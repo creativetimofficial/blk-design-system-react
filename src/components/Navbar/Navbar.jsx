@@ -130,7 +130,7 @@ class AppNavbar extends React.Component {
                   Getting started
                 </DropdownToggle>
                 <DropdownMenu className=" dropdown-with-icons">
-                  <DropdownItem href="https://demos.creative-tim.com/blk-design-system/docs/1.0/getting-started/overview.html">
+                  <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/tutorial">
                     <i className=" tim-icons icon-paper" />
                     Documentation
                   </DropdownItem>
