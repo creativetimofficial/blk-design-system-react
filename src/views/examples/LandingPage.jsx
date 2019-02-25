@@ -8,19 +8,16 @@ import {
   CardBody,
   CardFooter,
   CardTitle,
-  UncontrolledCollapse,
   ListGroupItem,
   ListGroup,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
   Container,
   Row,
-  Col,
-  UncontrolledTooltip
+  Col
 } from "reactstrap";
+
+// core components
+import Navbar from "components/Navbar/Navbar.jsx";
+import Footer from "components/Footer/Footer.jsx";
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -32,116 +29,7 @@ class LandingPage extends React.Component {
   render() {
     return (
       <>
-        {/* Navbar */}
-        <Navbar
-          className=" fixed-top navbar-transparent"
-          color-on-scroll="100"
-          expand="lg"
-        >
-          <Container>
-            <div className=" navbar-translate">
-              <NavbarBrand
-                data-placement="bottom"
-                href="https://demos.creative-tim.com/blk-design-system/index.html"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Designed and Coded by Creative Tim"
-              >
-                <span>BLK•</span>
-                Design System
-              </NavbarBrand>
-              <button
-                aria-controls="navigation-index"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className=" navbar-toggler navbar-toggler"
-                data-target="#navigation"
-                data-toggle="collapse"
-                id="navigation"
-                type="button"
-              >
-                <span className=" navbar-toggler-bar bar1" />
-                <span className=" navbar-toggler-bar bar2" />
-                <span className=" navbar-toggler-bar bar3" />
-              </button>
-            </div>
-            <UncontrolledCollapse
-              className=" justify-content-end"
-              id="navigation"
-              navbar
-              toggler="#navigation"
-            >
-              <div className=" navbar-collapse-header">
-                <Row>
-                  <Col className=" collapse-brand" xs="6">
-                    <a>BLK•</a>
-                  </Col>
-                  <Col className=" collapse-close text-right" xs="6">
-                    <button
-                      aria-controls="navigation-index"
-                      aria-expanded={false}
-                      aria-label="Toggle navigation"
-                      className=" navbar-toggler"
-                      data-target="#navigation"
-                      data-toggle="collapse"
-                      id="navigation"
-                      type="button"
-                    >
-                      <i className=" tim-icons icon-simple-remove" />
-                    </button>
-                  </Col>
-                </Row>
-              </div>
-              <Nav navbar>
-                <NavItem className=" p-0">
-                  <NavLink
-                    data-placement="bottom"
-                    href="https://twitter.com/CreativeTim"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    title="Follow us on Twitter"
-                  >
-                    <i className=" fab fa-twitter" />
-                    <p className=" d-lg-none d-xl-none">Twitter</p>
-                  </NavLink>
-                </NavItem>
-                <NavItem className=" p-0">
-                  <NavLink
-                    data-placement="bottom"
-                    href="https://www.facebook.com/CreativeTim"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    title="Like us on Facebook"
-                  >
-                    <i className=" fab fa-facebook-square" />
-                    <p className=" d-lg-none d-xl-none">Facebook</p>
-                  </NavLink>
-                </NavItem>
-                <NavItem className=" p-0">
-                  <NavLink
-                    data-placement="bottom"
-                    href="https://www.instagram.com/CreativeTimOfficial"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    title="Follow us on Instagram"
-                  >
-                    <i className=" fab fa-instagram" />
-                    <p className=" d-lg-none d-xl-none">Instagram</p>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="../index.html">Back to Kit</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://github.com/creativetimofficial/blk-design-system/issues">
-                    Have an issue?
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </UncontrolledCollapse>
-          </Container>
-        </Navbar>
-        {/* End Navbar */}
+        <Navbar />
         <div className=" wrapper">
           <div className=" page-header">
             <img
@@ -671,102 +559,7 @@ class LandingPage extends React.Component {
               </Row>
             </Container>
           </section>
-          <footer className=" footer">
-            <Container>
-              <Row>
-                <Col md="3">
-                  <h1 className=" title">BLK•</h1>
-                </Col>
-                <Col md="3">
-                  <Nav>
-                    <NavItem>
-                      <NavLink href="../index.html">Home</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="../examples/landing-page.html">
-                        Landing
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="../examples/register-page.html">
-                        Register
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="../examples/profile-page.html">
-                        Profile
-                      </NavLink>
-                    </NavItem>
-                  </Nav>
-                </Col>
-                <Col md="3">
-                  <Nav>
-                    <NavItem>
-                      <NavLink href="https://creative-tim.com/contact-us">
-                        Contact Us
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="https://creative-tim.com/about-us">
-                        About Us
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="https://creative-tim.com/blog">
-                        Blog
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="https://opensource.org/licenses/MIT">
-                        License
-                      </NavLink>
-                    </NavItem>
-                  </Nav>
-                </Col>
-                <Col md="3">
-                  <h3 className=" title">Follow us:</h3>
-                  <div className=" btn-wrapper profile">
-                    <Button
-                      className=" btn-icon btn-neutral btn-round btn-simple"
-                      color="default"
-                      href="https://twitter.com/creativetim"
-                      id="tooltip381204902"
-                      target="_blank"
-                    >
-                      <i className=" fab fa-twitter" />
-                    </Button>
-                    <UncontrolledTooltip delay={0} target="tooltip381204902">
-                      Follow us
-                    </UncontrolledTooltip>
-                    <Button
-                      className=" btn-icon btn-neutral btn-round btn-simple"
-                      color="default"
-                      href="https://www.facebook.com/creativetim"
-                      id="tooltip243062576"
-                      target="_blank"
-                    >
-                      <i className=" fab fa-facebook-square" />
-                    </Button>
-                    <UncontrolledTooltip delay={0} target="tooltip243062576">
-                      Like us
-                    </UncontrolledTooltip>
-                    <Button
-                      className=" btn-icon btn-neutral btn-round btn-simple"
-                      color="default"
-                      href="https://dribbble.com/creativetim"
-                      id="tooltip24973308"
-                      target="_blank"
-                    >
-                      <i className=" fab fa-dribbble" />
-                    </Button>
-                    <UncontrolledTooltip delay={0} target="tooltip24973308">
-                      Follow us
-                    </UncontrolledTooltip>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </footer>
+          <Footer />
         </div>
       </>
     );
