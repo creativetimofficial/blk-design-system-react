@@ -1,0 +1,113 @@
+/*
+ =========================================================
+ * Blk• Design System - v1.0.0
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/blk-design-system
+ * Copyright 2018 Creative Tim (http://www.creative-tim.com)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+// Core
+
+@import "blk-design-system-react/custom/functions";
+@import "blk-design-system-react/bootstrap/functions";
+
+@import "blk-design-system-react/custom/variables";
+@import "blk-design-system-react/bootstrap/variables";
+
+@import "blk-design-system-react/custom/mixins";
+@import "blk-design-system-react/bootstrap/mixins";
+
+// Bootstrap components
+
+@import "blk-design-system-react/bootstrap/root";
+@import "blk-design-system-react/bootstrap/reboot";
+@import "blk-design-system-react/bootstrap/type";
+@import "blk-design-system-react/bootstrap/images";
+@import "blk-design-system-react/bootstrap/code";
+@import "blk-design-system-react/bootstrap/grid";
+@import "blk-design-system-react/bootstrap/tables";
+@import "blk-design-system-react/bootstrap/forms";
+@import "blk-design-system-react/bootstrap/buttons";
+@import "blk-design-system-react/bootstrap/transitions";
+@import "blk-design-system-react/bootstrap/dropdown";
+@import "blk-design-system-react/bootstrap/button-group";
+@import "blk-design-system-react/bootstrap/input-group";
+@import "blk-design-system-react/bootstrap/custom-forms";
+@import "blk-design-system-react/bootstrap/nav";
+@import "blk-design-system-react/bootstrap/navbar";
+@import "blk-design-system-react/bootstrap/card";
+@import "blk-design-system-react/bootstrap/breadcrumb";
+@import "blk-design-system-react/bootstrap/pagination";
+@import "blk-design-system-react/bootstrap/badge";
+@import "blk-design-system-react/bootstrap/jumbotron";
+@import "blk-design-system-react/bootstrap/alert";
+@import "blk-design-system-react/bootstrap/progress";
+@import "blk-design-system-react/bootstrap/media";
+@import "blk-design-system-react/bootstrap/list-group";
+@import "blk-design-system-react/bootstrap/close";
+@import "blk-design-system-react/bootstrap/modal";
+@import "blk-design-system-react/bootstrap/tooltip";
+@import "blk-design-system-react/bootstrap/popover";
+@import "blk-design-system-react/bootstrap/carousel";
+@import "blk-design-system-react/bootstrap/utilities";
+@import "blk-design-system-react/bootstrap/print";
+
+// Custom components
+
+@import "blk-design-system-react/custom/alerts.scss";
+@import "blk-design-system-react/custom/buttons.scss";
+@import "blk-design-system-react/custom/dropdown.scss";
+@import "blk-design-system-react/custom/footer.scss";
+@import "blk-design-system-react/custom/forms.scss";
+@import "blk-design-system-react/custom/images.scss";
+@import "blk-design-system-react/custom/modal.scss";
+@import "blk-design-system-react/custom/navbar.scss";
+@import "blk-design-system-react/custom/type.scss";
+@import "blk-design-system-react/custom/icons.scss";
+@import "blk-design-system-react/custom/tables";
+@import "blk-design-system-react/custom/checkboxes-radio";
+@import "blk-design-system-react/custom/fixed-plugin";
+@import "blk-design-system-react/custom/pagination.scss";
+@import "blk-design-system-react/custom/misc.scss";
+@import "blk-design-system-react/custom/rtl.scss";
+@import "blk-design-system-react/custom/input-group.scss";
+@import "blk-design-system-react/custom/example-pages.scss";
+@import "blk-design-system-react/custom/progress.scss";
+@import "blk-design-system-react/custom/badge.scss";
+@import "blk-design-system-react/custom/pills.scss";
+@import "blk-design-system-react/custom/tabs.scss";
+@import "blk-design-system-react/custom/info-areas.scss";
+
+// Sections
+@import "blk-design-system-react/custom/sections.scss";
+
+// Vendor / Plugins
+
+@import "blk-design-system-react/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "blk-design-system-react/custom/vendor/plugin-animate-bootstrap-notify.scss";
+@import "blk-design-system-react/custom/vendor/plugin-bootstrap-switch.scss";
+@import "blk-design-system-react/custom/vendor/plugin-nouislider.scss";
+@import "blk-design-system-react/custom/vendor/plugin-datetimepicker.scss";
+
+// Cards
+
+@import "blk-design-system-react/custom/card";
+@import "blk-design-system-react/custom/cards/card-chart";
+@import "blk-design-system-react/custom/cards/card-map";
+@import "blk-design-system-react/custom/cards/card-user";
+@import "blk-design-system-react/custom/cards/card-task";
+@import "blk-design-system-react/custom/cards/card-plain";
+@import "blk-design-system-react/custom/cards/card-register";
+@import "blk-design-system-react/custom/cards/card-stats";
+@import "blk-design-system-react/custom/cards/card-chart";
+
+// React Differences
+
+@import "blk-design-system-react/react/react-differences";
