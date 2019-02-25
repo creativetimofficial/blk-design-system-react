@@ -63,18 +63,18 @@ class Index extends React.Component {
     return (
       <>
         <AppNavbar />
-        <div className=" wrapper">
-          <div className=" page-header header-filter">
-            <div className=" squares square1" />
-            <div className=" squares square2" />
-            <div className=" squares square3" />
-            <div className=" squares square4" />
-            <div className=" squares square5" />
-            <div className=" squares square6" />
-            <div className=" squares square7" />
+        <div className="wrapper">
+          <div className="page-header header-filter">
+            <div className="squares square1" />
+            <div className="squares square2" />
+            <div className="squares square3" />
+            <div className="squares square4" />
+            <div className="squares square5" />
+            <div className="squares square6" />
+            <div className="squares square7" />
             <Container>
-              <div className=" content-center brand">
-                <h1 className=" h1-seo">BLK•</h1>
+              <div className="content-center brand">
+                <h1 className="h1-seo">BLK•</h1>
                 <h3>
                   A beautiful Design System for Bootstrap 4. It's Free and Open
                   Source.
@@ -82,46 +82,46 @@ class Index extends React.Component {
               </div>
             </Container>
           </div>
-          <div className=" main">
-            <div className=" section section-basic" id="basic-elements">
+          <div className="main">
+            <div className="section section-basic" id="basic-elements">
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path1.png")}
               />
               <Container>
-                <h2 className=" title">Basic Elements</h2>
+                <h2 className="title">Basic Elements</h2>
                 <h3>Buttons</h3>
-                <p className=" category">Pick your style</p>
+                <p className="category">Pick your style</p>
                 <Row>
                   <Col md="10">
                     <Button color="primary" type="button">
                       Default
                     </Button>
                     <Button
-                      className=" btn-round"
+                      className="btn-round"
                       color="primary"
                       type="button"
                     >
                       Round
                     </Button>
                     <Button
-                      className=" btn-round"
+                      className="btn-round"
                       color="primary"
                       type="button"
                     >
-                      <i className=" tim-icons icon-heart-2" />
+                      <i className="tim-icons icon-heart-2" />
                       With Icon
                     </Button>
                     <Button
-                      className=" btn-icon btn-round"
+                      className="btn-icon btn-round"
                       color="primary"
                       type="button"
                     >
-                      <i className=" tim-icons icon-heart-2" />
+                      <i className="tim-icons icon-heart-2" />
                     </Button>
                     <Button
-                      className=" btn-simple btn-round"
+                      className="btn-simple btn-round"
                       color="primary"
                       type="button"
                     >
@@ -129,7 +129,7 @@ class Index extends React.Component {
                     </Button>
                   </Col>
                 </Row>
-                <p className=" category">Pick your size</p>
+                <p className="category">Pick your size</p>
                 <Row>
                   <Col md="10">
                     <Button color="primary" size="sm">
@@ -141,7 +141,7 @@ class Index extends React.Component {
                     </Button>
                   </Col>
                 </Row>
-                <p className=" category">Pick your color</p>
+                <p className="category">Pick your color</p>
                 <Row>
                   <Col md="12">
                     <Button color="default">Default</Button>
@@ -150,7 +150,7 @@ class Index extends React.Component {
                     <Button color="success">Success</Button>
                     <Button color="warning">Warning</Button>
                     <Button color="danger">Danger</Button>
-                    <Button className=" btn-neutral" color="default">
+                    <Button className="btn-neutral" color="default">
                       Neutral
                     </Button>
                   </Col>
@@ -160,27 +160,27 @@ class Index extends React.Component {
                 <Row>
                   <Col md="8">
                     <Button color="link">Default</Button>
-                    <Button className=" btn-link" color="primary">
+                    <Button className="btn-link" color="primary">
                       Primary
                     </Button>
-                    <Button className=" btn-link" color="info">
+                    <Button className="btn-link" color="info">
                       Info
                     </Button>
-                    <Button className=" btn-link" color="success">
+                    <Button className="btn-link" color="success">
                       Success
                     </Button>
-                    <Button className=" btn-link" color="warning">
+                    <Button className="btn-link" color="warning">
                       Warning
                     </Button>
-                    <Button className=" btn-link" color="danger">
+                    <Button className="btn-link" color="danger">
                       Danger
                     </Button>
                   </Col>
                 </Row>
-                <div className=" space-70" />
+                <div className="space-70" />
                 <div id="inputs">
                   <h3>Inputs</h3>
-                  <p className=" category">Form Controls</p>
+                  <p className="category">Form Controls</p>
                   <Row>
                     <Col lg="3" sm="6">
                       <FormGroup>
@@ -192,18 +192,18 @@ class Index extends React.Component {
                       </FormGroup>
                     </Col>
                     <Col lg="3" sm="6">
-                      <FormGroup className=" has-success">
+                      <FormGroup className="has-success">
                         <Input
-                          className=" form-control-success"
+                          className="form-control-success"
                           defaultValue="Success"
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col lg="3" sm="6">
-                      <FormGroup className=" has-danger">
+                      <FormGroup className="has-danger">
                         <Input
-                          className=" form-control-danger"
+                          className="form-control-danger"
                           defaultValue="Error Input"
                           type="email"
                         />
@@ -213,7 +213,7 @@ class Index extends React.Component {
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
-                            <i className=" fa fa-user" />
+                            <i className="fa fa-user" />
                           </InputGroupText>
                         </InputGroupAddon>
                         <Input
@@ -227,49 +227,49 @@ class Index extends React.Component {
                         <Input placeholder="Right Nucleo Icon" type="text" />
                         <InputGroupAddon addonType="append">
                           <InputGroupText>
-                            <i className=" tim-icons icon-lock-circle" />
+                            <i className="tim-icons icon-lock-circle" />
                           </InputGroupText>
                         </InputGroupAddon>
                       </InputGroup>
                     </Col>
                   </Row>
                 </div>
-                <div className=" space-70" />
+                <div className="space-70" />
                 <Row id="checkRadios">
                   <Col lg="3" sm="6">
-                    <p className=" category">Checkboxes</p>
+                    <p className="category">Checkboxes</p>
                     <FormGroup check>
                       <Label check>
                         <Input type="checkbox" />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Unchecked
                       </Label>
                     </FormGroup>
                     <FormGroup check>
                       <Label check>
                         <Input defaultChecked type="checkbox" />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Checked
                       </Label>
                     </FormGroup>
                     <FormGroup check disabled>
                       <Label check>
                         <Input disabled type="checkbox" />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Disabled Unchecked
                       </Label>
                     </FormGroup>
                     <FormGroup check disabled>
                       <Label check>
                         <Input defaultChecked disabled type="checkbox" />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Disabled Checked
                       </Label>
                     </FormGroup>
                   </Col>
                   <Col lg="3" sm="6">
-                    <p className=" category">Radios</p>
-                    <FormGroup check className=" form-check-radio">
+                    <p className="category">Radios</p>
+                    <FormGroup check className="form-check-radio">
                       <Label check>
                         <Input
                           defaultValue="option1"
@@ -277,11 +277,11 @@ class Index extends React.Component {
                           name="exampleRadios"
                           type="radio"
                         />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Radio is off
                       </Label>
                     </FormGroup>
-                    <FormGroup check className=" form-check-radio">
+                    <FormGroup check className="form-check-radio">
                       <Label check>
                         <Input
                           defaultChecked
@@ -290,11 +290,11 @@ class Index extends React.Component {
                           name="exampleRadios"
                           type="radio"
                         />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Radio is on
                       </Label>
                     </FormGroup>
-                    <FormGroup check className=" form-check-radio" disabled>
+                    <FormGroup check className="form-check-radio" disabled>
                       <Label check>
                         <Input
                           defaultValue="option3"
@@ -303,11 +303,11 @@ class Index extends React.Component {
                           name="exampleRadios1"
                           type="radio"
                         />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Disabled radio is off
                       </Label>
                     </FormGroup>
-                    <FormGroup check className=" form-check-radio" disabled>
+                    <FormGroup check className="form-check-radio" disabled>
                       <Label check>
                         <Input
                           defaultChecked
@@ -317,37 +317,37 @@ class Index extends React.Component {
                           name="exampleRadios1"
                           type="radio"
                         />
-                        <span className=" form-check-sign" />
+                        <span className="form-check-sign" />
                         Disabled radio is on
                       </Label>
                     </FormGroup>
                   </Col>
                   <Col lg="3" sm="6">
-                    <p className=" category">Toggle Buttons</p>
+                    <p className="category">Toggle Buttons</p>
                     <Switch offColor="" offText="" onColor="" onText="" />
                     <br />
                     <Switch defaultValue={false} offColor="" onColor="" />
                   </Col>
                   <Col lg="3" sm="6">
-                    <p className=" category">Sliders</p>
-                    <div className=" slider" id="sliderRegular" />
+                    <p className="category">Sliders</p>
+                    <div className="slider" id="sliderRegular" />
                     <br />
-                    <div className=" slider slider-primary" id="sliderDouble" />
+                    <div className="slider slider-primary" id="sliderDouble" />
                   </Col>
                 </Row>
               </Container>
             </div>
-            <div className=" section section-navbars">
+            <div className="section section-navbars">
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path3.png")}
               />
               <Container id="menu-dropdown">
                 <Row>
                   <Col md="6">
                     <h4>Menu</h4>
-                    <Navbar className=" bg-primary" expand="lg">
+                    <Navbar className="bg-primary" expand="lg">
                       <Container>
                         <NavbarBrand
                           href="#pablo"
@@ -359,15 +359,15 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar"
                           data-toggle="collapse"
                           id="example-navbar"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                         <UncontrolledCollapse
                           id="example-navbar"
@@ -375,7 +375,7 @@ class Index extends React.Component {
                           toggler="#example-navbar"
                         >
                           <Nav navbar>
-                            <NavItem className=" active">
+                            <NavItem className="active">
                               <NavLink
                                 href="#pablo"
                                 onClick={e => e.preventDefault()}
@@ -432,7 +432,7 @@ class Index extends React.Component {
                   </Col>
                   <Col md="6">
                     <h4>Menu with Icons</h4>
-                    <Navbar className=" bg-info" expand="lg">
+                    <Navbar className="bg-info" expand="lg">
                       <Container>
                         <NavbarBrand
                           href="#pablo"
@@ -444,22 +444,22 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar-icons"
                           data-toggle="collapse"
                           id="example-navbar-icons"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                         <UncontrolledCollapse
                           id="example-navbar-icons"
                           navbar
                           toggler="#example-navbar-icons"
                         >
-                          <Nav className=" ml-auto" navbar>
+                          <Nav className="ml-auto" navbar>
                             <NavItem>
                               <NavLink
                                 href="#pablo"
@@ -467,7 +467,7 @@ class Index extends React.Component {
                               >
                                 <i
                                   aria-hidden={true}
-                                  className=" tim-icons icon-send"
+                                  className="tim-icons icon-send"
                                 />
                               </NavLink>
                             </NavItem>
@@ -478,7 +478,7 @@ class Index extends React.Component {
                               >
                                 <i
                                   aria-hidden={true}
-                                  className=" tim-icons icon-single-02"
+                                  className="tim-icons icon-single-02"
                                 />
                               </NavLink>
                             </NavItem>
@@ -494,7 +494,7 @@ class Index extends React.Component {
                               >
                                 <i
                                   aria-hidden={true}
-                                  className=" tim-icons icon-settings-gear-63"
+                                  className="tim-icons icon-settings-gear-63"
                                 />
                               </DropdownToggle>
                               <DropdownMenu
@@ -522,14 +522,14 @@ class Index extends React.Component {
                                 >
                                   Something else here
                                 </DropdownItem>
-                                <div className=" divider" />
+                                <div className="divider" />
                                 <DropdownItem
                                   href="#pablo"
                                   onClick={e => e.preventDefault()}
                                 >
                                   Separated link
                                 </DropdownItem>
-                                <div className=" divider" />
+                                <div className="divider" />
                                 <DropdownItem
                                   href="#pablo"
                                   onClick={e => e.preventDefault()}
@@ -544,14 +544,14 @@ class Index extends React.Component {
                     </Navbar>
                   </Col>
                 </Row>
-                <h3 className=" title mb-3">Navigation</h3>
+                <h3 className="title mb-3">Navigation</h3>
               </Container>
               <div id="navbar">
-                <div className=" navigation-example">
+                <div className="navigation-example">
                   {/* Navbar Primary */}
-                  <Navbar className=" bg-primary" expand="lg">
+                  <Navbar className="bg-primary" expand="lg">
                     <Container>
-                      <div className=" navbar-translate">
+                      <div className="navbar-translate">
                         <NavbarBrand
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -562,15 +562,15 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar-primary"
                           data-toggle="collapse"
                           id="example-navbar-primary"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                       </div>
                       <UncontrolledCollapse
@@ -578,13 +578,13 @@ class Index extends React.Component {
                         navbar
                         toggler="#example-navbar-primary"
                       >
-                        <Nav className=" ml-auto" navbar>
-                          <NavItem className=" active">
+                        <Nav className="ml-auto" navbar>
+                          <NavItem className="active">
                             <NavLink
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" tim-icons icon-world" />
+                              <i className="tim-icons icon-world" />
                               Discover
                             </NavLink>
                           </NavItem>
@@ -593,7 +593,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" tim-icons icon-single-02" />
+                              <i className="tim-icons icon-single-02" />
                               Profile
                             </NavLink>
                           </NavItem>
@@ -602,7 +602,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" tim-icons icon-settings-gear-63" />
+                              <i className="tim-icons icon-settings-gear-63" />
                               Settings
                             </NavLink>
                           </NavItem>
@@ -612,9 +612,9 @@ class Index extends React.Component {
                   </Navbar>
                   {/* End Navbar Primary */}
                   {/* Navbar Info */}
-                  <Navbar className=" bg-info" expand="lg">
+                  <Navbar className="bg-info" expand="lg">
                     <Container>
-                      <div className=" navbar-translate">
+                      <div className="navbar-translate">
                         <NavbarBrand
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -625,15 +625,15 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar-info"
                           data-toggle="collapse"
                           id="example-navbar-info"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                       </div>
                       <UncontrolledCollapse
@@ -641,8 +641,8 @@ class Index extends React.Component {
                         navbar
                         toggler="#example-navbar-info"
                       >
-                        <Nav className=" ml-auto" navbar>
-                          <NavItem className=" active">
+                        <Nav className="ml-auto" navbar>
+                          <NavItem className="active">
                             <NavLink
                               href="#pablo"
                               onClick={e => e.preventDefault()}
@@ -672,9 +672,9 @@ class Index extends React.Component {
                   </Navbar>
                   {/* End Navbar Info */}
                   {/* Navbar Success */}
-                  <Navbar className=" bg-success" expand="lg">
+                  <Navbar className="bg-success" expand="lg">
                     <Container>
-                      <div className=" navbar-translate">
+                      <div className="navbar-translate">
                         <NavbarBrand
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -685,15 +685,15 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar-success"
                           data-toggle="collapse"
                           id="example-navbar-success"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                       </div>
                       <UncontrolledCollapse
@@ -701,13 +701,13 @@ class Index extends React.Component {
                         navbar
                         toggler="#example-navbar-success"
                       >
-                        <Nav className=" ml-auto" navbar>
-                          <NavItem className=" active">
+                        <Nav className="ml-auto" navbar>
+                          <NavItem className="active">
                             <NavLink
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" tim-icons icon-world" />
+                              <i className="tim-icons icon-world" />
                             </NavLink>
                           </NavItem>
                           <NavItem>
@@ -715,7 +715,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" tim-icons icon-single-02" />
+                              <i className="tim-icons icon-single-02" />
                             </NavLink>
                           </NavItem>
                           <NavItem>
@@ -723,7 +723,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" tim-icons icon-settings-gear-63" />
+                              <i className="tim-icons icon-settings-gear-63" />
                             </NavLink>
                           </NavItem>
                         </Nav>
@@ -732,9 +732,9 @@ class Index extends React.Component {
                   </Navbar>
                   {/* End Navbar Success */}
                   {/* Navbar Warning */}
-                  <Navbar className=" bg-warning" expand="lg">
+                  <Navbar className="bg-warning" expand="lg">
                     <Container>
-                      <div className=" navbar-translate">
+                      <div className="navbar-translate">
                         <NavbarBrand
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -745,15 +745,15 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar-warning"
                           data-toggle="collapse"
                           id="example-navbar-warning"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                       </div>
                       <UncontrolledCollapse
@@ -761,13 +761,13 @@ class Index extends React.Component {
                         navbar
                         toggler="#example-navbar-warning"
                       >
-                        <Nav className=" ml-auto" navbar>
+                        <Nav className="ml-auto" navbar>
                           <NavItem>
                             <NavLink
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-facebook-square" />
+                              <i className="fab fa-facebook-square" />
                             </NavLink>
                           </NavItem>
                           <NavItem>
@@ -775,7 +775,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-twitter" />
+                              <i className="fab fa-twitter" />
                             </NavLink>
                           </NavItem>
                           <NavItem>
@@ -783,7 +783,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-google-plus" />
+                              <i className="fab fa-google-plus" />
                             </NavLink>
                           </NavItem>
                           <NavItem>
@@ -791,7 +791,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-instagram" />
+                              <i className="fab fa-instagram" />
                             </NavLink>
                           </NavItem>
                         </Nav>
@@ -800,9 +800,9 @@ class Index extends React.Component {
                   </Navbar>
                   {/* End Navbar Warning */}
                   {/* Navbar Danger */}
-                  <Navbar className=" bg-danger" expand="lg">
+                  <Navbar className="bg-danger" expand="lg">
                     <Container>
-                      <div className=" navbar-translate">
+                      <div className="navbar-translate">
                         <NavbarBrand
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -813,15 +813,15 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar-danger"
                           data-toggle="collapse"
                           id="example-navbar-danger"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                       </div>
                       <UncontrolledCollapse
@@ -829,13 +829,13 @@ class Index extends React.Component {
                         navbar
                         toggler="#example-navbar-danger"
                       >
-                        <Nav className=" ml-auto" navbar>
+                        <Nav className="ml-auto" navbar>
                           <NavItem>
                             <NavLink
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-facebook-square" />
+                              <i className="fab fa-facebook-square" />
                               Share
                             </NavLink>
                           </NavItem>
@@ -844,7 +844,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-twitter" />
+                              <i className="fab fa-twitter" />
                               Tweet
                             </NavLink>
                           </NavItem>
@@ -853,7 +853,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-pinterest" />
+                              <i className="fab fa-pinterest" />
                               Pin
                             </NavLink>
                           </NavItem>
@@ -863,9 +863,9 @@ class Index extends React.Component {
                   </Navbar>
                   {/* End Navbar Danger */}
                   {/* Navbar Transparent */}
-                  <Navbar className=" navbar-transparent" expand="lg">
+                  <Navbar className="navbar-transparent" expand="lg">
                     <Container>
-                      <div className=" navbar-translate">
+                      <div className="navbar-translate">
                         <NavbarBrand
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -876,15 +876,15 @@ class Index extends React.Component {
                           aria-controls="navbarSupportedContent"
                           aria-expanded={false}
                           aria-label="Toggle navigation"
-                          className=" navbar-toggler"
+                          className="navbar-toggler"
                           data-target="#example-navbar-transparent"
                           data-toggle="collapse"
                           id="example-navbar-transparent"
                           type="button"
                         >
-                          <span className=" navbar-toggler-bar bar1" />
-                          <span className=" navbar-toggler-bar bar2" />
-                          <span className=" navbar-toggler-bar bar3" />
+                          <span className="navbar-toggler-bar bar1" />
+                          <span className="navbar-toggler-bar bar2" />
+                          <span className="navbar-toggler-bar bar3" />
                         </button>
                       </div>
                       <UncontrolledCollapse
@@ -892,13 +892,13 @@ class Index extends React.Component {
                         navbar
                         toggler="#example-navbar-transparent"
                       >
-                        <Nav className=" ml-auto" navbar>
+                        <Nav className="ml-auto" navbar>
                           <NavItem>
                             <NavLink
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-facebook-square" />
+                              <i className="fab fa-facebook-square" />
                               Facebook
                             </NavLink>
                           </NavItem>
@@ -907,7 +907,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-twitter" />
+                              <i className="fab fa-twitter" />
                               Twitter
                             </NavLink>
                           </NavItem>
@@ -916,7 +916,7 @@ class Index extends React.Component {
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <i className=" fab fa-instagram" />
+                              <i className="fab fa-instagram" />
                               Instagram
                             </NavLink>
                           </NavItem>
@@ -929,31 +929,31 @@ class Index extends React.Component {
               </div>
             </div>
             {/* End .section-navbars */}
-            <div className=" section section-tabs">
+            <div className="section section-tabs">
               <Container>
-                <div className=" title">
-                  <h3 className=" mb-3">Navigation Tabs</h3>
+                <div className="title">
+                  <h3 className="mb-3">Navigation Tabs</h3>
                 </div>
                 <Row>
-                  <Col className=" ml-auto mr-auto" md="10" xl="6">
-                    <div className=" mb-3">
-                      <small className=" text-uppercase font-weight-bold">
+                  <Col className="ml-auto mr-auto" md="10" xl="6">
+                    <div className="mb-3">
+                      <small className="text-uppercase font-weight-bold">
                         With icons
                       </small>
                     </div>
                     {/* Nav tabs */}
                     <Card>
                       <CardHeader>
-                        <Nav className=" nav-tabs-primary" role="tablist" tabs>
+                        <Nav className="nav-tabs-primary" role="tablist" tabs>
                           <NavItem>
                             <NavLink
-                              className=" active"
+                              className="active"
                               data-toggle="tab"
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                               role="tablist"
                             >
-                              <i className=" tim-icons icon-spaceship" />
+                              <i className="tim-icons icon-spaceship" />
                               Profile
                             </NavLink>
                           </NavItem>
@@ -964,7 +964,7 @@ class Index extends React.Component {
                               onClick={e => e.preventDefault()}
                               role="tablist"
                             >
-                              <i className=" tim-icons icon-settings-gear-63" />
+                              <i className="tim-icons icon-settings-gear-63" />
                               Settings
                             </NavLink>
                           </NavItem>
@@ -975,7 +975,7 @@ class Index extends React.Component {
                               onClick={e => e.preventDefault()}
                               role="tablist"
                             >
-                              <i className=" tim-icons icon-bag-16" />
+                              <i className="tim-icons icon-bag-16" />
                               Options
                             </NavLink>
                           </NavItem>
@@ -983,8 +983,8 @@ class Index extends React.Component {
                       </CardHeader>
                       <CardBody>
                         {/* Tab panes */}
-                        <TabContent className=" tab-space">
-                          <TabPane className=" active" id="link1">
+                        <TabContent className="tab-space">
+                          <TabPane className="active" id="link1">
                             <p>
                               Collaboratively administrate empowered markets via
                               plug-and-play networks. Dynamically procrastinate
@@ -1019,19 +1019,19 @@ class Index extends React.Component {
                       </CardBody>
                     </Card>
                   </Col>
-                  <Col className=" ml-auto mr-auto" md="10" xl="6">
-                    <div className=" mb-3">
-                      <small className=" text-uppercase font-weight-bold">
+                  <Col className="ml-auto mr-auto" md="10" xl="6">
+                    <div className="mb-3">
+                      <small className="text-uppercase font-weight-bold">
                         With text
                       </small>
                     </div>
                     {/* Tabs with Background on Card */}
                     <Card>
                       <CardHeader>
-                        <Nav className=" nav-tabs-primary" role="tablist" tabs>
+                        <Nav className="nav-tabs-primary" role="tablist" tabs>
                           <NavItem>
                             <NavLink
-                              className=" active"
+                              className="active"
                               data-toggle="tab"
                               href="#pablo"
                               onClick={e => e.preventDefault()}
@@ -1064,8 +1064,8 @@ class Index extends React.Component {
                       </CardHeader>
                       <CardBody>
                         {/* Tab panes */}
-                        <TabContent className=" tab-space">
-                          <TabPane className=" active" id="link4">
+                        <TabContent className="tab-space">
+                          <TabPane className="active" id="link4">
                             <p>
                               These cases are perfectly simple and easy to
                               distinguish. In a free hour, when our power of
@@ -1112,44 +1112,44 @@ class Index extends React.Component {
               </Container>
             </div>
             {/* End Section Tabs */}
-            <div className=" section section-pagination">
+            <div className="section section-pagination">
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path4.png")}
               />
               <img
                 alt="..."
-                className=" path path1"
+                className="path path1"
                 src={require("assets/img/path5.png")}
               />
               <Container>
                 <Row>
                   <Col md="6">
-                    <h3 className=" mb-4">Progress Bars</h3>
-                    <div className=" progress-container">
-                      <span className=" progress-badge">Default</span>
+                    <h3 className="mb-4">Progress Bars</h3>
+                    <div className="progress-container">
+                      <span className="progress-badge">Default</span>
                       <Progress max="100" value="60">
-                        <span className=" progress-value">25%</span>
+                        <span className="progress-value">25%</span>
                       </Progress>
                     </div>
-                    <div className=" progress-container progress-primary">
-                      <span className=" progress-badge">Primary</span>
+                    <div className="progress-container progress-primary">
+                      <span className="progress-badge">Primary</span>
                       <Progress max="100" value="60">
-                        <span className=" progress-value">60%</span>
+                        <span className="progress-value">60%</span>
                       </Progress>
                     </div>
                     <br />
-                    <h3 className=" mb-5">Navigation Pills</h3>
-                    <Nav className=" nav-pills-primary nav-pills-icons" pills>
+                    <h3 className="mb-5">Navigation Pills</h3>
+                    <Nav className="nav-pills-primary nav-pills-icons" pills>
                       <NavItem>
                         <NavLink
-                          className=" active show"
+                          className="active show"
                           data-toggle="tab"
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                         >
-                          <i className=" tim-icons icon-atom" />
+                          <i className="tim-icons icon-atom" />
                           Home
                         </NavLink>
                       </NavItem>
@@ -1159,7 +1159,7 @@ class Index extends React.Component {
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                         >
-                          <i className=" tim-icons icon-chat-33" />
+                          <i className="tim-icons icon-chat-33" />
                           Messages
                         </NavLink>
                       </NavItem>
@@ -1169,19 +1169,19 @@ class Index extends React.Component {
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                         >
-                          <i className=" tim-icons icon-settings-gear-63" />
+                          <i className="tim-icons icon-settings-gear-63" />
                           Settings
                         </NavLink>
                       </NavItem>
                     </Nav>
                   </Col>
                   <Col md="6">
-                    <h3 className=" mb-5">Pagination</h3>
+                    <h3 className="mb-5">Pagination</h3>
                     <Pagination
                       className="pagination pagination-primary"
-                      listClassName=" pagination-primary"
+                      listclassName="pagination-primary"
                     >
-                      <PaginationItem className=" active">
+                      <PaginationItem className="active">
                         <PaginationLink
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -1232,7 +1232,7 @@ class Index extends React.Component {
                           <span aria-hidden={true}>
                             <i
                               aria-hidden={true}
-                              className=" tim-icons icon-double-left"
+                              className="tim-icons icon-double-left"
                             />
                           </span>
                         </PaginationLink>
@@ -1245,7 +1245,7 @@ class Index extends React.Component {
                           1
                         </PaginationLink>
                       </PaginationItem>
-                      <PaginationItem className=" active">
+                      <PaginationItem className="active">
                         <PaginationLink
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -1270,60 +1270,60 @@ class Index extends React.Component {
                           <span aria-hidden={true}>
                             <i
                               aria-hidden={true}
-                              className=" tim-icons icon-double-right"
+                              className="tim-icons icon-double-right"
                             />
                           </span>
                         </PaginationLink>
                       </PaginationItem>
                     </Pagination>
                     <br />
-                    <h3 className=" mb-5">Labels</h3>
-                    <Badge className=" badge-default">Default</Badge>
+                    <h3 className="mb-5">Labels</h3>
+                    <Badge className="badge-default">Default</Badge>
                     <Badge color="primary">Primary</Badge>
                     <Badge color="success">Success</Badge>
                     <Badge color="info">Info</Badge>
                     <Badge color="warning">Warning</Badge>
                     <Badge color="danger">Danger</Badge>
-                    <Badge className=" badge-neutral">Neutral</Badge>
+                    <Badge className="badge-neutral">Neutral</Badge>
                   </Col>
                 </Row>
                 <br />
               </Container>
             </div>
-            <div className=" section section-notifications" id="notifications">
+            <div className="section section-notifications" id="notifications">
               <Container>
-                <div className=" space" />
+                <div className="space" />
                 <h3>Notifications</h3>
-                <Alert className=" alert-with-icon" color="primary">
-                  <span className=" tim-icons icon-coins" />
+                <Alert className="alert-with-icon" color="primary">
+                  <span className="tim-icons icon-coins" />
                   <span>
                     <b>Congrats! -</b>
                     This is a regular notification made with ".alert-primary"
                   </span>
                 </Alert>
-                <Alert className=" alert-with-icon" color="info">
-                  <span className=" tim-icons icon-trophy" />
+                <Alert className="alert-with-icon" color="info">
+                  <span className="tim-icons icon-trophy" />
                   <span>
                     <b>Heads up! -</b>
                     This is a regular notification made with ".alert-info"
                   </span>
                 </Alert>
-                <Alert className=" alert-with-icon" color="success">
-                  <span className=" tim-icons icon-bell-55" />
+                <Alert className="alert-with-icon" color="success">
+                  <span className="tim-icons icon-bell-55" />
                   <span>
                     <b>Well done! -</b>
                     This is a regular notification made with ".alert-success"
                   </span>
                 </Alert>
-                <Alert className=" alert-with-icon" color="warning">
-                  <span className=" tim-icons icon-bulb-63" />
+                <Alert className="alert-with-icon" color="warning">
+                  <span className="tim-icons icon-bulb-63" />
                   <span>
                     <b>Warning! -</b>
                     This is a regular notification made with ".alert-warning"
                   </span>
                 </Alert>
-                <Alert className=" alert-with-icon" color="danger">
-                  <span className=" tim-icons icon-support-17" />
+                <Alert className="alert-with-icon" color="danger">
+                  <span className="tim-icons icon-support-17" />
                   <span>
                     <b>Oh snap! -</b>
                     This is a regular notification made with ".alert-danger"
@@ -1333,59 +1333,59 @@ class Index extends React.Component {
             </div>
             {/* end notifications */}
             {/* Typography */}
-            <div className=" section section-typo">
+            <div className="section section-typo">
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path1.png")}
               />
               <img
                 alt="..."
-                className=" path path1"
+                className="path path1"
                 src={require("assets/img/path3.png")}
               />
               <Container>
-                <h3 className=" title">Typography</h3>
+                <h3 className="title">Typography</h3>
                 <div id="typography">
                   <Row>
                     <Col md="12">
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <h1>
                           <span>Header 1</span>
                           The Life of BLK• Design System
                         </h1>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <h2>
                           <span>Header 2</span>
                           The Life of BLK• Design System
                         </h2>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <h3>
                           <span>Header 3</span>
                           The Life of BLK• Design System
                         </h3>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <h4>
                           <span>Header 4</span>
                           The Life of BLK• Design System
                         </h4>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <h5>
                           <span>Header 5</span>
                           The Life of BLK• Design System
                         </h5>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <h6>
                           <span>Header 6</span>
                           The Life of BLK• Design System
                         </h6>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <p>
                           <span>Paragraph</span>I will be the leader of a
                           company that ends up being worth billions of dollars,
@@ -1395,10 +1395,10 @@ class Index extends React.Component {
                           the level that things could be at.
                         </p>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <span>Quote</span>
                         <blockquote>
-                          <p className=" blockquote blockquote-primary">
+                          <p className="blockquote blockquote-primary">
                             "I will be the leader of a company that ends up
                             being worth billions of dollars, because I got the
                             answers. I understand culture. I am the nucleus. I
@@ -1410,55 +1410,55 @@ class Index extends React.Component {
                           </p>
                         </blockquote>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <span>Muted Text</span>
-                        <p className=" text-muted">
+                        <p className="text-muted">
                           I will be the leader of a company that ends up being
                           worth billions of dollars, because I got the
                           answers...
                         </p>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <span>Primary Text</span>
-                        <p className=" text-primary">
+                        <p className="text-primary">
                           I will be the leader of a company that ends up being
                           worth billions of dollars, because I got the
                           answers...
                         </p>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <span>Info Text</span>
-                        <p className=" text-info">
+                        <p className="text-info">
                           I will be the leader of a company that ends up being
                           worth billions of dollars, because I got the
                           answers...
                         </p>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <span>Success Text</span>
-                        <p className=" text-success">
+                        <p className="text-success">
                           I will be the leader of a company that ends up being
                           worth billions of dollars, because I got the
                           answers...
                         </p>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <span>Warning Text</span>
-                        <p className=" text-warning">
+                        <p className="text-warning">
                           I will be the leader of a company that ends up being
                           worth billions of dollars, because I got the
                           answers...
                         </p>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <span>Danger Text</span>
-                        <p className=" text-danger">
+                        <p className="text-danger">
                           I will be the leader of a company that ends up being
                           worth billions of dollars, because I got the
                           answers...
                         </p>
                       </div>
-                      <div className=" typography-line">
+                      <div className="typography-line">
                         <h2>
                           <span>Small Tag</span>
                           Header with small subtitle <br />
@@ -1468,50 +1468,50 @@ class Index extends React.Component {
                     </Col>
                   </Row>
                 </div>
-                <div className=" space-50" />
+                <div className="space-50" />
                 <div id="images">
-                  <h3 className=" mb-5">Images</h3>
+                  <h3 className="mb-5">Images</h3>
                   <Row>
                     <Col sm="3" xs="6">
-                      <small className=" d-block text-uppercase font-weight-bold mb-4">
+                      <small className="d-block text-uppercase font-weight-bold mb-4">
                         Image
                       </small>
                       <img
                         alt="..."
-                        className=" img-fluid rounded shadow"
+                        className="img-fluid rounded shadow"
                         src={require("assets/img/ryan.jpg")}
                         style={{ width: "150px" }}
                       />
                     </Col>
                     <Col sm="3" xs="6">
-                      <small className=" d-block text-uppercase font-weight-bold mb-4">
+                      <small className="d-block text-uppercase font-weight-bold mb-4">
                         Circle Image
                       </small>
                       <img
                         alt="..."
-                        className=" img-fluid rounded-circle shadow"
+                        className="img-fluid rounded-circle shadow"
                         src={require("assets/img/james.jpg")}
                         style={{ width: "150px" }}
                       />
                     </Col>
-                    <Col className=" mt-5 mt-sm-0" sm="3" xs="6">
-                      <small className=" d-block text-uppercase font-weight-bold mb-4">
+                    <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+                      <small className="d-block text-uppercase font-weight-bold mb-4">
                         Raised
                       </small>
                       <img
                         alt="..."
-                        className=" img-fluid rounded shadow-lg"
+                        className="img-fluid rounded shadow-lg"
                         src={require("assets/img/lora.jpg")}
                         style={{ width: "150px" }}
                       />
                     </Col>
-                    <Col className=" mt-5 mt-sm-0" sm="3" xs="6">
-                      <small className=" d-block text-uppercase font-weight-bold mb-4">
+                    <Col className="mt-5 mt-sm-0" sm="3" xs="6">
+                      <small className="d-block text-uppercase font-weight-bold mb-4">
                         Circle Raised
                       </small>
                       <img
                         alt="..."
-                        className=" img-fluid rounded-circle shadow-lg"
+                        className="img-fluid rounded-circle shadow-lg"
                         src={require("assets/img/mike.jpg")}
                         style={{ width: "150px" }}
                       />
@@ -1521,22 +1521,22 @@ class Index extends React.Component {
               </Container>
             </div>
             <div
-              className=" section section-javascript"
+              className="section section-javascript"
               id="javascriptComponents"
             >
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path5.png")}
               />
               <img
                 alt="..."
-                className=" path path1"
+                className="path path1"
                 src={require("assets/img/path5.png")}
               />
               <Container>
-                <h3 className=" title mb-5">Javascript components</h3>
-                <h4 className=" mb-5">Modal</h4>
+                <h3 className="title mb-5">Javascript components</h3>
+                <h4 className="mb-5">Modal</h4>
                 <Row id="modals">
                   <Col md="4">
                     <Button
@@ -1568,10 +1568,10 @@ class Index extends React.Component {
                 </Row>
                 <br />
                 <br />
-                <h4 className=" mb-5 mt-3">Datepicker</h4>
+                <h4 className="mb-5 mt-3">Datepicker</h4>
                 <Row>
                   <Col md="4">
-                    <div className=" datepicker-container">
+                    <div className="datepicker-container">
                       <FormGroup>
                         <ReactDatetime
                           inputProps={{
@@ -1586,7 +1586,7 @@ class Index extends React.Component {
                 </Row>
                 <Row>
                   <Col md="6">
-                    <h4 className=" mb-5 mt-3">Popovers</h4>
+                    <h4 className="mb-5 mt-3">Popovers</h4>
                     <Button
                       color="default"
                       data-container="body"
@@ -1677,9 +1677,9 @@ class Index extends React.Component {
                     </UncontrolledPopover>
                   </Col>
                   <Col md="6">
-                    <h4 className=" mb-5 mt-3">Tooltips</h4>
+                    <h4 className="mb-5 mt-3">Tooltips</h4>
                     <Button
-                      className=" btn-tooltip"
+                      className="btn-tooltip"
                       color="default"
                       data-animation={true}
                       data-container="body"
@@ -1698,7 +1698,7 @@ class Index extends React.Component {
                       target="tooltip376048342"
                     />
                     <Button
-                      className=" btn-tooltip"
+                      className="btn-tooltip"
                       color="default"
                       data-animation={true}
                       data-container="body"
@@ -1716,7 +1716,7 @@ class Index extends React.Component {
                       target="tooltip297889956"
                     />
                     <Button
-                      className=" btn-tooltip"
+                      className="btn-tooltip"
                       color="default"
                       data-animation={true}
                       data-container="body"
@@ -1734,7 +1734,7 @@ class Index extends React.Component {
                       target="tooltip789511871"
                     />
                     <Button
-                      className=" btn-tooltip"
+                      className="btn-tooltip"
                       color="default"
                       data-animation={true}
                       data-container="body"
@@ -1751,29 +1751,29 @@ class Index extends React.Component {
                       placement="right"
                       target="tooltip353488548"
                     />
-                    <div className=" clearfix" />
+                    <div className="clearfix" />
                     <br />
                     <br />
                   </Col>
                 </Row>
               </Container>
-              <div className=" section">
+              <div className="section">
                 <Container>
-                  <div className=" title">
+                  <div className="title">
                     <h3>Carousel</h3>
                   </div>
-                  <Row className=" justify-content-between align-items-center">
-                    <Col className=" mb-5 mb-lg-0" lg="5">
-                      <h1 className=" text-white font-weight-light">
+                  <Row className="justify-content-between align-items-center">
+                    <Col className="mb-5 mb-lg-0" lg="5">
+                      <h1 className="text-white font-weight-light">
                         Bootstrap carousel
                       </h1>
-                      <p className=" text-white mt-4">
+                      <p className="text-white mt-4">
                         Black Design comes with three pre-built pages to help
                         you get started faster. You can change the text and
                         images and you're good to go.
                       </p>
                       <Button
-                        className=" mt-4"
+                        className="mt-4"
                         color="warning"
                         href="./docs/1.0/components/alerts.html"
                       >
@@ -1782,51 +1782,51 @@ class Index extends React.Component {
                     </Col>
                     <Col lg="6">
                       <div
-                        className=" carousel slide"
+                        className="carousel slide"
                         id="carouselExampleControls"
                       >
-                        <div className=" carousel-inner">
-                          <div className=" carousel-item active">
+                        <div className="carousel-inner">
+                          <div className="carousel-item active">
                             <img
                               alt="..."
-                              className=" d-block w-100"
+                              className="d-block w-100"
                               src={require("assets/img/denys.jpg")}
                             />
                           </div>
-                          <div className=" carousel-item">
+                          <div className="carousel-item">
                             <img
                               alt="..."
-                              className=" d-block w-100"
+                              className="d-block w-100"
                               src={require("assets/img/fabien-bazanegue.jpg")}
                             />
                           </div>
-                          <div className=" carousel-item">
+                          <div className="carousel-item">
                             <img
                               alt="..."
-                              className=" d-block w-100"
+                              className="d-block w-100"
                               src={require("assets/img/mark-finn.jpg")}
                             />
                           </div>
                         </div>
                         <a
-                          className=" carousel-control-prev"
+                          className="carousel-control-prev"
                           data-slide="prev"
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                           role="button"
                         >
-                          <i className=" tim-icons icon-minimal-left" />
-                          <span className=" sr-only">Previous</span>
+                          <i className="tim-icons icon-minimal-left" />
+                          <span className="sr-only">Previous</span>
                         </a>
                         <a
-                          className=" carousel-control-next"
+                          className="carousel-control-next"
                           data-slide="next"
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                           role="button"
                         >
-                          <i className=" tim-icons icon-minimal-right" />
-                          <span className=" sr-only">Next</span>
+                          <i className="tim-icons icon-minimal-right" />
+                          <span className="sr-only">Next</span>
                         </a>
                       </div>
                     </Col>
@@ -1834,26 +1834,26 @@ class Index extends React.Component {
                 </Container>
               </div>
             </div>
-            <div className=" section section-nucleo-icons">
+            <div className="section section-nucleo-icons">
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path3.png")}
               />
               <Container>
-                <Row className=" justify-content-center">
+                <Row className="justify-content-center">
                   <Col lg="8" md="12">
-                    <h2 className=" title">Nucleo Icons</h2>
-                    <h4 className=" description">
+                    <h2 className="title">Nucleo Icons</h2>
+                    <h4 className="description">
                       BLK• Design System PRO comes with 100 custom icons made by
                       our friends from NucleoApp. The official package contains
                       over 2.100 thin icons which are looking great in
                       combination with BLK• Design System PRO Make sure you
                       check all of them and use those that you like the most.
                     </h4>
-                    <div className=" btn-wrapper">
+                    <div className="btn-wrapper">
                       <Button
-                        className=" btn-round"
+                        className="btn-round"
                         color="primary"
                         href="./docs/1.0/foundation/icons.html"
                         rel="noopener noreferrer"
@@ -1862,7 +1862,7 @@ class Index extends React.Component {
                         View Demo Icons
                       </Button>
                       <Button
-                        className=" btn-simple btn-round"
+                        className="btn-simple btn-round"
                         color="primary"
                         href="https://nucleoapp.com/?ref=1712"
                         rel="noopener noreferrer"
@@ -1874,64 +1874,64 @@ class Index extends React.Component {
                     </div>
                   </Col>
                 </Row>
-                <div className=" blur-hover">
+                <div className="blur-hover">
                   <a href="./docs/1.0/foundation/icons.html">
-                    <div className=" icons-container blur-item on-screen mt-5">
+                    <div className="icons-container blur-item on-screen mt-5">
                       {/* Center */}
-                      <i className=" icon tim-icons icon-coins" />
+                      <i className="icon tim-icons icon-coins" />
                       {/* Right 1 */}
-                      <i className=" icon icon-sm tim-icons icon-spaceship" />
-                      <i className=" icon icon-sm tim-icons icon-money-coins" />
-                      <i className=" icon icon-sm tim-icons icon-link-72" />
+                      <i className="icon icon-sm tim-icons icon-spaceship" />
+                      <i className="icon icon-sm tim-icons icon-money-coins" />
+                      <i className="icon icon-sm tim-icons icon-link-72" />
                       {/* Right 2 */}
-                      <i className=" icon tim-icons icon-send" />
-                      <i className=" icon tim-icons icon-mobile" />
-                      <i className=" icon tim-icons icon-wifi" />
+                      <i className="icon tim-icons icon-send" />
+                      <i className="icon tim-icons icon-mobile" />
+                      <i className="icon tim-icons icon-wifi" />
                       {/* Left 1 */}
-                      <i className=" icon icon-sm tim-icons icon-key-25" />
-                      <i className=" icon icon-sm tim-icons icon-atom" />
-                      <i className=" icon icon-sm tim-icons icon-satisfied" />
+                      <i className="icon icon-sm tim-icons icon-key-25" />
+                      <i className="icon icon-sm tim-icons icon-atom" />
+                      <i className="icon icon-sm tim-icons icon-satisfied" />
                       {/* Left 2 */}
-                      <i className=" icon tim-icons icon-gift-2" />
-                      <i className=" icon tim-icons icon-tap-02" />
-                      <i className=" icon tim-icons icon-wallet-43" />
+                      <i className="icon tim-icons icon-gift-2" />
+                      <i className="icon tim-icons icon-tap-02" />
+                      <i className="icon tim-icons icon-wallet-43" />
                     </div>
-                    <span className=" blur-hidden h5 text-primary">
+                    <span className="blur-hidden h5 text-primary">
                       Eplore all the 21.000+ Nucleo Icons
                     </span>
                   </a>
                 </div>
               </Container>
             </div>
-            <div className=" section section-signup">
+            <div className="section section-signup">
               <Container>
-                <div className=" squares square-1" />
-                <div className=" squares square-2" />
-                <div className=" squares square-3" />
-                <div className=" squares square-4" />
-                <Row className=" row-grid justify-content-between align-items-center">
+                <div className="squares square-1" />
+                <div className="squares square-2" />
+                <div className="squares square-3" />
+                <div className="squares square-4" />
+                <Row className="row-grid justify-content-between align-items-center">
                   <Col lg="6">
-                    <h3 className=" display-3 text-white">
+                    <h3 className="display-3 text-white">
                       A beautiful Black Design{" "}
-                      <span className=" text-white">
+                      <span className="text-white">
                         completed with examples
                       </span>
                     </h3>
-                    <p className=" text-white mb-3">
+                    <p className="text-white mb-3">
                       The Design System comes with four pre-built pages to help
                       you get started faster. You can change the text and images
                       and you're good to go. More importantly, looking at them
                       will give you a picture of what you can built with this
                       powerful Bootstrap 4 Design System.
                     </p>
-                    <div className=" btn-wrapper">
+                    <div className="btn-wrapper">
                       <Button color="info" href="examples/register-page.html">
                         Register Page
                       </Button>
                     </div>
                   </Col>
-                  <Col className=" mb-lg-auto" lg="6">
-                    <Card className=" card-register">
+                  <Col className="mb-lg-auto" lg="6">
+                    <Card className="card-register">
                       <CardHeader>
                         <CardImg
                           alt="..."
@@ -1940,11 +1940,11 @@ class Index extends React.Component {
                         <CardTitle tag="h4">Register</CardTitle>
                       </CardHeader>
                       <CardBody>
-                        <Form className=" form">
+                        <Form className="form">
                           <InputGroup>
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
-                                <i className=" tim-icons icon-single-02" />
+                                <i className="tim-icons icon-single-02" />
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input placeholder="Full Name" type="text" />
@@ -1952,7 +1952,7 @@ class Index extends React.Component {
                           <InputGroup>
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
-                                <i className=" tim-icons icon-email-85" />
+                                <i className="tim-icons icon-email-85" />
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input placeholder="Email" type="text" />
@@ -1960,15 +1960,15 @@ class Index extends React.Component {
                           <InputGroup>
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
-                                <i className=" tim-icons icon-lock-circle" />
+                                <i className="tim-icons icon-lock-circle" />
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input placeholder="Password" type="text" />
                           </InputGroup>
-                          <FormGroup check className=" text-left">
+                          <FormGroup check className="text-left">
                             <Label check>
                               <Input type="checkbox" />
-                              <span className=" form-check-sign" />I agree to
+                              <span className="form-check-sign" />I agree to
                               the{" "}
                               <a href="javascript:void(0)">
                                 terms and conditions
@@ -1980,7 +1980,7 @@ class Index extends React.Component {
                       </CardBody>
                       <CardFooter>
                         <Button
-                          className=" btn-round"
+                          className="btn-round"
                           color="info"
                           href="javascript:void(0)"
                           size="lg"
@@ -1994,27 +1994,27 @@ class Index extends React.Component {
               </Container>
             </div>
             <div
-              className=" section section-examples"
+              className="section section-examples"
               data-background-color="black"
             >
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path1.png")}
               />
-              <div className=" space-50" />
-              <Container className=" text-center">
+              <div className="space-50" />
+              <Container className="text-center">
                 <Row>
                   <Col sm="6">
                     <a href="examples/landing-page.html">
                       <img
                         alt="..."
-                        className=" img-raised"
+                        className="img-raised"
                         src={require("assets/img/landing-page.png")}
                       />
                     </a>
                     <Button
-                      className=" btn-simple btn-round"
+                      className="btn-simple btn-round"
                       color="primary"
                       href="examples/landing-page.html"
                     >
@@ -2025,12 +2025,12 @@ class Index extends React.Component {
                     <a href="examples/profile-page.html">
                       <img
                         alt="..."
-                        className=" img-raised"
+                        className="img-raised"
                         src={require("assets/img/profile-page.png")}
                       />
                     </a>
                     <Button
-                      className=" btn-simple btn-round"
+                      className="btn-simple btn-round"
                       color="primary"
                       href="examples/profile-page.html"
                     >
@@ -2041,31 +2041,31 @@ class Index extends React.Component {
               </Container>
             </div>
             <div
-              className=" section section-download"
+              className="section section-download"
               data-background-color="black"
               id="#download-section"
             >
               <img
                 alt="..."
-                className=" path"
+                className="path"
                 src={require("assets/img/path1.png")}
               />
               <Container>
-                <Row className=" justify-content-md-center">
-                  <Col className=" text-center" lg="8" md="12">
-                    <h2 className=" title">
+                <Row className="justify-content-md-center">
+                  <Col className="text-center" lg="8" md="12">
+                    <h2 className="title">
                       Do you love this Bootstrap 4 Design System?
                     </h2>
-                    <h4 className=" description">
+                    <h4 className="description">
                       Cause if you do, it can be yours for FREE. Hit the button
                       below to navigate to Creative Tim where you can find the
                       design system in HTML format. Start a new project or give
                       an old Bootstrap project a new look!
                     </h4>
                   </Col>
-                  <Col className=" text-center" lg="8" md="12">
+                  <Col className="text-center" lg="8" md="12">
                     <Button
-                      className=" btn-round"
+                      className="btn-round"
                       color="primary"
                       href="https://www.creative-tim.com/product/blk-design-system"
                       role="button"
@@ -2073,7 +2073,7 @@ class Index extends React.Component {
                     >
                       Download HTML
                     </Button>
-                    {/* <Button className=" btn-simple btn-round" color="primary" href="https://www.invisionapp.com/now" rel="noopener noreferrer" role="button" size="lg" target="_blank">
+                    {/* <Button className="btn-simple btn-round" color="primary" href="https://www.invisionapp.com/now" rel="noopener noreferrer" role="button" size="lg" target="_blank">
 Download PSD/Sketch
 </Button>
  */}
@@ -2082,12 +2082,12 @@ Download PSD/Sketch
                 <br />
                 <br />
                 <br />
-                {/* <Row className=" text-center mt-5">
-<Col className=" ml-auto mr-auto" md="8">
+                {/* <Row className="text-center mt-5">
+<Col className="ml-auto mr-auto" md="8">
 <h2>
 Want more?
 </h2>
-<h5 className=" description">
+<h5 className="description">
 We've just launched <a href="http://demos.creative-tim.com/black-kit-pro/presentation.html" rel="noopener noreferrer" target="_blank">
 BLK• Design System PRO
 </a>
@@ -2095,8 +2095,8 @@ BLK• Design System PRO
 </h5>
 </Col>
 <Col md="12">
-<Button className=" btn-neutral btn-round" color="default" href="http://demos.creative-tim.com/black-kit-pro/presentation.html" rel="noopener noreferrer" size="lg" target="_blank">
-<i className=" tim-icons icon-cloud-upload-94">
+<Button className="btn-neutral btn-round" color="default" href="http://demos.creative-tim.com/black-kit-pro/presentation.html" rel="noopener noreferrer" size="lg" target="_blank">
+<i className="tim-icons icon-cloud-upload-94">
 </i>
  Upgrade to PRO
 </Button>
@@ -2105,47 +2105,47 @@ BLK• Design System PRO
  */}
                 <br />
                 <br />
-                <Row className=" row-grid align-items-center my-md">
+                <Row className="row-grid align-items-center my-md">
                   <Col lg="6">
-                    <h3 className=" text-primary font-weight-light mb-2">
+                    <h3 className="text-primary font-weight-light mb-2">
                       Thank you for supporting us!
                     </h3>
-                    <h4 className=" mb-0 font-weight-light">
+                    <h4 className="mb-0 font-weight-light">
                       Let's get in touch on any of these platforms.
                     </h4>
                   </Col>
-                  <Col className=" text-lg-center btn-wrapper" lg="6">
+                  <Col className="text-lg-center btn-wrapper" lg="6">
                     <Button
-                      className=" btn-icon btn-round"
+                      className="btn-icon btn-round"
                       color="twitter"
                       id="twitter"
                       size="lg"
                     >
-                      <i className=" fab fa-twitter" />
+                      <i className="fab fa-twitter" />
                     </Button>
                     <UncontrolledTooltip delay={0} target="twitter">
                       Tweet!
                     </UncontrolledTooltip>
                     <Button
-                      className=" btn-icon btn-round"
+                      className="btn-icon btn-round"
                       color="facebook"
                       id="facebook"
                       size="lg"
                     >
-                      <i className=" fab fa-facebook-square" />
+                      <i className="fab fa-facebook-square" />
                     </Button>
                     <UncontrolledTooltip delay={0} target="facebook">
                       Share!
                     </UncontrolledTooltip>
                     <Button
-                      className=" btn-icon btn-round"
+                      className="btn-icon btn-round"
                       color="github"
                       href="https://github.com/creativetimofficial"
                       id="tooltip877922017"
                       size="lg"
                       target="_blank"
                     >
-                      <i className=" fab fa-github" />
+                      <i className="fab fa-github" />
                     </Button>
                     <UncontrolledTooltip delay={0} target="tooltip877922017">
                       Star on Github
@@ -2156,18 +2156,18 @@ BLK• Design System PRO
             </div>
             {/* Sart Modal */}
             <Modal>
-              <div className=" modal-header justify-content-center">
+              <div className="modal-header justify-content-center">
                 <button
                   aria-hidden={true}
-                  className=" close"
+                  className="close"
                   data-dismiss="modal"
                   type="button"
                 >
-                  <i className=" tim-icons icon-simple-remove" />
+                  <i className="tim-icons icon-simple-remove" />
                 </button>
-                <h4 className=" title title-up">Modal title</h4>
+                <h4 className="title title-up">Modal title</h4>
               </div>
-              <div className=" modal-body">
+              <div className="modal-body">
                 <p>
                   Far far away, behind the word mountains, far from the
                   countries Vokalia and Consonantia, there live the blind texts.
@@ -2178,7 +2178,7 @@ BLK• Design System PRO
                   parts of sentences fly into your mouth.
                 </p>
               </div>
-              <div className=" modal-footer">
+              <div className="modal-footer">
                 <Button color="default" type="button">
                   Nice Button
                 </Button>
@@ -2189,29 +2189,29 @@ BLK• Design System PRO
             </Modal>
             {/* End Modal */}
             {/* Mini Modal */}
-            <Modal modalClassName=" modal-mini modal-primary modal-mini">
-              <div className=" modal-header justify-content-center">
+            <Modal modalclassName="modal-mini modal-primary modal-mini">
+              <div className="modal-header justify-content-center">
                 <button
                   aria-hidden={true}
-                  className=" close"
+                  className="close"
                   data-dismiss="modal"
                   type="button"
                 >
-                  <i className=" tim-icons icon-simple-remove text-white" />
+                  <i className="tim-icons icon-simple-remove text-white" />
                 </button>
-                <div className=" modal-profile">
-                  <i className=" tim-icons icon-single-02" />
+                <div className="modal-profile">
+                  <i className="tim-icons icon-single-02" />
                 </div>
               </div>
-              <div className=" modal-body">
+              <div className="modal-body">
                 <p>Always have an access to your profile</p>
               </div>
-              <div className=" modal-footer">
-                <Button className=" btn-neutral" color="link" type="button">
+              <div className="modal-footer">
+                <Button className="btn-neutral" color="link" type="button">
                   Back
                 </Button>
                 <Button
-                  className=" btn-neutral"
+                  className="btn-neutral"
                   color="link"
                   data-dismiss="modal"
                   type="button"
@@ -2221,24 +2221,24 @@ BLK• Design System PRO
               </div>
             </Modal>
             {/* Form Modal */}
-            <Modal modalClassName=" modal-black">
-              <div className=" modal-header justify-content-center">
+            <Modal modalclassName="modal-black">
+              <div className="modal-header justify-content-center">
                 <button
                   aria-hidden={true}
-                  className=" close"
+                  className="close"
                   data-dismiss="modal"
                   type="button"
                 >
-                  <i className=" tim-icons icon-simple-remove text-white" />
+                  <i className="tim-icons icon-simple-remove text-white" />
                 </button>
-                <div className=" text-muted text-center ml-auto mr-auto">
-                  <h3 className=" mb-0">Sign in with</h3>
+                <div className="text-muted text-center ml-auto mr-auto">
+                  <h3 className="mb-0">Sign in with</h3>
                 </div>
               </div>
-              <div className=" modal-body">
-                <div className=" btn-wrapper text-center">
+              <div className="modal-body">
+                <div className="btn-wrapper text-center">
                   <Button
-                    className=" btn-neutral btn-icon"
+                    className="btn-neutral btn-icon"
                     color="default"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
@@ -2246,7 +2246,7 @@ BLK• Design System PRO
                     <img alt="..." src={require("assets/img/github.svg")} />
                   </Button>
                   <Button
-                    className=" btn-neutral btn-icon"
+                    className="btn-neutral btn-icon"
                     color="default"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
@@ -2254,39 +2254,39 @@ BLK• Design System PRO
                     <img alt="..." src={require("assets/img/google.svg")} />
                   </Button>
                 </div>
-                <div className=" text-center text-muted mb-4 mt-3">
+                <div className="text-center text-muted mb-4 mt-3">
                   <small>Or sign in with credentials</small>
                 </div>
                 <Form role="form">
-                  <FormGroup className=" mb-3">
-                    <InputGroup className=" input-group-alternative">
+                  <FormGroup className="mb-3">
+                    <InputGroup className="input-group-alternative">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className=" tim-icons icon-email-85" />
+                          <i className="tim-icons icon-email-85" />
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input placeholder="Email" type="email" />
                     </InputGroup>
                   </FormGroup>
                   <FormGroup>
-                    <InputGroup className=" input-group-alternative">
+                    <InputGroup className="input-group-alternative">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className=" tim-icons icon-key-25" />
+                          <i className="tim-icons icon-key-25" />
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input placeholder="Password" type="password" />
                     </InputGroup>
                   </FormGroup>
-                  <FormGroup check className=" mt-3">
+                  <FormGroup check className="mt-3">
                     <Label check>
                       <Input defaultChecked type="checkbox" />
-                      <span className=" form-check-sign" />
+                      <span className="form-check-sign" />
                       Remember me!
                     </Label>
                   </FormGroup>
-                  <div className=" text-center">
-                    <Button className=" my-4" color="primary" type="button">
+                  <div className="text-center">
+                    <Button className="my-4" color="primary" type="button">
                       Sign in
                     </Button>
                   </div>

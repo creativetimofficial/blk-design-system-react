@@ -36,16 +36,16 @@ class RegisterPage extends React.Component {
     return (
       <>
         <Navbar />
-        <div className=" wrapper">
-          <div className=" page-header">
-            <div className=" page-header-image" />
-            <div className=" content">
+        <div className="wrapper">
+          <div className="page-header">
+            <div className="page-header-image" />
+            <div className="content">
               <Container>
                 <Row>
-                  <Col className=" offset-lg-0 offset-md-3" lg="5" md="6">
-                    <div className=" square square-7" id="square7" />
-                    <div className=" square square-8" id="square8" />
-                    <Card className=" card-register">
+                  <Col className="offset-lg-0 offset-md-3" lg="5" md="6">
+                    <div className="square square-7" id="square7" />
+                    <div className="square square-8" id="square8" />
+                    <Card className="card-register">
                       <CardHeader>
                         <CardImg
                           alt="..."
@@ -54,11 +54,11 @@ class RegisterPage extends React.Component {
                         <CardTitle tag="h4">Register</CardTitle>
                       </CardHeader>
                       <CardBody>
-                        <Form className=" form">
+                        <Form className="form">
                           <InputGroup>
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
-                                <i className=" tim-icons icon-single-02" />
+                                <i className="tim-icons icon-single-02" />
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input placeholder="Full Name" type="text" />
@@ -66,7 +66,7 @@ class RegisterPage extends React.Component {
                           <InputGroup>
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
-                                <i className=" tim-icons icon-email-85" />
+                                <i className="tim-icons icon-email-85" />
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input placeholder="Email" type="text" />
@@ -74,15 +74,15 @@ class RegisterPage extends React.Component {
                           <InputGroup>
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
-                                <i className=" tim-icons icon-lock-circle" />
+                                <i className="tim-icons icon-lock-circle" />
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input placeholder="Password" type="text" />
                           </InputGroup>
-                          <FormGroup check className=" text-left">
+                          <FormGroup check className="text-left">
                             <Label check>
                               <Input type="checkbox" />
-                              <span className=" form-check-sign" />I agree to
+                              <span className="form-check-sign" />I agree to
                               the{" "}
                               <a href="javascript:void(0)">
                                 terms and conditions
@@ -94,7 +94,7 @@ class RegisterPage extends React.Component {
                       </CardBody>
                       <CardFooter>
                         <Button
-                          className=" btn-round"
+                          className="btn-round"
                           color="info"
                           href="javascript:void(0)"
                           size="lg"
@@ -105,13 +105,13 @@ class RegisterPage extends React.Component {
                     </Card>
                   </Col>
                 </Row>
-                <div className=" register-bg" />
-                <div className=" square square-1" id="square1" />
-                <div className=" square square-2" id="square2" />
-                <div className=" square square-3" id="square3" />
-                <div className=" square square-4" id="square4" />
-                <div className=" square square-5" id="square5" />
-                <div className=" square square-6" id="square6" />
+                <div className="register-bg" />
+                <div className="square square-1" id="square1" />
+                <div className="square square-2" id="square2" />
+                <div className="square square-3" id="square3" />
+                <div className="square square-4" id="square4" />
+                <div className="square square-5" id="square5" />
+                <div className="square square-6" id="square6" />
               </Container>
             </div>
           </div>

@@ -38,86 +38,86 @@ class ProfilePage extends React.Component {
     return (
       <>
         <Navbar />
-        <div className=" wrapper">
-          <div className=" page-header">
+        <div className="wrapper">
+          <div className="page-header">
             <img
               alt="..."
-              className=" dots"
+              className="dots"
               src={require("assets/img/dots.png")}
             />
             <img
               alt="..."
-              className=" path"
+              className="path"
               src={require("assets/img/path4.png")}
             />
-            <Container className=" align-items-center">
+            <Container className="align-items-center">
               <Row>
                 <Col lg="6" md="6">
-                  <h1 className=" profile-title text-left">Mike Scheinder</h1>
-                  <h5 className=" text-on-back">01</h5>
-                  <p className=" profile-description">
+                  <h1 className="profile-title text-left">Mike Scheinder</h1>
+                  <h5 className="text-on-back">01</h5>
+                  <p className="profile-description">
                     Offices parties lasting outward nothing age few resolve.
                     Impression to discretion understood to we interested he
                     excellence. Him remarkably use projection collecting. Going
                     about eat forty world has round miles.
                   </p>
-                  <div className=" btn-wrapper profile pt-3">
+                  <div className="btn-wrapper profile pt-3">
                     <Button
-                      className=" btn-icon btn-round"
+                      className="btn-icon btn-round"
                       color="twitter"
                       href="https://twitter.com/creativetim"
                       id="tooltip639225725"
                       target="_blank"
                     >
-                      <i className=" fab fa-twitter" />
+                      <i className="fab fa-twitter" />
                     </Button>
                     <UncontrolledTooltip delay={0} target="tooltip639225725">
                       Follow us
                     </UncontrolledTooltip>
                     <Button
-                      className=" btn-icon btn-round"
+                      className="btn-icon btn-round"
                       color="facebook"
                       href="https://www.facebook.com/creativetim"
                       id="tooltip982846143"
                       target="_blank"
                     >
-                      <i className=" fab fa-facebook-square" />
+                      <i className="fab fa-facebook-square" />
                     </Button>
                     <UncontrolledTooltip delay={0} target="tooltip982846143">
                       Like us
                     </UncontrolledTooltip>
                     <Button
-                      className=" btn-icon btn-round"
+                      className="btn-icon btn-round"
                       color="dribbble"
                       href="https://dribbble.com/creativetim"
                       id="tooltip951161185"
                       target="_blank"
                     >
-                      <i className=" fab fa-dribbble" />
+                      <i className="fab fa-dribbble" />
                     </Button>
                     <UncontrolledTooltip delay={0} target="tooltip951161185">
                       Follow us
                     </UncontrolledTooltip>
                   </div>
                 </Col>
-                <Col className=" ml-auto mr-auto" lg="4" md="6">
-                  <Card className=" card-coin card-plain">
+                <Col className="ml-auto mr-auto" lg="4" md="6">
+                  <Card className="card-coin card-plain">
                     <CardHeader>
                       <img
                         alt="..."
-                        className=" img-center img-fluid rounded-circle"
+                        className="img-center img-fluid rounded-circle"
                         src={require("assets/img/mike.jpg")}
                       />
-                      <h4 className=" title">Transactions</h4>
+                      <h4 className="title">Transactions</h4>
                     </CardHeader>
                     <CardBody>
                       <Nav
-                        className=" nav-tabs-primary justify-content-center"
+                        className="nav-tabs-primary justify-content-center"
                         tabs
                       >
                         <NavItem>
                           <NavLink
-                            className=" active"
+                            className="active"
                             data-toggle="tab"
                             href="#pablo"
                             onClick={e => e.preventDefault()}
@@ -144,14 +144,14 @@ class ProfilePage extends React.Component {
                           </NavLink>
                         </NavItem>
                       </Nav>
-                      <TabContent className=" tab-subcategories">
-                        <TabPane className=" active" id="linka">
-                          <Table className=" tablesorter" responsive>
-                            <thead className=" text-primary">
+                      <TabContent className="tab-subcategories">
+                        <TabPane className="active" id="linka">
+                          <Table className="tablesorter" responsive>
+                            <thead className="text-primary">
                               <tr>
-                                <th className=" header">COIN</th>
-                                <th className=" header">AMOUNT</th>
-                                <th className=" header">VALUE</th>
+                                <th className="header">COIN</th>
+                                <th className="header">AMOUNT</th>
+                                <th className="header">VALUE</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -197,18 +197,18 @@ class ProfilePage extends React.Component {
                             </Col>
                           </Row>
                           <Button
-                            className=" btn-simple btn-icon btn-round float-right"
+                            className="btn-simple btn-icon btn-round float-right"
                             color="primary"
                             type="submit"
                           >
-                            <i className=" tim-icons icon-send" />
+                            <i className="tim-icons icon-send" />
                           </Button>
                         </TabPane>
                         <TabPane id="linkc">
-                          <Table className=" tablesorter" responsive>
-                            <thead className=" text-primary">
+                          <Table className="tablesorter" responsive>
+                            <thead className="text-primary">
                               <tr>
-                                <th className=" header">Latest Crypto News</th>
+                                <th className="header">Latest Crypto News</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -231,19 +231,19 @@ class ProfilePage extends React.Component {
               </Row>
             </Container>
           </div>
-          <div className=" section">
+          <div className="section">
             <Container>
-              <Row className=" justify-content-between">
+              <Row className="justify-content-between">
                 <Col md="6">
-                  <Row className=" justify-content-between align-items-center">
+                  <Row className="justify-content-between align-items-center">
                     <div
-                      className=" carousel slide"
+                      className="carousel slide"
                       data-ride="carousel"
                       id="carouselExampleIndicators"
                     >
-                      <ol className=" carousel-indicators">
+                      <ol className="carousel-indicators">
                         <li
-                          className=" active"
+                          className="active"
                           data-slide-to="0"
                           data-target="#carouselExampleIndicators"
                         />
@@ -256,84 +256,84 @@ class ProfilePage extends React.Component {
                           data-target="#carouselExampleIndicators"
                         />
                       </ol>
-                      <div className=" carousel-inner" role="listbox">
-                        <div className=" carousel-item active">
+                      <div className="carousel-inner" role="listbox">
+                        <div className="carousel-item active">
                           <img
                             alt="..."
-                            className=" d-block"
+                            className="d-block"
                             src={require("assets/img/denys.jpg")}
                           />
-                          <div className=" carousel-caption d-none d-md-block">
+                          <div className="carousel-caption d-none d-md-block">
                             <h5>Big City Life, United States</h5>
                           </div>
                         </div>
-                        <div className=" carousel-item">
+                        <div className="carousel-item">
                           <img
                             alt="..."
-                            className=" d-block"
+                            className="d-block"
                             src={require("assets/img/fabien-bazanegue.jpg")}
                           />
-                          <div className=" carousel-caption d-none d-md-block">
+                          <div className="carousel-caption d-none d-md-block">
                             <h5>Somewhere Beyond, United States</h5>
                           </div>
                         </div>
-                        <div className=" carousel-item">
+                        <div className="carousel-item">
                           <img
                             alt="..."
-                            className=" d-block"
+                            className="d-block"
                             src={require("assets/img/mark-finn.jpg")}
                           />
-                          <div className=" carousel-caption d-none d-md-block">
+                          <div className="carousel-caption d-none d-md-block">
                             <h5>Stocks, United States</h5>
                           </div>
                         </div>
                       </div>
                       <a
-                        className=" carousel-control-prev"
+                        className="carousel-control-prev"
                         data-slide="prev"
                         href="#pablo"
                         onClick={e => e.preventDefault()}
                         role="button"
                       >
-                        <i className=" tim-icons icon-minimal-left" />
+                        <i className="tim-icons icon-minimal-left" />
                       </a>
                       <a
-                        className=" carousel-control-next"
+                        className="carousel-control-next"
                         data-slide="next"
                         href="#pablo"
                         onClick={e => e.preventDefault()}
                         role="button"
                       >
-                        <i className=" tim-icons icon-minimal-right" />
+                        <i className="tim-icons icon-minimal-right" />
                       </a>
                     </div>
                   </Row>
                 </Col>
                 <Col md="5">
-                  <h1 className=" profile-title text-left">Projects</h1>
-                  <h5 className=" text-on-back">02</h5>
-                  <p className=" profile-description text-left">
+                  <h1 className="profile-title text-left">Projects</h1>
+                  <h5 className="text-on-back">02</h5>
+                  <p className="profile-description text-left">
                     An artist of considerable range, Ryan — the name taken by
                     Melbourne-raised, Brooklyn-based Nick Murphy — writes,
                     performs and records all of his own music, giving it a warm,
                     intimate feel with a solid groove structure. An artist of
                     considerable range.
                   </p>
-                  <div className=" btn-wrapper pt-3">
+                  <div className="btn-wrapper pt-3">
                     <Button
-                      className=" btn-simple"
+                      className="btn-simple"
                       color="primary"
                       href="javascript:void(0)"
                     >
-                      <i className=" tim-icons icon-book-bookmark" />
+                      <i className="tim-icons icon-book-bookmark" />
                       Bookmark
                     </Button>
                     <Button
-                      className=" btn-simple"
+                      className="btn-simple"
                       color="info"
                       href="javascript:void(0)"
                     >
-                      <i className=" tim-icons icon-bulb-63" />
+                      <i className="tim-icons icon-bulb-63" />
                       Check it!
                     </Button>
                   </div>
@@ -341,14 +341,14 @@ class ProfilePage extends React.Component {
               </Row>
             </Container>
           </div>
-          <section className=" section">
+          <section className="section">
             <Container>
               <Row>
                 <Col md="6">
-                  <Card className=" card-plain">
+                  <Card className="card-plain">
                     <CardHeader>
-                      <h1 className=" profile-title text-left">Contact</h1>
-                      <h5 className=" text-on-back">03</h5>
+                      <h1 className="profile-title text-left">Contact</h1>
+                      <h5 className="text-on-back">03</h5>
                     </CardHeader>
                     <CardBody>
                       <Form>
@@ -392,7 +392,7 @@ class ProfilePage extends React.Component {
                           </Col>
                         </Row>
                         <Button
-                          className=" btn-round float-right"
+                          className="btn-round float-right"
                           color="primary"
                           data-placement="right"
                           id="tooltip341148792"
@@ -411,13 +411,13 @@ class ProfilePage extends React.Component {
                     </CardBody>
                   </Card>
                 </Col>
-                <Col className=" ml-auto" md="4">
-                  <div className=" info info-horizontal">
-                    <div className=" icon icon-primary">
-                      <i className=" tim-icons icon-square-pin" />
+                <Col className="ml-auto" md="4">
+                  <div className="info info-horizontal">
+                    <div className="icon icon-primary">
+                      <i className="tim-icons icon-square-pin" />
                     </div>
-                    <div className=" description">
-                      <h4 className=" info-title">Find us at the office</h4>
+                    <div className="description">
+                      <h4 className="info-title">Find us at the office</h4>
                       <p>
                         Bld Mihail Kogalniceanu, nr. 8, <br />
                         7652 Bucharest, <br />
@@ -425,12 +425,12 @@ class ProfilePage extends React.Component {
                       </p>
                     </div>
                   </div>
-                  <div className=" info info-horizontal">
-                    <div className=" icon icon-primary">
-                      <i className=" tim-icons icon-mobile" />
+                  <div className="info info-horizontal">
+                    <div className="icon icon-primary">
+                      <i className="tim-icons icon-mobile" />
                     </div>
-                    <div className=" description">
-                      <h4 className=" info-title">Give us a ring</h4>
+                    <div className="description">
+                      <h4 className="info-title">Give us a ring</h4>
                       <p>
                         Michael Jordan <br />
                         +40 762 321 762 <br />
