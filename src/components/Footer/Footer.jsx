@@ -12,7 +12,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-class Footer extends React.Component{
+class Footer extends React.Component {
   render() {
     return (
       <footer className=" footer">
@@ -27,9 +27,7 @@ class Footer extends React.Component{
                   <NavLink href="./index.html">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="./examples/landing-page.html">
-                    Landing
-                  </NavLink>
+                  <NavLink href="./examples/landing-page.html">Landing</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="./examples/register-page.html">
@@ -37,9 +35,7 @@ class Footer extends React.Component{
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="./examples/profile-page.html">
-                    Profile
-                  </NavLink>
+                  <NavLink href="./examples/profile-page.html">Profile</NavLink>
                 </NavItem>
               </Nav>
             </Col>
@@ -56,9 +52,7 @@ class Footer extends React.Component{
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://creative-tim.com/blog">
-                    Blog
-                  </NavLink>
+                  <NavLink href="https://creative-tim.com/blog">Blog</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="https://opensource.org/licenses/MIT">

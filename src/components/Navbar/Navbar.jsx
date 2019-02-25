@@ -18,7 +18,7 @@ import {
   Col
 } from "reactstrap";
 
-class AppNavbar extends React.Component{
+class AppNavbar extends React.Component {
   render() {
     return (
       <Navbar

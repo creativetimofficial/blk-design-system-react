@@ -82,8 +82,7 @@ class RegisterPage extends React.Component {
                           <FormGroup check className="text-left">
                             <Label check>
                               <Input type="checkbox" />
-                              <span className="form-check-sign" />I agree to
-                              the{" "}
+                              <span className="form-check-sign" />I agree to the{" "}
                               <a href="javascript:void(0)">
                                 terms and conditions
                               </a>
