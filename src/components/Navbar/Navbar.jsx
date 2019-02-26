@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -22,18 +22,30 @@ class AppNavbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapseOpen: false
+      collapseOpen: false,
+      color: "navbar-transparent"
     };
   }
   toggleCollapse = () => {
+    document.documentElement.classList.toggle("nav-open");
     this.setState({
       collapseOpen: !this.state.collapseOpen
-    })
-  }
+    });
+  };
+  onCollapseExiting = () => {
+    this.setState({
+      collapseOut: "collapsing-out"
+    });
+  };
+  onCollapseExited = () => {
+    this.setState({
+      collapseOut: ""
+    });
+  };
   render() {
     return (
       <Navbar
-        className="fixed-top navbar-transparent"
+        className={"fixed-top " + this.state.color}
         color-on-scroll="100"
         expand="lg"
       >
@@ -41,13 +53,13 @@ class AppNavbar extends React.Component {
           <div className="navbar-translate">
             <NavbarBrand
               data-placement="bottom"
-              href="https://demos.creative-tim.com/blk-design-system/index.html"
+              to="/"
               rel="noopener noreferrer"
-              target="_blank"
               title="Designed and Coded by Creative Tim"
+              tag={Link}
             >
               <span>BLK•</span>
-              Design System
+              Design System React
             </NavbarBrand>
             <button
               aria-expanded={this.state.collapseOpen}
@@ -60,9 +72,11 @@ class AppNavbar extends React.Component {
             </button>
           </div>
           <Collapse
-            className="justify-content-end"
+            className={"justify-content-end " + this.state.collapseOut}
             navbar
             isOpen={this.state.collapseOpen}
+            onExiting={this.onCollapseExiting}
+            onExited={this.onCollapseExited}
           >
             <div className="navbar-collapse-header">
               <Row>
@@ -134,15 +148,15 @@ class AppNavbar extends React.Component {
                     <i className="tim-icons icon-paper" />
                     Documentation
                   </DropdownItem>
-                  <DropdownItem href="examples/register-page.html">
+                  <DropdownItem tag={Link} to="/register-page">
                     <i className="tim-icons icon-bullet-list-67" />
                     Register Page
                   </DropdownItem>
-                  <DropdownItem href="examples/landing-page.html">
+                  <DropdownItem tag={Link} to="/landing-page">
                     <i className="tim-icons icon-image-02" />
                     Landing Page
                   </DropdownItem>
-                  <DropdownItem href="examples/profile-page.html">
+                  <DropdownItem tag={Link} to="/profile-page">
                     <i className="tim-icons icon-single-02" />
                     Profile Page
                   </DropdownItem>
