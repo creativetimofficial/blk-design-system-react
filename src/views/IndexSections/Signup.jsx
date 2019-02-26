@@ -44,7 +44,7 @@ class Signup extends React.Component {
                 4 Design System.
               </p>
               <div className="btn-wrapper">
-                <Button color="primary" to="register-page" tag="Link">
+                <Button color="primary" to="register-page" tag={Link}>
                   Register Page
                 </Button>
               </div>
