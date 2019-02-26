@@ -1,5 +1,5 @@
 import React from "react";
-
+import classnames from "classnames";
 // reactstrap components
 import {
   Button,
@@ -20,20 +20,51 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip,
+  UncontrolledCarousel
 } from "reactstrap";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
 import Footer from "components/Footer/Footer.jsx";
 
+const carouselItems = [
+  {
+    src: require("assets/img/denys.jpg"),
+    altText: "Slide 1",
+    caption: "Big City Life, United States"
+  },
+  {
+    src: require("assets/img/fabien-bazanegue.jpg"),
+    altText: "Slide 2",
+    caption: "Somewhere Beyond, United States"
+  },
+  {
+    src: require("assets/img/mark-finn.jpg"),
+    altText: "Slide 3",
+    caption: "Stocks, United States"
+  }
+];
+
 class ProfilePage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tabs: 1
+    };
+  }
   componentDidMount() {
     document.body.classList.toggle("profile-page");
   }
   componentWillUnmount() {
     document.body.classList.toggle("profile-page");
   }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
   render() {
     return (
       <>
@@ -117,35 +148,40 @@ class ProfilePage extends React.Component {
                       >
                         <NavItem>
                           <NavLink
-                            className="active"
-                            data-toggle="tab"
+                            className={classnames({
+                              active: this.state.tabs === 1
+                            })}
+                            onClick={e => this.toggleTabs(e, "tabs", 1)}
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
                           >
                             Wallet
                           </NavLink>
                         </NavItem>
                         <NavItem>
                           <NavLink
-                            data-toggle="tab"
+                            className={classnames({
+                              active: this.state.tabs === 2
+                            })}
+                            onClick={e => this.toggleTabs(e, "tabs", 2)}
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
                           >
                             Send
                           </NavLink>
                         </NavItem>
                         <NavItem>
                           <NavLink
-                            data-toggle="tab"
+                            className={classnames({
+                              active: this.state.tabs === 3
+                            })}
+                            onClick={e => this.toggleTabs(e, "tabs", 3)}
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
                           >
                             News
                           </NavLink>
                         </NavItem>
                       </Nav>
-                      <TabContent className="tab-subcategories">
-                        <TabPane className="active" id="linka">
+                      <TabContent className="tab-subcategories" activeTab={"tab" + this.state.tabs}>
+                        <TabPane tabId="tab1">
                           <Table className="tablesorter" responsive>
                             <thead className="text-primary">
                               <tr>
@@ -173,7 +209,7 @@ class ProfilePage extends React.Component {
                             </tbody>
                           </Table>
                         </TabPane>
-                        <TabPane id="linkb">
+                        <TabPane tabId="tab2">
                           <Row>
                             <Label sm="3">Pay to</Label>
                             <Col sm="9">
@@ -204,7 +240,7 @@ class ProfilePage extends React.Component {
                             <i className="tim-icons icon-send" />
                           </Button>
                         </TabPane>
-                        <TabPane id="linkc">
+                        <TabPane tabId="tab3">
                           <Table className="tablesorter" responsive>
                             <thead className="text-primary">
                               <tr>
@@ -236,77 +272,9 @@ class ProfilePage extends React.Component {
               <Row className="justify-content-between">
                 <Col md="6">
                   <Row className="justify-content-between align-items-center">
-                    <div
-                      className="carousel slide"
-                      data-ride="carousel"
-                      id="carouselExampleIndicators"
-                    >
-                      <ol className="carousel-indicators">
-                        <li
-                          className="active"
-                          data-slide-to="0"
-                          data-target="#carouselExampleIndicators"
-                        />
-                        <li
-                          data-slide-to="1"
-                          data-target="#carouselExampleIndicators"
-                        />
-                        <li
-                          data-slide-to="2"
-                          data-target="#carouselExampleIndicators"
-                        />
-                      </ol>
-                      <div className="carousel-inner" role="listbox">
-                        <div className="carousel-item active">
-                          <img
-                            alt="..."
-                            className="d-block"
-                            src={require("assets/img/denys.jpg")}
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5>Big City Life, United States</h5>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <img
-                            alt="..."
-                            className="d-block"
-                            src={require("assets/img/fabien-bazanegue.jpg")}
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5>Somewhere Beyond, United States</h5>
-                          </div>
-                        </div>
-                        <div className="carousel-item">
-                          <img
-                            alt="..."
-                            className="d-block"
-                            src={require("assets/img/mark-finn.jpg")}
-                          />
-                          <div className="carousel-caption d-none d-md-block">
-                            <h5>Stocks, United States</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <a
-                        className="carousel-control-prev"
-                        data-slide="prev"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="button"
-                      >
-                        <i className="tim-icons icon-minimal-left" />
-                      </a>
-                      <a
-                        className="carousel-control-next"
-                        data-slide="next"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="button"
-                      >
-                        <i className="tim-icons icon-minimal-right" />
-                      </a>
-                    </div>
+                    <UncontrolledCarousel
+                      items={carouselItems}
+                    />
                   </Row>
                 </Col>
                 <Col md="5">
@@ -396,7 +364,7 @@ class ProfilePage extends React.Component {
                           color="primary"
                           data-placement="right"
                           id="tooltip341148792"
-                          type="submit"
+                          type="button"
                         >
                           Send text
                         </Button>
