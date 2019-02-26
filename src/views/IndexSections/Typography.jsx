@@ -65,7 +65,7 @@ class Typography extends React.Component {
                 <div className="typography-line">
                   <span>Quote</span>
                   <blockquote>
-                    <p className="blockquote blockquote-primary">
+                    <p className="blockquote blockquote-info">
                       "I will be the leader of a company that ends up being
                       worth billions of dollars, because I got the answers. I
                       understand culture. I am the nucleus. I think that’s a
