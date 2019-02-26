@@ -376,8 +376,8 @@ class Modals extends React.Component {
         <h2>Optional sizes</h2>
         <p>
           Modals have two optional sizes, available via modifier classes to be
-          placed on <code class="highlighter-rouge">size</code> prop of the{" "}
-          <code class="highlighter-rouge">{`<Modal>`}</code> tag. These sizes
+          placed on <code className="highlighter-rouge">size</code> prop of the{" "}
+          <code className="highlighter-rouge">{`<Modal>`}</code> tag. These sizes
           kick in at certain breakpoints to avoid horizontal scrollbars on
           narrower viewports.
         </p>

@@ -275,7 +275,7 @@ class Accordion extends React.Component {
         </SyntaxHighlighter>
         <p>
           You can choose to change the default tag of the{" "}
-          <code class="highlighter-rouge">Nav</code> to something else:
+          <code className="highlighter-rouge">Nav</code> to something else:
         </p>
         <div className="bd-example">
           <Nav vertical tag="nav">

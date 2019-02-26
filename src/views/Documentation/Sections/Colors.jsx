@@ -12,20 +12,20 @@ class Colors extends React.Component {
           <li>Download the project’s zip</li>
           <li>Make sure you have node.js (https://nodejs.org/en/) installed</li>
           <li>
-            Type <code class="highlighter-rouge">npm install</code> in
+            Type <code className="highlighter-rouge">npm install</code> in
             terminal/console in the source folder where{" "}
-            <code class="highlighter-rouge">package.json</code> is located
+            <code className="highlighter-rouge">package.json</code> is located
           </li>
           <li>
             You can find the colors in{" "}
-            <code class="highlighter-rouge">
+            <code className="highlighter-rouge">
               src/assets/scss/black-dashboard-react/_variables.scss
             </code>.
           </li>
           <li>
             Run in terminal{" "}
-            <code class="highlighter-rouge">npm run compile-sass</code> to
-            compile all the <code class="highlighter-rouge">scss</code> files.
+            <code className="highlighter-rouge">npm run compile-sass</code> to
+            compile all the <code className="highlighter-rouge">scss</code> files.
           </li>
         </ol>
       </>

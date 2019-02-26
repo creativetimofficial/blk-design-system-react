@@ -174,9 +174,9 @@ class Alerts extends React.Component {
           Alerts are available for any length of text, as well as an optional
           dismiss button. For proper styling, use one of the eight required
           contextual classes (e.g., .alert-success). For inline dismissal, you
-          can either use them with <code class="highlighter-rouge">toggle</code>{" "}
+          can either use them with <code className="highlighter-rouge">toggle</code>{" "}
           function, or use the{" "}
-          <code class="highlighter-rouge">UncontrolledAlert</code> instead (see
+          <code className="highlighter-rouge">UncontrolledAlert</code> instead (see
           examples down bellow);
         </p>
         <div className="bd-example">
@@ -257,7 +257,7 @@ class Alerts extends React.Component {
           {codeLinkColor}
         </SyntaxHighlighter>
         <h2>
-          Dismissing with <code class="highlighter-rouge">toggle</code> function
+          Dismissing with <code className="highlighter-rouge">toggle</code> function
         </h2>
         <div className="bd-example">
           <Alert
@@ -274,7 +274,7 @@ class Alerts extends React.Component {
         </SyntaxHighlighter>
         <h2>
           Dismissing with{" "}
-          <code class="highlighter-rouge">UncontrolledAlert</code> component
+          <code className="highlighter-rouge">UncontrolledAlert</code> component
         </h2>
         <div className="bd-example">
           <UncontrolledAlert color="info">

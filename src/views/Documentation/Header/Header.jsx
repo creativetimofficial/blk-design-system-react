@@ -12,7 +12,7 @@ class Header extends React.Component {
         tag="header"
       >
         <Link to="/" className="navbar-brand mr-0 mr-md-2 navbar-absolute-logo">
-          Black Dashboard - React
+        Blk• Design System React
         </Link>
         <Nav className="flex-row d-none d-md-flex" navbar>
           <NavItem>
@@ -37,17 +37,17 @@ class Header extends React.Component {
         <div className="navbar-nav-scroll ml-md-auto">
           <Nav className="bd-navbar-nav flex-row" navbar>
             <NavItem>
-              <Link to="/" className="nav-link">
-                <i className="tim-icons icon-tv-2" /> Back to Dashboard
+              <Link to="/documentation" className="nav-link">
+                <i className="tim-icons icon-tv-2" /> Documentation
               </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/creativetimofficial/black-dashboard-react/issues">
-                <i className="tim-icons icon-scissors" /> Report a bug
-              </NavLink>
+              <Link to="/" className="nav-link">
+                <i className="tim-icons icon-scissors" /> Live Preview
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/creativetimofficial/black-dashboard-react">
+              <NavLink href="https://github.com/creativetimofficial/blk-design-system-react">
                 <i className="tim-icons icon-shape-star" /> Help with a star
               </NavLink>
             </NavItem>
@@ -60,7 +60,7 @@ class Header extends React.Component {
           </Nav>
         </div>
         <a
-          href="https://github.com/creativetimofficial/black-dashboard-react"
+          href="https://github.com/creativetimofficial/blk-design-system-react"
           className="github-corner"
           aria-label="View source on Github"
         >
