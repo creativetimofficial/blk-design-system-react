@@ -1,6 +1,6 @@
 import React from "react";
 // reactstrap components
-import { Alert, Container } from "reactstrap";
+import { UncontrolledAlert, Container } from "reactstrap";
 
 class Notifications extends React.Component {
   render() {
@@ -9,41 +9,41 @@ class Notifications extends React.Component {
         <Container>
           <div className="space" />
           <h3>Notifications</h3>
-          <Alert className="alert-with-icon" color="primary">
-            <span className="tim-icons icon-coins" />
+          <UncontrolledAlert className="alert-with-icon" color="primary">
+            <span data-notify="icon" className="tim-icons icon-coins" />
             <span>
               <b>Congrats! -</b>
               This is a regular notification made with ".alert-primary"
             </span>
-          </Alert>
-          <Alert className="alert-with-icon" color="info">
-            <span className="tim-icons icon-trophy" />
+          </UncontrolledAlert>
+          <UncontrolledAlert className="alert-with-icon" color="info">
+            <span data-notify="icon" className="tim-icons icon-trophy" />
             <span>
               <b>Heads up! -</b>
               This is a regular notification made with ".alert-info"
             </span>
-          </Alert>
-          <Alert className="alert-with-icon" color="success">
-            <span className="tim-icons icon-bell-55" />
+          </UncontrolledAlert>
+          <UncontrolledAlert className="alert-with-icon" color="success">
+            <span data-notify="icon" className="tim-icons icon-bell-55" />
             <span>
               <b>Well done! -</b>
               This is a regular notification made with ".alert-success"
             </span>
-          </Alert>
-          <Alert className="alert-with-icon" color="warning">
-            <span className="tim-icons icon-bulb-63" />
+          </UncontrolledAlert>
+          <UncontrolledAlert className="alert-with-icon" color="warning">
+            <span data-notify="icon" className="tim-icons icon-bulb-63" />
             <span>
               <b>Warning! -</b>
               This is a regular notification made with ".alert-warning"
             </span>
-          </Alert>
-          <Alert className="alert-with-icon" color="danger">
-            <span className="tim-icons icon-support-17" />
+          </UncontrolledAlert>
+          <UncontrolledAlert className="alert-with-icon" color="danger">
+            <span data-notify="icon" className="tim-icons icon-support-17" />
             <span>
               <b>Oh snap! -</b>
               This is a regular notification made with ".alert-danger"
             </span>
-          </Alert>
+          </UncontrolledAlert>
         </Container>
       </div>
     );
