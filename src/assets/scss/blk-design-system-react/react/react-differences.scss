@@ -1,5 +1,10 @@
-// This file was created to import all the react styles
+// Differences from the HTML to the React product
 
+// react plugins
+@import "plugins/plugin-react-datetime";
+
+// core components
 @import "alerts";
 @import "example-pages";
+@import "inputs";
 @import "navbar";

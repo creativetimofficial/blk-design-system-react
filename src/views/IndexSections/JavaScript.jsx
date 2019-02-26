@@ -23,6 +23,19 @@ import {
 } from "reactstrap";
 
 class JavaScript extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      demoModal: false,
+      miniModal: false,
+      formModal: false
+    };
+  }
+  toggleModal = modalState => {
+    this.setState({
+      [modalState]: !this.state[modalState]
+    });
+  };
   render() {
     return (
       <div className="section section-javascript" id="javascriptComponents">
@@ -39,8 +52,7 @@ class JavaScript extends React.Component {
             <Col md="4">
               <Button
                 color="primary"
-                data-target="#myModal"
-                data-toggle="modal"
+                onClick={() => this.toggleModal("demoModal")}
               >
                 Launch Modal
               </Button>
@@ -48,8 +60,7 @@ class JavaScript extends React.Component {
             <Col md="4">
               <Button
                 color="warning"
-                data-target="#myModal1"
-                data-toggle="modal"
+                onClick={() => this.toggleModal("miniModal")}
               >
                 Launch Modal Mini
               </Button>
@@ -57,20 +68,20 @@ class JavaScript extends React.Component {
             <Col md="4">
               <Button
                 color="success"
-                data-target="#myModal2"
-                data-toggle="modal"
+                onClick={() => this.toggleModal("formModal")}
               >
                 Launch Modal Form
               </Button>
             </Col>
-            {/* Sart Modal */}
-            <Modal>
+            {/* Sart Demo Modal */}
+            <Modal
+              isOpen={this.state.demoModal}
+              toggle={() => this.toggleModal("demoModal")}
+            >
               <div className="modal-header justify-content-center">
                 <button
-                  aria-hidden={true}
                   className="close"
-                  data-dismiss="modal"
-                  type="button"
+                  onClick={() => this.toggleModal("demoModal")}
                 >
                   <i className="tim-icons icon-simple-remove" />
                 </button>
@@ -91,20 +102,26 @@ class JavaScript extends React.Component {
                 <Button color="default" type="button">
                   Nice Button
                 </Button>
-                <Button color="danger" data-dismiss="modal" type="button">
+                <Button
+                  color="danger"
+                  type="button"
+                  onClick={() => this.toggleModal("demoModal")}
+                >
                   Close
                 </Button>
               </div>
             </Modal>
-            {/* End Modal */}
-            {/* Mini Modal */}
-            <Modal modalclassName="modal-mini modal-primary modal-mini">
+            {/* End Demo Modal */}
+            {/* Start Mini Modal */}
+            <Modal
+              modalClassName="modal-mini modal-primary modal-mini"
+              isOpen={this.state.miniModal}
+              toggle={() => this.toggleModal("miniModal")}
+            >
               <div className="modal-header justify-content-center">
                 <button
-                  aria-hidden={true}
                   className="close"
-                  data-dismiss="modal"
-                  type="button"
+                  onClick={() => this.toggleModal("miniModal")}
                 >
                   <i className="tim-icons icon-simple-remove text-white" />
                 </button>
@@ -122,21 +139,24 @@ class JavaScript extends React.Component {
                 <Button
                   className="btn-neutral"
                   color="link"
-                  data-dismiss="modal"
+                  onClick={() => this.toggleModal("miniModal")}
                   type="button"
                 >
                   Close
                 </Button>
               </div>
             </Modal>
-            {/* Form Modal */}
-            <Modal modalclassName="modal-black">
+            {/* End Mini Modal */}
+            {/* Start Form Modal */}
+            <Modal
+              modalClassName="modal-black"
+              isOpen={this.state.formModal}
+              toggle={() => this.toggleModal("formModal")}
+            >
               <div className="modal-header justify-content-center">
                 <button
-                  aria-hidden={true}
                   className="close"
-                  data-dismiss="modal"
-                  type="button"
+                  onClick={() => this.toggleModal("formModal")}
                 >
                   <i className="tim-icons icon-simple-remove text-white" />
                 </button>
@@ -202,7 +222,7 @@ class JavaScript extends React.Component {
                 </Form>
               </div>
             </Modal>
-            {/* End Modal */}
+            {/* End Form Modal */}
           </Row>
           <br />
           <br />
@@ -216,7 +236,6 @@ class JavaScript extends React.Component {
                       className: "form-control",
                       placeholder: "Date Picker Here"
                     }}
-                    timeFormat={false}
                   />
                 </FormGroup>
               </div>

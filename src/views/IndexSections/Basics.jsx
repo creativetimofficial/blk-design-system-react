@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 // react plugin used to create switch buttons
 import Switch from "react-bootstrap-switch";
 
@@ -17,6 +18,12 @@ import {
 } from "reactstrap";
 
 class Basics extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      inputFocus: false
+    }
+  }
   render() {
     return (
       <div className="section section-basic" id="basic-elements">
@@ -130,13 +137,16 @@ class Basics extends React.Component {
                 </FormGroup>
               </Col>
               <Col lg="3" sm="6">
-                <InputGroup>
+                <InputGroup className={classnames({
+                  "input-group-focus": this.state.inputFocus
+                })}>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
                       <i className="fa fa-user" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Left Font Awesome Icon" type="text" />
+                  <Input placeholder="Left Font Awesome Icon" type="text"  onFocus={e => this.setState({ inputFocus: true })}
+                  onBlur={e => this.setState({ inputFocus: false })}/>
                 </InputGroup>
               </Col>
               <Col lg="3" sm="6">
