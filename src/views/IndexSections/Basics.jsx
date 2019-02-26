@@ -1,5 +1,7 @@
 import React from "react";
 import classnames from "classnames";
+// plugin that creates slider
+import Slider from "nouislider";
 // react plugin used to create switch buttons
 import Switch from "react-bootstrap-switch";
 
@@ -23,6 +25,22 @@ class Basics extends React.Component {
     this.state = {
       inputFocus: false
     };
+  }
+  componentDidMount() {
+    var slider1 = this.refs.slider1;
+    var slider2 = this.refs.slider2;
+    Slider.create(slider1, {
+      start: [40],
+      connect: [true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
+    Slider.create(slider2, {
+      start: [20, 60],
+      connect: [false, true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
   }
   render() {
     return (
@@ -263,9 +281,12 @@ class Basics extends React.Component {
             </Col>
             <Col lg="3" sm="6">
               <p className="category">Sliders</p>
-              <div className="slider" id="sliderRegular" />
+              <div className="slider" ref="slider1" />
               <br />
-              <div className="slider slider-primary" id="sliderDouble" />
+              <div
+                className="slider slider-info mb-3"
+                ref="slider2"
+              />
             </Col>
           </Row>
         </Container>
