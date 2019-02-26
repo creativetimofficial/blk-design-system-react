@@ -15,7 +15,7 @@ class Download extends React.Component {
           <Row className="justify-content-md-center">
             <Col className="text-center" lg="8" md="12">
               <h2 className="title">
-                Do you love this Bootstrap 4 Design System?
+                Do you love this Bootstrap 4 React Design System?
               </h2>
               <h4 className="description">
                 Cause if you do, it can be yours for FREE. Hit the button below
@@ -27,8 +27,8 @@ class Download extends React.Component {
             <Col className="text-center" lg="8" md="12">
               <Button
                 className="btn-round"
-                color="primary"
-                href="https://www.creative-tim.com/product/blk-design-system"
+                color="info"
+                href="https://www.creative-tim.com/product/blk-design-system-react"
                 role="button"
                 size="lg"
               >
@@ -43,7 +43,7 @@ class Download extends React.Component {
           <br />
           <Row className="row-grid align-items-center my-md">
             <Col lg="6">
-              <h3 className="text-primary font-weight-light mb-2">
+              <h3 className="text-info font-weight-light mb-2">
                 Thank you for supporting us!
               </h3>
               <h4 className="mb-0 font-weight-light">
