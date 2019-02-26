@@ -45,7 +45,7 @@ class Tabs extends React.Component {
               </div>
               <Card>
                 <CardHeader>
-                  <Nav className="nav-tabs-primary" role="tablist" tabs>
+                  <Nav className="nav-tabs-info" role="tablist" tabs>
                     <NavItem>
                       <NavLink
                         className={classnames({"active":this.state.iconTabs === 1})}
@@ -122,7 +122,7 @@ class Tabs extends React.Component {
               </div>
               <Card>
                 <CardHeader>
-                  <Nav className="nav-tabs-primary" role="tablist" tabs>
+                  <Nav className="nav-tabs-info" role="tablist" tabs>
                     <NavItem>
                       <NavLink
                         className={classnames({"active":this.state.textTabs === 4})}
