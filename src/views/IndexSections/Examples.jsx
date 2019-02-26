@@ -1,4 +1,6 @@
-import React from "react"; // reactstrap components
+import React from "react";
+import {Link} from "react-router-dom";
+// reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
 class Examples extends React.Component {
@@ -10,33 +12,35 @@ class Examples extends React.Component {
         <Container className="text-center">
           <Row>
             <Col sm="6">
-              <a href="examples/landing-page.html">
+              <Link to="landing-page">
                 <img
                   alt="..."
                   className="img-raised"
                   src={require("assets/img/landing-page.png")}
                 />
-              </a>
+              </Link>
               <Button
                 className="btn-simple btn-round"
                 color="primary"
-                href="examples/landing-page.html"
+                to="landing-page"
+                tag={Link}
               >
                 View Landing Page
               </Button>
             </Col>
             <Col sm="6">
-              <a href="examples/profile-page.html">
+              <Link to="profile-page">
                 <img
                   alt="..."
                   className="img-raised"
                   src={require("assets/img/profile-page.png")}
                 />
-              </a>
+              </Link>
               <Button
                 className="btn-simple btn-round"
                 color="primary"
-                href="examples/profile-page.html"
+                to="profile-page"
+                tag={Link}
               >
                 View Profile Page
               </Button>
