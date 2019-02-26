@@ -26,6 +26,23 @@ class PagesNavbar extends React.Component {
       color: "navbar-transparent"
     };
   }
+  componentDidMount() {
+    window.addEventListener("scroll", this.changeColor);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.changeColor);
+  }
+  changeColor = () => {
+    if (document.documentElement.scrollTop > 99 || document.body.scrollTop > 99) {
+      this.setState({
+        color: "bg-info"
+      })
+    } else if (document.documentElement.scrollTop < 100 || document.body.scrollTop < 100) {
+      this.setState({
+        color: "navbar-transparent"
+      })
+    }
+  }
   toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     this.setState({
