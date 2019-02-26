@@ -16,19 +16,19 @@ import {
 } from "reactstrap";
 
 class Tabs extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       iconTabs: 1,
       textTabs: 4
-    }
+    };
   }
-  toggleTabs = (e,stateName,index) => {
+  toggleTabs = (e, stateName, index) => {
     e.preventDefault();
     this.setState({
       [stateName]: index
-    })
-  }
+    });
+  };
   render() {
     return (
       <div className="section section-tabs">
@@ -48,8 +48,10 @@ class Tabs extends React.Component {
                   <Nav className="nav-tabs-info" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                        className={classnames({"active":this.state.iconTabs === 1})}
-                        onClick={(e) => this.toggleTabs(e,"iconTabs",1)}
+                        className={classnames({
+                          active: this.state.iconTabs === 1
+                        })}
+                        onClick={e => this.toggleTabs(e, "iconTabs", 1)}
                         href="#pablo"
                       >
                         <i className="tim-icons icon-spaceship" />
@@ -58,8 +60,10 @@ class Tabs extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        className={classnames({"active":this.state.iconTabs === 2})}
-                        onClick={(e) => this.toggleTabs(e,"iconTabs",2)}
+                        className={classnames({
+                          active: this.state.iconTabs === 2
+                        })}
+                        onClick={e => this.toggleTabs(e, "iconTabs", 2)}
                         href="#pablo"
                       >
                         <i className="tim-icons icon-settings-gear-63" />
@@ -68,8 +72,10 @@ class Tabs extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        className={classnames({"active":this.state.iconTabs === 3})}
-                        onClick={(e) => this.toggleTabs(e,"iconTabs",3)}
+                        className={classnames({
+                          active: this.state.iconTabs === 3
+                        })}
+                        onClick={e => this.toggleTabs(e, "iconTabs", 3)}
                         href="#pablo"
                       >
                         <i className="tim-icons icon-bag-16" />
@@ -79,7 +85,10 @@ class Tabs extends React.Component {
                   </Nav>
                 </CardHeader>
                 <CardBody>
-                  <TabContent className="tab-space" activeTab={"link" + this.state.iconTabs}>
+                  <TabContent
+                    className="tab-space"
+                    activeTab={"link" + this.state.iconTabs}
+                  >
                     <TabPane tabId="link1">
                       <p>
                         Collaboratively administrate empowered markets via
@@ -125,8 +134,10 @@ class Tabs extends React.Component {
                   <Nav className="nav-tabs-info" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                        className={classnames({"active":this.state.textTabs === 4})}
-                        onClick={(e) => this.toggleTabs(e,"textTabs",4)}
+                        className={classnames({
+                          active: this.state.textTabs === 4
+                        })}
+                        onClick={e => this.toggleTabs(e, "textTabs", 4)}
                         href="#pablo"
                       >
                         Profile
@@ -134,8 +145,10 @@ class Tabs extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        className={classnames({"active":this.state.textTabs === 5})}
-                        onClick={(e) => this.toggleTabs(e,"textTabs",5)}
+                        className={classnames({
+                          active: this.state.textTabs === 5
+                        })}
+                        onClick={e => this.toggleTabs(e, "textTabs", 5)}
                         href="#pablo"
                       >
                         Settings
@@ -143,8 +156,10 @@ class Tabs extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        className={classnames({"active":this.state.textTabs === 6})}
-                        onClick={(e) => this.toggleTabs(e,"textTabs",6)}
+                        className={classnames({
+                          active: this.state.textTabs === 6
+                        })}
+                        onClick={e => this.toggleTabs(e, "textTabs", 6)}
                         href="#pablo"
                       >
                         Options
@@ -153,7 +168,10 @@ class Tabs extends React.Component {
                   </Nav>
                 </CardHeader>
                 <CardBody>
-                  <TabContent className="tab-space" activeTab={"link" + this.state.textTabs}>
+                  <TabContent
+                    className="tab-space"
+                    activeTab={"link" + this.state.textTabs}
+                  >
                     <TabPane tabId="link4">
                       <p>
                         These cases are perfectly simple and easy to

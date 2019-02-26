@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 // reactstrap components
 import {
   Badge,
@@ -15,6 +16,18 @@ import {
 } from "reactstrap";
 
 class PaginationSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      pills: 1
+    };
+  }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
   render() {
     return (
       <div className="section section-pagination">
@@ -30,11 +43,11 @@ class PaginationSection extends React.Component {
               <h3 className="mb-4">Progress Bars</h3>
               <div className="progress-container">
                 <span className="progress-badge">Default</span>
-                <Progress max="100" value="60">
+                <Progress max="100" value="25">
                   <span className="progress-value">25%</span>
                 </Progress>
               </div>
-              <div className="progress-container progress-primary">
+              <div className="progress-container progress-info">
                 <span className="progress-badge">Primary</span>
                 <Progress max="100" value="60">
                   <span className="progress-value">60%</span>
@@ -42,13 +55,14 @@ class PaginationSection extends React.Component {
               </div>
               <br />
               <h3 className="mb-5">Navigation Pills</h3>
-              <Nav className="nav-pills-primary nav-pills-icons" pills>
+              <Nav className="nav-pills-info nav-pills-icons" pills>
                 <NavItem>
                   <NavLink
-                    className="active show"
-                    data-toggle="tab"
+                    className={classnames({
+                      "active show": this.state.pills === 1
+                    })}
+                    onClick={e => this.toggleTabs(e, "pills", 1)}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
                   >
                     <i className="tim-icons icon-atom" />
                     Home
@@ -56,9 +70,11 @@ class PaginationSection extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    data-toggle="tab"
+                    className={classnames({
+                      "active show": this.state.pills === 2
+                    })}
+                    onClick={e => this.toggleTabs(e, "pills", 2)}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
                   >
                     <i className="tim-icons icon-chat-33" />
                     Messages
@@ -66,9 +82,11 @@ class PaginationSection extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    data-toggle="tab"
+                    className={classnames({
+                      "active show": this.state.pills === 3
+                    })}
+                    onClick={e => this.toggleTabs(e, "pills", 3)}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
                   >
                     <i className="tim-icons icon-settings-gear-63" />
                     Settings
@@ -79,8 +97,8 @@ class PaginationSection extends React.Component {
             <Col md="6">
               <h3 className="mb-5">Pagination</h3>
               <Pagination
-                className="pagination pagination-primary"
-                listClassName="pagination-primary"
+                className="pagination pagination-info"
+                listClassName="pagination-info"
               >
                 <PaginationItem className="active">
                   <PaginationLink
@@ -123,7 +141,10 @@ class PaginationSection extends React.Component {
                   </PaginationLink>
                 </PaginationItem>
               </Pagination>
-              <Pagination>
+              <Pagination
+                className="pagination pagination-info"
+                listClassName="pagination-info"
+              >
                 <PaginationItem>
                   <PaginationLink
                     aria-label="Previous"

@@ -30,18 +30,12 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Menu
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
-                  <Collapse
-                    navbar
-                    isOpen={false}
-                  >
+                  <Collapse navbar isOpen={false}>
                     <Nav navbar>
                       <NavItem className="active">
                         <NavLink
@@ -105,18 +99,12 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Icons
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
-                  <Collapse
-                    navbar
-                    isOpen={false}
-                  >
+                  <Collapse navbar isOpen={false}>
                     <Nav className="ml-auto" navbar>
                       <NavItem>
                         <NavLink
@@ -211,19 +199,13 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Primary color
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <Collapse
-                  navbar
-                  isOpen={false}
-                >
+                <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -255,19 +237,13 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Info Color
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <Collapse
-                  navbar
-                  isOpen={false}
-                >
+                <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -296,19 +272,13 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Success Color
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <Collapse
-                  navbar
-                  isOpen={false}
-                >
+                <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -337,19 +307,13 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Warning Color
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <Collapse
-                  navbar
-                  isOpen={false}
-                >
+                <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -383,19 +347,13 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Danger Color
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <Collapse
-                  navbar
-                  isOpen={false}
-                >
+                <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -427,19 +385,13 @@ class Navbars extends React.Component {
                   <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                     Transparent
                   </NavbarBrand>
-                  <button
-                    className="navbar-toggler"
-                    aria-expanded={false}
-                  >
+                  <button className="navbar-toggler" aria-expanded={false}>
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <Collapse
-                  navbar
-                  isOpen={false}
-                >
+                <Collapse navbar isOpen={false}>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>

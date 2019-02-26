@@ -92,11 +92,7 @@ class RegisterPage extends React.Component {
                         </Form>
                       </CardBody>
                       <CardFooter>
-                        <Button
-                          className="btn-round"
-                          color="primary"
-                          size="lg"
-                        >
+                        <Button className="btn-round" color="primary" size="lg">
                           Get Started
                         </Button>
                       </CardFooter>
