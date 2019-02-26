@@ -8,7 +8,7 @@ class Download extends React.Component {
       <div
         className="section section-download"
         data-background-color="black"
-        id="#download-section"
+        id="download-section"
       >
         <img alt="..." className="path" src={require("assets/img/path1.png")} />
         <Container>

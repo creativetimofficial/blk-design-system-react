@@ -42,6 +42,9 @@ class ComponentsNavbar extends React.Component {
       collapseOut: ""
     });
   };
+  scrollToDownload = () => {
+    document.getElementById("download-section").scrollIntoView({behavior: "smooth"});
+  }
   render() {
     return (
       <Navbar
@@ -166,8 +169,7 @@ class ComponentsNavbar extends React.Component {
                 <Button
                   className="nav-link d-none d-lg-block"
                   color="default"
-                  href="javascript:void(0)"
-                  onClick="scrollToDownload()"
+                  onClick={this.scrollToDownload}
                 >
                   <i className="tim-icons icon-cloud-download-93" />
                   Download
