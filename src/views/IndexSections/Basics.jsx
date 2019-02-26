@@ -18,11 +18,11 @@ import {
 } from "reactstrap";
 
 class Basics extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       inputFocus: false
-    }
+    };
   }
   render() {
     return (
@@ -137,16 +137,22 @@ class Basics extends React.Component {
                 </FormGroup>
               </Col>
               <Col lg="3" sm="6">
-                <InputGroup className={classnames({
-                  "input-group-focus": this.state.inputFocus
-                })}>
+                <InputGroup
+                  className={classnames({
+                    "input-group-focus": this.state.inputFocus
+                  })}
+                >
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
                       <i className="fa fa-user" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Left Font Awesome Icon" type="text"  onFocus={e => this.setState({ inputFocus: true })}
-                  onBlur={e => this.setState({ inputFocus: false })}/>
+                  <Input
+                    placeholder="Left Font Awesome Icon"
+                    type="text"
+                    onFocus={e => this.setState({ inputFocus: true })}
+                    onBlur={e => this.setState({ inputFocus: false })}
+                  />
                 </InputGroup>
               </Col>
               <Col lg="3" sm="6">

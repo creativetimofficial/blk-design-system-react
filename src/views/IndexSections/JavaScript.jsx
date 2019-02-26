@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 // react plugin used to create datetimepicker
 import ReactDatetime from "react-datetime";
 
@@ -188,23 +189,41 @@ class JavaScript extends React.Component {
                 </div>
                 <Form role="form">
                   <FormGroup className="mb-3">
-                    <InputGroup className="input-group-alternative">
+                    <InputGroup
+                      className={classnames("input-group-alternative", {
+                        "input-group-focus": this.state.emailFocus
+                      })}
+                    >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
                           <i className="tim-icons icon-email-85" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input placeholder="Email" type="email" />
+                      <Input
+                        placeholder="Email"
+                        type="email"
+                        onFocus={e => this.setState({ emailFocus: true })}
+                        onBlur={e => this.setState({ emailFocus: false })}
+                      />
                     </InputGroup>
                   </FormGroup>
                   <FormGroup>
-                    <InputGroup className="input-group-alternative">
+                    <InputGroup
+                      className={classnames("input-group-alternative", {
+                        "input-group-focus": this.state.passwordFocus
+                      })}
+                    >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
                           <i className="tim-icons icon-key-25" />
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input placeholder="Password" type="password" />
+                      <Input
+                        placeholder="Password"
+                        type="password"
+                        onFocus={e => this.setState({ passwordFocus: true })}
+                        onBlur={e => this.setState({ passwordFocus: false })}
+                      />
                     </InputGroup>
                   </FormGroup>
                   <FormGroup check className="mt-3">
