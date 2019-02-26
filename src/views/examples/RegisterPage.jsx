@@ -49,7 +49,7 @@ class RegisterPage extends React.Component {
                       <CardHeader>
                         <CardImg
                           alt="..."
-                          src={require("assets/img/square1.png")}
+                          src={require("assets/img/square-purple-1.png")}
                         />
                         <CardTitle tag="h4">Register</CardTitle>
                       </CardHeader>
@@ -94,8 +94,7 @@ class RegisterPage extends React.Component {
                       <CardFooter>
                         <Button
                           className="btn-round"
-                          color="info"
-                          href="javascript:void(0)"
+                          color="primary"
                           size="lg"
                         >
                           Get Started

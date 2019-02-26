@@ -1,0 +1,10 @@
+// style for the landing page
+.index-page .squares{
+  @include linear-gradient($info-states, $info);
+}
+.register-page {
+  .card-register .card-header img,
+  .square {
+    @include linear-gradient($primary-states, $primary);
+  }
+}
