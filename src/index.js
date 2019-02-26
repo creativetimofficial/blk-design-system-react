@@ -10,6 +10,7 @@ import Index from "views/Index.jsx";
 import LandingPage from "views/examples/LandingPage.jsx";
 import RegisterPage from "views/examples/RegisterPage.jsx";
 import ProfilePage from "views/examples/ProfilePage.jsx";
+import Documentation from "views/Documentation/Documentation.jsx";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -26,6 +27,10 @@ ReactDOM.render(
       <Route
         path="/profile-page"
         render={props => <ProfilePage {...props} />}
+      />
+      <Route
+        path="/documentation"
+        render={props => <Documentation {...props} />}
       />
       <Redirect from="/" to="/components" />
     </Switch>

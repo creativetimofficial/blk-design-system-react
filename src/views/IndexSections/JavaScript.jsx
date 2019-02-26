@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import { Link } from "react-router-dom";
 // react plugin used to create datetimepicker
 import ReactDatetime from "react-datetime";
 
@@ -454,7 +455,8 @@ class JavaScript extends React.Component {
                 <Button
                   className="mt-4"
                   color="warning"
-                  href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alerts"
+                  to="/documentation/alerts"
+                  tag={Link}
                 >
                   See all components
                 </Button>

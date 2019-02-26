@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
@@ -22,9 +23,8 @@ class NucleoIcons extends React.Component {
                 <Button
                   className="btn-round"
                   color="primary"
-                  href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  to="/documentation/icons"
+                  tag={Link}
                 >
                   View Demo Icons
                 </Button>
@@ -42,7 +42,7 @@ class NucleoIcons extends React.Component {
             </Col>
           </Row>
           <div className="blur-hover">
-            <a href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons">
+            <Link to="/documentation/icons">
               <div className="icons-container blur-item on-screen mt-5">
                 {/* Center */}
                 <i className="icon tim-icons icon-coins" />
@@ -66,7 +66,7 @@ class NucleoIcons extends React.Component {
               <span className="blur-hidden h5 text-primary">
                 Eplore all the 21.000+ Nucleo Icons
               </span>
-            </a>
+            </Link>
           </div>
         </Container>
       </div>
