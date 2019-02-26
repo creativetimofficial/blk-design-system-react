@@ -16,10 +16,10 @@ class PageHeader extends React.Component {
         <div className="squares square7" />
         <Container>
           <div className="content-center brand">
-            <h1 className="h1-seo">BLK•</h1>
+            <h1 className="h1-seo">BLK•React</h1>
             <h3>
-              A beautiful Design System for Bootstrap 4. It's Free and Open
-              Source.
+              A beautiful Design System for Bootstrap 4 (reactstrap) and React.
+              It's Free and Open Source.
             </h3>
           </div>
         </Container>
