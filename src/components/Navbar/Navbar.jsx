@@ -22,12 +22,12 @@ class AppNavbar extends React.Component {
   render() {
     return (
       <Navbar
-        className=" fixed-top navbar-transparent"
+        className="fixed-top navbar-transparent"
         color-on-scroll="100"
         expand="lg"
       >
         <Container>
-          <div className=" navbar-translate">
+          <div className="navbar-translate">
             <NavbarBrand
               data-placement="bottom"
               href="https://demos.creative-tim.com/blk-design-system/index.html"
@@ -42,46 +42,46 @@ class AppNavbar extends React.Component {
               aria-controls="navigation-index"
               aria-expanded={false}
               aria-label="Toggle navigation"
-              className=" navbar-toggler navbar-toggler"
+              className="navbar-toggler navbar-toggler"
               data-target="#navigation"
               data-toggle="collapse"
               id="navigation"
               type="button"
             >
-              <span className=" navbar-toggler-bar bar1" />
-              <span className=" navbar-toggler-bar bar2" />
-              <span className=" navbar-toggler-bar bar3" />
+              <span className="navbar-toggler-bar bar1" />
+              <span className="navbar-toggler-bar bar2" />
+              <span className="navbar-toggler-bar bar3" />
             </button>
           </div>
           <UncontrolledCollapse
-            className=" justify-content-end"
+            className="justify-content-end"
             id="navigation"
             navbar
             toggler="#navigation"
           >
-            <div className=" navbar-collapse-header">
+            <div className="navbar-collapse-header">
               <Row>
-                <Col className=" collapse-brand" xs="6">
+                <Col className="collapse-brand" xs="6">
                   <a>BLK•</a>
                 </Col>
-                <Col className=" collapse-close text-right" xs="6">
+                <Col className="collapse-close text-right" xs="6">
                   <button
                     aria-controls="navigation-index"
                     aria-expanded={false}
                     aria-label="Toggle navigation"
-                    className=" navbar-toggler"
+                    className="navbar-toggler"
                     data-target="#navigation"
                     data-toggle="collapse"
                     id="navigation"
                     type="button"
                   >
-                    <i className=" tim-icons icon-simple-remove" />
+                    <i className="tim-icons icon-simple-remove" />
                   </button>
                 </Col>
               </Row>
             </div>
             <Nav navbar>
-              <NavItem className=" p-0">
+              <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
                   href="https://twitter.com/CreativeTim"
@@ -89,11 +89,11 @@ class AppNavbar extends React.Component {
                   target="_blank"
                   title="Follow us on Twitter"
                 >
-                  <i className=" fab fa-twitter" />
-                  <p className=" d-lg-none d-xl-none">Twitter</p>
+                  <i className="fab fa-twitter" />
+                  <p className="d-lg-none d-xl-none">Twitter</p>
                 </NavLink>
               </NavItem>
-              <NavItem className=" p-0">
+              <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
                   href="https://www.facebook.com/CreativeTim"
@@ -101,11 +101,11 @@ class AppNavbar extends React.Component {
                   target="_blank"
                   title="Like us on Facebook"
                 >
-                  <i className=" fab fa-facebook-square" />
-                  <p className=" d-lg-none d-xl-none">Facebook</p>
+                  <i className="fab fa-facebook-square" />
+                  <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
               </NavItem>
-              <NavItem className=" p-0">
+              <NavItem className="p-0">
                 <NavLink
                   data-placement="bottom"
                   href="https://www.instagram.com/CreativeTimOfficial"
@@ -113,8 +113,8 @@ class AppNavbar extends React.Component {
                   target="_blank"
                   title="Follow us on Instagram"
                 >
-                  <i className=" fab fa-instagram" />
-                  <p className=" d-lg-none d-xl-none">Instagram</p>
+                  <i className="fab fa-instagram" />
+                  <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav>
@@ -126,36 +126,36 @@ class AppNavbar extends React.Component {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i className=" fa fa-cogs d-lg-none d-xl-none" />
+                  <i className="fa fa-cogs d-lg-none d-xl-none" />
                   Getting started
                 </DropdownToggle>
-                <DropdownMenu className=" dropdown-with-icons">
+                <DropdownMenu className="dropdown-with-icons">
                   <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/tutorial">
-                    <i className=" tim-icons icon-paper" />
+                    <i className="tim-icons icon-paper" />
                     Documentation
                   </DropdownItem>
                   <DropdownItem href="examples/register-page.html">
-                    <i className=" tim-icons icon-bullet-list-67" />
+                    <i className="tim-icons icon-bullet-list-67" />
                     Register Page
                   </DropdownItem>
                   <DropdownItem href="examples/landing-page.html">
-                    <i className=" tim-icons icon-image-02" />
+                    <i className="tim-icons icon-image-02" />
                     Landing Page
                   </DropdownItem>
                   <DropdownItem href="examples/profile-page.html">
-                    <i className=" tim-icons icon-single-02" />
+                    <i className="tim-icons icon-single-02" />
                     Profile Page
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
                 <Button
-                  className=" nav-link d-none d-lg-block"
+                  className="nav-link d-none d-lg-block"
                   color="default"
                   href="javascript:void(0)"
                   onClick="scrollToDownload()"
                 >
-                  <i className=" tim-icons icon-cloud-download-93" />
+                  <i className="tim-icons icon-cloud-download-93" />
                   Download
                 </Button>
               </NavItem>
