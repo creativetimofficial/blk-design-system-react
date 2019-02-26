@@ -1,0 +1,8 @@
+.btn {
+  & + .btn {
+    margin-left: 4px;
+  }
+}
+.btn-group + .btn-group {
+  margin-left: 4px;
+}

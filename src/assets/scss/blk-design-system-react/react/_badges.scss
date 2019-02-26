@@ -1,0 +1,5 @@
+.badge {
+  & + .badge {
+    margin-left: 4px;
+  }
+}
