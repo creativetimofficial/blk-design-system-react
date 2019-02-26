@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 
 // core components
-import PagesNavbar from "components/Navbars/PagesNavbar.jsx";
+import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
 import Footer from "components/Footer/Footer.jsx";
 
 class LandingPage extends React.Component {
@@ -29,7 +29,7 @@ class LandingPage extends React.Component {
   render() {
     return (
       <>
-        <PagesNavbar />
+        <ExamplesNavbar />
         <div className="wrapper">
           <div className="page-header">
             <img
