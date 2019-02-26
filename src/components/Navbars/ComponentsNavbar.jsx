@@ -18,7 +18,7 @@ import {
   Col
 } from "reactstrap";
 
-class AppNavbar extends React.Component {
+class ComponentsNavbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -181,4 +181,4 @@ class AppNavbar extends React.Component {
   }
 }
 
-export default AppNavbar;
+export default ComponentsNavbar;

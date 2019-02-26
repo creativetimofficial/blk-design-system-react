@@ -1,7 +1,7 @@
 import React from "react";
 
 // core components
-import AppNavbar from "components/Navbar/Navbar.jsx";
+import ComponentsNavbar from "components/Navbars/ComponentsNavbar.jsx";
 import PageHeader from "components/PageHeader/PageHeader.jsx";
 import Footer from "components/Footer/Footer.jsx";
 
@@ -28,7 +28,7 @@ class Index extends React.Component {
   render() {
     return (
       <>
-        <AppNavbar />
+        <ComponentsNavbar />
         <div className="wrapper">
           <PageHeader />
           <div className="main">
