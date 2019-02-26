@@ -42,7 +42,7 @@ class NucleoIcons extends React.Component {
             </Col>
           </Row>
           <div className="blur-hover">
-            <a href="./docs/1.0/foundation/icons.html">
+            <a href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons">
               <div className="icons-container blur-item on-screen mt-5">
                 {/* Center */}
                 <i className="icon tim-icons icon-coins" />
