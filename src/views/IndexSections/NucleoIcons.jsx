@@ -22,7 +22,7 @@ class NucleoIcons extends React.Component {
                 <Button
                   className="btn-round"
                   color="primary"
-                  href="./docs/1.0/foundation/icons.html"
+                  href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
