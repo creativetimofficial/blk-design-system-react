@@ -1,0 +1,4 @@
+.form-check input[type="checkbox"]:checked + .form-check-sign::before,
+.form-check input[type="checkbox"]:checked + .form-check-sign::before{
+  background-color: $info;
+}
