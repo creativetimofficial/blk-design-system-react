@@ -435,7 +435,7 @@ class JavaScript extends React.Component {
                 <Button
                   className="mt-4"
                   color="warning"
-                  href="./docs/1.0/components/alerts.html"
+                  href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alerts"
                 >
                   See all components
                 </Button>
