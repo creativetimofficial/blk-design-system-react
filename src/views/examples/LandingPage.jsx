@@ -1,5 +1,6 @@
 import React from "react";
-
+// react plugin used to create charts
+import { Line } from "react-chartjs-2";
 // reactstrap components
 import {
   Button,
@@ -18,6 +19,8 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
 import Footer from "components/Footer/Footer.jsx";
+
+import bigChartData from "variables/charts.jsx";
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -429,7 +432,7 @@ class LandingPage extends React.Component {
                 <CardHeader>
                   <Row>
                     <Col className="text-left" sm="6">
-                      <hr className="line-primary" />
+                      <hr className="line-info" />
                       <h5 className="card-category">Total Investments</h5>
                       <CardTitle tag="h2">Performance</CardTitle>
                     </Col>
@@ -437,7 +440,10 @@ class LandingPage extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <div className="chart-area">
-                    <canvas id="chartBig" />
+                    <Line
+                      data={bigChartData.data}
+                      options={bigChartData.options}
+                    />
                   </div>
                 </CardBody>
               </Card>
