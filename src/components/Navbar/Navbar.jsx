@@ -3,7 +3,7 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  UncontrolledCollapse,
+  Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -19,6 +19,17 @@ import {
 } from "reactstrap";
 
 class AppNavbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapseOpen: false
+    };
+  }
+  toggleCollapse = () => {
+    this.setState({
+      collapseOpen: !this.state.collapseOpen
+    })
+  }
   render() {
     return (
       <Navbar
@@ -39,25 +50,19 @@ class AppNavbar extends React.Component {
               Design System
             </NavbarBrand>
             <button
-              aria-controls="navigation-index"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
+              aria-expanded={this.state.collapseOpen}
               className="navbar-toggler navbar-toggler"
-              data-target="#navigation"
-              data-toggle="collapse"
-              id="navigation"
-              type="button"
+              onClick={this.toggleCollapse}
             >
               <span className="navbar-toggler-bar bar1" />
               <span className="navbar-toggler-bar bar2" />
               <span className="navbar-toggler-bar bar3" />
             </button>
           </div>
-          <UncontrolledCollapse
+          <Collapse
             className="justify-content-end"
-            id="navigation"
             navbar
-            toggler="#navigation"
+            isOpen={this.state.collapseOpen}
           >
             <div className="navbar-collapse-header">
               <Row>
@@ -66,14 +71,9 @@ class AppNavbar extends React.Component {
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
                   <button
-                    aria-controls="navigation-index"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    aria-expanded={this.state.collapseOpen}
                     className="navbar-toggler"
-                    data-target="#navigation"
-                    data-toggle="collapse"
-                    id="navigation"
-                    type="button"
+                    onClick={this.toggleCollapse}
                   >
                     <i className="tim-icons icon-simple-remove" />
                   </button>
@@ -160,7 +160,7 @@ class AppNavbar extends React.Component {
                 </Button>
               </NavItem>
             </Nav>
-          </UncontrolledCollapse>
+          </Collapse>
         </Container>
       </Navbar>
     );

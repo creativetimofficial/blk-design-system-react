@@ -80,7 +80,7 @@ class PaginationSection extends React.Component {
               <h3 className="mb-5">Pagination</h3>
               <Pagination
                 className="pagination pagination-primary"
-                listclassName="pagination-primary"
+                listClassName="pagination-primary"
               >
                 <PaginationItem className="active">
                   <PaginationLink
