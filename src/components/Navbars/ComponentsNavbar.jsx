@@ -86,7 +86,7 @@ class ComponentsNavbar extends React.Component {
               title="Designed and Coded by Creative Tim"
               tag={Link}
             >
-              <span>BLK•</span>
+              <span>BLK• </span>
               Design System React
             </NavbarBrand>
             <button
