@@ -20,8 +20,27 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupText,
-  Label
+  Label,
+  UncontrolledCarousel
 } from "reactstrap";
+
+const carouselItems = [
+  {
+    src: require("assets/img/denys.jpg"),
+    altText: 'Slide 1',
+    caption: ''
+  },
+  {
+    src: require("assets/img/fabien-bazanegue.jpg"),
+    altText: 'Slide 2',
+    caption: ''
+  },
+  {
+    src: require("assets/img/mark-finn.jpg"),
+    altText: 'Slide 3',
+    caption: ''
+  }
+];
 
 class JavaScript extends React.Component {
   constructor(props) {
@@ -441,51 +460,8 @@ class JavaScript extends React.Component {
                 </Button>
               </Col>
               <Col lg="6">
-                <div className="carousel slide" id="carouselExampleControls">
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <img
-                        alt="..."
-                        className="d-block w-100"
-                        src={require("assets/img/denys.jpg")}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        alt="..."
-                        className="d-block w-100"
-                        src={require("assets/img/fabien-bazanegue.jpg")}
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        alt="..."
-                        className="d-block w-100"
-                        src={require("assets/img/mark-finn.jpg")}
-                      />
-                    </div>
-                  </div>
-                  <a
-                    className="carousel-control-prev"
-                    data-slide="prev"
-                    href="#pablo"
-                    onClick={e => e.preventDefault()}
-                    role="button"
-                  >
-                    <i className="tim-icons icon-minimal-left" />
-                    <span className="sr-only">Previous</span>
-                  </a>
-                  <a
-                    className="carousel-control-next"
-                    data-slide="next"
-                    href="#pablo"
-                    onClick={e => e.preventDefault()}
-                    role="button"
-                  >
-                    <i className="tim-icons icon-minimal-right" />
-                    <span className="sr-only">Next</span>
-                  </a>
-                </div>
+                <UncontrolledCarousel items={carouselItems} indicators={false}
+                autoPlay={false}/>
               </Col>
             </Row>
           </Container>
