@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -43,7 +44,7 @@ class Signup extends React.Component {
                 4 Design System.
               </p>
               <div className="btn-wrapper">
-                <Button color="info" href="examples/register-page.html">
+                <Button color="primary" to="register-page" tag="Link">
                   Register Page
                 </Button>
               </div>
@@ -51,7 +52,7 @@ class Signup extends React.Component {
             <Col className="mb-lg-auto" lg="6">
               <Card className="card-register">
                 <CardHeader>
-                  <CardImg alt="..." src={require("assets/img/square1.png")} />
+                  <CardImg alt="..." src={require("assets/img/square-purple-1.png")} />
                   <CardTitle tag="h4">Register</CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -92,8 +93,7 @@ class Signup extends React.Component {
                 <CardFooter>
                   <Button
                     className="btn-round"
-                    color="info"
-                    href="javascript:void(0)"
+                    color="primary"
                     size="lg"
                   >
                     Get Started

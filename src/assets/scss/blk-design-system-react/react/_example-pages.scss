@@ -2,9 +2,8 @@
 .index-page .squares{
   @include linear-gradient($info-states, $info);
 }
-.register-page {
-  .card-register .card-header img,
-  .square {
+.register-page, .section.section-signup{
+  .squares, .square {
     @include linear-gradient($primary-states, $primary);
   }
 }
