@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 // reactstrap components
 import {
   TabContent,
@@ -15,6 +16,19 @@ import {
 } from "reactstrap";
 
 class Tabs extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      iconTabs: 1,
+      textTabs: 4
+    }
+  }
+  toggleTabs = (e,stateName,index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    })
+  }
   render() {
     return (
       <div className="section section-tabs">
@@ -29,17 +43,14 @@ class Tabs extends React.Component {
                   With icons
                 </small>
               </div>
-              {/* Nav tabs */}
               <Card>
                 <CardHeader>
                   <Nav className="nav-tabs-primary" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                        className="active"
-                        data-toggle="tab"
+                        className={classnames({"active":this.state.iconTabs === 1})}
+                        onClick={(e) => this.toggleTabs(e,"iconTabs",1)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tablist"
                       >
                         <i className="tim-icons icon-spaceship" />
                         Profile
@@ -47,10 +58,9 @@ class Tabs extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
+                        className={classnames({"active":this.state.iconTabs === 2})}
+                        onClick={(e) => this.toggleTabs(e,"iconTabs",2)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tablist"
                       >
                         <i className="tim-icons icon-settings-gear-63" />
                         Settings
@@ -58,10 +68,9 @@ class Tabs extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
+                        className={classnames({"active":this.state.iconTabs === 3})}
+                        onClick={(e) => this.toggleTabs(e,"iconTabs",3)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tablist"
                       >
                         <i className="tim-icons icon-bag-16" />
                         Options
@@ -70,9 +79,8 @@ class Tabs extends React.Component {
                   </Nav>
                 </CardHeader>
                 <CardBody>
-                  {/* Tab panes */}
-                  <TabContent className="tab-space">
-                    <TabPane className="active" id="link1">
+                  <TabContent className="tab-space" activeTab={"link" + this.state.iconTabs}>
+                    <TabPane tabId="link1">
                       <p>
                         Collaboratively administrate empowered markets via
                         plug-and-play networks. Dynamically procrastinate B2C
@@ -82,7 +90,7 @@ class Tabs extends React.Component {
                         without revolutionary ROI.
                       </p>
                     </TabPane>
-                    <TabPane id="link2">
+                    <TabPane tabId="link2">
                       <p>
                         Completely synergize resource taxing relationships via
                         premier niche markets. Professionally cultivate
@@ -92,7 +100,7 @@ class Tabs extends React.Component {
                         for state of the art customer service.
                       </p>
                     </TabPane>
-                    <TabPane id="link3">
+                    <TabPane tabId="link3">
                       <p>
                         Efficiently unleash cross-media information without
                         cross-media value. Quickly maximize timely deliverables
@@ -112,37 +120,32 @@ class Tabs extends React.Component {
                   With text
                 </small>
               </div>
-              {/* Tabs with Background on Card */}
               <Card>
                 <CardHeader>
                   <Nav className="nav-tabs-primary" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                        className="active"
-                        data-toggle="tab"
+                        className={classnames({"active":this.state.textTabs === 4})}
+                        onClick={(e) => this.toggleTabs(e,"textTabs",4)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tablist"
                       >
                         Profile
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
+                        className={classnames({"active":this.state.textTabs === 5})}
+                        onClick={(e) => this.toggleTabs(e,"textTabs",5)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tablist"
                       >
                         Settings
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
+                        className={classnames({"active":this.state.textTabs === 6})}
+                        onClick={(e) => this.toggleTabs(e,"textTabs",6)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tablist"
                       >
                         Options
                       </NavLink>
@@ -150,9 +153,8 @@ class Tabs extends React.Component {
                   </Nav>
                 </CardHeader>
                 <CardBody>
-                  {/* Tab panes */}
-                  <TabContent className="tab-space">
-                    <TabPane className="active" id="link4">
+                  <TabContent className="tab-space" activeTab={"link" + this.state.textTabs}>
+                    <TabPane tabId="link4">
                       <p>
                         These cases are perfectly simple and easy to
                         distinguish. In a free hour, when our power of choice is
@@ -164,7 +166,7 @@ class Tabs extends React.Component {
                         occur that pleasures
                       </p>
                     </TabPane>
-                    <TabPane id="link5">
+                    <TabPane tabId="link5">
                       <p>
                         I will be the leader of a company that ends up being
                         worth billions of dollars, because I got the answers. I
@@ -176,7 +178,7 @@ class Tabs extends React.Component {
                         things could be at.
                       </p>
                     </TabPane>
-                    <TabPane id="link6">
+                    <TabPane tabId="link6">
                       <p>
                         I think that’s a responsibility that I have, to push
                         possibilities, to show people, this is the level that
@@ -191,7 +193,6 @@ class Tabs extends React.Component {
                   </TabContent>
                 </CardBody>
               </Card>
-              {/* End Tabs on plain Card */}
             </Col>
           </Row>
         </Container>
