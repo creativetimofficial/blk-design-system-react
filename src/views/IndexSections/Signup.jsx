@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -52,7 +52,10 @@ class Signup extends React.Component {
             <Col className="mb-lg-auto" lg="6">
               <Card className="card-register">
                 <CardHeader>
-                  <CardImg alt="..." src={require("assets/img/square-purple-1.png")} />
+                  <CardImg
+                    alt="..."
+                    src={require("assets/img/square-purple-1.png")}
+                  />
                   <CardTitle tag="h4">Register</CardTitle>
                 </CardHeader>
                 <CardBody>
@@ -91,11 +94,7 @@ class Signup extends React.Component {
                   </Form>
                 </CardBody>
                 <CardFooter>
-                  <Button
-                    className="btn-round"
-                    color="primary"
-                    size="lg"
-                  >
+                  <Button className="btn-round" color="primary" size="lg">
                     Get Started
                   </Button>
                 </CardFooter>

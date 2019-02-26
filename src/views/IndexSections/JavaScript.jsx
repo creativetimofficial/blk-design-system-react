@@ -27,18 +27,18 @@ import {
 const carouselItems = [
   {
     src: require("assets/img/denys.jpg"),
-    altText: 'Slide 1',
-    caption: ''
+    altText: "Slide 1",
+    caption: ""
   },
   {
     src: require("assets/img/fabien-bazanegue.jpg"),
-    altText: 'Slide 2',
-    caption: ''
+    altText: "Slide 2",
+    caption: ""
   },
   {
     src: require("assets/img/mark-finn.jpg"),
-    altText: 'Slide 3',
-    caption: ''
+    altText: "Slide 3",
+    caption: ""
   }
 ];
 
@@ -460,8 +460,11 @@ class JavaScript extends React.Component {
                 </Button>
               </Col>
               <Col lg="6">
-                <UncontrolledCarousel items={carouselItems} indicators={false}
-                autoPlay={false}/>
+                <UncontrolledCarousel
+                  items={carouselItems}
+                  indicators={false}
+                  autoPlay={false}
+                />
               </Col>
             </Row>
           </Container>

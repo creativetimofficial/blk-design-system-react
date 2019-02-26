@@ -283,10 +283,7 @@ class Basics extends React.Component {
               <p className="category">Sliders</p>
               <div className="slider" ref="slider1" />
               <br />
-              <div
-                className="slider slider-info mb-3"
-                ref="slider2"
-              />
+              <div className="slider slider-info mb-3" ref="slider2" />
             </Col>
           </Row>
         </Container>
