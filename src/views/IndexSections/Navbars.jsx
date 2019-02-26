@@ -1,7 +1,7 @@
 import React from "react";
 // reactstrap components
 import {
-  UncontrolledCollapse,
+  Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -31,23 +31,16 @@ class Navbars extends React.Component {
                     Menu
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar"
-                    data-toggle="collapse"
-                    id="example-navbar"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
-                  <UncontrolledCollapse
-                    id="example-navbar"
+                  <Collapse
                     navbar
-                    toggler="#example-navbar"
+                    isOpen={false}
                   >
                     <Nav navbar>
                       <NavItem className="active">
@@ -101,7 +94,7 @@ class Navbars extends React.Component {
                         </DropdownMenu>
                       </UncontrolledDropdown>
                     </Nav>
-                  </UncontrolledCollapse>
+                  </Collapse>
                 </Container>
               </Navbar>
             </Col>
@@ -113,23 +106,16 @@ class Navbars extends React.Component {
                     Icons
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar-icons"
-                    data-toggle="collapse"
-                    id="example-navbar-icons"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
-                  <UncontrolledCollapse
-                    id="example-navbar-icons"
+                  <Collapse
                     navbar
-                    toggler="#example-navbar-icons"
+                    isOpen={false}
                   >
                     <Nav className="ml-auto" navbar>
                       <NavItem>
@@ -209,7 +195,7 @@ class Navbars extends React.Component {
                         </DropdownMenu>
                       </UncontrolledDropdown>
                     </Nav>
-                  </UncontrolledCollapse>
+                  </Collapse>
                 </Container>
               </Navbar>
             </Col>
@@ -226,24 +212,17 @@ class Navbars extends React.Component {
                     Primary color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar-primary"
-                    data-toggle="collapse"
-                    id="example-navbar-primary"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-primary"
+                <Collapse
                   navbar
-                  toggler="#example-navbar-primary"
+                  isOpen={false}
                 >
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
@@ -265,7 +244,7 @@ class Navbars extends React.Component {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             {/* End Navbar Primary */}
@@ -277,24 +256,17 @@ class Navbars extends React.Component {
                     Info Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar-info"
-                    data-toggle="collapse"
-                    id="example-navbar-info"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-info"
+                <Collapse
                   navbar
-                  toggler="#example-navbar-info"
+                  isOpen={false}
                 >
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
@@ -313,7 +285,7 @@ class Navbars extends React.Component {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             {/* End Navbar Info */}
@@ -325,24 +297,17 @@ class Navbars extends React.Component {
                     Success Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar-success"
-                    data-toggle="collapse"
-                    id="example-navbar-success"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-success"
+                <Collapse
                   navbar
-                  toggler="#example-navbar-success"
+                  isOpen={false}
                 >
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
@@ -361,7 +326,7 @@ class Navbars extends React.Component {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             {/* End Navbar Success */}
@@ -373,24 +338,17 @@ class Navbars extends React.Component {
                     Warning Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar-warning"
-                    data-toggle="collapse"
-                    id="example-navbar-warning"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-warning"
+                <Collapse
                   navbar
-                  toggler="#example-navbar-warning"
+                  isOpen={false}
                 >
                   <Nav className="ml-auto" navbar>
                     <NavItem>
@@ -414,7 +372,7 @@ class Navbars extends React.Component {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             {/* End Navbar Warning */}
@@ -426,24 +384,17 @@ class Navbars extends React.Component {
                     Danger Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar-danger"
-                    data-toggle="collapse"
-                    id="example-navbar-danger"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-danger"
+                <Collapse
                   navbar
-                  toggler="#example-navbar-danger"
+                  isOpen={false}
                 >
                   <Nav className="ml-auto" navbar>
                     <NavItem>
@@ -465,7 +416,7 @@ class Navbars extends React.Component {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             {/* End Navbar Danger */}
@@ -477,24 +428,17 @@ class Navbars extends React.Component {
                     Transparent
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
                     className="navbar-toggler"
-                    data-target="#example-navbar-transparent"
-                    data-toggle="collapse"
-                    id="example-navbar-transparent"
-                    type="button"
+                    aria-expanded={false}
                   >
                     <span className="navbar-toggler-bar bar1" />
                     <span className="navbar-toggler-bar bar2" />
                     <span className="navbar-toggler-bar bar3" />
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-transparent"
+                <Collapse
                   navbar
-                  toggler="#example-navbar-transparent"
+                  isOpen={false}
                 >
                   <Nav className="ml-auto" navbar>
                     <NavItem>
@@ -516,7 +460,7 @@ class Navbars extends React.Component {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             {/* End Navbar Transparent*/}
