@@ -4,10 +4,10 @@ class Download extends React.Component {
   render() {
     return (
       <>
-        <h1 className=" bd-title" id="content">
+        <h1 className="bd-title" id="content">
           Download
         </h1>
-        <p className=" bd-lead">
+        <p className="bd-lead">
           Download BLK• React to get the compiled CSS and JavaScript, source
           code, or include it with your favorite package managers.
         </p>

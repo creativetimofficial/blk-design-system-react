@@ -4,10 +4,10 @@ class License extends React.Component {
   render() {
     return (
       <>
-        <h1 className=" bd-title" id="content">
+        <h1 className="bd-title" id="content">
           License
         </h1>
-        <p className=" bd-lead" />
+        <p className="bd-lead" />
         <p>
           Currently, on <a href="https://www.creative-tim.com/">Creative Tim</a>{" "}
           you can get the products with two types of licenses: Personal or

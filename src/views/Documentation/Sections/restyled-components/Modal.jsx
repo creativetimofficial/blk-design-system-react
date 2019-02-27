@@ -121,27 +121,27 @@ class Modal extends React.Component {
 </iframe>
 </noscript>
  {/* End Google Tag Manager (noscript) */}
- <a className=" sr-only sr-only-focusable" href="#pablo" id="skippy" onClick={e =>
+ <a className="sr-only sr-only-focusable" href="#pablo" id="skippy" onClick={e =>
  e.preventDefault()}>
 <Container>
-<span className=" skiplink-text">
+<span className="skiplink-text">
 Skip to main content
 </span>
 </Container>
 </a>
-<Navbar className=" navbar-expand bg-primary flex-column flex-md-row bd-navbar">
-<NavbarBrand className=" mr-0 mr-md-2 navbar-absolute-logo" href="https://www.creative-tim.com/product/blk-design-system" rel="noopener noreferrer" target="_blank">
+<Navbar className="navbar-expand bg-primary flex-column flex-md-row bd-navbar">
+<NavbarBrand className="mr-0 mr-md-2 navbar-absolute-logo" href="https://www.creative-tim.com/product/blk-design-system" rel="noopener noreferrer" target="_blank">
  Blk• Design System 
 </NavbarBrand>
-<Nav className=" flex-row d-none d-md-flex" navbar>
+<Nav className="flex-row d-none d-md-flex" navbar>
 <NavItem>
-<NavLink className=" p-2" href="#pablo" onClick={e =>
+<NavLink className="p-2" href="#pablo" onClick={e =>
  e.preventDefault()}>
  1.0.0 
 </NavLink>
 </NavItem>
  {/* <UncontrolledDropdown nav>
-<DropdownToggle aria-expanded={false} aria-haspopup={true} caret className=" nav-item mr-md-2" color="default" data-toggle="dropdown" href="#pablo" id="bd-versions" nav onClick={e =>
+<DropdownToggle aria-expanded={false} aria-haspopup={true} caret className="nav-item mr-md-2" color="default" data-toggle="dropdown" href="#pablo" id="bd-versions" nav onClick={e =>
  e.preventDefault()}>
  v2.0.0 
 </DropdownToggle>
@@ -156,8 +156,8 @@ BS3 - 1.2.1
 </UncontrolledDropdown>
  */}
  <NavItem>
-<NavLink aria-label="GitHub" className=" p-2" href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" className=" navbar-nav-svg" focusable={false} viewbox="0 0 512 499.36">
+<NavLink aria-label="GitHub" className="p-2" href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" className="navbar-nav-svg" focusable={false} viewbox="0 0 512 499.36">
 <title>
 GitHub
 </title>
@@ -167,8 +167,8 @@ GitHub
 </NavLink>
 </NavItem>
 <NavItem>
-<NavLink aria-label="Twitter" className=" p-2" href="https://twitter.com/CreativeTim" rel="noopener" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" className=" navbar-nav-svg" focusable={false} viewbox="0 0 512 416.32">
+<NavLink aria-label="Twitter" className="p-2" href="https://twitter.com/CreativeTim" rel="noopener" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" className="navbar-nav-svg" focusable={false} viewbox="0 0 512 416.32">
 <title>
 Twitter
 </title>
@@ -178,25 +178,25 @@ Twitter
 </NavLink>
 </NavItem>
 </Nav>
-<div className=" navbar-nav-scroll ml-md-auto">
-<Nav className=" bd-navbar-nav flex-row" navbar>
+<div className="navbar-nav-scroll ml-md-auto">
+<Nav className="bd-navbar-nav flex-row" navbar>
 <NavItem>
-<NavLink className=" active" href="../../../docs/1.0/getting-started/introduction.html">
-<i className=" tim-icons icon-app">
+<NavLink className="active" href="../../../docs/1.0/getting-started/introduction.html">
+<i className="tim-icons icon-app">
 </i>
  Documentation
 </NavLink>
 </NavItem>
 <NavItem>
 <NavLink href="https://demos.creative-tim.com/blk-design-system/index.html">
-<i className=" tim-icons icon-tv-2">
+<i className="tim-icons icon-tv-2">
 </i>
  Live Preview
 </NavLink>
 </NavItem>
 <NavItem>
 <NavLink href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
-<i className=" tim-icons icon-shape-star">
+<i className="tim-icons icon-shape-star">
 </i>
  Help with a star
 </NavLink>
@@ -211,35 +211,35 @@ Twitter
 </NavItem>
 </Nav>
 </div>
-<a aria-label="View source on Github" className=" github-corner" href="https://github.com/creativetimofficial/blk-design-system">
+<a aria-label="View source on Github" className="github-corner" href="https://github.com/creativetimofficial/blk-design-system">
 <svg aria-hidden={true} height="60" style={{fill:#fff", color:#9c27b0", position: "absolute", top: "0", border: "0", right: "0",}} viewbox="0 0 250 250" width="60">
 <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
 </path>
-<path className=" octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style={{transform-origin: "130px 106px",}}>
+<path className="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style={{transform-origin: "130px 106px",}}>
 </path>
-<path className=" octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor">
+<path className="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor">
 </path>
 </svg>
 </a>
 <style>
  .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out } @keyframes octocat-wave { 0%, 100% { transform: rotate(0) } 20%, 60% { transform: rotate(-25deg) } 40%, 80% { transform: rotate(10deg) } } @media (max-width:500px) { .github-corner:hover .octo-arm { animation: none } .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out } } 
 </style>
- {/* <Button className=" btn-white d-none d-lg-inline-block" color="default" href="">
+ {/* <Button className="btn-white d-none d-lg-inline-block" color="default" href="">
 Download
 </Button>
  */}
  
 </Navbar>
 <Container fluid>
-<Row className=" flex-xl-nowrap">
-<Col className=" bd-sidebar" md="3" xl="2" xs="12">
-<UncontrolledCollapse className=" bd-links" id="bd-docs-nav" toggler="#bd-docs-nav">
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<Row className="flex-xl-nowrap">
+<Col className="bd-sidebar" md="3" xl="2" xs="12">
+<UncontrolledCollapse className="bd-links" id="bd-docs-nav" toggler="#bd-docs-nav">
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Getting started 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/getting-started/overview.html">
  Overview 
@@ -272,12 +272,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Foundation 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/foundation/colors.html">
  Colors 
@@ -300,12 +300,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Components 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/components/alerts.html">
  Alerts 
@@ -341,7 +341,7 @@ Download
  Forms 
 </a>
 </li>
-<li className=" active bd-sidenav-active">
+<li className="active bd-sidenav-active">
 <a href="../../../docs/1.0/components/modal.html">
  Modal 
 </a>
@@ -383,12 +383,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Plugins 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/plugins/datetimepicker.html">
  DateTimePicker 
@@ -413,22 +413,22 @@ Download
 </div>
 </UncontrolledCollapse>
 </Col>
-<Col className=" d-none d-xl-block bd-toc" xl="2">
-<ul className=" section-nav">
-<li className=" toc-entry toc-h2">
+<Col className="d-none d-xl-block bd-toc" xl="2">
+<ul className="section-nav">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Examples
 </a>
 <ul>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Modal components
 </a>
 <ul>
 <ul>
-<li className=" toc-entry toc-h5">
+<li className="toc-entry toc-h5">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Modal title
@@ -437,14 +437,14 @@ Modal title
 </ul>
 </ul>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Live demo
 </a>
 <ul>
 <ul>
-<li className=" toc-entry toc-h5">
+<li className="toc-entry toc-h5">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Modal title
@@ -453,14 +453,14 @@ Modal title
 </ul>
 </ul>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Scrolling long content
 </a>
 <ul>
 <ul>
-<li className=" toc-entry toc-h5">
+<li className="toc-entry toc-h5">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Modal title
@@ -469,26 +469,26 @@ Modal title
 </ul>
 </ul>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Tooltips and popovers
 </a>
 <ul>
 <ul>
-<li className=" toc-entry toc-h5">
+<li className="toc-entry toc-h5">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Modal title
 </a>
 </li>
-<li className=" toc-entry toc-h5">
+<li className="toc-entry toc-h5">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Popover in a modal
 </a>
 </li>
-<li className=" toc-entry toc-h5">
+<li className="toc-entry toc-h5">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Tooltips in a modal
@@ -497,7 +497,7 @@ Tooltips in a modal
 </ul>
 </ul>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Embedding YouTube videos
@@ -505,20 +505,20 @@ Embedding YouTube videos
 </li>
 </ul>
 </li>
-<li className=" toc-entry toc-h2">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Optional sizes
 </a>
 <ul>
 <ul>
-<li className=" toc-entry toc-h4">
+<li className="toc-entry toc-h4">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Large modal
 </a>
 </li>
-<li className=" toc-entry toc-h4">
+<li className="toc-entry toc-h4">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Small modal
@@ -527,25 +527,25 @@ Small modal
 </ul>
 </ul>
 </li>
-<li className=" toc-entry toc-h2">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Usage
 </a>
 <ul>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Via data attributes
 </a>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Via JavaScript
 </a>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Options
@@ -555,11 +555,11 @@ Options
 </li>
 </ul>
 </Col>
-<Col className=" py-md-3 pl-md-5 bd-content" md="9" role="main" xl="8" xs="12">
-<h1 className=" bd-title" id="content">
+<Col className="py-md-3 pl-md-5 bd-content" md="9" role="main" xl="8" xs="12">
+<h1 className="bd-title" id="content">
 Modal
 </h1>
-<p className=" bd-lead">
+<p className="bd-lead">
 Use Bootstrap's JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
 </p>
 <h2 id="examples">
@@ -572,35 +572,35 @@ Modal components
 Below is a <em>
 static
 </em>
- modal example (meaning its <code className=" highlighter-rouge">
+ modal example (meaning its <code className="highlighter-rouge">
 position
 </code>
- and <code className=" highlighter-rouge">
+ and <code className="highlighter-rouge">
 display
 </code>
- have been overridden). Included are the modal header, modal body (required for <code className=" highlighter-rouge">
+ have been overridden). Included are the modal header, modal body (required for <code className="highlighter-rouge">
 padding
 </code>
 ), and modal footer (optional). We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
 </p>
-<div className=" bd-example bd-example-modal">
+<div className="bd-example bd-example-modal">
 <Modal>
-<div className=" modal-header">
-<h5 className=" modal-title">
+<div className="modal-header">
+<h5 className="modal-title">
 Modal title
 </h5>
-<button aria-label="Close" className=" close" data-dismiss="modal" type="button">
+<button aria-label="Close" className="close" data-dismiss="modal" type="button">
 <span aria-hidden={true}>
 ×
 </span>
 </button>
 </div>
-<div className=" modal-body">
+<div className="modal-body">
 <p>
 Modal body text goes here.
 </p>
 </div>
-<div className=" modal-footer">
+<div className="modal-footer">
 <Button color="secondary" data-dismiss="modal" type="button">
 Close
 </Button>
@@ -610,235 +610,235 @@ Save changes
 </div>
 </Modal>
 </div>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 tabindex=
 </span>
-<span className=" s">
+<span className="s">
 "-1"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "dialog"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-dialog"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "document"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-content"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-header"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <h5
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-title"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Modal title<span className=" nt">
+Modal title<span className="nt">
 </h5>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "close"
 </span>
-<span className=" na">
+<span className="na">
 data-dismiss=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 aria-label=
 </span>
-<span className=" s">
+<span className="s">
 "Close"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <span
 </span>
-<span className=" na">
+<span className="na">
 aria-hidden=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" ni">
+<span className="ni">
 &amp;times;
 </span>
-<span className=" nt">
+<span className="nt">
 </span>
 </span>
-<span className=" nt">
+<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-body"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <p>
 </span>
-Modal body text goes here.<span className=" nt">
+Modal body text goes here.<span className="nt">
 </p>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-footer"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Save changes<span className=" nt">
+Save changes<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary"
 </span>
-<span className=" na">
+<span className="na">
 data-dismiss=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Close<span className=" nt">
+Close<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
 </code>
@@ -851,22 +851,22 @@ Live demo
 Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.
 </p>
 <Modal>
-<div className=" modal-header">
-<h5 className=" modal-title" id="exampleModalLiveLabel">
+<div className="modal-header">
+<h5 className="modal-title" id="exampleModalLiveLabel">
 Modal title
 </h5>
-<button aria-label="Close" className=" close" data-dismiss="modal" type="button">
+<button aria-label="Close" className="close" data-dismiss="modal" type="button">
 <span aria-hidden={true}>
 ×
 </span>
 </button>
 </div>
-<div className=" modal-body">
+<div className="modal-body">
 <p>
 Woohoo, you're reading this text in a modal!
 </p>
 </div>
-<div className=" modal-footer">
+<div className="modal-footer">
 <Button color="secondary" data-dismiss="modal" type="button">
 Close
 </Button>
@@ -875,297 +875,297 @@ Save changes
 </Button>
 </div>
 </Modal>
-<div className=" bd-example">
+<div className="bd-example">
 <Button color="primary" data-target="#exampleModalLive" data-toggle="modal" type="button">
  Launch demo modal 
 </Button>
 </div>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" c">
+<code className="language-html" data-lang="html">
+<span className="c">
 <!-- Button trigger modal -->
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 data-target=
 </span>
-<span className=" s">
+<span className="s">
 "#exampleModal"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- Launch demo modal<span className=" nt">
+ Launch demo modal<span className="nt">
 </button>
 </span>
-<span className=" c">
+<span className="c">
 <!-- Modal -->
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal fade"
 </span>
-<span className=" na">
+<span className="na">
 id=
 </span>
-<span className=" s">
+<span className="s">
 "exampleModal"
 </span>
-<span className=" na">
+<span className="na">
 tabindex=
 </span>
-<span className=" s">
+<span className="s">
 "-1"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "dialog"
 </span>
-<span className=" na">
+<span className="na">
 aria-labelledby=
 </span>
-<span className=" s">
+<span className="s">
 "exampleModalLabel"
 </span>
-<span className=" na">
+<span className="na">
 aria-hidden=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-dialog"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "document"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-content"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-header"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <h5
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-title"
 </span>
-<span className=" na">
+<span className="na">
 id=
 </span>
-<span className=" s">
+<span className="s">
 "exampleModalLabel"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Modal title<span className=" nt">
+Modal title<span className="nt">
 </h5>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "close"
 </span>
-<span className=" na">
+<span className="na">
 data-dismiss=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 aria-label=
 </span>
-<span className=" s">
+<span className="s">
 "Close"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <span
 </span>
-<span className=" na">
+<span className="na">
 aria-hidden=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" ni">
+<span className="ni">
 &amp;times;
 </span>
-<span className=" nt">
+<span className="nt">
 </span>
 </span>
-<span className=" nt">
+<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-body"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- ... <span className=" nt">
+ ... <span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-footer"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary"
 </span>
-<span className=" na">
+<span className="na">
 data-dismiss=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Close<span className=" nt">
+Close<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Save changes<span className=" nt">
+Save changes<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
 </code>
@@ -1178,17 +1178,17 @@ Scrolling long content
 When modals become too long for the user’s viewport or device, they scroll independent of the page itself. Try the demo below to see what we mean.
 </p>
 <Modal>
-<div className=" modal-header">
-<h5 className=" modal-title" id="exampleModalLongTitle">
+<div className="modal-header">
+<h5 className="modal-title" id="exampleModalLongTitle">
 Modal title
 </h5>
-<button aria-label="Close" className=" close" data-dismiss="modal" type="button">
+<button aria-label="Close" className="close" data-dismiss="modal" type="button">
 <span aria-hidden={true}>
 ×
 </span>
 </button>
 </div>
-<div className=" modal-body">
+<div className="modal-body">
 <p>
 Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 </p>
@@ -1244,7 +1244,7 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagi
 Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
 </p>
 </div>
-<div className=" modal-footer">
+<div className="modal-footer">
 <Button color="secondary" data-dismiss="modal" type="button">
 Close
 </Button>
@@ -1253,297 +1253,297 @@ Save changes
 </Button>
 </div>
 </Modal>
-<div className=" bd-example">
+<div className="bd-example">
 <Button color="primary" data-target="#exampleModalLong" data-toggle="modal" type="button">
  Launch demo modal 
 </Button>
 </div>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" c">
+<code className="language-html" data-lang="html">
+<span className="c">
 <!-- Button trigger modal -->
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 data-target=
 </span>
-<span className=" s">
+<span className="s">
 "#exampleModalLong"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- Launch demo modal<span className=" nt">
+ Launch demo modal<span className="nt">
 </button>
 </span>
-<span className=" c">
+<span className="c">
 <!-- Modal -->
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal fade"
 </span>
-<span className=" na">
+<span className="na">
 id=
 </span>
-<span className=" s">
+<span className="s">
 "exampleModalLong"
 </span>
-<span className=" na">
+<span className="na">
 tabindex=
 </span>
-<span className=" s">
+<span className="s">
 "-1"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "dialog"
 </span>
-<span className=" na">
+<span className="na">
 aria-labelledby=
 </span>
-<span className=" s">
+<span className="s">
 "exampleModalLongTitle"
 </span>
-<span className=" na">
+<span className="na">
 aria-hidden=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-dialog"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "document"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-content"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-header"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <h5
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-title"
 </span>
-<span className=" na">
+<span className="na">
 id=
 </span>
-<span className=" s">
+<span className="s">
 "exampleModalLongTitle"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Modal title<span className=" nt">
+Modal title<span className="nt">
 </h5>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "close"
 </span>
-<span className=" na">
+<span className="na">
 data-dismiss=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 aria-label=
 </span>
-<span className=" s">
+<span className="s">
 "Close"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <span
 </span>
-<span className=" na">
+<span className="na">
 aria-hidden=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" ni">
+<span className="ni">
 &amp;times;
 </span>
-<span className=" nt">
+<span className="nt">
 </span>
 </span>
-<span className=" nt">
+<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-body"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- ... <span className=" nt">
+ ... <span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-footer"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary"
 </span>
-<span className=" na">
+<span className="na">
 data-dismiss=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Close<span className=" nt">
+Close<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Save changes<span className=" nt">
+Save changes<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
 </code>
@@ -1562,22 +1562,22 @@ popovers
  can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.
 </p>
 <Modal>
-<div className=" modal-header">
-<h5 className=" modal-title" id="exampleModalPopoversLabel">
+<div className="modal-header">
+<h5 className="modal-title" id="exampleModalPopoversLabel">
 Modal title
 </h5>
-<button aria-label="Close" className=" close" data-dismiss="modal" type="button">
+<button aria-label="Close" className="close" data-dismiss="modal" type="button">
 <span aria-hidden={true}>
 ×
 </span>
 </button>
 </div>
-<div className=" modal-body">
+<div className="modal-body">
 <h5>
 Popover in a modal
 </h5>
 <p>
-This <Button className=" popover-test" color="secondary" data-container="#exampleModalPopovers" data-content="Popover body content is set in this attribute." href="#pablo" onClick={e =>
+This <Button className="popover-test" color="secondary" data-container="#exampleModalPopovers" data-content="Popover body content is set in this attribute." href="#pablo" onClick={e =>
  e.preventDefault()} role="button" title="Popover title">
 button
 </Button>
@@ -1589,18 +1589,18 @@ button
 Tooltips in a modal
 </h5>
 <p>
-<a className=" tooltip-test" data-container="#exampleModalPopovers" href="#pablo" onClick={e =>
+<a className="tooltip-test" data-container="#exampleModalPopovers" href="#pablo" onClick={e =>
  e.preventDefault()} title="Tooltip">
 This link
 </a>
- and <a className=" tooltip-test" data-container="#exampleModalPopovers" href="#pablo" onClick={e =>
+ and <a className="tooltip-test" data-container="#exampleModalPopovers" href="#pablo" onClick={e =>
  e.preventDefault()} title="Tooltip">
 that link
 </a>
  have tooltips on hover.
 </p>
 </div>
-<div className=" modal-footer">
+<div className="modal-footer">
 <Button color="secondary" data-dismiss="modal" type="button">
 Close
 </Button>
@@ -1609,144 +1609,144 @@ Save changes
 </Button>
 </div>
 </Modal>
-<div className=" bd-example">
+<div className="bd-example">
 <Button color="primary" data-target="#exampleModalPopovers" data-toggle="modal" type="button">
  Launch demo modal 
 </Button>
 </div>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-body"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <h5>
 </span>
-Popover in a modal<span className=" nt">
+Popover in a modal<span className="nt">
 </h5>
 </span>
-<span className=" nt">
+<span className="nt">
 <p>
 </span>
-This <span className=" nt">
+This <span className="nt">
 <a
 </span>
-<span className=" na">
+<span className="na">
 href=
 </span>
-<span className=" s">
+<span className="s">
 "#"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary popover-test"
 </span>
-<span className=" na">
+<span className="na">
 title=
 </span>
-<span className=" s">
+<span className="s">
 "Popover title"
 </span>
-<span className=" na">
+<span className="na">
 data-content=
 </span>
-<span className=" s">
+<span className="s">
 "Popover body content is set in this attribute."
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-button<span className=" nt">
+button<span className="nt">
 </a>
 </span>
- triggers a popover on click.<span className=" nt">
+ triggers a popover on click.<span className="nt">
 </p>
 </span>
-<span className=" nt">
+<span className="nt">
 <hr>
 </span>
-<span className=" nt">
+<span className="nt">
 <h5>
 </span>
-Tooltips in a modal<span className=" nt">
+Tooltips in a modal<span className="nt">
 </h5>
 </span>
-<span className=" nt">
+<span className="nt">
 <p><a
 </span>
-<span className=" na">
+<span className="na">
 href=
 </span>
-<span className=" s">
+<span className="s">
 "#"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "tooltip-test"
 </span>
-<span className=" na">
+<span className="na">
 title=
 </span>
-<span className=" s">
+<span className="s">
 "Tooltip"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-This link<span className=" nt">
+This link<span className="nt">
 </a>
 </span>
- and <span className=" nt">
+ and <span className="nt">
 <a
 </span>
-<span className=" na">
+<span className="na">
 href=
 </span>
-<span className=" s">
+<span className="s">
 "#"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "tooltip-test"
 </span>
-<span className=" na">
+<span className="na">
 title=
 </span>
-<span className=" s">
+<span className="s">
 "Tooltip"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-that link<span className=" nt">
+that link<span className="nt">
 </a>
 </span>
- have tooltips on hover.<span className=" nt">
+ have tooltips on hover.<span className="nt">
 </p>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
 </code>
@@ -1765,12 +1765,12 @@ See this helpful Stack Overflow post
 Optional sizes
 </h2>
 <p>
-Modals have two optional sizes, available via modifier classes to be placed on a <code className=" highlighter-rouge">
+Modals have two optional sizes, available via modifier classes to be placed on a <code className="highlighter-rouge">
 .modal-dialog
 </code>
 . These sizes kick in at certain breakpoints to avoid horizontal scrollbars on narrower viewports.
 </p>
-<div className=" bd-example">
+<div className="bd-example">
 <Button color="primary" data-target=".bd-example-modal-lg" data-toggle="modal" type="button">
 Large modal
 </Button>
@@ -1778,249 +1778,249 @@ Large modal
 Small modal
 </Button>
 </div>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" c">
+<code className="language-html" data-lang="html">
+<span className="c">
 <!-- Large modal -->
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 data-target=
 </span>
-<span className=" s">
+<span className="s">
 ".bd-example-modal-lg"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Large modal<span className=" nt">
+Large modal<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal fade bd-example-modal-lg"
 </span>
-<span className=" na">
+<span className="na">
 tabindex=
 </span>
-<span className=" s">
+<span className="s">
 "-1"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "dialog"
 </span>
-<span className=" na">
+<span className="na">
 aria-labelledby=
 </span>
-<span className=" s">
+<span className="s">
 "myLargeModalLabel"
 </span>
-<span className=" na">
+<span className="na">
 aria-hidden=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-dialog modal-lg"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-content"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- ... <span className=" nt">
+ ... <span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" c">
+<span className="c">
 <!-- Small modal -->
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 data-target=
 </span>
-<span className=" s">
+<span className="s">
 ".bd-example-modal-sm"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Small modal<span className=" nt">
+Small modal<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal fade bd-example-modal-sm"
 </span>
-<span className=" na">
+<span className="na">
 tabindex=
 </span>
-<span className=" s">
+<span className="s">
 "-1"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "dialog"
 </span>
-<span className=" na">
+<span className="na">
 aria-labelledby=
 </span>
-<span className=" s">
+<span className="s">
 "mySmallModalLabel"
 </span>
-<span className=" na">
+<span className="na">
 aria-hidden=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-dialog modal-sm"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <div
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "modal-content"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- ... <span className=" nt">
+ ... <span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
-<span className=" nt">
+<span className="nt">
 </div>
 </span>
 </code>
 </pre>
 </figure>
-<Modal className="modal-lg" modalClassName=" bd-example-modal-lg">
-<div className=" modal-header">
-<h4 className=" modal-title" id="myLargeModalLabel">
+<Modal className="modal-lg" modalclassName="bd-example-modal-lg">
+<div className="modal-header">
+<h4 className="modal-title" id="myLargeModalLabel">
 Large modal
 </h4>
-<button aria-label="Close" className=" close" data-dismiss="modal" type="button">
+<button aria-label="Close" className="close" data-dismiss="modal" type="button">
 <span aria-hidden={true}>
 ×
 </span>
 </button>
 </div>
-<div className=" modal-body">
+<div className="modal-body">
  ... 
 </div>
 </Modal>
-<Modal className="modal-sm" modalClassName=" bd-example-modal-sm">
-<div className=" modal-header">
-<h4 className=" modal-title" id="mySmallModalLabel">
+<Modal className="modal-sm" modalclassName="bd-example-modal-sm">
+<div className="modal-header">
+<h4 className="modal-title" id="mySmallModalLabel">
 Small modal
 </h4>
-<button aria-label="Close" className=" close" data-dismiss="modal" type="button">
+<button aria-label="Close" className="close" data-dismiss="modal" type="button">
 <span aria-hidden={true}>
 ×
 </span>
 </button>
 </div>
-<div className=" modal-body">
+<div className="modal-body">
  ... 
 </div>
 </Modal>
@@ -2028,13 +2028,13 @@ Small modal
 Usage
 </h2>
 <p>
-The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code className=" highlighter-rouge">
+The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code className="highlighter-rouge">
 .modal-open
 </code>
- to the <code className=" highlighter-rouge">
+ to the <code className="highlighter-rouge">
 <body>
 </code>
- to override default scrolling behavior and generates a <code className=" highlighter-rouge">
+ to override default scrolling behavior and generates a <code className="highlighter-rouge">
 .modal-backdrop
 </code>
  to provide a click area for dismissing shown modals when clicking outside the modal.
@@ -2043,45 +2043,45 @@ The modal plugin toggles your hidden content on demand, via data attributes or J
 Via data attributes
 </h3>
 <p>
-Activate a modal without writing JavaScript. Set <code className=" highlighter-rouge">
+Activate a modal without writing JavaScript. Set <code className="highlighter-rouge">
 data-toggle="modal"
 </code>
- on a controller element, like a button, along with a <code className=" highlighter-rouge">
+ on a controller element, like a button, along with a <code className="highlighter-rouge">
 data-target="#foo"
 </code>
- or <code className=" highlighter-rouge">
+ or <code className="highlighter-rouge">
 href="#foo"
 </code>
  to target a specific modal to toggle.
 </p>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "modal"
 </span>
-<span className=" na">
+<span className="na">
 data-target=
 </span>
-<span className=" s">
+<span className="s">
 "#myModal"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Launch modal<span className=" nt">
+Launch modal<span className="nt">
 </button>
 </span>
 </code>
@@ -2091,36 +2091,36 @@ Launch modal<span className=" nt">
 Via JavaScript
 </h3>
 <p>
-Call a modal with id <code className=" highlighter-rouge">
+Call a modal with id <code className="highlighter-rouge">
 myModal
 </code>
  with a single line of JavaScript:
 </p>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-js" data-lang="js">
-<span className=" nx">
+<code className="language-js" data-lang="js">
+<span className="nx">
 $
 </span>
-<span className=" p">
+<span className="p">
 (
 </span>
-<span className=" s1">
+<span className="s1">
 '#myModal'
 </span>
-<span className=" p">
+<span className="p">
 ).
 </span>
-<span className=" nx">
+<span className="nx">
 modal
 </span>
-<span className=" p">
+<span className="p">
 (
 </span>
-<span className=" nx">
+<span className="nx">
 options
 </span>
-<span className=" p">
+<span className="p">
 )
 </span>
 </code>
@@ -2130,15 +2130,15 @@ options
 Options
 </h3>
 <p>
-Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code className=" highlighter-rouge">
+Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code className="highlighter-rouge">
 data-
 </code>
-, as in <code className=" highlighter-rouge">
+, as in <code className="highlighter-rouge">
 data-backdrop=""
 </code>
 .
 </p>
-<div className=" bd-example" data-example-id="">
+<div className="bd-example" data-example-id="">
 <Table responsive>
 <tr>
 <th style={{width: "100px",}}>
@@ -2156,220 +2156,220 @@ Description
 </tr>
 </Table>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <table
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "table table-striped table-responsive"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <thead>
 </span>
-<span className=" nt">
+<span className="nt">
 <tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <th
 </span>
-<span className=" na">
+<span className="na">
 style=
 </span>
-<span className=" s">
+<span className="s">
 "width: 100px;"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Name<span className=" nt">
+Name<span className="nt">
 </th>
 </span>
-<span className=" nt">
+<span className="nt">
 <th
 </span>
-<span className=" na">
+<span className="na">
 style=
 </span>
-<span className=" s">
+<span className="s">
 "width: 50px;"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Type<span className=" nt">
+Type<span className="nt">
 </th>
 </span>
-<span className=" nt">
+<span className="nt">
 <th
 </span>
-<span className=" na">
+<span className="na">
 style=
 </span>
-<span className=" s">
+<span className="s">
 "width: 50px;"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Default<span className=" nt">
+Default<span className="nt">
 </th>
 </span>
-<span className=" nt">
+<span className="nt">
 <th>
 </span>
-Description<span className=" nt">
+Description<span className="nt">
 </th>
 </span>
-<span className=" nt">
+<span className="nt">
 </tr>
 </span>
-<span className=" nt">
+<span className="nt">
 </thead>
 </span>
-<span className=" nt">
+<span className="nt">
 <tbody>
 </span>
-<span className=" nt">
+<span className="nt">
 <tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-backdrop<span className=" nt">
+backdrop<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-boolean or the string <span className=" nt">
+boolean or the string <span className="nt">
 <code>
 </span>
-'static'<span className=" nt">
+'static'<span className="nt">
 </code></td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-true<span className=" nt">
+true<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-Includes a modal-backdrop element. Alternatively, specify <span className=" nt">
+Includes a modal-backdrop element. Alternatively, specify <span className="nt">
 <code>
 </span>
-static<span className=" nt">
+static<span className="nt">
 </code>
 </span>
- for a backdrop which doesn't close the modal on click.<span className=" nt">
+ for a backdrop which doesn't close the modal on click.<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 </tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-keyboard<span className=" nt">
+keyboard<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-boolean<span className=" nt">
+boolean<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-true<span className=" nt">
+true<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-Closes the modal when escape key is pressed<span className=" nt">
+Closes the modal when escape key is pressed<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 </tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-focus<span className=" nt">
+focus<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-boolean<span className=" nt">
+boolean<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-true<span className=" nt">
+true<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-Puts the focus on the modal when initialized.<span className=" nt">
+Puts the focus on the modal when initialized.<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 </tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <tr>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-show<span className=" nt">
+show<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-boolean<span className=" nt">
+boolean<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-true<span className=" nt">
+true<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 <td>
 </span>
-Shows the modal when initialized.<span className=" nt">
+Shows the modal when initialized.<span className="nt">
 </td>
 </span>
-<span className=" nt">
+<span className="nt">
 </tr>
 </span>
-<span className=" nt">
+<span className="nt">
 </tbody>
 </span>
-<span className=" nt">
+<span className="nt">
 </table>
 </span>
 </code>

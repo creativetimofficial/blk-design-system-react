@@ -119,27 +119,27 @@ class Buttons extends React.Component {
 </iframe>
 </noscript>
  {/* End Google Tag Manager (noscript) */}
- <a className=" sr-only sr-only-focusable" href="#pablo" id="skippy" onClick={e =>
+ <a className="sr-only sr-only-focusable" href="#pablo" id="skippy" onClick={e =>
  e.preventDefault()}>
 <Container>
-<span className=" skiplink-text">
+<span className="skiplink-text">
 Skip to main content
 </span>
 </Container>
 </a>
-<Navbar className=" navbar-expand bg-primary flex-column flex-md-row bd-navbar">
-<NavbarBrand className=" mr-0 mr-md-2 navbar-absolute-logo" href="https://www.creative-tim.com/product/blk-design-system" rel="noopener noreferrer" target="_blank">
+<Navbar className="navbar-expand bg-primary flex-column flex-md-row bd-navbar">
+<NavbarBrand className="mr-0 mr-md-2 navbar-absolute-logo" href="https://www.creative-tim.com/product/blk-design-system" rel="noopener noreferrer" target="_blank">
  Blk• Design System 
 </NavbarBrand>
-<Nav className=" flex-row d-none d-md-flex" navbar>
+<Nav className="flex-row d-none d-md-flex" navbar>
 <NavItem>
-<NavLink className=" p-2" href="#pablo" onClick={e =>
+<NavLink className="p-2" href="#pablo" onClick={e =>
  e.preventDefault()}>
  1.0.0 
 </NavLink>
 </NavItem>
  {/* <UncontrolledDropdown nav>
-<DropdownToggle aria-expanded={false} aria-haspopup={true} caret className=" nav-item mr-md-2" color="default" data-toggle="dropdown" href="#pablo" id="bd-versions" nav onClick={e =>
+<DropdownToggle aria-expanded={false} aria-haspopup={true} caret className="nav-item mr-md-2" color="default" data-toggle="dropdown" href="#pablo" id="bd-versions" nav onClick={e =>
  e.preventDefault()}>
  v2.0.0 
 </DropdownToggle>
@@ -154,8 +154,8 @@ BS3 - 1.2.1
 </UncontrolledDropdown>
  */}
  <NavItem>
-<NavLink aria-label="GitHub" className=" p-2" href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" className=" navbar-nav-svg" focusable={false} viewbox="0 0 512 499.36">
+<NavLink aria-label="GitHub" className="p-2" href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" className="navbar-nav-svg" focusable={false} viewbox="0 0 512 499.36">
 <title>
 GitHub
 </title>
@@ -165,8 +165,8 @@ GitHub
 </NavLink>
 </NavItem>
 <NavItem>
-<NavLink aria-label="Twitter" className=" p-2" href="https://twitter.com/CreativeTim" rel="noopener" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" className=" navbar-nav-svg" focusable={false} viewbox="0 0 512 416.32">
+<NavLink aria-label="Twitter" className="p-2" href="https://twitter.com/CreativeTim" rel="noopener" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" className="navbar-nav-svg" focusable={false} viewbox="0 0 512 416.32">
 <title>
 Twitter
 </title>
@@ -176,25 +176,25 @@ Twitter
 </NavLink>
 </NavItem>
 </Nav>
-<div className=" navbar-nav-scroll ml-md-auto">
-<Nav className=" bd-navbar-nav flex-row" navbar>
+<div className="navbar-nav-scroll ml-md-auto">
+<Nav className="bd-navbar-nav flex-row" navbar>
 <NavItem>
-<NavLink className=" active" href="../../../docs/1.0/getting-started/introduction.html">
-<i className=" tim-icons icon-app">
+<NavLink className="active" href="../../../docs/1.0/getting-started/introduction.html">
+<i className="tim-icons icon-app">
 </i>
  Documentation
 </NavLink>
 </NavItem>
 <NavItem>
 <NavLink href="https://demos.creative-tim.com/blk-design-system/index.html">
-<i className=" tim-icons icon-tv-2">
+<i className="tim-icons icon-tv-2">
 </i>
  Live Preview
 </NavLink>
 </NavItem>
 <NavItem>
 <NavLink href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
-<i className=" tim-icons icon-shape-star">
+<i className="tim-icons icon-shape-star">
 </i>
  Help with a star
 </NavLink>
@@ -209,35 +209,35 @@ Twitter
 </NavItem>
 </Nav>
 </div>
-<a aria-label="View source on Github" className=" github-corner" href="https://github.com/creativetimofficial/blk-design-system">
+<a aria-label="View source on Github" className="github-corner" href="https://github.com/creativetimofficial/blk-design-system">
 <svg aria-hidden={true} height="60" style={{fill:#fff", color:#9c27b0", position: "absolute", top: "0", border: "0", right: "0",}} viewbox="0 0 250 250" width="60">
 <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
 </path>
-<path className=" octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style={{transform-origin: "130px 106px",}}>
+<path className="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style={{transform-origin: "130px 106px",}}>
 </path>
-<path className=" octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor">
+<path className="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor">
 </path>
 </svg>
 </a>
 <style>
  .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out } @keyframes octocat-wave { 0%, 100% { transform: rotate(0) } 20%, 60% { transform: rotate(-25deg) } 40%, 80% { transform: rotate(10deg) } } @media (max-width:500px) { .github-corner:hover .octo-arm { animation: none } .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out } } 
 </style>
- {/* <Button className=" btn-white d-none d-lg-inline-block" color="default" href="">
+ {/* <Button className="btn-white d-none d-lg-inline-block" color="default" href="">
 Download
 </Button>
  */}
  
 </Navbar>
 <Container fluid>
-<Row className=" flex-xl-nowrap">
-<Col className=" bd-sidebar" md="3" xl="2" xs="12">
-<UncontrolledCollapse className=" bd-links" id="bd-docs-nav" toggler="#bd-docs-nav">
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<Row className="flex-xl-nowrap">
+<Col className="bd-sidebar" md="3" xl="2" xs="12">
+<UncontrolledCollapse className="bd-links" id="bd-docs-nav" toggler="#bd-docs-nav">
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Getting started 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/getting-started/overview.html">
  Overview 
@@ -270,12 +270,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Foundation 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/foundation/colors.html">
  Colors 
@@ -298,12 +298,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Components 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/components/alerts.html">
  Alerts 
@@ -319,7 +319,7 @@ Download
  Breadcrumb 
 </a>
 </li>
-<li className=" active bd-sidenav-active">
+<li className="active bd-sidenav-active">
 <a href="../../../docs/1.0/components/buttons.html">
  Buttons 
 </a>
@@ -381,12 +381,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Plugins 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/plugins/datetimepicker.html">
  DateTimePicker 
@@ -411,27 +411,27 @@ Download
 </div>
 </UncontrolledCollapse>
 </Col>
-<Col className=" d-none d-xl-block bd-toc" xl="2">
-<ul className=" section-nav">
-<li className=" toc-entry toc-h2">
+<Col className="d-none d-xl-block bd-toc" xl="2">
+<ul className="section-nav">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Examples
 </a>
 </li>
-<li className=" toc-entry toc-h2">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Style buttons
 </a>
 </li>
-<li className=" toc-entry toc-h2">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Sizes
 </a>
 </li>
-<li className=" toc-entry toc-h2">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Disabled state
@@ -439,11 +439,11 @@ Disabled state
 </li>
 </ul>
 </Col>
-<Col className=" py-md-3 pl-md-5 bd-content" md="9" role="main" xl="8" xs="12">
-<h1 className=" bd-title" id="content">
+<Col className="py-md-3 pl-md-5 bd-content" md="9" role="main" xl="8" xs="12">
+<h1 className="bd-title" id="content">
 Buttons
 </h1>
-<p className=" bd-lead">
+<p className="bd-lead">
 Use Black Dashboard's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 </p>
 <h2 id="examples">
@@ -452,7 +452,7 @@ Examples
 <p>
 Black Dashboard has changed the predefined button styles from Bootstrap, each serving its own semantic purpose, with a few extras thrown in for more control.
 </p>
-<div className=" bd-example" data-example-id="">
+<div className="bd-example" data-example-id="">
 <Button color="primary" type="button">
 Primary
 </Button>
@@ -472,133 +472,133 @@ Warning
 Default
 </Button>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Primary<span className=" nt">
+Primary<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-info"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Info<span className=" nt">
+Info<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-success"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Success<span className=" nt">
+Success<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-danger"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Danger<span className=" nt">
+Danger<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-warning"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Warning<span className=" nt">
+Warning<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-default"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Default<span className=" nt">
+Default<span className="nt">
 </button>
 </span>
 </code>
@@ -607,126 +607,126 @@ Default<span className=" nt">
 <h2 id="style-buttons">
 Style buttons
 </h2>
-<div className=" bd-example" data-example-id="">
+<div className="bd-example" data-example-id="">
 <Button color="primary">
 Default
 </Button>
-<Button className=" btn-round" color="primary">
+<Button className="btn-round" color="primary">
 Round
 </Button>
-<Button className=" btn-round" color="primary">
-<i className=" tim-icons icon-gift-2">
+<Button className="btn-round" color="primary">
+<i className="tim-icons icon-gift-2">
 </i>
  With Icon 
 </Button>
-<Button className=" btn-fab btn-icon btn-round" color="primary">
-<i className=" tim-icons icon-gift-2">
+<Button className="btn-fab btn-icon btn-round" color="primary">
+<i className="tim-icons icon-gift-2">
 </i>
 </Button>
-<Button className=" btn-neutral" color="primary">
+<Button className="btn-neutral" color="primary">
 Neutral
 </Button>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Default<span className=" nt">
+Default<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary btn-round"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Round<span className=" nt">
+Round<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary btn-round"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <i
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "tim-icons icon-gift-2"
 </span>
-<span className=" nt">
+<span className="nt">
 ></i>
 </span>
- With Icon<span className=" nt">
+ With Icon<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary btn-fab btn-icon btn-round"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-<span className=" nt">
+<span className="nt">
 <i
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "tim-icons icon-gift-2"
 </span>
-<span className=" nt">
+<span className="nt">
 ></i>
 </span>
-<span className=" nt">
+<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary btn-neutral"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Neutral<span className=" nt">
+Neutral<span className="nt">
 </button>
 </span>
 </code>
@@ -736,15 +736,15 @@ Neutral<span className=" nt">
 Sizes
 </h2>
 <p>
-Fancy larger or smaller buttons? Add <code className=" highlighter-rouge">
+Fancy larger or smaller buttons? Add <code className="highlighter-rouge">
 .btn-lg
 </code>
- or <code className=" highlighter-rouge">
+ or <code className="highlighter-rouge">
 .btn-sm
 </code>
  for additional sizes.
 </p>
-<div className=" bd-example" data-example-id="">
+<div className="bd-example" data-example-id="">
 <Button color="primary" size="sm">
 Small
 </Button>
@@ -755,52 +755,52 @@ Regular
 Large
 </Button>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary btn-sm"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Small<span className=" nt">
+Small<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Regular<span className=" nt">
+Regular<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary btn-lg"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Large<span className=" nt">
+Large<span className="nt">
 </button>
 </span>
 </code>
@@ -810,15 +810,15 @@ Large<span className=" nt">
 Disabled state
 </h2>
 <p>
-Make buttons look inactive by adding the <code className=" highlighter-rouge">
+Make buttons look inactive by adding the <code className="highlighter-rouge">
 disabled
 </code>
- boolean attribute to any <code className=" highlighter-rouge">
+ boolean attribute to any <code className="highlighter-rouge">
 <button>
 </code>
  element.
 </p>
-<div className=" bd-example" data-example-id="">
+<div className="bd-example" data-example-id="">
 <Button color="primary" disabled size="lg" type="button">
 Primary button
 </Button>
@@ -826,163 +826,163 @@ Primary button
 Button
 </Button>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-lg btn-primary"
 </span>
-<span className=" na">
+<span className="na">
 disabled
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Primary button<span className=" nt">
+Primary button<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary btn-lg"
 </span>
-<span className=" na">
+<span className="na">
 disabled
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Button<span className=" nt">
+Button<span className="nt">
 </button>
 </span>
 </code>
 </pre>
 </div>
 <p>
-Disabled buttons using the <code className=" highlighter-rouge">
+Disabled buttons using the <code className="highlighter-rouge">
 <a>
 </code>
  element behave a bit different:
 </p>
 <ul>
 <li>
-<code className=" highlighter-rouge">
+<code className="highlighter-rouge">
 <a>
 </code>
-s don’t support the <code className=" highlighter-rouge">
+s don’t support the <code className="highlighter-rouge">
 disabled
 </code>
- attribute, so you must add the <code className=" highlighter-rouge">
+ attribute, so you must add the <code className="highlighter-rouge">
 .disabled
 </code>
  class to make it visually appear disabled.
 </li>
 <li>
-Some future-friendly styles are included to disable all <code className=" highlighter-rouge">
+Some future-friendly styles are included to disable all <code className="highlighter-rouge">
 pointer-events
 </code>
  on anchor buttons. In browsers which support that property, you won’t see the disabled cursor at all.
 </li>
 </ul>
-<div className=" bd-example" data-example-id="">
-<Button aria-disabled={true} className=" disabled" color="primary" href="#pablo" onClick={e =>
+<div className="bd-example" data-example-id="">
+<Button aria-disabled={true} className="disabled" color="primary" href="#pablo" onClick={e =>
  e.preventDefault()} role="button" size="lg">
 Primary link
 </Button>
-<Button aria-disabled={true} className=" disabled" color="secondary" href="#pablo" onClick={e =>
+<Button aria-disabled={true} className="disabled" color="secondary" href="#pablo" onClick={e =>
  e.preventDefault()} role="button" size="lg">
 Link
 </Button>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <a
 </span>
-<span className=" na">
+<span className="na">
 href=
 </span>
-<span className=" s">
+<span className="s">
 "#"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-primary btn-lg disabled"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 aria-disabled=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Primary link<span className=" nt">
+Primary link<span className="nt">
 </a>
 </span>
-<span className=" nt">
+<span className="nt">
 <a
 </span>
-<span className=" na">
+<span className="na">
 href=
 </span>
-<span className=" s">
+<span className="s">
 "#"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary btn-lg disabled"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 aria-disabled=
 </span>
-<span className=" s">
+<span className="s">
 "true"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Link<span className=" nt">
+Link<span className="nt">
 </a>
 </span>
 </code>

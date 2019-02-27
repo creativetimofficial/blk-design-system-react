@@ -121,27 +121,27 @@ class Popovers extends React.Component {
 </iframe>
 </noscript>
  {/* End Google Tag Manager (noscript) */}
- <a className=" sr-only sr-only-focusable" href="#pablo" id="skippy" onClick={e =>
+ <a className="sr-only sr-only-focusable" href="#pablo" id="skippy" onClick={e =>
  e.preventDefault()}>
 <Container>
-<span className=" skiplink-text">
+<span className="skiplink-text">
 Skip to main content
 </span>
 </Container>
 </a>
-<Navbar className=" navbar-expand bg-primary flex-column flex-md-row bd-navbar">
-<NavbarBrand className=" mr-0 mr-md-2 navbar-absolute-logo" href="https://www.creative-tim.com/product/blk-design-system" rel="noopener noreferrer" target="_blank">
+<Navbar className="navbar-expand bg-primary flex-column flex-md-row bd-navbar">
+<NavbarBrand className="mr-0 mr-md-2 navbar-absolute-logo" href="https://www.creative-tim.com/product/blk-design-system" rel="noopener noreferrer" target="_blank">
  Blk• Design System 
 </NavbarBrand>
-<Nav className=" flex-row d-none d-md-flex" navbar>
+<Nav className="flex-row d-none d-md-flex" navbar>
 <NavItem>
-<NavLink className=" p-2" href="#pablo" onClick={e =>
+<NavLink className="p-2" href="#pablo" onClick={e =>
  e.preventDefault()}>
  1.0.0 
 </NavLink>
 </NavItem>
  {/* <UncontrolledDropdown nav>
-<DropdownToggle aria-expanded={false} aria-haspopup={true} caret className=" nav-item mr-md-2" color="default" data-toggle="dropdown" href="#pablo" id="bd-versions" nav onClick={e =>
+<DropdownToggle aria-expanded={false} aria-haspopup={true} caret className="nav-item mr-md-2" color="default" data-toggle="dropdown" href="#pablo" id="bd-versions" nav onClick={e =>
  e.preventDefault()}>
  v2.0.0 
 </DropdownToggle>
@@ -156,8 +156,8 @@ BS3 - 1.2.1
 </UncontrolledDropdown>
  */}
  <NavItem>
-<NavLink aria-label="GitHub" className=" p-2" href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" className=" navbar-nav-svg" focusable={false} viewbox="0 0 512 499.36">
+<NavLink aria-label="GitHub" className="p-2" href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" className="navbar-nav-svg" focusable={false} viewbox="0 0 512 499.36">
 <title>
 GitHub
 </title>
@@ -167,8 +167,8 @@ GitHub
 </NavLink>
 </NavItem>
 <NavItem>
-<NavLink aria-label="Twitter" className=" p-2" href="https://twitter.com/CreativeTim" rel="noopener" target="_blank">
-<svg xmlns="http://www.w3.org/2000/svg" className=" navbar-nav-svg" focusable={false} viewbox="0 0 512 416.32">
+<NavLink aria-label="Twitter" className="p-2" href="https://twitter.com/CreativeTim" rel="noopener" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" className="navbar-nav-svg" focusable={false} viewbox="0 0 512 416.32">
 <title>
 Twitter
 </title>
@@ -178,25 +178,25 @@ Twitter
 </NavLink>
 </NavItem>
 </Nav>
-<div className=" navbar-nav-scroll ml-md-auto">
-<Nav className=" bd-navbar-nav flex-row" navbar>
+<div className="navbar-nav-scroll ml-md-auto">
+<Nav className="bd-navbar-nav flex-row" navbar>
 <NavItem>
-<NavLink className=" active" href="../../../docs/1.0/getting-started/introduction.html">
-<i className=" tim-icons icon-app">
+<NavLink className="active" href="../../../docs/1.0/getting-started/introduction.html">
+<i className="tim-icons icon-app">
 </i>
  Documentation
 </NavLink>
 </NavItem>
 <NavItem>
 <NavLink href="https://demos.creative-tim.com/blk-design-system/index.html">
-<i className=" tim-icons icon-tv-2">
+<i className="tim-icons icon-tv-2">
 </i>
  Live Preview
 </NavLink>
 </NavItem>
 <NavItem>
 <NavLink href="https://github.com/creativetimofficial/blk-design-system" rel="noopener" target="_blank">
-<i className=" tim-icons icon-shape-star">
+<i className="tim-icons icon-shape-star">
 </i>
  Help with a star
 </NavLink>
@@ -211,35 +211,35 @@ Twitter
 </NavItem>
 </Nav>
 </div>
-<a aria-label="View source on Github" className=" github-corner" href="https://github.com/creativetimofficial/blk-design-system">
+<a aria-label="View source on Github" className="github-corner" href="https://github.com/creativetimofficial/blk-design-system">
 <svg aria-hidden={true} height="60" style={{fill:#fff", color:#9c27b0", position: "absolute", top: "0", border: "0", right: "0",}} viewbox="0 0 250 250" width="60">
 <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z">
 </path>
-<path className=" octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style={{transform-origin: "130px 106px",}}>
+<path className="octo-arm" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style={{transform-origin: "130px 106px",}}>
 </path>
-<path className=" octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor">
+<path className="octo-body" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor">
 </path>
 </svg>
 </a>
 <style>
  .github-corner:hover .octo-arm { animation: octocat-wave 560ms ease-in-out } @keyframes octocat-wave { 0%, 100% { transform: rotate(0) } 20%, 60% { transform: rotate(-25deg) } 40%, 80% { transform: rotate(10deg) } } @media (max-width:500px) { .github-corner:hover .octo-arm { animation: none } .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out } } 
 </style>
- {/* <Button className=" btn-white d-none d-lg-inline-block" color="default" href="">
+ {/* <Button className="btn-white d-none d-lg-inline-block" color="default" href="">
 Download
 </Button>
  */}
  
 </Navbar>
 <Container fluid>
-<Row className=" flex-xl-nowrap">
-<Col className=" bd-sidebar" md="3" xl="2" xs="12">
-<UncontrolledCollapse className=" bd-links" id="bd-docs-nav" toggler="#bd-docs-nav">
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<Row className="flex-xl-nowrap">
+<Col className="bd-sidebar" md="3" xl="2" xs="12">
+<UncontrolledCollapse className="bd-links" id="bd-docs-nav" toggler="#bd-docs-nav">
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Getting started 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/getting-started/overview.html">
  Overview 
@@ -272,12 +272,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Foundation 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/foundation/colors.html">
  Colors 
@@ -300,12 +300,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Components 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/components/alerts.html">
  Alerts 
@@ -361,7 +361,7 @@ Download
  Pagination 
 </a>
 </li>
-<li className=" active bd-sidenav-active">
+<li className="active bd-sidenav-active">
 <a href="../../../docs/1.0/components/popovers.html">
  Popovers 
 </a>
@@ -383,12 +383,12 @@ Download
 </li>
 </Nav>
 </div>
-<div className=" bd-toc-item active">
-<a className=" bd-toc-link" href="#pablo" onClick={e =>
+<div className="bd-toc-item active">
+<a className="bd-toc-link" href="#pablo" onClick={e =>
  e.preventDefault()}>
  Plugins 
 </a>
-<Nav className=" bd-sidenav">
+<Nav className="bd-sidenav">
 <li>
 <a href="../../../docs/1.0/plugins/datetimepicker.html">
  DateTimePicker 
@@ -413,33 +413,33 @@ Download
 </div>
 </UncontrolledCollapse>
 </Col>
-<Col className=" d-none d-xl-block bd-toc" xl="2">
-<ul className=" section-nav">
-<li className=" toc-entry toc-h2">
+<Col className="d-none d-xl-block bd-toc" xl="2">
+<ul className="section-nav">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Static popover
 </a>
 <ul>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Popover top
 </a>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Popover right
 </a>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Popover bottom
 </a>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Popover left
@@ -447,25 +447,25 @@ Popover left
 </li>
 </ul>
 </li>
-<li className=" toc-entry toc-h2">
+<li className="toc-entry toc-h2">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Live demo
 </a>
 <ul>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Four directions
 </a>
 </li>
-<li className=" toc-entry toc-h3">
+<li className="toc-entry toc-h3">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Dismiss on next click
 </a>
 <ul>
-<li className=" toc-entry toc-h4">
+<li className="toc-entry toc-h4">
 <a href="#pablo" onClick={e =>
  e.preventDefault()}>
 Specific markup required for dismiss-on-next-click
@@ -477,11 +477,11 @@ Specific markup required for dismiss-on-next-click
 </li>
 </ul>
 </Col>
-<Col className=" py-md-3 pl-md-5 bd-content" md="9" role="main" xl="8" xs="12">
-<h1 className=" bd-title" id="content">
+<Col className="py-md-3 pl-md-5 bd-content" md="9" role="main" xl="8" xs="12">
+<h1 className="bd-title" id="content">
 Popovers
 </h1>
-<p className=" bd-lead">
+<p className="bd-lead">
 Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
 </p>
 <h2 id="static-popover">
@@ -490,62 +490,62 @@ Static popover
 <p>
 Four options are available: top, right, bottom, and left aligned.
 </p>
-<div className=" bd-example bd-example-popover-static">
-<div className=" popover bs-popover-top bs-popover-top-docs">
-<div className=" arrow">
+<div className="bd-example bd-example-popover-static">
+<div className="popover bs-popover-top bs-popover-top-docs">
+<div className="arrow">
 </div>
-<h3 className=" popover-header">
+<h3 className="popover-header">
 Popover top
 </h3>
-<div className=" popover-body">
+<div className="popover-body">
 <p>
 Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 </p>
 </div>
 </div>
-<div className=" popover bs-popover-right bs-popover-right-docs">
-<div className=" arrow">
+<div className="popover bs-popover-right bs-popover-right-docs">
+<div className="arrow">
 </div>
-<h3 className=" popover-header">
+<h3 className="popover-header">
 Popover right
 </h3>
-<div className=" popover-body">
+<div className="popover-body">
 <p>
 Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 </p>
 </div>
 </div>
-<div className=" popover bs-popover-bottom bs-popover-bottom-docs">
-<div className=" arrow">
+<div className="popover bs-popover-bottom bs-popover-bottom-docs">
+<div className="arrow">
 </div>
-<h3 className=" popover-header">
+<h3 className="popover-header">
 Popover bottom
 </h3>
-<div className=" popover-body">
+<div className="popover-body">
 <p>
 Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 </p>
 </div>
 </div>
-<div className=" popover bs-popover-left bs-popover-left-docs">
-<div className=" arrow">
+<div className="popover bs-popover-left bs-popover-left-docs">
+<div className="arrow">
 </div>
-<h3 className=" popover-header">
+<h3 className="popover-header">
 Popover left
 </h3>
-<div className=" popover-body">
+<div className="popover-body">
 <p>
 Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 </p>
 </div>
 </div>
-<div className=" clearfix">
+<div className="clearfix">
 </div>
 </div>
 <h2 id="live-demo">
 Live demo
 </h2>
-<div className=" bd-example" data-example-id="">
+<div className="bd-example" data-example-id="">
 <Button color="danger" data-color="primary" data-container="body" data-content="And here's some amazing content. It's very engaging. Right?" id="tooltip197987809" size="lg" type="button">
 Click to toggle popover
 </Button>
@@ -558,58 +558,58 @@ And here's some amazing content. It's very engaging. Right?
 </PopoverBody>
 </UncontrolledPopover>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-lg btn-danger"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "popover"
 </span>
-<span className=" na">
+<span className="na">
 data-container=
 </span>
-<span className=" s">
+<span className="s">
 "body"
 </span>
-<span className=" na">
+<span className="na">
 data-original-title=
 </span>
-<span className=" s">
+<span className="s">
 "Popover Title"
 </span>
-<span className=" na">
+<span className="na">
 data-content=
 </span>
-<span className=" s">
+<span className="s">
 "And here's some amazing content. It's very engaging. Right?"
 </span>
-<span className=" na">
+<span className="na">
 data-color=
 </span>
-<span className=" s">
+<span className="s">
 "primary"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Click to toggle popover<span className=" nt">
+Click to toggle popover<span className="nt">
 </button>
 </span>
 </code>
@@ -618,8 +618,8 @@ Click to toggle popover<span className=" nt">
 <h3 id="four-directions">
 Four directions
 </h3>
-<div className=" bd-example popover-demo">
-<div className=" bd-example-popovers">
+<div className="bd-example popover-demo">
+<div className="bd-example-popovers">
 <Button color="default" data-color="primary" data-container="body" data-content="Here will be some very useful information about his popover." data-placement="left" id="tooltip659361700" type="button">
  On left 
 </Button>
@@ -666,187 +666,187 @@ Here will be some very useful information about his popover.
 </UncontrolledPopover>
 </div>
 </div>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary"
 </span>
-<span className=" na">
+<span className="na">
 data-container=
 </span>
-<span className=" s">
+<span className="s">
 "body"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "popover"
 </span>
-<span className=" na">
+<span className="na">
 data-placement=
 </span>
-<span className=" s">
+<span className="s">
 "top"
 </span>
-<span className=" na">
+<span className="na">
 data-content=
 </span>
-<span className=" s">
+<span className="s">
 "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- Popover on top<span className=" nt">
+ Popover on top<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary"
 </span>
-<span className=" na">
+<span className="na">
 data-container=
 </span>
-<span className=" s">
+<span className="s">
 "body"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "popover"
 </span>
-<span className=" na">
+<span className="na">
 data-placement=
 </span>
-<span className=" s">
+<span className="s">
 "right"
 </span>
-<span className=" na">
+<span className="na">
 data-content=
 </span>
-<span className=" s">
+<span className="s">
 "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- Popover on right<span className=" nt">
+ Popover on right<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary"
 </span>
-<span className=" na">
+<span className="na">
 data-container=
 </span>
-<span className=" s">
+<span className="s">
 "body"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "popover"
 </span>
-<span className=" na">
+<span className="na">
 data-placement=
 </span>
-<span className=" s">
+<span className="s">
 "bottom"
 </span>
-<span className=" na">
+<span className="na">
 data-content=
 </span>
-<span className=" s">
+<span className="s">
 "Vivamussagittis lacus vel augue laoreet rutrum faucibus."
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- Popover on bottom<span className=" nt">
+ Popover on bottom<span className="nt">
 </button>
 </span>
-<span className=" nt">
+<span className="nt">
 <button
 </span>
-<span className=" na">
+<span className="na">
 type=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-secondary"
 </span>
-<span className=" na">
+<span className="na">
 data-container=
 </span>
-<span className=" s">
+<span className="s">
 "body"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "popover"
 </span>
-<span className=" na">
+<span className="na">
 data-placement=
 </span>
-<span className=" s">
+<span className="s">
 "left"
 </span>
-<span className=" na">
+<span className="na">
 data-content=
 </span>
-<span className=" s">
+<span className="s">
 "Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
- Popover on left<span className=" nt">
+ Popover on left<span className="nt">
 </button>
 </span>
 </code>
@@ -856,34 +856,34 @@ data-content=
 Dismiss on next click
 </h3>
 <p>
-Use the <code className=" highlighter-rouge">
+Use the <code className="highlighter-rouge">
 focus
 </code>
  trigger to dismiss popovers on the user’s next click of a different element than the toggle element.
 </p>
-<div className=" bd-callout bd-callout-danger">
+<div className="bd-callout bd-callout-danger">
 <h4 id="specific-markup-required-for-dismiss-on-next-click">
 Specific markup required for dismiss-on-next-click
 </h4>
 <p>
-For proper cross-browser and cross-platform behavior, you must use the <code className=" highlighter-rouge">
+For proper cross-browser and cross-platform behavior, you must use the <code className="highlighter-rouge">
 <a>
 </code>
  tag, <em>
 not
 </em>
- the <code className=" highlighter-rouge">
+ the <code className="highlighter-rouge">
 <button>
 </code>
  tag, and you also must include a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex">
-<code className=" highlighter-rouge">
+<code className="highlighter-rouge">
 tabindex
 </code>
 </a>
  attribute.
 </p>
 </div>
-<div className=" bd-example" data-example-id="">
+<div className="bd-example" data-example-id="">
 <Button color="danger" data-content="And here's some amazing content. It's very engaging. Right?" data-trigger="focus" id="tooltip707294901" role="button" size="lg" tabindex="0" title="Dismissible popover">
 Dismissible popover
 </Button>
@@ -893,94 +893,94 @@ And here's some amazing content. It's very engaging. Right?
 </PopoverBody>
 </UncontrolledPopover>
 </div>
-<div className=" highlight">
+<div className="highlight">
 <pre>
-<code className=" language-html" data-lang="html">
-<span className=" nt">
+<code className="language-html" data-lang="html">
+<span className="nt">
 <a
 </span>
-<span className=" na">
+<span className="na">
 tabindex=
 </span>
-<span className=" s">
+<span className="s">
 "0"
 </span>
-<span className=" na">
+<span className="na">
 class=
 </span>
-<span className=" s">
+<span className="s">
 "btn btn-lg btn-danger"
 </span>
-<span className=" na">
+<span className="na">
 role=
 </span>
-<span className=" s">
+<span className="s">
 "button"
 </span>
-<span className=" na">
+<span className="na">
 data-toggle=
 </span>
-<span className=" s">
+<span className="s">
 "popover"
 </span>
-<span className=" na">
+<span className="na">
 data-trigger=
 </span>
-<span className=" s">
+<span className="s">
 "focus"
 </span>
-<span className=" na">
+<span className="na">
 title=
 </span>
-<span className=" s">
+<span className="s">
 "Dismissible popover"
 </span>
-<span className=" na">
+<span className="na">
 data-content=
 </span>
-<span className=" s">
+<span className="s">
 "And here's some amazing content. It's very engaging. Right?"
 </span>
-<span className=" nt">
+<span className="nt">
 >
 </span>
-Dismissible popover<span className=" nt">
+Dismissible popover<span className="nt">
 </a>
 </span>
 </code>
 </pre>
 </div>
-<figure className=" highlight">
+<figure className="highlight">
 <pre>
-<code className=" language-js" data-lang="js">
-<span className=" nx">
+<code className="language-js" data-lang="js">
+<span className="nx">
 $
 </span>
-<span className=" p">
+<span className="p">
 (
 </span>
-<span className=" s1">
+<span className="s1">
 '.popover-dismiss'
 </span>
-<span className=" p">
+<span className="p">
 ).
 </span>
-<span className=" nx">
+<span className="nx">
 popover
 </span>
-<span className=" p">
+<span className="p">
 ({
 </span>
-<span className=" na">
+<span className="na">
 trigger
 </span>
-<span className=" p">
+<span className="p">
 :
 </span>
-<span className=" s1">
+<span className="s1">
 'focus'
 </span>
-<span className=" p">
+<span className="p">
 })
 </span>
 </code>

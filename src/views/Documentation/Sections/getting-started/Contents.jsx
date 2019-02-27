@@ -77,10 +77,10 @@ class Contents extends React.Component {
   render() {
     return (
       <>
-        <h1 className=" bd-title" id="content">
+        <h1 className="bd-title" id="content">
           Contents
         </h1>
-        <p className=" bd-lead">
+        <p className="bd-lead">
           Discover what's included in BLK Design System React
         </p>
         <h2 id="precompiled-bootstrap">BLK Design System React</h2>

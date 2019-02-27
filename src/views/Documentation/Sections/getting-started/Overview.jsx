@@ -7,10 +7,10 @@ class Overview extends React.Component {
   render() {
     return (
       <>
-        <h1 className=" bd-title" id="content">
+        <h1 className="bd-title" id="content">
           Overview
         </h1>
-        <p className=" bd-lead">
+        <p className="bd-lead">
           An user-friendly, open source and beautiful design system based on
           Bootstrap 4, using Reactstrap, React and create-react-app.
         </p>
@@ -20,15 +20,15 @@ class Overview extends React.Component {
           internet. <b>BLK•</b>
           Design
         </p>
-        <Row className=" mt-5">
+        <Row className="mt-5">
           <Col md="4">
-            <div className=" info">
-              <div className=" icon icon-primary">
-                <i className=" tim-icons icon-html5" />
+            <div className="info">
+              <div className="icon icon-primary">
+                <i className="tim-icons icon-html5" />
               </div>
-              <h4 className=" info-title text-muted">Developer First</h4>
-              <hr className=" line-primary" />
-              <p className=" text-muted">
+              <h4 className="info-title text-muted">Developer First</h4>
+              <hr className="line-primary" />
+              <p className="text-muted">
                 <b>BLK•</b>
                 Design System is a "Developer First" product, with a lot of
                 variables for colors, fonts, sizes and other elements.
@@ -36,15 +36,15 @@ class Overview extends React.Component {
             </div>
           </Col>
           <Col md="4">
-            <div className=" info">
-              <div className=" icon icon-warning">
-                <i className=" tim-icons icon-paper" />
+            <div className="info">
+              <div className="icon icon-warning">
+                <i className="tim-icons icon-paper" />
               </div>
-              <h4 className=" info-title text-muted">
+              <h4 className="info-title text-muted">
                 High quality before everything
               </h4>
-              <hr className=" line-warning" />
-              <p className=" text-muted">
+              <hr className="line-warning" />
+              <p className="text-muted">
                 We are following the latest code standards provided by the guys
                 from Bootstrap, so you will love working with this design
                 system.
@@ -52,13 +52,13 @@ class Overview extends React.Component {
             </div>
           </Col>
           <Col md="4">
-            <div className=" info">
-              <div className=" icon icon-danger">
-                <i className=" tim-icons icon-heart-2" />
+            <div className="info">
+              <div className="icon icon-danger">
+                <i className="tim-icons icon-heart-2" />
               </div>
-              <h4 className=" info-title text-muted">Community helpers</h4>
-              <hr className=" line-danger" />
-              <p className=" text-muted">
+              <h4 className="info-title text-muted">Community helpers</h4>
+              <hr className="line-danger" />
+              <p className="text-muted">
                 Since all our products are built on top of Open Source also{" "}
                 <b>BLK•</b>
                 Design System is released under{" "}
