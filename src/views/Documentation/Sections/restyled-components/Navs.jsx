@@ -1,6 +1,7 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import classnames from "classnames";
 // reactstrap components
 import {
   Card,
@@ -113,8 +114,649 @@ const codeVertical1 = `<Nav vertical tag="nav">
   </NavItem>
 </Nav>`;
 
+const codePlainTabs = `import React from "react";
+import classnames from "classnames";
+// reactstrap components
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane
+} from "reactstrap";
 
 class Navs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      plainTabs: 1
+    };
+  }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
+  render() {
+    return (
+      <Card className="card-nav-tabs card-plain">
+        <CardHeader className="card-header-danger">
+          {/* colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" */}
+          <div className="nav-tabs-navigation">
+            <div className="nav-tabs-wrapper">
+              <Nav data-tabs="tabs" tabs>
+                <NavItem>
+                  <NavLink
+                    className={classnames({
+                      active: this.state.plainTabs === 1
+                    })}
+                    onClick={e => this.toggleTabs(e, "plainTabs", 1)}
+                    href="#pablo"
+                  >
+                    Home
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({
+                      active: this.state.plainTabs === 2
+                    })}
+                    onClick={e => this.toggleTabs(e, "plainTabs", 2)}
+                    href="#pablo"
+                  >
+                    Updates
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({
+                      active: this.state.plainTabs === 3
+                    })}
+                    onClick={e => this.toggleTabs(e, "plainTabs", 3)}
+                    href="#pablo"
+                  >
+                    History
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </div>
+          </div>
+        </CardHeader>
+        <CardBody>
+          <TabContent className="text-center" activeTab={"plainTabs" + this.state.plainTabs}>
+            <TabPane tabId="plainTabs1">
+              <p>
+                I think that’s a responsibility that I have, to push
+                possibilities, to show people, this is the level that things
+                could be at. So when you get something that has the name
+                Kanye West on it, it’s supposed to be pushing the furthest
+                possibilities. I will be the leader of a company that ends
+                up being worth billions of dollars, because I got the
+                answers. I understand culture. I am the nucleus.
+              </p>
+            </TabPane>
+            <TabPane tabId="plainTabs2">
+              <p>
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers. I understand
+                culture. I am the nucleus. I think that’s a responsibility
+                that I have, to push possibilities, to show people, this is
+                the level that things could be at. I think that’s a
+                responsibility that I have, to push possibilities, to show
+                people, this is the level that things could be at.
+              </p>
+            </TabPane>
+            <TabPane tabId="plainTabs3">
+              <p>
+                I think that’s a responsibility that I have, to push
+                possibilities, to show people, this is the level that things
+                could be at. I will be the leader of a company that ends up
+                being worth billions of dollars, because I got the answers.
+                I understand culture. I am the nucleus. I think that’s a
+                responsibility that I have, to push possibilities, to show
+                people, this is the level that things could be at.
+              </p>
+            </TabPane>
+          </TabContent>
+        </CardBody>
+      </Card>
+    );
+  }
+}
+
+export default Navs;`;
+
+const codeIconTabs = `import React from "react";
+import classnames from "classnames";
+// reactstrap components
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane
+} from "reactstrap";
+
+class Navs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      iconTabs: 1
+    };
+  }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
+  render() {
+    return (
+      <Card className="card-nav-tabs">
+        <CardHeader className="card-header-primary">
+          {/* colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" */}
+          <div className="nav-tabs-navigation">
+            <div className="nav-tabs-wrapper">
+              <Nav data-tabs="tabs" tabs>
+                <NavItem>
+                  <NavLink
+                    className={classnames({
+                      active: this.state.iconTabs === 1
+                    })}
+                    onClick={e => this.toggleTabs(e, "iconTabs", 1)}
+                    href="#pablo"
+                  >
+                    <i className="tim-icons icon-single-02" />
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({
+                      active: this.state.iconTabs === 2
+                    })}
+                    onClick={e => this.toggleTabs(e, "iconTabs", 2)}
+                    href="#pablo"
+                  >
+                    <i className="tim-icons icon-chat-33" />
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({
+                      active: this.state.iconTabs === 3
+                    })}
+                    onClick={e => this.toggleTabs(e, "iconTabs", 3)}
+                    href="#pablo"
+                  >
+                    <i className="tim-icons icon-settings-gear-63" />
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </div>
+          </div>
+        </CardHeader>
+        <CardBody>
+          <TabContent className="text-center" activeTab={"iconTabs" + this.state.iconTabs}>
+            <TabPane tabId="iconTabs1">
+              <p>
+                I will be the leader of a company that ends up being worth
+                billions of dollars, because I got the answers. I understand
+                culture. I am the nucleus. I think that’s a responsibility
+                that I have, to push possibilities, to show people, this is
+                the level that things could be at. I think that’s a
+                responsibility that I have, to push possibilities, to show
+                people, this is the level that things could be at.
+              </p>
+            </TabPane>
+            <TabPane tabId="iconTabs2">
+              <p>
+                I think that’s a responsibility that I have, to push
+                possibilities, to show people, this is the level that things
+                could be at. I will be the leader of a company that ends up
+                being worth billions of dollars, because I got the answers. I
+                understand culture. I am the nucleus. I think that’s a
+                responsibility that I have, to push possibilities, to show
+                people, this is the level that things could be at.
+              </p>
+            </TabPane>
+            <TabPane tabId="iconTabs3">
+              <p>
+                I think that’s a responsibility that I have, to push
+                possibilities, to show people, this is the level that things
+                could be at. So when you get something that has the name Kanye
+                West on it, it’s supposed to be pushing the furthest
+                possibilities. I will be the leader of a company that ends up
+                being worth billions of dollars, because I got the answers. I
+                understand culture. I am the nucleus.
+              </p>
+            </TabPane>
+          </TabContent>
+        </CardBody>
+      </Card>
+    );
+  }
+}
+
+export default Navs;
+`;
+
+const codePills = `import React from "react";
+import classnames from "classnames";
+// reactstrap components
+import {
+  Card,
+  CardHeader,
+  CardBody
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane
+} from "reactstrap";
+
+class Navs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      pills: 1
+    };
+  }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
+  render() {
+    return (
+      <>
+        <Nav className="nav-pills-primary" pills role="tablist">
+          <NavItem>
+            <NavLink
+              className={classnames({
+                active: this.state.pills === 1
+              })}
+              onClick={e => this.toggleTabs(e, "pills", 1)}
+              href="#pablo"
+            >
+              Profile
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              className={classnames({
+                active: this.state.pills === 2
+              })}
+              onClick={e => this.toggleTabs(e, "pills", 2)}
+              href="#pablo"
+            >
+              Settings
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              className={classnames({
+                active: this.state.pills === 3
+              })}
+              onClick={e => this.toggleTabs(e, "pills", 3)}
+              href="#pablo"
+            >
+              Options
+            </NavLink>
+          </NavItem>
+        </Nav>
+        <TabContent className="tab-space" activeTab={"pills" + this.state.pills}>
+          <TabPane tabId="pills1">
+            Collaboratively administrate empowered markets via plug-and-play
+            networks. Dynamically procrastinate B2C users after installed base
+            benefits. <br />
+            <br />
+            Dramatically visualize customer directed convergence without
+            revolutionary ROI.
+          </TabPane>
+          <TabPane tabId="pills2">
+            Efficiently unleash cross-media information without cross-media
+            value. Quickly maximize timely deliverables for real-time schemas.{" "}
+            <br />
+            <br />
+            Dramatically maintain clicks-and-mortar solutions without
+            functional solutions.
+          </TabPane>
+          <TabPane tabId="pills3">
+            Completely synergize resource taxing relationships via premier
+            niche markets. Professionally cultivate one-to-one customer
+            service with robust ideas. <br />
+            <br />
+            Dynamically innovate resource-leveling customer service for state
+            of the art customer service.
+          </TabPane>
+        </TabContent>
+      </>
+    );
+  }
+}
+
+export default Navs;
+`;
+
+const codeVerticalPills = `import React from "react";
+import classnames from "classnames";
+// reactstrap components
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane,
+  Row,
+  Col
+} from "reactstrap";
+
+class Navs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      vertical: 1
+    };
+  }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
+  render() {
+    return (
+      <>
+        <Row>
+          <Col md="4">
+            <Nav className="nav-pills-primary flex-column" pills>
+              <NavItem>
+                <NavLink
+                  className={classnames({
+                    active: this.state.vertical === 1
+                  })}
+                  onClick={e => this.toggleTabs(e, "vertical", 1)}
+                  href="#pablo"
+                >
+                  Profile
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  className={classnames({
+                    active: this.state.vertical === 2
+                  })}
+                  onClick={e => this.toggleTabs(e, "vertical", 2)}
+                  href="#pablo"
+                >
+                  Settings
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  className={classnames({
+                    active: this.state.vertical === 3
+                  })}
+                  onClick={e => this.toggleTabs(e, "vertical", 3)}
+                  href="#pablo"
+                >
+                  Options
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Col>
+          <Col md="8">
+            <TabContent activeTab={"vertical" + this.state.vertical}>
+              <TabPane tabId="vertical1">
+                Collaboratively administrate empowered markets via
+                plug-and-play networks. Dynamically procrastinate B2C users
+                after installed base benefits. <br />
+                <br />
+                Dramatically visualize customer directed convergence without
+                revolutionary ROI.
+              </TabPane>
+              <TabPane tabId="vertical2">
+                Efficiently unleash cross-media information without
+                cross-media value. Quickly maximize timely deliverables for
+                real-time schemas. <br />
+                <br />
+                Dramatically maintain clicks-and-mortar solutions without
+                functional solutions.
+              </TabPane>
+              <TabPane tabId="vertical3">
+                Completely synergize resource taxing relationships via premier
+                niche markets. Professionally cultivate one-to-one customer
+                service with robust ideas. <br />
+                <br />
+                Dynamically innovate resource-leveling customer service for
+                state of the art customer service.
+              </TabPane>
+            </TabContent>
+          </Col>
+        </Row>
+      </>
+    );
+  }
+}
+
+export default Navs;
+`;
+
+const codeWithIcons = `import React from "react";
+import classnames from "classnames";
+// reactstrap components
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane
+} from "reactstrap";
+
+class Navs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      withIcons: 1
+    };
+  }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
+  render() {
+    return (
+      <>
+        <Nav
+          className="nav-pills-primary nav-pills-icons"
+          pills
+          role="tablist"
+        >
+          {/* color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger" */}
+          <NavItem>
+            <NavLink
+              className={classnames({
+                active: this.state.withIcons === 1
+              })}
+              onClick={e => this.toggleTabs(e, "withIcons", 1)}
+              href="#pablo"
+            >
+              <i className="tim-icons icon-laptop" />
+              Dashboard
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              className={classnames({
+                active: this.state.withIcons === 2
+              })}
+              onClick={e => this.toggleTabs(e, "withIcons", 2)}
+              href="#pablo"
+            >
+              <i className="tim-icons icon-settings-gear-63" />
+              Settings
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              className={classnames({
+                active: this.state.withIcons === 3
+              })}
+              onClick={e => this.toggleTabs(e, "withIcons", 3)}
+              href="#pablo"
+            >
+              <i className="tim-icons icon-calendar-60" />
+              Tasks
+            </NavLink>
+          </NavItem>
+        </Nav>
+        <TabContent className="tab-space" activeTab={"withIcons" + this.state.withIcons}>
+          <TabPane tabId="withIcons1">
+            Collaboratively administrate empowered markets via plug-and-play
+            networks. Dynamically procrastinate B2C users after installed base
+            benefits. <br />
+            <br />
+            Dramatically visualize customer directed convergence without
+            revolutionary ROI.
+          </TabPane>
+          <TabPane tabId="withIcons2">
+            Efficiently unleash cross-media information without cross-media
+            value. Quickly maximize timely deliverables for real-time schemas.{" "}
+            <br />
+            <br />
+            Dramatically maintain clicks-and-mortar solutions without
+            functional solutions.
+          </TabPane>
+          <TabPane tabId="withIcons3">
+            Completely synergize resource taxing relationships via premier
+            niche markets. Professionally cultivate one-to-one customer
+            service with robust ideas. <br />
+            <br />
+            Dynamically innovate resource-leveling customer service for state
+            of the art customer service.
+          </TabPane>
+        </TabContent>
+      </>
+    );
+  }
+}
+
+export default Navs;
+`;
+
+const codePillsDropdown = `import React from "react";
+import classnames from "classnames";
+// reactstrap components
+import {
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  NavItem,
+  NavLink,
+  Nav
+} from "reactstrap";
+
+class Navs extends React.Component {
+  render() {
+    return (
+      <>
+        <Nav pills>
+          <NavItem>
+            <NavLink
+              className="active"
+              href="#pablo"
+              onClick={e => e.preventDefault()}
+            >
+              Active
+            </NavLink>
+          </NavItem>
+          <UncontrolledDropdown nav>
+            <DropdownToggle
+              aria-expanded={false}
+              aria-haspopup={true}
+              caret
+              color="default"
+              data-toggle="dropdown"
+              href="#pablo"
+              nav
+              onClick={e => e.preventDefault()}
+              role="button"
+            >
+              Dropdown
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                Action
+              </DropdownItem>
+              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                Another action
+              </DropdownItem>
+              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                Something else here
+              </DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                Separated link
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+          <NavItem>
+            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              Link
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              className="disabled"
+              href="#pablo"
+              onClick={e => e.preventDefault()}
+            >
+              Disabled
+            </NavLink>
+          </NavItem>
+        </Nav>
+      </>
+    );
+  }
+}
+
+export default Navs;
+`;
+
+class Navs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      plainTabs: 1,
+      iconTabs: 1,
+      pills: 1,
+      vertical: 1,
+      withIcons: 1
+    };
+  }
+  toggleTabs = (e, stateName, index) => {
+    e.preventDefault();
+    this.setState({
+      [stateName]: index
+    });
+  };
   render() {
     return (
       <>
@@ -427,28 +1069,33 @@ class Navs extends React.Component {
                   <Nav data-tabs="tabs" tabs>
                     <NavItem>
                       <NavLink
-                        className="active"
-                        data-toggle="tab"
+                        className={classnames({
+                          active: this.state.plainTabs === 1
+                        })}
+                        onClick={e => this.toggleTabs(e, "plainTabs", 1)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
                       >
                         Home
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
+                        className={classnames({
+                          active: this.state.plainTabs === 2
+                        })}
+                        onClick={e => this.toggleTabs(e, "plainTabs", 2)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
                       >
                         Updates
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
+                        className={classnames({
+                          active: this.state.plainTabs === 3
+                        })}
+                        onClick={e => this.toggleTabs(e, "plainTabs", 3)}
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
                       >
                         History
                       </NavLink>
@@ -458,8 +1105,8 @@ class Navs extends React.Component {
               </div>
             </CardHeader>
             <CardBody>
-              <TabContent className="text-center">
-                <TabPane className="active" id="home">
+              <TabContent className="text-center" activeTab={"plainTabs" + this.state.plainTabs}>
+                <TabPane tabId="plainTabs1">
                   <p>
                     I think that’s a responsibility that I have, to push
                     possibilities, to show people, this is the level that things
@@ -470,7 +1117,7 @@ class Navs extends React.Component {
                     answers. I understand culture. I am the nucleus.
                   </p>
                 </TabPane>
-                <TabPane id="updates">
+                <TabPane tabId="plainTabs2">
                   <p>
                     I will be the leader of a company that ends up being worth
                     billions of dollars, because I got the answers. I understand
@@ -481,7 +1128,7 @@ class Navs extends React.Component {
                     people, this is the level that things could be at.
                   </p>
                 </TabPane>
-                <TabPane id="history">
+                <TabPane tabId="plainTabs3">
                   <p>
                     I think that’s a responsibility that I have, to push
                     possibilities, to show people, this is the level that things
@@ -496,7 +1143,9 @@ class Navs extends React.Component {
             </CardBody>
           </Card>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codePlainTabs}
+        </SyntaxHighlighter>
         <h4 id="tabs-with-icons-on-card">Tabs with Icons on Card</h4>
         <Card className="card-nav-tabs">
           <CardHeader className="card-header-primary">
@@ -506,28 +1155,33 @@ class Navs extends React.Component {
                 <Nav data-tabs="tabs" tabs>
                   <NavItem>
                     <NavLink
-                      className="active"
-                      data-toggle="tab"
+                      className={classnames({
+                        active: this.state.iconTabs === 1
+                      })}
+                      onClick={e => this.toggleTabs(e, "iconTabs", 1)}
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
                     >
                       <i className="tim-icons icon-single-02" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      className={classnames({
+                        active: this.state.iconTabs === 2
+                      })}
+                      onClick={e => this.toggleTabs(e, "iconTabs", 2)}
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
                     >
                       <i className="tim-icons icon-chat-33" />
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      className={classnames({
+                        active: this.state.iconTabs === 3
+                      })}
+                      onClick={e => this.toggleTabs(e, "iconTabs", 3)}
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
                     >
                       <i className="tim-icons icon-settings-gear-63" />
                     </NavLink>
@@ -537,8 +1191,8 @@ class Navs extends React.Component {
             </div>
           </CardHeader>
           <CardBody>
-            <TabContent className="text-center">
-              <TabPane className="active" id="profile">
+            <TabContent className="text-center" activeTab={"iconTabs" + this.state.iconTabs}>
+              <TabPane tabId="iconTabs1">
                 <p>
                   I will be the leader of a company that ends up being worth
                   billions of dollars, because I got the answers. I understand
@@ -549,7 +1203,7 @@ class Navs extends React.Component {
                   people, this is the level that things could be at.
                 </p>
               </TabPane>
-              <TabPane id="messages">
+              <TabPane tabId="iconTabs2">
                 <p>
                   I think that’s a responsibility that I have, to push
                   possibilities, to show people, this is the level that things
@@ -560,7 +1214,7 @@ class Navs extends React.Component {
                   people, this is the level that things could be at.
                 </p>
               </TabPane>
-              <TabPane id="settings">
+              <TabPane tabId="iconTabs3">
                 <p>
                   I think that’s a responsibility that I have, to push
                   possibilities, to show people, this is the level that things
@@ -574,6 +1228,9 @@ class Navs extends React.Component {
             </TabContent>
           </CardBody>
         </Card>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeIconTabs}
+        </SyntaxHighlighter>
         <h3 id="pills">Pills</h3>
         <p>
           Take that same HTML, but use{" "}
@@ -585,41 +1242,40 @@ class Navs extends React.Component {
           <Nav className="nav-pills-primary" pills role="tablist">
             <NavItem>
               <NavLink
-                aria-expanded={true}
-                className="active"
-                data-toggle="tab"
+                className={classnames({
+                  active: this.state.pills === 1
+                })}
+                onClick={e => this.toggleTabs(e, "pills", 1)}
                 href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="tablist"
               >
                 Profile
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                aria-expanded={false}
-                data-toggle="tab"
+                className={classnames({
+                  active: this.state.pills === 2
+                })}
+                onClick={e => this.toggleTabs(e, "pills", 2)}
                 href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="tablist"
               >
                 Settings
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                aria-expanded={false}
-                data-toggle="tab"
+                className={classnames({
+                  active: this.state.pills === 3
+                })}
+                onClick={e => this.toggleTabs(e, "pills", 3)}
                 href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="tablist"
               >
                 Options
               </NavLink>
             </NavItem>
           </Nav>
-          <TabContent className="tab-space">
-            <TabPane aria-expanded={true} className="active" id="link1">
+          <TabContent className="tab-space" activeTab={"pills" + this.state.pills}>
+            <TabPane tabId="pills1">
               Collaboratively administrate empowered markets via plug-and-play
               networks. Dynamically procrastinate B2C users after installed base
               benefits. <br />
@@ -627,7 +1283,7 @@ class Navs extends React.Component {
               Dramatically visualize customer directed convergence without
               revolutionary ROI.
             </TabPane>
-            <TabPane aria-expanded={false} id="link2">
+            <TabPane tabId="pills2">
               Efficiently unleash cross-media information without cross-media
               value. Quickly maximize timely deliverables for real-time schemas.{" "}
               <br />
@@ -635,7 +1291,7 @@ class Navs extends React.Component {
               Dramatically maintain clicks-and-mortar solutions without
               functional solutions.
             </TabPane>
-            <TabPane aria-expanded={false} id="link3">
+            <TabPane tabId="pills3">
               Completely synergize resource taxing relationships via premier
               niche markets. Professionally cultivate one-to-one customer
               service with robust ideas. <br />
@@ -645,7 +1301,9 @@ class Navs extends React.Component {
             </TabPane>
           </TabContent>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codePills}
+        </SyntaxHighlighter>
         <h4 id="vertical-tabs">Vertical Tabs</h4>
         <div className="bd-example" data-example-id="">
           <Row>
@@ -653,28 +1311,33 @@ class Navs extends React.Component {
               <Nav className="nav-pills-primary flex-column" pills>
                 <NavItem>
                   <NavLink
-                    className="active"
-                    data-toggle="tab"
+                    className={classnames({
+                      active: this.state.vertical === 1
+                    })}
+                    onClick={e => this.toggleTabs(e, "vertical", 1)}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
                   >
                     Profile
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    data-toggle="tab"
+                    className={classnames({
+                      active: this.state.vertical === 2
+                    })}
+                    onClick={e => this.toggleTabs(e, "vertical", 2)}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
                   >
                     Settings
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    data-toggle="tab"
+                    className={classnames({
+                      active: this.state.vertical === 3
+                    })}
+                    onClick={e => this.toggleTabs(e, "vertical", 3)}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
                   >
                     Options
                   </NavLink>
@@ -682,8 +1345,8 @@ class Navs extends React.Component {
               </Nav>
             </Col>
             <Col md="8">
-              <TabContent>
-                <TabPane className="active" id="tab1">
+              <TabContent activeTab={"vertical" + this.state.vertical}>
+                <TabPane tabId="vertical1">
                   Collaboratively administrate empowered markets via
                   plug-and-play networks. Dynamically procrastinate B2C users
                   after installed base benefits. <br />
@@ -691,7 +1354,7 @@ class Navs extends React.Component {
                   Dramatically visualize customer directed convergence without
                   revolutionary ROI.
                 </TabPane>
-                <TabPane id="tab2">
+                <TabPane tabId="vertical2">
                   Efficiently unleash cross-media information without
                   cross-media value. Quickly maximize timely deliverables for
                   real-time schemas. <br />
@@ -699,7 +1362,7 @@ class Navs extends React.Component {
                   Dramatically maintain clicks-and-mortar solutions without
                   functional solutions.
                 </TabPane>
-                <TabPane id="tab3">
+                <TabPane tabId="vertical3">
                   Completely synergize resource taxing relationships via premier
                   niche markets. Professionally cultivate one-to-one customer
                   service with robust ideas. <br />
@@ -711,7 +1374,9 @@ class Navs extends React.Component {
             </Col>
           </Row>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeVerticalPills}
+        </SyntaxHighlighter>
         <h4 id="with-icons">With Icons</h4>
         <div className="bd-example" data-example-id="">
           <Nav
@@ -722,10 +1387,11 @@ class Navs extends React.Component {
             {/* color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger" */}
             <NavItem>
               <NavLink
-                data-toggle="tab"
+                className={classnames({
+                  active: this.state.withIcons === 1
+                })}
+                onClick={e => this.toggleTabs(e, "withIcons", 1)}
                 href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="tab"
               >
                 <i className="tim-icons icon-laptop" />
                 Dashboard
@@ -733,11 +1399,11 @@ class Navs extends React.Component {
             </NavItem>
             <NavItem>
               <NavLink
-                className="active"
-                data-toggle="tab"
+                className={classnames({
+                  active: this.state.withIcons === 2
+                })}
+                onClick={e => this.toggleTabs(e, "withIcons", 2)}
                 href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="tab"
               >
                 <i className="tim-icons icon-settings-gear-63" />
                 Settings
@@ -745,18 +1411,19 @@ class Navs extends React.Component {
             </NavItem>
             <NavItem>
               <NavLink
-                data-toggle="tab"
+                className={classnames({
+                  active: this.state.withIcons === 3
+                })}
+                onClick={e => this.toggleTabs(e, "withIcons", 3)}
                 href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="tab"
               >
                 <i className="tim-icons icon-calendar-60" />
                 Tasks
               </NavLink>
             </NavItem>
           </Nav>
-          <TabContent className="tab-space">
-            <TabPane className="active" id="dashboard-1">
+          <TabContent className="tab-space" activeTab={"withIcons" + this.state.withIcons}>
+            <TabPane tabId="withIcons1">
               Collaboratively administrate empowered markets via plug-and-play
               networks. Dynamically procrastinate B2C users after installed base
               benefits. <br />
@@ -764,7 +1431,7 @@ class Navs extends React.Component {
               Dramatically visualize customer directed convergence without
               revolutionary ROI.
             </TabPane>
-            <TabPane id="schedule-1">
+            <TabPane tabId="withIcons2">
               Efficiently unleash cross-media information without cross-media
               value. Quickly maximize timely deliverables for real-time schemas.{" "}
               <br />
@@ -772,7 +1439,7 @@ class Navs extends React.Component {
               Dramatically maintain clicks-and-mortar solutions without
               functional solutions.
             </TabPane>
-            <TabPane id="tasks-1">
+            <TabPane tabId="withIcons3">
               Completely synergize resource taxing relationships via premier
               niche markets. Professionally cultivate one-to-one customer
               service with robust ideas. <br />
@@ -782,7 +1449,9 @@ class Navs extends React.Component {
             </TabPane>
           </TabContent>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeWithIcons}
+        </SyntaxHighlighter>
         <h3 id="pills-with-dropdowns">Pills with dropdowns</h3>
         <div className="bd-example" data-example-id="">
           <Nav pills>
@@ -841,7 +1510,9 @@ class Navs extends React.Component {
             </NavItem>
           </Nav>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codePillsDropdown}
+        </SyntaxHighlighter>
         <h3 id="using-data-attributes">Using data attributes</h3>
         <p>
           You can activate a tab or pill navigation without writing any
