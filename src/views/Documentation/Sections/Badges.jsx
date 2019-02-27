@@ -32,7 +32,7 @@ const codeLinks = `<Badge href="#" color="primary">Primary</Badge>
 class Badges extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <h1 className="bd-title" id="content">
           Badges
         </h1>
@@ -144,7 +144,7 @@ class Badges extends React.Component {
           </a>
           .
         </p>
-      </div>
+      </>
     );
   }
 }

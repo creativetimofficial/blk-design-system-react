@@ -18,17 +18,16 @@ import Navbars from "views/Documentation/Sections/core-components/Navbars.jsx";
 import PageHeader from "views/Documentation/Sections/core-components/PageHeader.jsx";
 // Reasctrap components
 import Alerts from "views/Documentation/Sections/restyled-components/Alerts.jsx";
-// import Badges from "views/Documentation/Sections/Badges.jsx";
-// import Breadcrumbs from "views/Documentation/Sections/Breadcrumbs.jsx";
-// import Buttons from "views/Documentation/Sections/Buttons.jsx";
-// import Cards from "views/Documentation/Sections/Cards.jsx";
-// import Dropdowns from "views/Documentation/Sections/Dropdowns.jsx";
-// import Forms from "views/Documentation/Sections/Forms.jsx";
-// import Modals from "views/Documentation/Sections/Modals.jsx";
-// import Navs from "views/Documentation/Sections/Navs.jsx";
-// import Navbars from "views/Documentation/Sections/Navbars.jsx";
-// import Tables from "views/Documentation/Sections/Tables.jsx";
-// import Typography from "views/Documentation/Sections/Typography.jsx";
+import Badge from "views/Documentation/Sections/restyled-components/Badge.jsx";
+// import Breadcrumbs from "views/Documentation/Sections/restyled-components/Breadcrumbs.jsx";
+// import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
+// import Cards from "views/Documentation/Sections/restyled-components/Cards.jsx";
+// import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
+// import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
+// import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx";
+// import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
+// import Navbars from "views/Documentation/Sections/restyled-components/Navbars.jsx";
+// import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
 // Plugins
 // import Charts from "views/Documentation/Sections/Charts.jsx";
 // import Icons from "views/Documentation/Sections/Icons.jsx";
@@ -132,11 +131,11 @@ var docsRoutes = [
         component: Alerts,
         name: "Alerts"
       },
-      // {
-      //   path: "/documentation/badge",
-      //   component: Badges,
-      //   name: "Badges"
-      // },
+      {
+        path: "/documentation/badge",
+        component: Badge,
+        name: "Badge"
+      },
       // {
       //   path: "/documentation/breadcrumbs",
       //   component: Breadcrumbs,
