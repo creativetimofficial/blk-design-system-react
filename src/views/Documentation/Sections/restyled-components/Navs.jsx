@@ -1513,27 +1513,17 @@ class Navs extends React.Component {
         <SyntaxHighlighter language="jsx" style={prism}>
           {codePillsDropdown}
         </SyntaxHighlighter>
-        <h3 id="using-data-attributes">Using data attributes</h3>
-        <p>
-          You can activate a tab or pill navigation without writing any
-          JavaScript by simply specifying{" "}
-          <code className="highlighter-rouge">data-toggle="tab"</code>
-          or <code className="highlighter-rouge">data-toggle="pill"</code>
-          on an element. Use these data attributes on{" "}
-          <code className="highlighter-rouge">.nav-tabs</code>
-          or <code className="highlighter-rouge">.nav-pills</code>.
-        </p>
-        <figure className="highlight" />
+        <h3 id="using-data-attributes">Props</h3>
         <p>
           If you want to see more examples and properties please check the
           official{" "}
           <strong>
             <a
-              href="http://getbootstrap.com/docs/4.0/components/navs/"
+              href="https://reactstrap.github.io/components/navs/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Bootstrap Documentation
+              Reactstrap Documentation
             </a>
           </strong>
           .
