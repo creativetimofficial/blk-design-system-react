@@ -67,49 +67,74 @@ In order for you to easily be able to use the Blk• Design System, we have crea
 Within the download you'll find the following directories and files:
 
 ```
-Blk• Design System
+Blk• Design System React
 .
 ├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
 ├── README.md
-├── assets/
-│   ├── css/
-│   │   ├── blk-design-system.css
-│   │   ├── blk-design-system.css.map
-│   │   ├── blk-design-system.min.css
-│   │   └── nucleo-icons.css
-│   ├── demo/
-│   ├── fonts/
-│   ├── img/
-│   ├── js/
-│   │   ├── blk-design-system.js
-│   │   ├── blk-design-system.js.map
-│   │   ├── blk-design-system.min.js
-│   │   ├── core/
-│   │   │   ├── bootstrap.min.js
-│   │   │   ├── jquery.min.js
-│   │   │   └── popper.min.js
-│   │   └── plugins/
-│   └── scss/
-│       ├── blk-design-system/
-│       │   ├── bootstrap/
-│       │   │   ├── mixins/
-│       │   │   └── utilities/
-│       │   └── custom/
-│       │       ├── cards/
-│       │       ├── mixins/
-│       │       ├── sections/
-│       │       ├── utilities/
-│       │       └── vendor/
-│       └── blk-design-system.scss
-├── docs/
-│   └── documentation.html
-├── examples/
-│   ├── landing-page.html
-│   ├── profile-page.html
-│   └── register-page.html
-├── gulpfile.js
-├── index.html
-└── package.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── index.js
+    ├── variables
+    │   └── charts.jsx
+    ├── assets
+    │   ├── css
+    │   │   ├── blk-design-system-react.css
+    │   │   ├── blk-design-system-react.css.map
+    │   │   ├── blk-design-system-react.min.css
+    │   │   └── nucleo-icons.css
+    │   ├── demo
+    │   │   └── demo.css
+    │   ├── fonts
+    │   │   ├── nucleo.eot
+    │   │   ├── nucleo.ttf
+    │   │   ├── nucleo.woff
+    │   │   └── nucleo.woff2
+    │   ├── img
+    │   └── scss
+    │       ├── blk-design-system-react
+    │       │   ├── bootstrap
+    │       │   │   ├── mixins
+    │       │   │   └── utilities
+    │       │   ├── custom
+    │       │   │   ├── cards
+    │       │   │   ├── mixins
+    │       │   │   ├── sections
+    │       │   │   ├── utilities
+    │       │   │   └── vendor
+    │       │   └── react
+    │       │       └── react-differences.scss
+    │       └── blk-design-system-react.scss
+    ├── components
+    │   ├── Footer
+    │   │   └── Footer.jsx
+    │   ├── Navbars
+    │   │   ├── ComponentsNavbar.jsx
+    │   │   └── ExamplesNavbar.jsx
+    │   └── PageHeader
+    │       └── PageHeader.jsx
+    └── views
+        ├── Index.jsx
+        ├── IndexSections
+        │   ├── Basics.jsx
+        │   ├── Download.jsx
+        │   ├── Examples.jsx
+        │   ├── JavaScript.jsx
+        │   ├── Navbars.jsx
+        │   ├── Notifications.jsx
+        │   ├── NucleoIcons.jsx
+        │   ├── Pagination.jsx
+        │   ├── Signup.jsx
+        │   ├── Tabs.jsx
+        │   └── Typography.jsx
+        └── examples
+            ├── LandingPage.jsx
+            ├── ProfilePage.jsx
+            └── RegisterPage.jsx
 ```
 
 ## Browser Support
