@@ -9,8 +9,6 @@ import {
   DropdownItem,
   UncontrolledButtonDropdown,
   Button,
-  Col,
-  Row
 } from "reactstrap";
 
 const codeExamples = `<UncontrolledDropdown>
@@ -68,32 +66,6 @@ const codeExamplesVariation = `<UncontrolledDropdown group direction="up">
         <DropdownItem>Another Action</DropdownItem>
     </DropdownMenu>
 </UncontrolledButtonDropdown>`;
-
-const codeExamplesColors = `<Col xs={6} className="ml-auto">
-    <UncontrolledDropdown>
-      <DropdownToggle caret data-toggle="dropdown">
-        Dropdown button
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem>Action</DropdownItem>
-        <DropdownItem>Another Action</DropdownItem>
-        <DropdownItem>Something else here</DropdownItem>
-      </DropdownMenu>
-    </UncontrolledDropdown>
-  </Col>
-  <Col xs={6} className="mr-auto">
-    <UncontrolledDropdown>
-      <DropdownToggle caret data-toggle="dropdown">
-        Dropdown button
-      </DropdownToggle>
-      <DropdownMenu className="dropdown-black">
-        <DropdownItem>Action</DropdownItem>
-        <DropdownItem>Another Action</DropdownItem>
-        <DropdownItem>Something else here</DropdownItem>
-      </DropdownMenu>
-    </UncontrolledDropdown>
-  </Col>
-</Row>`;
 
 class Dropdowns extends React.Component {
   constructor(props) {
