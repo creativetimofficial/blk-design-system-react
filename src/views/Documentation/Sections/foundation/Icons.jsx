@@ -35,8 +35,8 @@ class Icons extends React.Component {
         <h3 id="initialization">Initialization</h3>
         <p>
           Start placing icons in your app. We recommend using a consistent HTML
-          element, like <code className="highlighter-rouge">{`<i>`}</code>.
-          Find the right icon and learn how to reference it in your markup.
+          element, like <code className="highlighter-rouge">{`<i>`}</code>. Find
+          the right icon and learn how to reference it in your markup.
         </p>
         <h3 id="example">Example</h3>
         <div className="bd-example" data-example-id="">

@@ -16,8 +16,188 @@ const codeHowItWorks = `<Container>
       <span>One of three columns</span>
     </Col>
   </Row>
+</Container>`;
+
+const codeEqualWidth = `<Container>
+  <Row>
+    <Col>
+      <span>1 of 2</span>
+    </Col>
+    <Col>
+      <span>2 of 2</span>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col>
+      <span>2 of 3</span>
+    </Col>
+    <Col>
+      <span>3 of 3</span>
+    </Col>
+  </Row>
 </Container>
       `;
+
+const codeEqualWidth1 = `<Container>
+  <Row>
+    <Col>
+      <span>Column</span>
+    </Col>
+    <Col>
+      <span>Column</span>
+    </Col>
+    <div className="w-100" />
+    <Col>
+      <span>Column</span>
+    </Col>
+    <Col>
+      <span>Column</span>
+    </Col>
+  </Row>
+</Container>`;
+
+const codeSettingOneColumnWidth = `<Container>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col xs="6">
+      <span>2 of 3 (wider)</span>
+    </Col>
+    <Col>
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col xs="5">
+      <span>2 of 3 (wider)</span>
+    </Col>
+    <Col>
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+</Container>`;
+
+const codeSettingOneColumnWidthAuto = `<Container>
+  <Row className="justify-content-md-center">
+    <Col lg="2">
+      <span>1 of 3</span>
+    </Col>
+    <Col lg={{size: "auto"}}>
+      <span>Variable width content</span>
+    </Col>
+    <Col lg="2">
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col lg={{size: "auto"}}>
+      <span>Variable width content</span>
+    </Col>
+    <Col lg="2">
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+</Container>`;
+
+const codeEqualWidthMultiRow = `<Row>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+  <div className="w-100" />
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+</Row>`;
+
+const codeAllBreakpoints = `<Row>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+</Row>
+<Row>
+  <Col xs="8">
+    <span>col-8</span>
+  </Col>
+  <Col xs="4">
+    <span>col-4</span>
+  </Col>
+</Row>`;
+
+const codeStackedToHorizontal = `<Row>
+  <Col sm="8">
+    <span>col-sm-8</span>
+  </Col>
+  <Col sm="4">
+    <span>col-sm-4</span>
+  </Col>
+</Row>
+<Row>
+  <Col sm>
+    <span>col-sm</span>
+  </Col>
+  <Col sm>
+    <span>col-sm</span>
+  </Col>
+  <Col sm>
+    <span>col-sm</span>
+  </Col>
+</Row>`;
+
+const codeMixAndMatch = `{/* Stack the columns on mobile by making one full-width and the other half-width */}
+<Row>
+  <Col md="8" xs="12">
+    <span>.col-12 .col-md-8</span>
+  </Col>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+</Row>
+{/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+<Row>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+</Row>
+{/* Columns are always 50% wide, on mobile and desktop */}
+<Row>
+  <Col xs="6">
+    <span>.col-6</span>
+  </Col>
+  <Col xs="6">
+    <span>.col-6</span>
+  </Col>
+</Row>`;
 
 class Grid extends React.Component {
   render() {
@@ -38,15 +218,15 @@ class Grid extends React.Component {
           to layout and align content. It’s built with{" "}
           <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
             flexbox
-          </a>
+          </a>{" "}
           and is fully responsive. Below is an example and an in-depth look at
           how the grid comes together.
         </p>
         <p>
-          <strong>New to or unfamiliar with flexbox?</strong>
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <strong>New to or unfamiliar with flexbox?</strong>{" "}
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">
             Read this CSS Tricks flexbox guide
-          </a>
+          </a>{" "}
           for background, terminology, guidelines, and code snippets.
         </p>
         <div className="bd-example" data-example-id="">
@@ -75,14 +255,12 @@ class Grid extends React.Component {
         </p>
         <h2 id="grid-options">Grid options</h2>
         <p>
-          While Bootstrap uses <code className="highlighter-rouge">em</code>s
-          or <code className="highlighter-rouge">rem</code>s for defining most
+          While Bootstrap uses <code className="highlighter-rouge">em</code>s or{" "}
+          <code className="highlighter-rouge">rem</code>s for defining most
           sizes, <code className="highlighter-rouge">px</code>s are used for
           grid breakpoints and container widths. This is because the viewport
           width is in pixels and does not change with the{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            font size
-          </a>
+          <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>
           .
         </p>
         <p>
@@ -132,19 +310,19 @@ class Grid extends React.Component {
                   Class prefix
                 </th>
                 <td>
-                  <code>.col-</code>
+                  <code>{`xs={*}`}</code>
                 </td>
                 <td>
-                  <code>.col-sm-</code>
+                  <code>{`sm={*}`}</code>
                 </td>
                 <td>
-                  <code>.col-md-</code>
+                  <code>{`md={*}`}</code>
                 </td>
                 <td>
-                  <code>.col-lg-</code>
+                  <code>{`lg={*}`}</code>
                 </td>
                 <td>
-                  <code>.col-xl-</code>
+                  <code>{`xl={*}`}</code>
                 </td>
               </tr>
               <tr>
@@ -178,71 +356,75 @@ class Grid extends React.Component {
         <p>
           Utilize breakpoint-specific column classes for easy column sizing
           without an explicit numbered class like{" "}
-          <code className="highlighter-rouge">.col-sm-6</code>.
+          <code className="highlighter-rouge">{`sm={6}`}</code>.
         </p>
         <h3 id="equal-width">Equal-width</h3>
         <p>
           For example, here are two grid layouts that apply to every device and
-          viewport, from <code className="highlighter-rouge">xs</code>
-          to <code className="highlighter-rouge">xl</code>. Add any number of
+          viewport, from <code className="highlighter-rouge">xs</code> to{" "}
+          <code className="highlighter-rouge">xl</code>. Add any number of
           unit-less classes for each breakpoint you need and every column will
           be the same width.
         </p>
         <div className="bd-example" data-example-id="">
           <Container>
             <Row>
-              <div className="col">
+              <Col>
                 <span>1 of 2</span>
-              </div>
-              <div className="col">
+              </Col>
+              <Col>
                 <span>2 of 2</span>
-              </div>
+              </Col>
             </Row>
             <Row>
-              <div className="col">
+              <Col>
                 <span>1 of 3</span>
-              </div>
-              <div className="col">
+              </Col>
+              <Col>
                 <span>2 of 3</span>
-              </div>
-              <div className="col">
+              </Col>
+              <Col>
                 <span>3 of 3</span>
-              </div>
+              </Col>
             </Row>
           </Container>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeEqualWidth}
+        </SyntaxHighlighter>
         <p>
           Equal-width columns can be broken into multiple lines, but there was a{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="https://github.com/philipwalton/flexbugs#flexbug-11">
             Safari flexbox bug
           </a>
           that prevented this from working without an explicit{" "}
-          <code className="highlighter-rouge">flex-basis</code>
-          or <code className="highlighter-rouge">border</code>. There are
+          <code className="highlighter-rouge">flex-basis</code> or{" "}
+          <code className="highlighter-rouge">border</code>. There are
           workarounds for older browser versions, but they shouldn’t be
           necessary if you’re up-to-date.
         </p>
         <div className="bd-example" data-example-id="">
           <Container>
             <Row>
-              <div className="col">
+              <Col>
                 <span>Column</span>
-              </div>
-              <div className="col">
+              </Col>
+              <Col>
                 <span>Column</span>
-              </div>
+              </Col>
               <div className="w-100" />
-              <div className="col">
+              <Col>
                 <span>Column</span>
-              </div>
-              <div className="col">
+              </Col>
+              <Col>
                 <span>Column</span>
-              </div>
+              </Col>
             </Row>
           </Container>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeEqualWidth1}
+        </SyntaxHighlighter>
         <h3 id="setting-one-column-width">Setting one column width</h3>
         <p>
           Auto-layout for flexbox grid columns also means you can set the width
@@ -254,70 +436,73 @@ class Grid extends React.Component {
         <div className="bd-example" data-example-id="">
           <Container>
             <Row>
-              <div className="col">
+              <Col>
                 <span>1 of 3</span>
-              </div>
+              </Col>
               <Col xs="6">
                 <span>2 of 3 (wider)</span>
               </Col>
-              <div className="col">
+              <Col>
                 <span>3 of 3</span>
-              </div>
+              </Col>
             </Row>
             <Row>
-              <div className="col">
+              <Col>
                 <span>1 of 3</span>
-              </div>
+              </Col>
               <Col xs="5">
                 <span>2 of 3 (wider)</span>
               </Col>
-              <div className="col">
+              <Col>
                 <span>3 of 3</span>
-              </div>
+              </Col>
             </Row>
           </Container>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSettingOneColumnWidth}
+        </SyntaxHighlighter>
         <h3 id="variable-width-content">Variable width content</h3>
         <p>
           Use{" "}
-          <code className="highlighter-rouge">col-{`{breakpoint}`}-auto</code>
+          <code className="highlighter-rouge">{`breakpoint={{size: "auto"}}`}</code>{" "}
           classes to size columns based on the natural width of their content.
         </p>
         <div className="bd-example" data-example-id="">
           <Container>
             <Row className="justify-content-md-center">
-              <Col className="col" lg="2">
+              <Col lg="2">
                 <span>1 of 3</span>
               </Col>
-              <Col className="col-md-auto">
+              <Col lg={{ size: "auto" }}>
                 <span>Variable width content</span>
               </Col>
-              <Col className="col" lg="2">
+              <Col lg="2">
                 <span>3 of 3</span>
               </Col>
             </Row>
             <Row>
-              <div className="col">
+              <Col>
                 <span>1 of 3</span>
-              </div>
-              <Col className="col-md-auto">
+              </Col>
+              <Col lg={{ size: "auto" }}>
                 <span>Variable width content</span>
               </Col>
-              <Col className="col" lg="2">
+              <Col lg="2">
                 <span>3 of 3</span>
               </Col>
             </Row>
           </Container>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSettingOneColumnWidthAuto}
+        </SyntaxHighlighter>
         <h3 id="equal-width-multi-row">Equal-width multi-row</h3>
         <p>
           Create equal-width columns that span multiple rows by inserting a{" "}
-          <code className="highlighter-rouge">.w-100</code>
-          where you want the columns to break to a new line. Make the breaks
-          responsive by mixing the{" "}
-          <code className="highlighter-rouge">.w-100</code>
+          <code className="highlighter-rouge">.w-100</code> where you want the
+          columns to break to a new line. Make the breaks responsive by mixing
+          the <code className="highlighter-rouge">.w-100</code>
           with some{" "}
           <a href="/docs/1.0/utilities/display/">
             responsive display utilities
@@ -326,22 +511,24 @@ class Grid extends React.Component {
         </p>
         <div className="bd-example" data-example-id="">
           <Row>
-            <div className="col">
+            <Col>
               <span>col</span>
-            </div>
-            <div className="col">
+            </Col>
+            <Col>
               <span>col</span>
-            </div>
+            </Col>
             <div className="w-100" />
-            <div className="col">
+            <Col>
               <span>col</span>
-            </div>
-            <div className="col">
+            </Col>
+            <Col>
               <span>col</span>
-            </div>
+            </Col>
           </Row>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeEqualWidthMultiRow}
+        </SyntaxHighlighter>
         <h2 id="responsive-classes">Responsive classes</h2>
         <p>
           Bootstrap’s grid includes five tiers of predefined classes for
@@ -352,26 +539,25 @@ class Grid extends React.Component {
         <h3 id="all-breakpoints">All breakpoints</h3>
         <p>
           For grids that are the same from the smallest of devices to the
-          largest, use the <code className="highlighter-rouge">.col</code>
-          and <code className="highlighter-rouge">.col-*</code>
-          classes. Specify a numbered class when you need a particularly sized
-          column; otherwise, feel free to stick to{" "}
-          <code className="highlighter-rouge">.col</code>.
+          largest, use the <code className="highlighter-rouge">xs</code> and{" "}
+          <code className="highlighter-rouge">{`xs={*}`}</code> classes. Specify
+          a numbered class when you need a particularly sized column; otherwise,
+          feel free to stick to <code className="highlighter-rouge">.col</code>.
         </p>
         <div className="bd-example" data-example-id="">
           <Row>
-            <div className="col">
+            <Col>
               <span>col</span>
-            </div>
-            <div className="col">
+            </Col>
+            <Col>
               <span>col</span>
-            </div>
-            <div className="col">
+            </Col>
+            <Col>
               <span>col</span>
-            </div>
-            <div className="col">
+            </Col>
+            <Col>
               <span>col</span>
-            </div>
+            </Col>
           </Row>
           <Row>
             <Col xs="8">
@@ -382,13 +568,15 @@ class Grid extends React.Component {
             </Col>
           </Row>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeAllBreakpoints}
+        </SyntaxHighlighter>
         <h3 id="stacked-to-horizontal">Stacked to horizontal</h3>
         <p>
           Using a single set of{" "}
-          <code className="highlighter-rouge">.col-sm-*</code>
-          classes, you can create a basic grid system that starts out stacked
-          and becomes horizontal at the small breakpoint ({" "}
+          <code className="highlighter-rouge">{`sm={*}`}</code> classes, you can
+          create a basic grid system that starts out stacked and becomes
+          horizontal at the small breakpoint ({" "}
           <code className="highlighter-rouge">sm</code>
           ).
         </p>
@@ -402,18 +590,20 @@ class Grid extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col className="col-sm">
+            <Col sm>
               <span>col-sm</span>
             </Col>
-            <Col className="col-sm">
+            <Col sm>
               <span>col-sm</span>
             </Col>
-            <Col className="col-sm">
+            <Col sm>
               <span>col-sm</span>
             </Col>
           </Row>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeStackedToHorizontal}
+        </SyntaxHighlighter>
         <h3 id="mix-and-match">Mix and match</h3>
         <p>
           Don’t want your columns to simply stack in some grid tiers? Use a
@@ -452,7 +642,9 @@ class Grid extends React.Component {
             </Col>
           </Row>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeMixAndMatch}
+        </SyntaxHighlighter>
       </>
     );
   }
