@@ -2,11 +2,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
-import {
-  CardBody,
-  Row,
-  Col
-} from "reactstrap";
+import { CardBody, Row, Col } from "reactstrap";
 
 const codeImport = `import "assets/css/nucleo-icons.css";`;
 

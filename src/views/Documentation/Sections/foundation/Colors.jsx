@@ -1,24 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Button,
-  UncontrolledCollapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  Label,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Table,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Label, Table, Row, Col } from "reactstrap";
 
 class Colors extends React.Component {
   render() {
