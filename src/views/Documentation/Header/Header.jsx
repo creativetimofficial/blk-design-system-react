@@ -65,8 +65,8 @@ class Header extends React.Component {
           aria-label="View source on Github"
         >
           <svg
-            width="60"
-            height="60"
+            width="66"
+            height="66"
             viewBox="0 0 250 250"
             style={{
               fill: "#fff",

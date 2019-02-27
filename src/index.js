@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-
+// docs styles
+import "views/Documentation/assets-for-demo/docs.scss";
+import "views/Documentation/assets-for-demo/react-docs.scss";
+// core styles
 import "assets/css/nucleo-icons.css";
 import "assets/scss/blk-design-system-react.scss?v=1.0.0";
 import "assets/demo/demo.css";
