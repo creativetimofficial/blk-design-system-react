@@ -96,10 +96,12 @@ class Navbar extends React.Component {
           inside{" "}
           <code className="highlighter-rouge">
             src/components/Navbars/IndexNavbar.jsx
-          </code> and{" "}
+          </code>{" "}
+          and{" "}
           <code className="highlighter-rouge">
             src/components/Navbars/ExamplesNavbar.jsx
-          </code>.
+          </code>
+          .
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
@@ -111,7 +113,9 @@ class Navbar extends React.Component {
           <code className="highlighter-rouge">src/views/Index.jsx</code>.
         </p>
         <p>
-          It is diveded in two parts, the left one, that is used for the product name, and the right part with some social links and some links for navigating through the product.
+          It is diveded in two parts, the left one, that is used for the product
+          name, and the right part with some social links and some links for
+          navigating through the product.
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
@@ -119,11 +123,14 @@ class Navbar extends React.Component {
           </code>
         </h2>
         <p>
-          It is used to create the navbar / header that appears on all the pages found inside{" "}
+          It is used to create the navbar / header that appears on all the pages
+          found inside{" "}
           <code className="highlighter-rouge">src/views/examples/*</code>.
         </p>
         <p>
-          It is diveded in two parts, the left one, that is used for the product name, and the right part with some social links and some links for navigating through the product.
+          It is diveded in two parts, the left one, that is used for the product
+          name, and the right part with some social links and some links for
+          navigating through the product.
         </p>
       </>
     );

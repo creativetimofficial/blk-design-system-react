@@ -21,6 +21,7 @@ import Alerts from "views/Documentation/Sections/restyled-components/Alerts.jsx"
 import Badge from "views/Documentation/Sections/restyled-components/Badge.jsx";
 import Breadcrumb from "views/Documentation/Sections/restyled-components/Breadcrumb.jsx";
 import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
+import Carousel from "views/Documentation/Sections/restyled-components/Carousel.jsx";
 // import Cards from "views/Documentation/Sections/restyled-components/Cards.jsx";
 // import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
 // import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
@@ -145,6 +146,11 @@ var docsRoutes = [
         path: "/documentation/buttons",
         component: Buttons,
         name: "Buttons"
+      },
+      {
+        path: "/documentation/carousel",
+        component: Carousel,
+        name: "Carousel"
       },
       // {
       //   path: "/documentation/cards",

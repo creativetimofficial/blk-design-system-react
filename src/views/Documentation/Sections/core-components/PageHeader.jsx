@@ -15,9 +15,13 @@ class PageHeader extends React.Component {
           </code>
           .
         </p>
-        <p>This is the demo upper part of the <code className="highlighter-rouge">src/views/Index.jsx</code>.</p>
         <p>
-          It has the product title, a small description and some background squares with a nice animation.
+          This is the demo upper part of the{" "}
+          <code className="highlighter-rouge">src/views/Index.jsx</code>.
+        </p>
+        <p>
+          It has the product title, a small description and some background
+          squares with a nice animation.
         </p>
         <p>
           You can see it <Link to="/">here</Link>.
