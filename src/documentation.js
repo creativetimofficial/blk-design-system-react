@@ -17,7 +17,7 @@ import Footer from "views/Documentation/Sections/core-components/Footer.jsx";
 import Navbars from "views/Documentation/Sections/core-components/Navbars.jsx";
 import PageHeader from "views/Documentation/Sections/core-components/PageHeader.jsx";
 // Reasctrap components
-// import Alerts from "views/Documentation/Sections/Alerts.jsx";
+import Alerts from "views/Documentation/Sections/restyled-components/Alerts.jsx";
 // import Badges from "views/Documentation/Sections/Badges.jsx";
 // import Breadcrumbs from "views/Documentation/Sections/Breadcrumbs.jsx";
 // import Buttons from "views/Documentation/Sections/Buttons.jsx";
@@ -127,11 +127,11 @@ var docsRoutes = [
     name: "Restyled Components",
     path: "/documentation/alert",
     routes: [
-      // {
-      //   path: "/documentation/alert",
-      //   component: Alerts,
-      //   name: "Alerts"
-      // },
+      {
+        path: "/documentation/alert",
+        component: Alerts,
+        name: "Alerts"
+      },
       // {
       //   path: "/documentation/badge",
       //   component: Badges,
