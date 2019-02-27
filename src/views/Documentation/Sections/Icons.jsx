@@ -29,7 +29,8 @@ class Icons extends React.Component {
           our friends from{" "}
           <a href="https://nucleoapp.com/?ref=1712" target="_blank">
             NucleoApp
-          </a>.
+          </a>
+          .
         </p>
         <p>
           You will find all these icons in{" "}

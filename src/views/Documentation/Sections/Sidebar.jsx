@@ -77,12 +77,14 @@ class Sidebar extends React.Component {
           Can be found in{" "}
           <code className="highlighter-rouge">
             src/components/Sidebar/Sidebar.jsx
-          </code>.
+          </code>
+          .
         </p>
         <p>
           This is the left menu which is present on the{" "}
           <code className="highlighter-rouge">src/layouts/Admin/Admin.jsx</code>{" "}
-          and <code className="highlighter-rouge">src/layouts/RTL/RTL.jsx</code>.
+          and <code className="highlighter-rouge">src/layouts/RTL/RTL.jsx</code>
+          .
         </p>
         <p>
           It contains the company logo and title and the links to your whole
@@ -102,11 +104,13 @@ class Sidebar extends React.Component {
         </SyntaxHighlighter>
         <p>
           To understand better how to use it, please take a look inside{" "}
-          <code className="highlighter-rouge">src/layouts/Admin/Admin.jsx</code>,{" "}
-          <code className="highlighter-rouge">src/layouts/RTL/RTL.jsx</code> and{" "}
+          <code className="highlighter-rouge">src/layouts/Admin/Admin.jsx</code>
+          , <code className="highlighter-rouge">src/layouts/RTL/RTL.jsx</code>{" "}
+          and{" "}
           <code className="highlighter-rouge">
             src/components/Sidebar/Sidebar.jsx
-          </code>.
+          </code>
+          .
         </p>
         <h2>Props</h2>
         <SyntaxHighlighter language="jsx" style={prism}>

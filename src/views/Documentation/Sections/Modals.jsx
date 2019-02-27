@@ -377,8 +377,8 @@ class Modals extends React.Component {
         <p>
           Modals have two optional sizes, available via modifier classes to be
           placed on <code className="highlighter-rouge">size</code> prop of the{" "}
-          <code className="highlighter-rouge">{`<Modal>`}</code> tag. These sizes
-          kick in at certain breakpoints to avoid horizontal scrollbars on
+          <code className="highlighter-rouge">{`<Modal>`}</code> tag. These
+          sizes kick in at certain breakpoints to avoid horizontal scrollbars on
           narrower viewports.
         </p>
         <div className="bd-example">
@@ -434,7 +434,8 @@ class Modals extends React.Component {
             rel="noopener noreferrer"
           >
             reactstrap modal documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

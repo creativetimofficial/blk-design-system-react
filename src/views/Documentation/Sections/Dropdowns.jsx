@@ -416,7 +416,8 @@ class Dropdowns extends React.Component {
             rel="noopener noreferrer"
           >
             reactstrap dropdowns documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

@@ -174,10 +174,10 @@ class Alerts extends React.Component {
           Alerts are available for any length of text, as well as an optional
           dismiss button. For proper styling, use one of the eight required
           contextual classes (e.g., .alert-success). For inline dismissal, you
-          can either use them with <code className="highlighter-rouge">toggle</code>{" "}
-          function, or use the{" "}
-          <code className="highlighter-rouge">UncontrolledAlert</code> instead (see
-          examples down bellow);
+          can either use them with{" "}
+          <code className="highlighter-rouge">toggle</code> function, or use the{" "}
+          <code className="highlighter-rouge">UncontrolledAlert</code> instead
+          (see examples down bellow);
         </p>
         <div className="bd-example">
           <Alert color="primary">This is a primary alert—check it out!</Alert>
@@ -200,7 +200,8 @@ class Alerts extends React.Component {
             This is a primary alert with{" "}
             <a href="#pablo" className="alert-link">
               an example link
-            </a>. Give it a click if you like.
+            </a>
+            . Give it a click if you like.
           </Alert>
           <Alert color="info">
             This is a info alert with{" "}
@@ -210,7 +211,8 @@ class Alerts extends React.Component {
               onClick={e => e.preventDefault()}
             >
               an example link
-            </a>. Give it a click if you like.
+            </a>
+            . Give it a click if you like.
           </Alert>
           <Alert color="success">
             This is a success alert with{" "}
@@ -220,7 +222,8 @@ class Alerts extends React.Component {
               onClick={e => e.preventDefault()}
             >
               an example link
-            </a>. Give it a click if you like.
+            </a>
+            . Give it a click if you like.
           </Alert>
           <Alert color="danger">
             This is a danger alert with{" "}
@@ -230,7 +233,8 @@ class Alerts extends React.Component {
               onClick={e => e.preventDefault()}
             >
               an example link
-            </a>. Give it a click if you like.
+            </a>
+            . Give it a click if you like.
           </Alert>
           <Alert color="warning">
             This is a warning alert with{" "}
@@ -240,7 +244,8 @@ class Alerts extends React.Component {
               onClick={e => e.preventDefault()}
             >
               an example link
-            </a>. Give it a click if you like.
+            </a>
+            . Give it a click if you like.
           </Alert>
           <Alert color="default">
             This is a default alert with{" "}
@@ -250,14 +255,16 @@ class Alerts extends React.Component {
               onClick={e => e.preventDefault()}
             >
               an example link
-            </a>. Give it a click if you like.
+            </a>
+            . Give it a click if you like.
           </Alert>
         </div>
         <SyntaxHighlighter language="jsx" style={prism}>
           {codeLinkColor}
         </SyntaxHighlighter>
         <h2>
-          Dismissing with <code className="highlighter-rouge">toggle</code> function
+          Dismissing with <code className="highlighter-rouge">toggle</code>{" "}
+          function
         </h2>
         <div className="bd-example">
           <Alert
@@ -294,7 +301,8 @@ class Alerts extends React.Component {
             rel="noopener noreferrer"
           >
             reactstrap alerts documentation
-          </a>.
+          </a>
+          .
         </p>
         <br />
         <br />

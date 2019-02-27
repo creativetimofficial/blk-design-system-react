@@ -12,7 +12,7 @@ class Header extends React.Component {
         tag="header"
       >
         <Link to="/" className="navbar-brand mr-0 mr-md-2 navbar-absolute-logo">
-        Blk• Design System React
+          Blk• Design System React
         </Link>
         <Nav className="flex-row d-none d-md-flex" navbar>
           <NavItem>

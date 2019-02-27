@@ -1,8 +1,12 @@
 // Getting started
-import Tutorial from "views/Documentation/Sections/Tutorial.jsx";
-import Colors from "views/Documentation/Sections/Colors.jsx";
-import RoutingSystem from "views/Documentation/Sections/RoutingSystem.jsx";
-import Variables from "views/Documentation/Sections/Variables.jsx";
+// import Tutorial from "views/Documentation/Sections/Tutorial.jsx";
+// import Colors from "views/Documentation/Sections/Colors.jsx";
+// import Variables from "views/Documentation/Sections/Variables.jsx";
+import Overview from "views/Documentation/Sections/getting-started/Overview.jsx";
+import Download from "views/Documentation/Sections/getting-started/Download.jsx";
+import License from "views/Documentation/Sections/getting-started/License.jsx";
+import Contents from "views/Documentation/Sections/getting-started/Contents.jsx";
+import BuildTools from "views/Documentation/Sections/getting-started/BuildTools.jsx";
 // Core components
 import FixedPlugin from "views/Documentation/Sections/FixedPlugin.jsx";
 import Footer from "views/Documentation/Sections/Footer.jsx";
@@ -29,27 +33,32 @@ import PerfectScrollbar from "views/Documentation/Sections/PerfectScrollbar.jsx"
 var docsRoutes = [
   {
     name: "Getting started",
-    path: "/documentation/tutorial",
+    path: "/documentation/overview",
     routes: [
       {
-        path: "/documentation/tutorial",
-        component: Tutorial,
-        name: "Tutorial"
+        path: "/documentation/overview",
+        component: Overview,
+        name: "Overview"
       },
       {
-        path: "/documentation/colors",
-        component: Colors,
-        name: "Colors"
+        path: "/documentation/download",
+        component: Download,
+        name: "Download"
       },
       {
-        path: "/documentation/routing-system",
-        component: RoutingSystem,
-        name: "Routing System"
+        path: "/documentation/build-tools",
+        component: BuildTools,
+        name: "Build Tools"
       },
       {
-        path: "/documentation/variables",
-        component: Variables,
-        name: "Variables"
+        path: "/documentation/contents",
+        component: Contents,
+        name: "Contents"
+      },
+      {
+        path: "/documentation/license",
+        component: License,
+        name: "License"
       }
     ]
   },
@@ -162,7 +171,7 @@ var docsRoutes = [
       }
     ]
   },
-  { redirect: true, path: "/documentation", pathTo: "/documentation/tutorial" }
+  { redirect: true, path: "/documentation", pathTo: "/documentation/overview" }
 ];
 
 export default docsRoutes;

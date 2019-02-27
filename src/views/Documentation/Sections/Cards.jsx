@@ -163,8 +163,8 @@ class Cards extends React.Component {
         <h3>Body</h3>
         <p>
           The building block of a card is the{" "}
-          <code className="highlighter-rouge">CardBody</code>. Use it whenever you
-          need a padded section within a card.
+          <code className="highlighter-rouge">CardBody</code>. Use it whenever
+          you need a padded section within a card.
         </p>
         <div className="bd-example">
           <Card>
@@ -409,7 +409,8 @@ class Cards extends React.Component {
             rel="noopener noreferrer"
           >
             official reactstrap documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

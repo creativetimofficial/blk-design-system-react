@@ -599,7 +599,8 @@ class Navigation extends React.Component {
         </SyntaxHighlighter>
         <p>
           You may also utilize dropdowns in your navbar nav. You will have to
-          specify the <code className="highlighter-rouge">{`tag='nav'`}</code> prop.
+          specify the <code className="highlighter-rouge">{`tag='nav'`}</code>{" "}
+          prop.
         </p>
         <div className="bd-example" data-example-id="">
           <Navbar expand="lg" color="primary">
@@ -812,10 +813,10 @@ class Navigation extends React.Component {
         </SyntaxHighlighter>
         <h2>Placement</h2>
         <p>
-          Use our <code className="highlighter-rouge">position utilities</code> to
-          place navbars in non-static positions. Choose from fixed to the top,
-          fixed to the bottom, or stickied to the top (scrolls with the page
-          until it reaches the top, then stays there). Fixed navbars use{" "}
+          Use our <code className="highlighter-rouge">position utilities</code>{" "}
+          to place navbars in non-static positions. Choose from fixed to the
+          top, fixed to the bottom, or stickied to the top (scrolls with the
+          page until it reaches the top, then stays there). Fixed navbars use{" "}
           <code className="highlighter-rouge">position: fixed</code>, meaning
           they’re pulled from the normal flow of the DOM and may require custom
           CSS (e.g., <code className="highlighter-rouge">padding-top</code> on
@@ -830,7 +831,8 @@ class Navigation extends React.Component {
             <a href="https://caniuse.com/#feat=css-sticky">
               isn’t fully supported in every browser
             </a>
-          </strong>.
+          </strong>
+          .
         </p>
         <div className="bd-example" data-example-id="">
           <Navbar expand="lg" color={"primary"} light>
@@ -1007,7 +1009,8 @@ class Navigation extends React.Component {
             rel="noopener noreferrer"
           >
             reactstrap navbar documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );
