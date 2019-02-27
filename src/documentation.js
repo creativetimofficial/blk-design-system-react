@@ -19,7 +19,7 @@ import PageHeader from "views/Documentation/Sections/core-components/PageHeader.
 // Reasctrap components
 import Alerts from "views/Documentation/Sections/restyled-components/Alerts.jsx";
 import Badge from "views/Documentation/Sections/restyled-components/Badge.jsx";
-// import Breadcrumbs from "views/Documentation/Sections/restyled-components/Breadcrumbs.jsx";
+import Breadcrumb from "views/Documentation/Sections/restyled-components/Breadcrumb.jsx";
 // import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
 // import Cards from "views/Documentation/Sections/restyled-components/Cards.jsx";
 // import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
@@ -136,11 +136,11 @@ var docsRoutes = [
         component: Badge,
         name: "Badge"
       },
-      // {
-      //   path: "/documentation/breadcrumbs",
-      //   component: Breadcrumbs,
-      //   name: "Breadcrumbs"
-      // },
+      {
+        path: "/documentation/breadcrumbs",
+        component: Breadcrumb,
+        name: "Breadcrumb"
+      },
       // {
       //   path: "/documentation/buttons",
       //   component: Buttons,
