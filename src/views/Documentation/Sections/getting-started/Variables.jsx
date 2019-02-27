@@ -11,7 +11,7 @@ class Variables extends React.Component {
         </h1>
         <p>
           To make our demo pages (pages found in{" "}
-          <code className="highlighter-rouge">src/views/*</code>) a bit more
+          <code className="highlighter-rouge">src/views{'/'}*</code>) a bit more
           easy to understand and to have less code, we've created some special
           files with variables, variables which we import where we need them.
         </p>
@@ -19,15 +19,11 @@ class Variables extends React.Component {
           You will find all the variables regarding the charts in{" "}
           <code className="highlighter-rouge">src/variables/charts.jsx</code>.
         </p>
-        <p>
-          At the end of this file, you will find the exports with comments for
-          you to know where each variables is used.
-        </p>
-        <p>To use any of these variables you need to import them like so:</p>
+        <p>To use any of this variable you need to import it like so:</p>
         <SyntaxHighlighter
           language="jsx"
           style={prism}
-        >{`import { variableName } from 'variables/charts.jsx';`}</SyntaxHighlighter>
+        >{`import variableName from 'variables/charts.jsx';`}</SyntaxHighlighter>
       </div>
     );
   }

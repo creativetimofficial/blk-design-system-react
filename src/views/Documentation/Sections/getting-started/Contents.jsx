@@ -1,70 +1,77 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
-// reactstrap components
-import { Table } from "reactstrap";
 
-const fileStructure = `black-dashboard-react
+const fileStructure = `Blk• Design System React
 .
-├── package.json
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
-├── LICENSE.md
 ├── README.md
+├── package.json
 ├── Documentation
 │   └── documentation.html
-├── github-assets
-│   └── react.svg
 ├── public
+│   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
     ├── index.js
-    ├── logo-white.svg
-    ├── logo.svg
-    ├── routes.js
+    ├── variables
+    │   └── charts.jsx
     ├── assets
     │   ├── css
+    │   │   ├── blk-design-system-react.css
+    │   │   ├── blk-design-system-react.css.map
+    │   │   ├── blk-design-system-react.min.css
+    │   │   └── nucleo-icons.css
     │   ├── demo
+    │   │   └── demo.css
     │   ├── fonts
+    │   │   ├── nucleo.eot
+    │   │   ├── nucleo.ttf
+    │   │   ├── nucleo.woff
+    │   │   └── nucleo.woff2
     │   ├── img
     │   └── scss
-    │       ├── black-dashboard-react
+    │       ├── blk-design-system-react
     │       │   ├── bootstrap
     │       │   │   ├── mixins
     │       │   │   └── utilities
     │       │   ├── custom
     │       │   │   ├── cards
     │       │   │   ├── mixins
+    │       │   │   ├── sections
     │       │   │   ├── utilities
     │       │   │   └── vendor
-    │       └── black-dashboard-react.scss
+    │       │   └── react
+    │       │       └── react-differences.scss
+    │       └── blk-design-system-react.scss
     ├── components
-    │   ├── FixedPlugin
-    │   │   └── FixedPlugin.jsx
     │   ├── Footer
     │   │   └── Footer.jsx
     │   ├── Navbars
-    │   │   ├── AdminNavbar.jsx
-    │   │   └── RTLNavbar.jsx
-    │   └── Sidebar
-    │       └── Sidebar.jsx
-    ├── layouts
-    │   ├── Admin
-    │   │   └── Admin.jsx
-    │   └── RTL
-    │       └── RTL.jsx
-    ├── variables
-    │   └── charts.jsx
+    │   │   ├── ComponentsNavbar.jsx
+    │   │   └── ExamplesNavbar.jsx
+    │   └── PageHeader
+    │       └── PageHeader.jsx
     └── views
-        ├── Dashboard.jsx
-        ├── Icons.jsx
-        ├── Map.jsx
-        ├── Notifications.jsx
-        ├── Rtl.jsx
-        ├── TableList.jsx
-        ├── Typography.jsx
-        └── UserProfile.jsx`;
+        ├── Index.jsx
+        ├── IndexSections
+        │   ├── Basics.jsx
+        │   ├── Download.jsx
+        │   ├── Examples.jsx
+        │   ├── JavaScript.jsx
+        │   ├── Navbars.jsx
+        │   ├── Notifications.jsx
+        │   ├── NucleoIcons.jsx
+        │   ├── Pagination.jsx
+        │   ├── Signup.jsx
+        │   ├── Tabs.jsx
+        │   └── Typography.jsx
+        └── examples
+            ├── LandingPage.jsx
+            ├── ProfilePage.jsx
+            └── RegisterPage.jsx`;
 
 class Contents extends React.Component {
   render() {

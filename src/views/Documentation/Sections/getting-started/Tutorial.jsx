@@ -4,67 +4,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import { applescript } from "react-syntax-highlighter/dist/styles/hljs";
 
-const fileStructure = `black-dashboard-react
-.
-├── package.json
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE.md
-├── README.md
-├── Documentation
-│   └── documentation.html
-├── github-assets
-│   └── react.svg
-├── public
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── logo-white.svg
-    ├── logo.svg
-    ├── routes.js
-    ├── assets
-    │   ├── css
-    │   ├── demo
-    │   ├── fonts
-    │   ├── img
-    │   └── scss
-    │       ├── black-dashboard-react
-    │       │   ├── bootstrap
-    │       │   │   ├── mixins
-    │       │   │   └── utilities
-    │       │   ├── custom
-    │       │   │   ├── cards
-    │       │   │   ├── mixins
-    │       │   │   ├── utilities
-    │       │   │   └── vendor
-    │       └── black-dashboard-react.scss
-    ├── components
-    │   ├── FixedPlugin
-    │   │   └── FixedPlugin.jsx
-    │   ├── Footer
-    │   │   └── Footer.jsx
-    │   ├── Navbars
-    │   │   ├── AdminNavbar.jsx
-    │   │   └── RTLNavbar.jsx
-    │   └── Sidebar
-    │       └── Sidebar.jsx
-    ├── layouts
-    │   ├── Admin
-    │   │   └── Admin.jsx
-    │   └── RTL
-    │       └── RTL.jsx
-    ├── variables
-    │   └── charts.jsx
-    └── views
-        ├── Dashboard.jsx
-        ├── Icons.jsx
-        ├── Map.jsx
-        ├── Notifications.jsx
-        ├── Rtl.jsx
-        ├── TableList.jsx
-        ├── Typography.jsx
-        └── UserProfile.jsx`;
+
 
 class Tutorial extends React.Component {
   render() {
@@ -73,121 +13,6 @@ class Tutorial extends React.Component {
         <h1 className="bd-title" id="content">
           Tutorial
         </h1>
-        <br />
-        <br />
-        <h2>Short Description and Usage</h2>
-        <p>
-          <b>Black Dashboard React</b> is a beautiful resource built over{" "}
-          <a
-            href="https://getbootstrap.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Bootstrap 4
-          </a>
-          ,{" "}
-          <a
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>{" "}
-          (
-          <a
-            href="https://github.com/facebook/create-react-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            create-react-app
-          </a>
-          ) and{" "}
-          <a
-            href="https://reactstrap.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            reactstrap
-          </a>{" "}
-          to allow you to create powerful and beautiful dashboards. We have
-          redesigned all the usual components in Bootstrap to make it look flat,
-          minimalist and easy to use.
-        </p>
-        <p>
-          Using the dashboard is very simple, but it does require you to
-          understand basic JavaScript functions, react and reactstrap. To get
-          the desired effect you will need to integrate react components and JS
-          plugins that take a little bit more effort. Down below we list all the
-          files you need to include inside the application to get going.
-        </p>
-        <br />
-        <br />
-        <h2>License</h2>
-        <p>
-          <b>MIT LICENSE</b>
-          <br />
-          Copyright (c) {1900 + new Date().getYear()}{" "}
-          <a href="https://creative-tim.com/" target="_blank">
-            Creative Tim
-          </a>
-          .
-        </p>
-        <p>
-          Permission is hereby granted, free of charge, to any person obtaining
-          a copy of this software and associated documentation files (the
-          "Software"), to deal in the Software without restriction, including
-          without limitation the rights to use, copy, modify, merge, publish,
-          distribute, sublicense, and/or sell copies of the Software, and to
-          permit persons to whom the Software is furnished to do so, subject to
-          the following conditions:
-        </p>
-        <p>
-          The above copyright notice and this permission notice shall be
-          included in all copies or substantial portions of the Software.
-        </p>
-        <p>
-          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-          EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-          MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-          IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-          CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-          TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-          SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-        </p>
-        <p>
-          Read more about licenses here:{" "}
-          <a
-            href="https://www.creative-tim.com/license/?ref=black-dashboard-react"
-            target="_blank"
-          >
-            creative-tim license
-          </a>
-          .
-        </p>
-        <br />
-        <br />
-        <h2>Getting Started</h2>
-        <p>
-          The Black Dashboard React is built on top of{" "}
-          <a
-            href="https://reactstrap.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            reactstrap
-          </a>{" "}
-          (Bootstrap 4), so you can safely use it on your existing or new
-          Reactstrap project. No line of code from Bootstrap 4 was changed, so
-          you don't have to worry about undesired effects in your work.
-        </p>
-        <p>
-          We provide all the necessary CSS resources. So, to immediately change
-          or get started with our design, include the{" "}
-          <code className="highlighter-rouge">
-            src/assets/scss/black-dashboard-react.css
-          </code>{" "}
-          in your template. Your project will get the new look.
-        </p>
         <br />
         <br />
         <h2>Local Development</h2>
@@ -401,9 +226,16 @@ class Tutorial extends React.Component {
           our styles inside your app like so:
         </p>
         <SyntaxHighlighter language="javascript" style={prism}>
-          {`import "assets/scss/black-dashboard-react.scss";
+          {`import "assets/scss/blk-design-system-react.scss";
 import "assets/css/nucleo-icons.css";`}
         </SyntaxHighlighter>
+        <p>Or you can import our compiled scss</p>
+          <SyntaxHighlighter language="javascript" style={prism}>
+            {`import "assets/css/blk-design-system-react.css";
+// import "assets/css/blk-design-system-react.min.css";
+// import "assets/css/blk-design-system-react.css.map";
+import "assets/css/nucleo-icons.css";`}
+          </SyntaxHighlighter>
         <br />
         <br />
         <h2>Fonts and Icons</h2>
@@ -418,12 +250,6 @@ import "assets/css/nucleo-icons.css";`}
         >{`<!--     Fonts and icons     -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />`}</SyntaxHighlighter>
-        <br />
-        <br />
-        <h2>File structure</h2>
-        <SyntaxHighlighter language="bash" style={prism}>
-          {fileStructure}
-        </SyntaxHighlighter>
       </>
     );
   }

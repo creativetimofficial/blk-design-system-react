@@ -1,12 +1,12 @@
 // Getting started
-// import Tutorial from "views/Documentation/Sections/Tutorial.jsx";
 // import Colors from "views/Documentation/Sections/Colors.jsx";
-// import Variables from "views/Documentation/Sections/Variables.jsx";
 import Overview from "views/Documentation/Sections/getting-started/Overview.jsx";
 import Download from "views/Documentation/Sections/getting-started/Download.jsx";
 import License from "views/Documentation/Sections/getting-started/License.jsx";
 import Contents from "views/Documentation/Sections/getting-started/Contents.jsx";
 import BuildTools from "views/Documentation/Sections/getting-started/BuildTools.jsx";
+import Tutorial from "views/Documentation/Sections/getting-started/Tutorial.jsx";
+import Variables from "views/Documentation/Sections/getting-started/Variables.jsx";
 // Core components
 import FixedPlugin from "views/Documentation/Sections/FixedPlugin.jsx";
 import Footer from "views/Documentation/Sections/Footer.jsx";
@@ -59,6 +59,16 @@ var docsRoutes = [
         path: "/documentation/license",
         component: License,
         name: "License"
+      },
+      {
+        path: "/documentation/tutorial",
+        component: Tutorial,
+        name: "Tutorial"
+      },
+      {
+        path: "/documentation/variables",
+        component: Variables,
+        name: "Variables"
       }
     ]
   },
