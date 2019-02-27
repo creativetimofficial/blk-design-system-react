@@ -34,6 +34,22 @@ const codeBase = `<Nav>
     </NavItem>
 </Nav>`;
 
+const codeBase1 = `<Nav tag="nav">
+    <NavItem>
+        <NavLink href="#">Link</NavLink>
+    </NavItem>
+    <NavItem>
+        <NavLink href="#">Link</NavLink>
+    </NavItem>
+    <NavItem>
+        <NavLink href="#">Another Link</NavLink>
+    </NavItem>
+    <NavItem>
+        <NavLink disabled href="#">Disabled Link</NavLink>
+    </NavItem>
+</Nav>`;
+
+
 const codeCenter = `<Nav className="justify-content-center">
     <NavItem>
         <NavLink href="#">Link</NavLink>
@@ -206,7 +222,9 @@ class Navs extends React.Component {
             </NavLink>
           </Nav>
         </div>
-        <div className="highlight" />
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeBase1}
+        </SyntaxHighlighter>
         <h2 id="available-styles">Available styles</h2>
         <p>
           Change the style of <code className="highlighter-rouge">.nav</code>s
