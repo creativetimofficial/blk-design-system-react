@@ -22,7 +22,7 @@ import Badge from "views/Documentation/Sections/restyled-components/Badge.jsx";
 import Breadcrumb from "views/Documentation/Sections/restyled-components/Breadcrumb.jsx";
 import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
 import Carousel from "views/Documentation/Sections/restyled-components/Carousel.jsx";
-// import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
+import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
 // import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
 // import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx";
 // import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
@@ -151,11 +151,11 @@ var docsRoutes = [
         component: Carousel,
         name: "Carousel"
       },
-      // {
-      //   path: "/documentation/dropdowns",
-      //   component: Dropdowns,
-      //   name: "Dropdowns"
-      // },
+      {
+        path: "/documentation/dropdowns",
+        component: Dropdowns,
+        name: "Dropdowns"
+      },
       // {
       //   path: "/documentation/forms",
       //   component: Forms,
