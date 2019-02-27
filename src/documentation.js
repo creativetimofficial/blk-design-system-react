@@ -13,10 +13,9 @@ import Grid from "views/Documentation/Sections/foundation/Grid.jsx";
 import Typography from "views/Documentation/Sections/foundation/Typography.jsx";
 import Icons from "views/Documentation/Sections/foundation/Icons.jsx";
 // Core components
-// import FixedPlugin from "views/Documentation/Sections/FixedPlugin.jsx";
-// import Footer from "views/Documentation/Sections/Footer.jsx";
-// import Navbar from "views/Documentation/Sections/Navbar.jsx";
-// import Sidebar from "views/Documentation/Sections/Sidebar.jsx";
+import Footer from "views/Documentation/Sections/core-components/Footer.jsx";
+import Navbars from "views/Documentation/Sections/core-components/Navbars.jsx";
+import PageHeader from "views/Documentation/Sections/core-components/PageHeader.jsx";
 // Reasctrap components
 // import Alerts from "views/Documentation/Sections/Alerts.jsx";
 // import Badges from "views/Documentation/Sections/Badges.jsx";
@@ -107,26 +106,21 @@ var docsRoutes = [
     name: "Core Components",
     path: "/documentation/custom-upload",
     routes: [
-      // {
-      //   path: "/documentation/fixed-plugin",
-      //   component: FixedPlugin,
-      //   name: "Fixed Plugin"
-      // },
-      // {
-      //   path: "/documentation/footer",
-      //   component: Footer,
-      //   name: "Footer"
-      // },
-      // {
-      //   path: "/documentation/navbar",
-      //   component: Navbar,
-      //   name: "App Navbar"
-      // },
-      // {
-      //   path: "/documentation/sidebar",
-      //   component: Sidebar,
-      //   name: "Sidebar"
-      // }
+      {
+        path: "/documentation/footer",
+        component: Footer,
+        name: "Footer"
+      },
+      {
+        path: "/documentation/navbars",
+        component: Navbars,
+        name: "App Navbars"
+      },
+      {
+        path: "/documentation/page-header",
+        component: PageHeader,
+        name: "PageHeader"
+      }
     ]
   },
   {
