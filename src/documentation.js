@@ -20,7 +20,7 @@ import PageHeader from "views/Documentation/Sections/core-components/PageHeader.
 import Alerts from "views/Documentation/Sections/restyled-components/Alerts.jsx";
 import Badge from "views/Documentation/Sections/restyled-components/Badge.jsx";
 import Breadcrumb from "views/Documentation/Sections/restyled-components/Breadcrumb.jsx";
-// import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
+import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
 // import Cards from "views/Documentation/Sections/restyled-components/Cards.jsx";
 // import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
 // import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
@@ -141,11 +141,11 @@ var docsRoutes = [
         component: Breadcrumb,
         name: "Breadcrumb"
       },
-      // {
-      //   path: "/documentation/buttons",
-      //   component: Buttons,
-      //   name: "Buttons"
-      // },
+      {
+        path: "/documentation/buttons",
+        component: Buttons,
+        name: "Buttons"
+      },
       // {
       //   path: "/documentation/cards",
       //   component: Cards,
