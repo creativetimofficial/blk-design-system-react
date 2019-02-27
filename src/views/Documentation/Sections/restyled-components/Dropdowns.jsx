@@ -8,7 +8,7 @@ import {
   DropdownMenu,
   DropdownItem,
   UncontrolledButtonDropdown,
-  Button,
+  Button
 } from "reactstrap";
 
 const codeExamples = `<UncontrolledDropdown>

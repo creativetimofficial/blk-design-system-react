@@ -62,7 +62,7 @@ class Carousel extends React.Component {
   }
 }
 
-export default Carousel;`
+export default Carousel;`;
 
 class Carousel extends React.Component {
   render() {

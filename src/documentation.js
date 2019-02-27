@@ -25,7 +25,7 @@ import Carousel from "views/Documentation/Sections/restyled-components/Carousel.
 import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
 import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
 import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx";
-// import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
+import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
 // import Navbars from "views/Documentation/Sections/restyled-components/Navbars.jsx";
 // import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
 // Plugins
@@ -171,11 +171,11 @@ var docsRoutes = [
       //   component: Navbars,
       //   name: "Navbars"
       // },
-      // {
-      //   path: "/documentation/navs",
-      //   component: Navs,
-      //   name: "Navs"
-      // },
+      {
+        path: "/documentation/navs",
+        component: Navs,
+        name: "Navs"
+      },
       // {
       //   path: "/documentation/tables",
       //   component: Tables,
