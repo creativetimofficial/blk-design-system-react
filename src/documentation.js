@@ -23,7 +23,7 @@ import Breadcrumb from "views/Documentation/Sections/restyled-components/Breadcr
 import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
 import Carousel from "views/Documentation/Sections/restyled-components/Carousel.jsx";
 import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
-// import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
+import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
 // import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx";
 // import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
 // import Navbars from "views/Documentation/Sections/restyled-components/Navbars.jsx";
@@ -156,11 +156,11 @@ var docsRoutes = [
         component: Dropdowns,
         name: "Dropdowns"
       },
-      // {
-      //   path: "/documentation/forms",
-      //   component: Forms,
-      //   name: "Forms"
-      // },
+      {
+        path: "/documentation/forms",
+        component: Forms,
+        name: "Forms"
+      },
       // {
       //   path: "/documentation/modal",
       //   component: Modals,
