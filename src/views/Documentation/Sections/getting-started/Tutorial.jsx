@@ -4,8 +4,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import { applescript } from "react-syntax-highlighter/dist/styles/hljs";
 
-
-
 class Tutorial extends React.Component {
   render() {
     return (
@@ -230,12 +228,12 @@ class Tutorial extends React.Component {
 import "assets/css/nucleo-icons.css";`}
         </SyntaxHighlighter>
         <p>Or you can import our compiled scss</p>
-          <SyntaxHighlighter language="javascript" style={prism}>
-            {`import "assets/css/blk-design-system-react.css";
+        <SyntaxHighlighter language="javascript" style={prism}>
+          {`import "assets/css/blk-design-system-react.css";
 // import "assets/css/blk-design-system-react.min.css";
 // import "assets/css/blk-design-system-react.css.map";
 import "assets/css/nucleo-icons.css";`}
-          </SyntaxHighlighter>
+        </SyntaxHighlighter>
         <br />
         <br />
         <h2>Fonts and Icons</h2>
