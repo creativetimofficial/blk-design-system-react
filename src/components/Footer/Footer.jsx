@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -24,35 +24,35 @@ class Footer extends React.Component {
             <Col md="3">
               <Nav>
                 <NavItem>
-                  <NavLink href="./index.html">Home</NavLink>
+                  <NavLink to="/" tag={Link}>Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="./examples/landing-page.html">Landing</NavLink>
+                  <NavLink to="/landing-page" tag={Link}>Landing</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="./examples/register-page.html">
+                  <NavLink to="/register-page" tag={Link}>
                     Register
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="./examples/profile-page.html">Profile</NavLink>
+                  <NavLink to="/profile-page" tag={Link}>Profile</NavLink>
                 </NavItem>
               </Nav>
             </Col>
             <Col md="3">
               <Nav>
                 <NavItem>
-                  <NavLink href="https://creative-tim.com/contact-us">
+                  <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
                     Contact Us
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://creative-tim.com/about-us">
+                  <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
                     About Us
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://creative-tim.com/blog">Blog</NavLink>
+                  <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">Blog</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="https://opensource.org/licenses/MIT">
