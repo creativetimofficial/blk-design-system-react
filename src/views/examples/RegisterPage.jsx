@@ -1,5 +1,5 @@
 import React from "react";
-
+import classnames from "classnames";
 // reactstrap components
 import {
   Button,
@@ -90,29 +90,64 @@ class RegisterPage extends React.Component {
                       </CardHeader>
                       <CardBody>
                         <Form className="form">
-                          <InputGroup>
+                          <InputGroup
+                            className={classnames({
+                              "input-group-focus": this.state.fullNameFocus
+                            })}
+                          >
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
                                 <i className="tim-icons icon-single-02" />
                               </InputGroupText>
                             </InputGroupAddon>
-                            <Input placeholder="Full Name" type="text" />
+                            <Input
+                              placeholder="Full Name"
+                              type="text"
+                              onFocus={e =>
+                                this.setState({ fullNameFocus: true })
+                              }
+                              onBlur={e =>
+                                this.setState({ fullNameFocus: false })
+                              }
+                            />
                           </InputGroup>
-                          <InputGroup>
+                          <InputGroup
+                            className={classnames({
+                              "input-group-focus": this.state.emailFocus
+                            })}
+                          >
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
                                 <i className="tim-icons icon-email-85" />
                               </InputGroupText>
                             </InputGroupAddon>
-                            <Input placeholder="Email" type="text" />
+                            <Input
+                              placeholder="Email"
+                              type="text"
+                              onFocus={e => this.setState({ emailFocus: true })}
+                              onBlur={e => this.setState({ emailFocus: false })}
+                            />
                           </InputGroup>
-                          <InputGroup>
+                          <InputGroup
+                            className={classnames({
+                              "input-group-focus": this.state.passwordFocus
+                            })}
+                          >
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
                                 <i className="tim-icons icon-lock-circle" />
                               </InputGroupText>
                             </InputGroupAddon>
-                            <Input placeholder="Password" type="text" />
+                            <Input
+                              placeholder="Password"
+                              type="text"
+                              onFocus={e =>
+                                this.setState({ passwordFocus: true })
+                              }
+                              onBlur={e =>
+                                this.setState({ passwordFocus: false })
+                              }
+                            />
                           </InputGroup>
                           <FormGroup check className="text-left">
                             <Label check>
