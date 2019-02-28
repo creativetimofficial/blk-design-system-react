@@ -32,9 +32,10 @@ import Progress from "views/Documentation/Sections/restyled-components/Progress.
 import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
 import Tooltips from "views/Documentation/Sections/restyled-components/Tooltips.jsx";
 // Plugins
-// import Charts from "views/Documentation/Sections/Charts.jsx";
-// import Icons from "views/Documentation/Sections/Icons.jsx";
-// import PerfectScrollbar from "views/Documentation/Sections/PerfectScrollbar.jsx";
+import Charts from "views/Documentation/Sections/plugins/Charts.jsx";
+import Datetimepicker from "views/Documentation/Sections/plugins/Datetimepicker.jsx";
+import Sliders from "views/Documentation/Sections/plugins/Sliders.jsx";
+import Switch from "views/Documentation/Sections/plugins/Switch.jsx";
 
 var docsRoutes = [
   {
@@ -205,17 +206,10 @@ var docsRoutes = [
     name: "Plugins",
     path: "/documentation/charts",
     routes: [
-      // { path: "/documentation/charts", component: Charts, name: "Charts" },
-      // {
-      //   path: "/documentation/icons",
-      //   component: Icons,
-      //   name: "Nucleo Icons"
-      // },
-      // {
-      //   path: "/documentation/perfect-scrollbar",
-      //   component: PerfectScrollbar,
-      //   name: "PerfectScrollbar"
-      // }
+      { path: "/documentation/charts", component: Charts, name: "Charts" },
+      { path: "/documentation/date-time-picker", component: Datetimepicker, name: "DateTimePicker" },
+      { path: "/documentation/sliders", component: Sliders, name: "Sliders" },
+      { path: "/documentation/switch", component: Switch, name: "Switch" }
     ]
   },
   { redirect: true, path: "/documentation", pathTo: "/documentation/overview" }
