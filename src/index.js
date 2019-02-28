@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 // docs styles
 import "views/Documentation/assets-for-demo/docs.scss";
 import "views/Documentation/assets-for-demo/react-docs.scss";
@@ -16,7 +16,7 @@ import ProfilePage from "views/examples/ProfilePage.jsx";
 import Documentation from "views/Documentation/Documentation.jsx";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route path="/components" render={props => <Index {...props} />} />
       <Route
@@ -37,6 +37,6 @@ ReactDOM.render(
       />
       <Redirect from="/" to="/components" />
     </Switch>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );
