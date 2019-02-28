@@ -2006,17 +2006,17 @@ class NavbarDocs extends React.Component {
           {codeToggler3}
         </SyntaxHighlighter>
         <h2 id="props">Props</h2>
-          <p>
-            Please refer to{" "}
-            <a
-              href="https://reactstrap.github.io/components/navbar/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              reactstrap Navbar documentation
-            </a>
-            .
-          </p>
+        <p>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/navbar/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reactstrap Navbar documentation
+          </a>
+          .
+        </p>
       </>
     );
   }

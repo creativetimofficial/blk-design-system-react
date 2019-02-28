@@ -102,7 +102,7 @@ var docsRoutes = [
         path: "/documentation/icons",
         component: Icons,
         name: "Icons"
-      },
+      }
     ]
   },
   {
@@ -207,7 +207,11 @@ var docsRoutes = [
     path: "/documentation/charts",
     routes: [
       { path: "/documentation/charts", component: Charts, name: "Charts" },
-      { path: "/documentation/date-time-picker", component: Datetimepicker, name: "DateTimePicker" },
+      {
+        path: "/documentation/date-time-picker",
+        component: Datetimepicker,
+        name: "DateTimePicker"
+      },
       { path: "/documentation/sliders", component: Sliders, name: "Sliders" },
       { path: "/documentation/switch", component: Switch, name: "Switch" }
     ]
