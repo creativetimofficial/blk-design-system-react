@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon
+} from "react-share";
 // reactstrap components
 import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
@@ -56,12 +62,43 @@ class Download extends React.Component {
                 color="twitter"
                 id="twitter"
                 size="lg"
+                href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fblk-design-system-react%2F%23%2Fcomponents&text=Blk%E2%80%A2%20Design%20System%20React%20by%20Creative%20Tim&original_referer=http%3A%2F%2Flocalhost%3A3000%2Fcomponents&via=creativetim&hashtags=react%2Cbootstrap%2Creactstrap%2Ccreativetim%2Ccreativetimofficial%2Cblk%2Cblkreact%2Cdesign%2Csystem%2Cdesignsystem%2Creactdesign%2Creactsystem%2Creactdesignsystem%2Cblksystem%2Cblkdesign%2Cblkreactdesignsystem"
+                target="_blank"
               >
                 <i className="fab fa-twitter" />
               </Button>
               <UncontrolledTooltip delay={0} target="twitter">
                 Tweet!
               </UncontrolledTooltip>
+              <TwitterShareButton
+                url="https://demos.creative-tim.com/blk-design-system-react/#/components"
+                title="Blk• Design System React by Creative Tim"
+                hashtags={[
+                  "react",
+                  "bootstrap",
+                  "reactstrap",
+                  "creativetim",
+                  "creativetimofficial",
+                  "blk",
+                  "blkreact",
+                  "design",
+                  "system",
+                  "designsystem",
+                  "reactdesign",
+                  "reactsystem",
+                  "reactdesignsystem",
+                  "blksystem",
+                  "blkdesign",
+                  "blkreactdesignsystem"
+                ]}
+                via="creativetim"
+                className="btn-icon btn-round btn-twitter btn-lg"
+              >
+                <TwitterIcon size={32} round={true} />
+              </TwitterShareButton>
+              <FacebookShareButton url="https://demos.creative-tim.com/blk-design-system-react/#/components">
+                <FacebookIcon size={32} round={true} />
+              </FacebookShareButton>
               <Button
                 className="btn-icon btn-round"
                 color="facebook"
