@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/blk-design-system-react/precache-manifest.fe66e4aecbf5ae734a609e0e9aeb1e7c.js"
+  "/blk-design-system-react/precache-manifest.951e4d037c27dc1c29722e7faf0e9484.js"
 );
 
 workbox.clientsClaim();

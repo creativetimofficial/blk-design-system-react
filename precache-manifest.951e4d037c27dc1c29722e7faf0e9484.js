@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "ff004a0e5de54ba9dbd8583fa7e1b3f5",
-    "url": "/blk-design-system-react/static/media/square5.ff004a0e.png"
+    "revision": "6619b9792d7d108bb589b51bbd560278",
+    "url": "/blk-design-system-react/static/media/square2.6619b979.png"
   },
   {
-    "revision": "dcbaf6c66c64f7e9e989",
+    "revision": "9d1f0159c5923a9ea4a5",
     "url": "/blk-design-system-react/static/css/main.982114d8.chunk.css"
   },
   {
@@ -80,24 +80,24 @@ self.__precacheManifest = [
     "url": "/blk-design-system-react/static/media/dots.b81dabc0.png"
   },
   {
-    "revision": "dcbaf6c66c64f7e9e989",
-    "url": "/blk-design-system-react/static/js/main.dcbaf6c6.chunk.js"
+    "revision": "9d1f0159c5923a9ea4a5",
+    "url": "/blk-design-system-react/static/js/main.9d1f0159.chunk.js"
   },
   {
-    "revision": "6619b9792d7d108bb589b51bbd560278",
-    "url": "/blk-design-system-react/static/media/square2.6619b979.png"
+    "revision": "ca25707397fcc982d7dc1f82555f09a0",
+    "url": "/blk-design-system-react/static/media/square1.ca257073.png"
   },
   {
     "revision": "23fa76237f0066f4ffd8f20e77449887",
     "url": "/blk-design-system-react/static/media/square3.23fa7623.png"
   },
   {
-    "revision": "8fdf9ee20db40e5d1cf778bf99486cb7",
-    "url": "/blk-design-system-react/static/media/square4.8fdf9ee2.png"
+    "revision": "ff004a0e5de54ba9dbd8583fa7e1b3f5",
+    "url": "/blk-design-system-react/static/media/square5.ff004a0e.png"
   },
   {
-    "revision": "ca25707397fcc982d7dc1f82555f09a0",
-    "url": "/blk-design-system-react/static/media/square1.ca257073.png"
+    "revision": "8fdf9ee20db40e5d1cf778bf99486cb7",
+    "url": "/blk-design-system-react/static/media/square4.8fdf9ee2.png"
   },
   {
     "revision": "9d4a558e7169ed763a05715627bc088c",
@@ -156,7 +156,7 @@ self.__precacheManifest = [
     "url": "/blk-design-system-react/static/media/ripp.98742a82.png"
   },
   {
-    "revision": "0b931dcc7c8d7b5600733074e6c44f63",
+    "revision": "b8d798ea32e2c67aa4d5fb58c3ba2097",
     "url": "/blk-design-system-react/index.html"
   }
 ];
