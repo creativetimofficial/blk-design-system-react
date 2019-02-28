@@ -3,7 +3,7 @@
 ![alt text](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/blk-design-system/opt_blk_thumbnail.jpg "Blk• Design System")
 
 
-**[Blk• Design  System](http://demos.creative-tim.com/blk-design-system/index.html)** is a responsive Bootstrap 4 kit provided for free by Creative Tim. It is a beautiful cross-platform UI kit featuring over 70 elements and 3 templates.
+**[Blk• Design  System React](http://demos.creative-tim.com/blk-design-system-react/)** is a responsive Bootstrap 4 kit, developed using [React](https://reactjs.org/), [Reactstrap](https://reactstrap.github.io/) and [create-react-app](https://facebook.github.io/create-react-app/), and it is provided for free by Creative Tim. It is a beautiful cross-platform UI kit featuring over 70 elements and 3 templates.
 
 Now will help you create a clean and simple website that is a perfect fit for today's black design. It is built using the 12 column grid system, with components designed to fit together perfectly. It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
 
@@ -13,7 +13,7 @@ Each element is well presented in a very complex documentation. You can read mor
 
 ## Bootstrap 4 Support
 
-Blk• Design System is built on top of the much awaited Bootstrap 4. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 project; you can just import the Blk• Design System style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
+Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reactstrap). This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 or Reactstrap project; you can just import the Blk• Design System React style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
 ## Table of contents
 
