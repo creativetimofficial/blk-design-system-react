@@ -312,8 +312,7 @@ class ProfilePage extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className="tim-icons icon-book-bookmark" />
-                      Bookmark
+                      <i className="tim-icons icon-book-bookmark" /> Bookmark
                     </Button>
                     <Button
                       className="btn-simple"
@@ -321,8 +320,7 @@ class ProfilePage extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className="tim-icons icon-bulb-63" />
-                      Check it!
+                      <i className="tim-icons icon-bulb-63" /> Check it!
                     </Button>
                   </div>
                 </Col>

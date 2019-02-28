@@ -198,8 +198,7 @@ class ComponentsNavbar extends React.Component {
                   color="default"
                   onClick={this.scrollToDownload}
                 >
-                  <i className="tim-icons icon-cloud-download-93" />{" "}
-                  Download
+                  <i className="tim-icons icon-cloud-download-93" /> Download
                 </Button>
               </NavItem>
             </Nav>
