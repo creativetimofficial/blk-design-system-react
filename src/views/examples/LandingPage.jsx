@@ -96,21 +96,24 @@ class LandingPage extends React.Component {
                       <Button
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
-                        href="javascript:void(0)"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
                       >
                         <i className="fab fa-twitter" />
                       </Button>
                       <Button
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
-                        href="javascript:void(0)"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
                       >
                         <i className="fab fa-dribbble" />
                       </Button>
                       <Button
                         className="btn-icon btn-simple btn-round btn-neutral"
                         color="default"
-                        href="javascript:void(0)"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
                       >
                         <i className="fab fa-facebook" />
                       </Button>

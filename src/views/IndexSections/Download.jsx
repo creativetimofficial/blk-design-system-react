@@ -28,7 +28,7 @@ class Download extends React.Component {
               <Button
                 className="btn-round"
                 color="info"
-                href="https://www.creative-tim.com/product/blk-design-system-react"
+                href="https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-index-page-download-section"
                 role="button"
                 size="lg"
               >

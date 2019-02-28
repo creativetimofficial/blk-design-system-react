@@ -88,7 +88,10 @@ class Signup extends React.Component {
                       <Label check>
                         <Input type="checkbox" />
                         <span className="form-check-sign" />I agree to the{" "}
-                        <a href="javascript:void(0)">terms and conditions</a>.
+                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                          terms and conditions
+                        </a>
+                        .
                       </Label>
                     </FormGroup>
                   </Form>
