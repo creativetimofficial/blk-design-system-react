@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  FacebookIcon,
-  TwitterIcon
-} from "react-share";
 // reactstrap components
 import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
@@ -70,39 +64,12 @@ class Download extends React.Component {
               <UncontrolledTooltip delay={0} target="twitter">
                 Tweet!
               </UncontrolledTooltip>
-              <TwitterShareButton
-                url="https://demos.creative-tim.com/blk-design-system-react/#/components"
-                title="Blk• Design System React by Creative Tim"
-                hashtags={[
-                  "react",
-                  "bootstrap",
-                  "reactstrap",
-                  "creativetim",
-                  "creativetimofficial",
-                  "blk",
-                  "blkreact",
-                  "design",
-                  "system",
-                  "designsystem",
-                  "reactdesign",
-                  "reactsystem",
-                  "reactdesignsystem",
-                  "blksystem",
-                  "blkdesign",
-                  "blkreactdesignsystem"
-                ]}
-                via="creativetim"
-                className="btn-icon btn-round btn-twitter btn-lg"
-              >
-                <TwitterIcon size={32} round={true} />
-              </TwitterShareButton>
-              <FacebookShareButton url="https://demos.creative-tim.com/blk-design-system-react/#/components">
-                <FacebookIcon size={32} round={true} />
-              </FacebookShareButton>
               <Button
                 className="btn-icon btn-round"
                 color="facebook"
                 id="facebook"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fblk-design-system-react%2F%23%2Fcomponents"
+                target="_blank"
                 size="lg"
               >
                 <i className="fab fa-facebook-square" />
