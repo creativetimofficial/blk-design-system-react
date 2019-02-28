@@ -80,7 +80,7 @@ class Download extends React.Component {
               <Button
                 className="btn-icon btn-round"
                 color="github"
-                href="https://github.com/creativetimofficial"
+                href="https://github.com/creativetimofficial/blk-design-system-react"
                 id="tooltip877922017"
                 size="lg"
                 target="_blank"
