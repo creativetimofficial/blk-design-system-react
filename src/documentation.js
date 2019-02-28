@@ -27,6 +27,7 @@ import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
 import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx";
 import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
 import Navbar from "views/Documentation/Sections/restyled-components/Navbar.jsx";
+import Pagination from "views/Documentation/Sections/restyled-components/Pagination.jsx";
 // import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
 // Plugins
 // import Charts from "views/Documentation/Sections/Charts.jsx";
@@ -175,6 +176,11 @@ var docsRoutes = [
         path: "/documentation/navs",
         component: Navs,
         name: "Navs"
+      },
+      {
+        path: "/documentation/pagination",
+        component: Pagination,
+        name: "Pagination"
       },
       // {
       //   path: "/documentation/tables",
