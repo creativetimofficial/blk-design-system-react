@@ -1,11 +1,14 @@
-# [Blk• Design  System](http://demos.creative-tim.com/blk-design-system/index.html) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Blk• Design  System React](https://demos.creative-tim.com/blk-design-system-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
-![alt text](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/blk-design-system/opt_blk_thumbnail.jpg "Blk• Design System")
 
+ ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/blk-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/blk-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+
+
+![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/147/original/opt_blkds_react_thumbnail.jpg)
 
 **[Blk• Design  System React](http://demos.creative-tim.com/blk-design-system-react/)** is a responsive Bootstrap 4 kit, developed using [React](https://reactjs.org/), [Reactstrap](https://reactstrap.github.io/) and [create-react-app](https://facebook.github.io/create-react-app/), and it is provided for free by Creative Tim. It is a beautiful cross-platform UI kit featuring over 70 elements and 3 templates.
 
-Now will help you create a clean and simple website that is a perfect fit for today's black design. It is built using the 12 column grid system, with components designed to fit together perfectly. It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
+Blk• Design  System React will help you create a clean and simple website that is a perfect fit for today's black design. It is built using the 12 column grid system, with components designed to fit together perfectly. It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
 
 ## Complex Documentation
 
@@ -15,55 +18,61 @@ Each element is well presented in a very complex documentation. You can read mor
 
 Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reactstrap). This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 or Reactstrap project; you can just import the Blk• Design System React style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
-## Table of contents
 
-* [Getting Started](#getting-started)
-* [Example Pages](#example-pages)
+## Table of Contents
+
+* [Versions](#versions)
+* [Demo](#demo)
+* [Quick Start](#quick-start)
 * [Documentation](#documentation)
-* [Tutorial](#tutorial)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
-* [Technical Support or Questions](#technical-support-or-questions)
+* [Resources](#resources)
+* [Reporting Issues](#reporting-issues)
+* [Licensing](#licensing)
 * [Useful Links](#useful-links)
 
-## Getting Started
 
-We've also included an optional Gulp file to help you get started with theme customization. You'll need to install Node.js and Gulp before using our included gulpfile.js.
+## Versions
 
-1. Download the project's zip
-2. Make sure you have node.js (https://nodejs.org/en/) installed
-3. Type `npm install` in terminal/console in the source folder where `package.json` is located
-4. You will find all the branding colors inside `assets/scss/blk-design-system/custom/_variables.scss`. You can change them with a `HEX` value or with other predefined variables.
-5. Run in terminal `gulp compile-scss` for a single compilation or `gulp watch` for continous compilation of the changes that you make in `*.scss` files. This command should be run in the same folder where `gulpfile.js` and `package.json` are located
-6. Run in terminal `gulp default` for opening the Dashboard Page (default) of the product.
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-readme)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/blk-design-system-sketch/tree/sketch)
 
-## Example Pages
 
-We wanted to fully display the power of this kit, so the kit comes packed with examples showing you how to use the components. Inside the product you will find:
 
-+ [Live Preview](http://demos.creative-tim.com/blk-design-system/index.html)
-+ [Profile Page](http://demos.creative-tim.com/blk-design-system/examples/profile-page.html)
-+ [Register Page](http://demos.creative-tim.com/blk-design-system/examples/register-page.html)
-+ [Landing Page](http://demos.creative-tim.com/blk-design-system/examples/landing-page.html)
+
+
+
+| HTML | React |
+| --- | --- |
+| [![BLK Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system)  | [![BLK Design System  React](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/blk-design-system-react.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-react)
+
+## Demo
+
+| Buttons | Inputs | Navbars  |
+| --- | --- | ---  |
+| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/buttons.png?raw=true)](https://demos.creative-tim.com/blk-design-system-react/#/)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/inputs.png?raw=true)](https://demos.creative-tim.com/blk-design-system-react/#/)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/navbars.png?raw=true)](https://demos.creative-tim.com/blk-design-system-react/#/)  
+
+| Login Page | Landing Page | Profile Page  |
+| --- | --- | ---  |
+| [![Register Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/blk-design-system-react/register-page.png)](https://demos.creative-tim.com/blk-design-system-react/#/register-page)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/landing-page.png?raw=true)](https://demos.creative-tim.com/blk-design-system-react/#/landing-page)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/profile-page.png?raw=true)](https://demos.creative-tim.com/blk-design-system-react/#/profile-page)  
+
+[View More](https://demos.creative-tim.com/blk-design-system-react)
+
+
+## Quick start
+
+- `npm i blk-design-system-react`
+- [Download from Github](https://github.com/creativetimofficial/blk-design-system-react/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/blk-design-system-react).
+- Install with [Bower](https://bower.io/): ```bower install blk-design-system-react```.
+- Clone the repo: `git clone https://github.com/creativetimofficial/blk-design-system-react.git`.
+
 
 ## Documentation
+The documentation for the BLK Design System React is hosted at our [website](https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview).
 
-The documentation for the Blk• Design System is hosted at our [website](https://demos.creative-tim.com/blk-design-system/docs/1.0/getting-started/overview.html).
-
-## Tutorial
-
-In order for you to easily be able to use the Blk• Design System, we have created a tutorial page. It shows the structure for the files inside the archive and how to import them. It then features every components with a description and example fr how to use it. You can see the details here ().
-
-## Coming soon
-
-- Vue.js
-- Angular
-- React
-- Sketch
-- Photoshop
 
 ## File Structure
-
 Within the download you'll find the following directories and files:
 
 ```
@@ -137,39 +146,61 @@ Blk• Design System React
             └── RegisterPage.jsx
 ```
 
+
 ## Browser Support
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64">
+<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
 
-## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+
+## Resources
+- Demo: <https://demos.creative-tim.com/blk-design-system-react/#/>
+- Download Page: <https://www.creative-tim.com/product/blk-design-system-react>
+- Documentation: <https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview>
+- License Agreement: <https://www.creative-tim.com/license>
+- Support: <https://www.creative-tim.com/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/blk-design-system-react/issues)
+- **Dashboards:**
+
+| HTML | React | Vue  |
+| --- | --- | ---  |
+| [![Black Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/black-dashboard/black-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard) | [![Black Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/master/black-dashboard-react/black-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard-react) | [![Vue Black Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-black-dashboard/vue-black-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/vue-black-dashboard)  |
+
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for the BLK Design System. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the BLK Design System. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=blkdsr-readme).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+
+## Licensing
+
+- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=blkdsr-readme)
+
+- Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 
 ## Useful Links
 
-- More products from Creative Tim: <https://www.creative-tim.com/bootstrap-themes>
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref="mk-github-readme")
 
-- Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+### Social Media
 
-- Freebies: <http://www.creative-tim.com/products>
+Twitter: <https://twitter.com/CreativeTim>
 
-- Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+Facebook: <https://www.facebook.com/CreativeTim>
 
-## Social Media:
+Dribbble: <https://dribbble.com/creativetim>
 
-* Twitter: <https://twitter.com/CreativeTim>
-
-* Facebook: <https://www.facebook.com/CreativeTim>
-
-* Dribbble: <https://dribbble.com/creativetim>
-
-* Google+: <https://plus.google.com/+CreativetimPage>
-
-* Instagram: <https://instagram.com/creativetimofficial>
-
-[CHANGELOG]: ./CHANGELOG.md
-[LICENSE]: ./LICENSE
-[version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+Instagram: <https://www.instagram.com/CreativeTimOfficial>
