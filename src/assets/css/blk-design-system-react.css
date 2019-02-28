@@ -15306,10 +15306,12 @@ td.rdtYear:hover {
 .section-examples .container .col-sm-6 img {
   border-color: #1d8cf8; }
 
+@media (max-width: 575.98px) {
+  .page-header .content-center.brand {
+    width: unset; } }
+
 .blockquote.blockquote-info {
   border-color: #1d8cf8;
   color: #1d8cf8; }
   .blockquote.blockquote-info small {
     color: #1d8cf8; }
-
-/*# sourceMappingURL=blk-design-system-react.css.map */
