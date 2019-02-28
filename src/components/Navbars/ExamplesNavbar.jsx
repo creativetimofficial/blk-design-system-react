@@ -99,7 +99,7 @@ class PagesNavbar extends React.Component {
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a>BLK•</a>
+                  <a href="#pablo" onClick={e=>e.preventDefault()}>BLK•React</a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
                   <button
