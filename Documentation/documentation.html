@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../public/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="../public/favicon.ico" />
+    <title>
+      BLK Design System React by Creative Tim - Components Documentation
+    </title>
+    <!--     Fonts and icons     -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- Nucleo Icons -->
+    <link href="../src/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link
+      href="../src/assets/css/blk-design-system-react.min.css?v=1.0.0"
+      rel="stylesheet"
+    />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../src/assets/demo/demo.css" rel="stylesheet" />
+    <style>
+      .offline-doc .page-header {
+        min-height: 100vh;
+        max-height: 999px;
+        padding: 0;
+        color: #ffffff;
+        position: relative;
+      }
+      .offline-doc .page-header .page-header-image {
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .offline-doc .page-header .content-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffffff;
+        padding: 0 15px;
+        width: 100%;
+        max-width: 880px;
+      }
+      .offline-doc .page-header footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .offline-doc .page-header .container {
+        height: 100%;
+        z-index: 1;
+      }
+      .offline-doc .page-header .category,
+      .offline-doc .page-header .description {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .offline-doc .page-header.page-header-small {
+        min-height: 60vh;
+        max-height: 440px;
+      }
+      .offline-doc .page-header.page-header-mini {
+        min-height: 40vh;
+        max-height: 340px;
+      }
+      .offline-doc .page-header .title {
+        margin-bottom: 15px;
+      }
+      .offline-doc .page-header .title + h4 {
+        margin-top: 10px;
+      }
+      .offline-doc .page-header:after,
+      .offline-doc .page-header:before {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        left: 0;
+        top: 0;
+        content: "";
+      }
+      .offline-doc .page-header:before {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+
+  <body class="offline-doc">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
+      <div class="container">
+        <div class="navbar-wrapper">
+          <div class="navbar-toggle d-inline">
+            <button type="button" class="navbar-toggler">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <a class="navbar-brand" href="javascript:void(0)"
+            >BLK Design System React</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+          <span class="navbar-toggler-bar navbar-kebab"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/creativetimofficial/blk-design-system-react"
+                target="_blank"
+              >
+                Help with a star
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="modal modal-search fade"
+      id="searchModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="searchModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroup"
+              placeholder="SEARCH"
+            />
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="tim-icons icon-simple-remove"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+    <div class="page-header clear-filter">
+      <div
+        class="page-header-image"
+        style="background-image: url('../src/assets/img/img_3115.jpg');"
+      ></div>
+      <div class="content-center">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+            <h1 class="title">BLK Design System React</h1>
+            <h3 class="description">Documentation v1.0.0</h3>
+            <br />
+            <a
+              href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/tutorial"
+              class="btn btn-primary btn-round btn-lg"
+              >View documentation</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h1 class="title">BLK• React</h1>
+          </div>
+          <div class="col-md-3">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="https://creative-tim.com/contact-us?ref=blkdsr-static-docs-footer" class="nav-link">
+                  Contact Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://creative-tim.com/about-us?ref=blkdsr-static-docs-footer" class="nav-link">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://creative-tim.com/blog?ref=blkdsr-static-docs-footer" class="nav-link">
+                  Blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://opensource.org/licenses/MIT" class="nav-link">
+                  License
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="title">Follow us:</h3>
+            <div class="btn-wrapper profile">
+              <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Like us">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Follow us">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>

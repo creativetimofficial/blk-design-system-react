@@ -1,5 +1,7 @@
 import React from "react";
 import classnames from "classnames";
+// javascript plugin used to create scrollbars on windows
+import PerfectScrollbar from "perfect-scrollbar";
 // reactstrap components
 import {
   Button,
@@ -46,6 +48,8 @@ const carouselItems = [
   }
 ];
 
+let ps = null;
+
 class ProfilePage extends React.Component {
   constructor(props) {
     super(props);
@@ -54,9 +58,22 @@ class ProfilePage extends React.Component {
     };
   }
   componentDidMount() {
+    if (navigator.platform.indexOf("Win") > -1) {
+      document.documentElement.className += " perfect-scrollbar-on";
+      document.documentElement.classList.remove("perfect-scrollbar-off");
+      let tables = document.querySelectorAll(".table-responsive");
+      for (let i = 0; i < tables.length; i++) {
+        ps = new PerfectScrollbar(tables[i]);
+      }
+    }
     document.body.classList.toggle("profile-page");
   }
   componentWillUnmount() {
+    if (navigator.platform.indexOf("Win") > -1) {
+      ps.destroy();
+      document.documentElement.className += " perfect-scrollbar-off";
+      document.documentElement.classList.remove("perfect-scrollbar-on");
+    }
     document.body.classList.toggle("profile-page");
   }
   toggleTabs = (e, stateName, index) => {
@@ -295,8 +312,7 @@ class ProfilePage extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className="tim-icons icon-book-bookmark" />
-                      Bookmark
+                      <i className="tim-icons icon-book-bookmark" /> Bookmark
                     </Button>
                     <Button
                       className="btn-simple"
@@ -304,8 +320,7 @@ class ProfilePage extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className="tim-icons icon-bulb-63" />
-                      Check it!
+                      <i className="tim-icons icon-bulb-63" /> Check it!
                     </Button>
                   </div>
                 </Col>

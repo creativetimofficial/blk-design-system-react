@@ -20,7 +20,7 @@ class Download extends React.Component {
               <h4 className="description">
                 Cause if you do, it can be yours for FREE. Hit the button below
                 to navigate to Creative Tim where you can find the design system
-                in HTML format. Start a new project or give an old Bootstrap
+                in React format. Start a new project or give an old Bootstrap
                 project a new look!
               </h4>
             </Col>
@@ -32,7 +32,7 @@ class Download extends React.Component {
                 role="button"
                 size="lg"
               >
-                Download HTML
+                Download React
               </Button>
             </Col>
           </Row>

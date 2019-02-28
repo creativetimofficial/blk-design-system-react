@@ -361,14 +361,8 @@ class JavaScript extends React.Component {
               <Button
                 className="btn-tooltip"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-delay="100"
-                data-placement="left"
                 id="tooltip376048342"
                 size="sm"
-                title="Tooltip on left"
-                type="button"
               >
                 On left
               </Button>
@@ -376,17 +370,14 @@ class JavaScript extends React.Component {
                 delay={0}
                 placement="left"
                 target="tooltip376048342"
-              />
+              >
+                Tooltip on left
+              </UncontrolledTooltip>
               <Button
                 className="btn-tooltip"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-placement="top"
                 id="tooltip297889956"
                 size="sm"
-                title="Tooltip on top"
-                type="button"
               >
                 On top
               </Button>
@@ -394,17 +385,14 @@ class JavaScript extends React.Component {
                 delay={0}
                 placement="top"
                 target="tooltip297889956"
-              />
+              >
+                Tooltip on top
+              </UncontrolledTooltip>
               <Button
                 className="btn-tooltip"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-placement="bottom"
                 id="tooltip789511871"
                 size="sm"
-                title="Tooltip on bottom"
-                type="button"
               >
                 On bottom
               </Button>
@@ -412,17 +400,14 @@ class JavaScript extends React.Component {
                 delay={0}
                 placement="bottom"
                 target="tooltip789511871"
-              />
+              >
+                Tooltip on bottom
+              </UncontrolledTooltip>
               <Button
                 className="btn-tooltip"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-placement="right"
                 id="tooltip353488548"
                 size="sm"
-                title="Tooltip on right"
-                type="button"
               >
                 On right
               </Button>
@@ -430,7 +415,9 @@ class JavaScript extends React.Component {
                 delay={0}
                 placement="right"
                 target="tooltip353488548"
-              />
+              >
+                Tooltip on right
+              </UncontrolledTooltip>
               <div className="clearfix" />
               <br />
               <br />

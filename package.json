@@ -38,6 +38,7 @@
     "moment": "2.24.0",
     "node-sass": "4.11.0",
     "nouislider": "13.1.1",
+    "perfect-scrollbar": "1.4.0",
     "react": "16.8.3",
     "react-bootstrap-switch": "15.5.3",
     "react-chartjs-2": "2.7.4",
