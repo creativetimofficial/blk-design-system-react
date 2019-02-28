@@ -50,7 +50,6 @@ const codeBase1 = `<Nav tag="nav">
     </NavItem>
 </Nav>`;
 
-
 const codeCenter = `<Nav className="justify-content-center">
     <NavItem>
         <NavLink href="#">Link</NavLink>
@@ -1105,7 +1104,10 @@ class Navs extends React.Component {
               </div>
             </CardHeader>
             <CardBody>
-              <TabContent className="text-center" activeTab={"plainTabs" + this.state.plainTabs}>
+              <TabContent
+                className="text-center"
+                activeTab={"plainTabs" + this.state.plainTabs}
+              >
                 <TabPane tabId="plainTabs1">
                   <p>
                     I think that’s a responsibility that I have, to push
@@ -1191,7 +1193,10 @@ class Navs extends React.Component {
             </div>
           </CardHeader>
           <CardBody>
-            <TabContent className="text-center" activeTab={"iconTabs" + this.state.iconTabs}>
+            <TabContent
+              className="text-center"
+              activeTab={"iconTabs" + this.state.iconTabs}
+            >
               <TabPane tabId="iconTabs1">
                 <p>
                   I will be the leader of a company that ends up being worth
@@ -1274,7 +1279,10 @@ class Navs extends React.Component {
               </NavLink>
             </NavItem>
           </Nav>
-          <TabContent className="tab-space" activeTab={"pills" + this.state.pills}>
+          <TabContent
+            className="tab-space"
+            activeTab={"pills" + this.state.pills}
+          >
             <TabPane tabId="pills1">
               Collaboratively administrate empowered markets via plug-and-play
               networks. Dynamically procrastinate B2C users after installed base
@@ -1422,7 +1430,10 @@ class Navs extends React.Component {
               </NavLink>
             </NavItem>
           </Nav>
-          <TabContent className="tab-space" activeTab={"withIcons" + this.state.withIcons}>
+          <TabContent
+            className="tab-space"
+            activeTab={"withIcons" + this.state.withIcons}
+          >
             <TabPane tabId="withIcons1">
               Collaboratively administrate empowered markets via plug-and-play
               networks. Dynamically procrastinate B2C users after installed base

@@ -26,7 +26,7 @@ import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdown
 import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
 import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx";
 import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
-// import Navbars from "views/Documentation/Sections/restyled-components/Navbars.jsx";
+import Navbar from "views/Documentation/Sections/restyled-components/Navbar.jsx";
 // import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
 // Plugins
 // import Charts from "views/Documentation/Sections/Charts.jsx";
@@ -166,11 +166,11 @@ var docsRoutes = [
         component: Modals,
         name: "Modals"
       },
-      // {
-      //   path: "/documentation/navbars",
-      //   component: Navbars,
-      //   name: "Navbars"
-      // },
+      {
+        path: "/documentation/navbar",
+        component: Navbar,
+        name: "Navbars"
+      },
       {
         path: "/documentation/navs",
         component: Navs,

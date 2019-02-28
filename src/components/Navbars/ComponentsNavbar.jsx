@@ -172,7 +172,7 @@ class ComponentsNavbar extends React.Component {
                   Getting started
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/documentation/tutorial" tag={Link}>
+                  <DropdownItem to="/documentation/overview" tag={Link}>
                     <i className="tim-icons icon-paper" />
                     Documentation
                   </DropdownItem>
