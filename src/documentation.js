@@ -28,7 +28,9 @@ import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx"
 import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
 import Navbar from "views/Documentation/Sections/restyled-components/Navbar.jsx";
 import Pagination from "views/Documentation/Sections/restyled-components/Pagination.jsx";
-// import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
+import Progress from "views/Documentation/Sections/restyled-components/Progress.jsx";
+import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
+import Tooltips from "views/Documentation/Sections/restyled-components/Tooltips.jsx";
 // Plugins
 // import Charts from "views/Documentation/Sections/Charts.jsx";
 // import Icons from "views/Documentation/Sections/Icons.jsx";
@@ -182,16 +184,21 @@ var docsRoutes = [
         component: Pagination,
         name: "Pagination"
       },
-      // {
-      //   path: "/documentation/tables",
-      //   component: Tables,
-      //   name: "Tables"
-      // },
-      // {
-      //   path: "/documentation/typography",
-      //   component: Typography,
-      //   name: "Typography"
-      // }
+      {
+        path: "/documentation/progress",
+        component: Progress,
+        name: "Progress"
+      },
+      {
+        path: "/documentation/tables",
+        component: Tables,
+        name: "Tables"
+      },
+      {
+        path: "/documentation/tooltips",
+        component: Tooltips,
+        name: "Tooltips"
+      }
     ]
   },
   {
