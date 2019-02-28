@@ -24,10 +24,14 @@ class Footer extends React.Component {
             <Col md="3">
               <Nav>
                 <NavItem>
-                  <NavLink to="/" tag={Link}>Home</NavLink>
+                  <NavLink to="/" tag={Link}>
+                    Home
+                  </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/landing-page" tag={Link}>Landing</NavLink>
+                  <NavLink to="/landing-page" tag={Link}>
+                    Landing
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink to="/register-page" tag={Link}>
@@ -35,7 +39,9 @@ class Footer extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/profile-page" tag={Link}>Profile</NavLink>
+                  <NavLink to="/profile-page" tag={Link}>
+                    Profile
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Col>
@@ -52,7 +58,9 @@ class Footer extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">Blog</NavLink>
+                  <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">
+                    Blog
+                  </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="https://opensource.org/licenses/MIT">

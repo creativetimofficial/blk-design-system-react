@@ -180,7 +180,10 @@ class ProfilePage extends React.Component {
                           </NavLink>
                         </NavItem>
                       </Nav>
-                      <TabContent className="tab-subcategories" activeTab={"tab" + this.state.tabs}>
+                      <TabContent
+                        className="tab-subcategories"
+                        activeTab={"tab" + this.state.tabs}
+                      >
                         <TabPane tabId="tab1">
                           <Table className="tablesorter" responsive>
                             <thead className="text-primary">
@@ -272,9 +275,7 @@ class ProfilePage extends React.Component {
               <Row className="justify-content-between">
                 <Col md="6">
                   <Row className="justify-content-between align-items-center">
-                    <UncontrolledCarousel
-                      items={carouselItems}
-                    />
+                    <UncontrolledCarousel items={carouselItems} />
                   </Row>
                 </Col>
                 <Col md="5">
@@ -291,7 +292,8 @@ class ProfilePage extends React.Component {
                     <Button
                       className="btn-simple"
                       color="primary"
-                      href="javascript:void(0)"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
                     >
                       <i className="tim-icons icon-book-bookmark" />
                       Bookmark
@@ -299,7 +301,8 @@ class ProfilePage extends React.Component {
                     <Button
                       className="btn-simple"
                       color="info"
-                      href="javascript:void(0)"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
                     >
                       <i className="tim-icons icon-bulb-63" />
                       Check it!
