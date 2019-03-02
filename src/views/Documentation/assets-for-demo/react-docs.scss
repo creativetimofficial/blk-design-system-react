@@ -1,5 +1,8 @@
 body.bd-docs{
   background: white;
+  .bd-example .navbar {
+    z-index: 2;
+  }
 }
 .bd-docs .bd-example .btn + .btn{
   margin-left: 5px;
