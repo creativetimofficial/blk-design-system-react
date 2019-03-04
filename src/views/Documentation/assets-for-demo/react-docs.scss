@@ -23,3 +23,6 @@ body.bd-docs{
 .bd-docs .bd-navbar .navbar-brand{
   position: unset;
 }
+.bd-docs .bd-example.bd-color-schemes .navbar-toggler{
+  pointer-events: none;
+}

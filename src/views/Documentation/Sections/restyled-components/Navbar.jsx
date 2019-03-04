@@ -1410,7 +1410,7 @@ class NavbarDocs extends React.Component {
           <code className="highlighter-rouge">.bg-*</code>
           utilities.
         </p>
-        <div className="bd-example">
+        <div className="bd-example bd-color-schemes">
           <Navbar className="bg-dark" expand="lg">
             <Container>
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
