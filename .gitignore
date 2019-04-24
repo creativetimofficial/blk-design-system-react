@@ -25,5 +25,7 @@ yarn-error.log*
 
 # WebdriverIO Specific Files
 errorShots/
-screenshots/latest/
-screenshots/diff/
+screenshots/
+.reg
+reg.json
+reportBlk.html
