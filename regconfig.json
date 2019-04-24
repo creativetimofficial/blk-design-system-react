@@ -1,26 +1,24 @@
 {
-    "core": {
-      "workingDir": ".reg",
-      "actualDir": "screenshots/latest",
-      "threshold": 0,
-      "ximgdiff": {
-        "invocationType": "client"
-      },
-      "addIgnore": true,
-      "thresholdRate": 0
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "screenshots/latest",
+    "thresholdRate": 0,
+    "addIgnore": true,
+    "ximgdiff": {
+      "invocationType": "client"
+    }
+  },
+  "plugins": {
+    "reg-keygen-git-hash-plugin": true,
+    "reg-notify-github-plugin": {
+      "clientId": ""
     },
-    "plugins": {
-      "reg-keygen-git-hash-plugin": true,
-      "reg-notify-github-plugin": {
-        "clientId": ""
-      },
-      "reg-publish-s3-plugin": {
-        "bucketName": "${BUCKET_NAME}",
-        "pathPrefix": "${PATH_PREFIX}"
-      },
-      "reg-notify-slack-plugin": {
-        "webhookUrl": "${SLACK_WEBHOOK}"
-      }
+    "reg-notify-slack-plugin": {
+      "webhookUrl": "${SLACK_WEBHOOK}"
+    },
+    "reg-publish-s3-plugin": {
+      "bucketName": "${BUCKET_NAME}",
+      "pathPrefix": "${PATH_PREFIX}"
     }
   }
-
+}
