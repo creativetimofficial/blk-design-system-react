@@ -15,11 +15,11 @@
         "clientId": ""
       },
       "reg-publish-s3-plugin": {
-        "bucketName": "{BUCKET_NAME}",
-        "pathPrefix": "{PATH_PREFIX}"
+        "bucketName": "${BUCKET_NAME}",
+        "pathPrefix": "${PATH_PREFIX}"
       },
       "reg-notify-slack-plugin": {
-        "webhookUrl": "{SLACK_WEBHOOK}"
+        "webhookUrl": "${SLACK_WEBHOOK}"
       }
     }
   }
