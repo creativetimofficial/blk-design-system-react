@@ -18,6 +18,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import ReactPixel from "react-facebook-pixel";
 // docs styles
 import "views/Documentation/assets-for-demo/docs.scss";
 import "views/Documentation/assets-for-demo/react-docs.scss";
@@ -31,6 +32,10 @@ import LandingPage from "views/examples/LandingPage.jsx";
 import RegisterPage from "views/examples/RegisterPage.jsx";
 import ProfilePage from "views/examples/ProfilePage.jsx";
 import Documentation from "views/Documentation/Documentation.jsx";
+
+ReactPixel.init("111649226022273");
+ReactPixel.pageView();
+ReactPixel.fbq("track", "PageView");
 
 ReactDOM.render(
   <HashRouter>
