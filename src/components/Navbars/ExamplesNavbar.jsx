@@ -19,6 +19,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
+  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -167,6 +168,16 @@ class PagesNavbar extends React.Component {
                   <i className="fab fa-instagram" />
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
+              </NavItem>
+              <NavItem>
+                <Button
+                  className="nav-link d-none d-lg-block"
+                  color="primary"
+                  target="_blank"
+                  href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
+                >
+                  <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+                </Button>
               </NavItem>
               <NavItem>
                 <NavLink tag={Link} to="/">
