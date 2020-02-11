@@ -212,6 +212,16 @@ class ComponentsNavbar extends React.Component {
               <NavItem>
                 <Button
                   className="nav-link d-none d-lg-block"
+                  color="primary"
+                  target="_blank"
+                  href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-index-navbar-upgrade-pro"
+                >
+                  <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+                </Button>
+              </NavItem>
+              <NavItem>
+                <Button
+                  className="nav-link d-none d-lg-block"
                   color="default"
                   onClick={this.scrollToDownload}
                 >
