@@ -3,6 +3,7 @@
 ## [1.1.0] date
 ### Bug fixing
 ### Major style changes
+- `src/assets/scss/blk-design-system-react/react/plugins/_plugin-nouislider.scss`
 ### Deleted components
 ### Added components
 ### Deleted dependencies
