@@ -2,6 +2,13 @@
 
 ## [1.1.0] date
 ### Bug fixing
+- Github
+  - https://github.com/creativetimofficial/blk-design-system-react/issues/8
+  - https://github.com/creativetimofficial/blk-design-system-react/issues/7
+  - https://github.com/creativetimofficial/blk-design-system-react/issues/5
+  - https://github.com/creativetimofficial/blk-design-system-react/issues/4
+  - https://github.com/creativetimofficial/blk-design-system-react/issues/2
+  - https://github.com/creativetimofficial/blk-design-system-react/issues/1
 ### Major style changes
 - `src/assets/scss/blk-design-system-react/react/plugins/_plugin-nouislider.scss`
 ### Deleted components
@@ -29,6 +36,16 @@ reactstrap           7.1.0   →     8.4.1
 npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
 npm WARN deprecated popper.js@1.16.1: Popper changed home, find its new releases at @popperjs/core
 npm WARN deprecated core-js@2.6.11: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
+```
+**The folowing components make react throw errors for using life-cycle methods that will be dropped in React 17.x: react-datetime, react-bootstrap-switch. But the UI or functionality of the product is not affected. When we'll update the product to React 17.x, if the issue will persist, we'll drop support for these components and replace them with other ones that create the same or a similar UI. Also, the warnings are only present in the development, and not in production.**
+```
+Warning: componentWillReceiveProps has been renamed, and is not recommended for use. See https://fb.me/react-unsafe-component-lifecycles for details.
+
+* Move data fetching code or side effects to componentDidUpdate.
+* If you're updating state whenever props change, refactor your code to use memoization techniques or move it to static getDerivedStateFromProps. Learn more at: https://fb.me/react-derived-state
+* Rename componentWillReceiveProps to UNSAFE_componentWillReceiveProps to suppress this warning in non-strict mode. In React 17.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+
+Please update the following components: DateTime, Switch
 ```
 
 ## [1.0.0] 2019-03-04
