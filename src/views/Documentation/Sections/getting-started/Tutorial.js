@@ -204,6 +204,37 @@ class Tutorial extends React.Component {
         <br />
         <br />
         <h2>Live Production</h2>
+        <Alert color="info">
+          You may need to change our homepage prop inside the package.json file.
+          If you do not change that, you could have issues while trying to
+          deploy your app, and that is because the homepage prop points to our
+          live preview of this product.
+        </Alert>
+        <Alert color="info">
+          If you want to run the build command, and open the server locally, you
+          will need to delete the homepage prop altogether.
+        </Alert>
+        <p>Please read more about the homepage prop here:</p>
+        <ul>
+          <li>
+            <a
+              href="https://create-react-app.dev/docs/deployment/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://create-react-app.dev/docs/deployment/
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson
+            </a>
+          </li>
+        </ul>
         <ul>
           <li>
             <a
@@ -242,14 +273,14 @@ class Tutorial extends React.Component {
         </p>
         <SyntaxHighlighter language="javascript" style={prism}>
           {`import "assets/scss/blk-design-system-react.scss";
-import "assets/css/nucleo-icons.css";`}
+        import "assets/css/nucleo-icons.css";`}
         </SyntaxHighlighter>
         <p>Or you can import our compiled scss</p>
         <SyntaxHighlighter language="javascript" style={prism}>
           {`import "assets/css/blk-design-system-react.css";
-// import "assets/css/blk-design-system-react.min.css";
-// import "assets/css/blk-design-system-react.css.map";
-import "assets/css/nucleo-icons.css";`}
+        // import "assets/css/blk-design-system-react.min.css";
+        // import "assets/css/blk-design-system-react.css.map";
+        import "assets/css/nucleo-icons.css";`}
         </SyntaxHighlighter>
         <br />
         <br />
@@ -263,8 +294,8 @@ import "assets/css/nucleo-icons.css";`}
           language="html"
           style={applescript}
         >{`<!--     Fonts and icons     -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />`}</SyntaxHighlighter>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />`}</SyntaxHighlighter>
       </>
     );
   }
