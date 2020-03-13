@@ -34,6 +34,8 @@
   "dependencies": {
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
     "moment": "2.24.0",
     "node-sass": "4.13.1",
     "nouislider": "14.1.1",
@@ -49,7 +51,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
