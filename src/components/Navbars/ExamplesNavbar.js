@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.0.0
+* BLK Design System React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -21,10 +21,6 @@ import { Link } from "react-router-dom";
 import {
   Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -32,10 +28,11 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
+  UncontrolledTooltip
 } from "reactstrap";
 
-class ComponentsNavbar extends React.Component {
+class PagesNavbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -82,11 +79,6 @@ class ComponentsNavbar extends React.Component {
       collapseOut: ""
     });
   };
-  scrollToDownload = () => {
-    document
-      .getElementById("download-section")
-      .scrollIntoView({ behavior: "smooth" });
-  };
   render() {
     return (
       <Navbar
@@ -97,15 +89,16 @@ class ComponentsNavbar extends React.Component {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              data-placement="bottom"
               to="/"
-              rel="noopener noreferrer"
-              title="Designed and Coded by Creative Tim"
+              id="navbar-brand"
               tag={Link}
             >
               <span>BLK• </span>
               Design System React
             </NavbarBrand>
+            <UncontrolledTooltip placement="bottom" target="navbar-brand">
+              Designed and Coded by Creative Tim
+            </UncontrolledTooltip>
             <button
               aria-expanded={this.state.collapseOpen}
               className="navbar-toggler navbar-toggler"
@@ -178,55 +171,25 @@ class ComponentsNavbar extends React.Component {
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Getting started
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem to="/documentation/overview" tag={Link}>
-                    <i className="tim-icons icon-paper" />
-                    Documentation
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/register-page">
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Register Page
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/landing-page">
-                    <i className="tim-icons icon-image-02" />
-                    Landing Page
-                  </DropdownItem>
-                  <DropdownItem tag={Link} to="/profile-page">
-                    <i className="tim-icons icon-single-02" />
-                    Profile Page
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
               <NavItem>
                 <Button
                   className="nav-link d-none d-lg-block"
                   color="primary"
                   target="_blank"
-                  href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-index-navbar-upgrade-pro"
+                  href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
                 >
                   <i className="tim-icons icon-spaceship" /> Upgrade to PRO
                 </Button>
               </NavItem>
               <NavItem>
-                <Button
-                  className="nav-link d-none d-lg-block"
-                  color="default"
-                  onClick={this.scrollToDownload}
-                >
-                  <i className="tim-icons icon-cloud-download-93" /> Download
-                </Button>
+                <NavLink tag={Link} to="/">
+                  Back to Kit
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+                  Have an issue?
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -236,4 +199,4 @@ class ComponentsNavbar extends React.Component {
   }
 }
 
-export default ComponentsNavbar;
+export default PagesNavbar;
