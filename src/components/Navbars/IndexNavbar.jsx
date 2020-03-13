@@ -32,7 +32,8 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
+  UncontrolledTooltip
 } from "reactstrap";
 
 class ComponentsNavbar extends React.Component {
@@ -97,15 +98,16 @@ class ComponentsNavbar extends React.Component {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              data-placement="bottom"
               to="/"
-              rel="noopener noreferrer"
-              title="Designed and Coded by Creative Tim"
               tag={Link}
+              id="navbar-brand"
             >
               <span>BLK• </span>
               Design System React
             </NavbarBrand>
+            <UncontrolledTooltip placement="bottom" target="navbar-brand">
+              Designed and Coded by Creative Tim
+            </UncontrolledTooltip>
             <button
               aria-expanded={this.state.collapseOpen}
               className="navbar-toggler navbar-toggler"
