@@ -205,6 +205,35 @@ class Tutorial extends React.Component {
         <br />
         <br />
         <h2>Live Production</h2>
+        <ul>
+          <li>
+            <a
+              href="https://blog.heroku.com/deploying-react-with-zero-configuration"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              tutorial for deploying on heroku
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://medium.freecodecamp.org/surge-vs-github-pages-deploying-a-create-react-app-project-c0ecbf317089"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              tutorial for deploying on github pages and surge
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              tutorial for deploying on S3 and CloudFront
+            </a>
+          </li>
+        </ul>
         <Alert color="info">
           You may need to change our homepage prop inside the package.json file.
           If you do not change that, you could have issues while trying to
@@ -233,35 +262,6 @@ class Tutorial extends React.Component {
               rel="noopener noreferrer"
             >
               https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a
-              href="https://blog.heroku.com/deploying-react-with-zero-configuration"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              tutorial for deploying on heroku
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.freecodecamp.org/surge-vs-github-pages-deploying-a-create-react-app-project-c0ecbf317089"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              tutorial for deploying on github pages and surge
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              tutorial for deploying on S3 and CloudFront
             </a>
           </li>
         </ul>
