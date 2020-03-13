@@ -28,22 +28,22 @@ class Navbar extends React.Component {
           In our template product, we have two demo navbars that can be found
           inside{" "}
           <code className="highlighter-rouge">
-            src/components/Navbars/IndexNavbar.jsx
+            src/components/Navbars/IndexNavbar.js
           </code>{" "}
           and{" "}
           <code className="highlighter-rouge">
-            src/components/Navbars/ExamplesNavbar.jsx
+            src/components/Navbars/ExamplesNavbar.js
           </code>
           .
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Navbars/IndexNavbar.jsx
+            src/components/Navbars/IndexNavbar.js
           </code>
         </h2>
         <p>
           It is used to create the navbar / header that appears on the{" "}
-          <code className="highlighter-rouge">src/views/Index.jsx</code>.
+          <code className="highlighter-rouge">src/views/Index.js</code>.
         </p>
         <p>
           It is diveded in two parts, the left one, that is used for the product
@@ -52,7 +52,7 @@ class Navbar extends React.Component {
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Navbars/ExamplesNavbar.jsx
+            src/components/Navbars/ExamplesNavbar.js
           </code>
         </h2>
         <p>

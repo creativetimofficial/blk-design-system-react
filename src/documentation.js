@@ -16,43 +16,43 @@
 
 */
 // Getting started
-// import Colors from "views/Documentation/Sections/Colors.jsx";
-import Overview from "views/Documentation/Sections/getting-started/Overview.jsx";
-import Download from "views/Documentation/Sections/getting-started/Download.jsx";
-import License from "views/Documentation/Sections/getting-started/License.jsx";
-import Contents from "views/Documentation/Sections/getting-started/Contents.jsx";
-import BuildTools from "views/Documentation/Sections/getting-started/BuildTools.jsx";
-import Tutorial from "views/Documentation/Sections/getting-started/Tutorial.jsx";
-import Variables from "views/Documentation/Sections/getting-started/Variables.jsx";
+// import Colors from "views/Documentation/Sections/Colors.js";
+import Overview from "views/Documentation/Sections/getting-started/Overview.js";
+import Download from "views/Documentation/Sections/getting-started/Download.js";
+import License from "views/Documentation/Sections/getting-started/License.js";
+import Contents from "views/Documentation/Sections/getting-started/Contents.js";
+import BuildTools from "views/Documentation/Sections/getting-started/BuildTools.js";
+import Tutorial from "views/Documentation/Sections/getting-started/Tutorial.js";
+import Variables from "views/Documentation/Sections/getting-started/Variables.js";
 // Foundation
-import Colors from "views/Documentation/Sections/foundation/Colors.jsx";
-import Grid from "views/Documentation/Sections/foundation/Grid.jsx";
-import Typography from "views/Documentation/Sections/foundation/Typography.jsx";
-import Icons from "views/Documentation/Sections/foundation/Icons.jsx";
+import Colors from "views/Documentation/Sections/foundation/Colors.js";
+import Grid from "views/Documentation/Sections/foundation/Grid.js";
+import Typography from "views/Documentation/Sections/foundation/Typography.js";
+import Icons from "views/Documentation/Sections/foundation/Icons.js";
 // Core components
-import Footer from "views/Documentation/Sections/core-components/Footer.jsx";
-import Navbars from "views/Documentation/Sections/core-components/Navbars.jsx";
-import PageHeader from "views/Documentation/Sections/core-components/PageHeader.jsx";
+import Footer from "views/Documentation/Sections/core-components/Footer.js";
+import Navbars from "views/Documentation/Sections/core-components/Navbars.js";
+import PageHeader from "views/Documentation/Sections/core-components/PageHeader.js";
 // Reasctrap components
-import Alerts from "views/Documentation/Sections/restyled-components/Alerts.jsx";
-import Badge from "views/Documentation/Sections/restyled-components/Badge.jsx";
-import Breadcrumb from "views/Documentation/Sections/restyled-components/Breadcrumb.jsx";
-import Buttons from "views/Documentation/Sections/restyled-components/Buttons.jsx";
-import Carousel from "views/Documentation/Sections/restyled-components/Carousel.jsx";
-import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.jsx";
-import Forms from "views/Documentation/Sections/restyled-components/Forms.jsx";
-import Modals from "views/Documentation/Sections/restyled-components/Modals.jsx";
-import Navs from "views/Documentation/Sections/restyled-components/Navs.jsx";
-import Navbar from "views/Documentation/Sections/restyled-components/Navbar.jsx";
-import Pagination from "views/Documentation/Sections/restyled-components/Pagination.jsx";
-import Progress from "views/Documentation/Sections/restyled-components/Progress.jsx";
-import Tables from "views/Documentation/Sections/restyled-components/Tables.jsx";
-import Tooltips from "views/Documentation/Sections/restyled-components/Tooltips.jsx";
+import Alerts from "views/Documentation/Sections/restyled-components/Alerts.js";
+import Badge from "views/Documentation/Sections/restyled-components/Badge.js";
+import Breadcrumb from "views/Documentation/Sections/restyled-components/Breadcrumb.js";
+import Buttons from "views/Documentation/Sections/restyled-components/Buttons.js";
+import Carousel from "views/Documentation/Sections/restyled-components/Carousel.js";
+import Dropdowns from "views/Documentation/Sections/restyled-components/Dropdowns.js";
+import Forms from "views/Documentation/Sections/restyled-components/Forms.js";
+import Modals from "views/Documentation/Sections/restyled-components/Modals.js";
+import Navs from "views/Documentation/Sections/restyled-components/Navs.js";
+import Navbar from "views/Documentation/Sections/restyled-components/Navbar.js";
+import Pagination from "views/Documentation/Sections/restyled-components/Pagination.js";
+import Progress from "views/Documentation/Sections/restyled-components/Progress.js";
+import Tables from "views/Documentation/Sections/restyled-components/Tables.js";
+import Tooltips from "views/Documentation/Sections/restyled-components/Tooltips.js";
 // Plugins
-import Charts from "views/Documentation/Sections/plugins/Charts.jsx";
-import Datetimepicker from "views/Documentation/Sections/plugins/Datetimepicker.jsx";
-import Sliders from "views/Documentation/Sections/plugins/Sliders.jsx";
-import Switch from "views/Documentation/Sections/plugins/Switch.jsx";
+import Charts from "views/Documentation/Sections/plugins/Charts.js";
+import Datetimepicker from "views/Documentation/Sections/plugins/Datetimepicker.js";
+import Sliders from "views/Documentation/Sections/plugins/Sliders.js";
+import Switch from "views/Documentation/Sections/plugins/Switch.js";
 
 var docsRoutes = [
   {

@@ -34,13 +34,13 @@ class Variables extends React.Component {
         </p>
         <p>
           You will find all the variables regarding the charts in{" "}
-          <code className="highlighter-rouge">src/variables/charts.jsx</code>.
+          <code className="highlighter-rouge">src/variables/charts.js</code>.
         </p>
         <p>To use any of this variable you need to import it like so:</p>
         <SyntaxHighlighter
           language="jsx"
           style={prism}
-        >{`import variableName from 'variables/charts.jsx';`}</SyntaxHighlighter>
+        >{`import variableName from 'variables/charts.js';`}</SyntaxHighlighter>
       </div>
     );
   }

@@ -16,36 +16,36 @@
 
 */
 import React from "react";
+import { Link } from "react-router-dom";
 
-class Footer extends React.Component {
+class PageHeader extends React.Component {
   render() {
     return (
       <>
         <h1 className="bd-title" id="content">
-          Footer
+          PageHeader
         </h1>
         <p>
           Can be found inside{" "}
           <code className="highlighter-rouge">
-            src/components/Footer/Footer.jsx
+            src/components/PageHeader/PageHeader.js
           </code>
           .
         </p>
-        <p>This is the demo bottom navigation.</p>
         <p>
-          It is devided in four parts. The first part is the product name, the
-          second and third ones are used for inner and outter links, while the
-          last one, is used for socials.
+          This is the demo upper part of the{" "}
+          <code className="highlighter-rouge">src/views/Index.js</code>.
         </p>
-        <p>It was designed to be as simple as it may.</p>
         <p>
-          This component is servers as demo and everything in this component is
-          static, so you will need to manually change things if you want to use
-          it. Feel free to change this component as you wish.
+          It has the product title, a small description and some background
+          squares with a nice animation.
+        </p>
+        <p>
+          You can see it <Link to="/">here</Link>.
         </p>
       </>
     );
   }
 }
 
-export default Footer;
+export default PageHeader;
