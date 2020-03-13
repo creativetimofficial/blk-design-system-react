@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/blk-design-system-react/issues"
   },
-  "homepage": "https://github.com/creativetimofficial/blk-design-system-react#readme",
+  "homepage": "https://demos.creative-tim.com/blk-design-system-react/#/",
   "dependencies": {
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
