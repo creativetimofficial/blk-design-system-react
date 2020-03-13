@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.0.0
+* BLK Design System React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
@@ -20,7 +20,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "assets/css/nucleo-icons.css";
-import "assets/scss/blk-design-system-react.scss?v=1.0.0";
+import "assets/scss/blk-design-system-react.scss?v=1.1.0";
 import "assets/demo/demo.css";
 
 import Index from "views/Index.js";
