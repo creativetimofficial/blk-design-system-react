@@ -44,8 +44,8 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
+import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import Footer from "components/Footer/Footer.js";
 
 const carouselItems = [
   {

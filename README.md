@@ -89,7 +89,7 @@ Blk• Design System React
 └── src
     ├── index.js
     ├── variables
-    │   └── charts.jsx
+    │   └── charts.js
     ├── assets
     │   ├── css
     │   │   ├── blk-design-system-react.css
@@ -120,30 +120,30 @@ Blk• Design System React
     │       └── blk-design-system-react.scss
     ├── components
     │   ├── Footer
-    │   │   └── Footer.jsx
+    │   │   └── Footer.js
     │   ├── Navbars
-    │   │   ├── ComponentsNavbar.jsx
-    │   │   └── ExamplesNavbar.jsx
+    │   │   ├── ComponentsNavbar.js
+    │   │   └── ExamplesNavbar.js
     │   └── PageHeader
-    │       └── PageHeader.jsx
+    │       └── PageHeader.js
     └── views
-        ├── Index.jsx
+        ├── Index.js
         ├── IndexSections
-        │   ├── Basics.jsx
-        │   ├── Download.jsx
-        │   ├── Examples.jsx
-        │   ├── JavaScript.jsx
-        │   ├── Navbars.jsx
-        │   ├── Notifications.jsx
-        │   ├── NucleoIcons.jsx
-        │   ├── Pagination.jsx
-        │   ├── Signup.jsx
-        │   ├── Tabs.jsx
-        │   └── Typography.jsx
+        │   ├── Basics.js
+        │   ├── Download.js
+        │   ├── Examples.js
+        │   ├── JavaScript.js
+        │   ├── Navbars.js
+        │   ├── Notifications.js
+        │   ├── NucleoIcons.js
+        │   ├── Pagination.js
+        │   ├── Signup.js
+        │   ├── Tabs.js
+        │   └── Typography.js
         └── examples
-            ├── LandingPage.jsx
-            ├── ProfilePage.jsx
-            └── RegisterPage.jsx
+            ├── LandingPage.js
+            ├── ProfilePage.js
+            └── RegisterPage.js
 ```
 
 

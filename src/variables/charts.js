@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-// used inside src/views/examples/LandingPage.jsx
+// used inside src/views/examples/LandingPage.js
 const bigChart = {
   data: canvas => {
     let ctx = canvas.getContext("2d");
