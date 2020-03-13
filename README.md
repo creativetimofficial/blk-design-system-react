@@ -178,7 +178,7 @@ We use GitHub Issues as the official bug tracker for the BLK Design System. Here
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=blkdsr-readme)
+- Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=blkdsr-readme)
 
 - Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 
