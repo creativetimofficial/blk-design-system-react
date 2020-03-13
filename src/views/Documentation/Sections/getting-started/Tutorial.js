@@ -20,6 +20,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import { applescript } from "react-syntax-highlighter/dist/styles/hljs";
+import { Alert } from "reactstrap";
 
 class Tutorial extends React.Component {
   render() {
