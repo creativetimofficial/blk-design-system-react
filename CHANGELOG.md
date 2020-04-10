@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.1.0] date
+## [1.1.0] 2020-04-10
 ### Bug fixing
 - Github
   - https://github.com/creativetimofficial/blk-design-system-react/issues/8
@@ -21,13 +21,13 @@
 ```
 chart.js             2.7.3   →     2.9.3
 node-sass           4.11.0   →    4.13.1
-nouislider          13.1.1   →    14.1.1
+nouislider          13.1.1   →    14.2.0
 perfect-scrollbar    1.4.0   →     1.5.0
-react               16.8.3   →   16.13.0
+react               16.8.3   →   16.13.1
 react-chartjs-2      2.7.4   →     2.9.0
-react-dom           16.8.3   →   16.13.0
+react-dom           16.8.3   →   16.13.1
 react-router-dom     4.3.1   →     5.1.2
-react-scripts        2.1.5   →     3.4.0
+react-scripts        2.1.5   →     3.4.1
 reactstrap           7.1.0   →     8.4.1
 ```
 ### Warning
