@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.0.0
+* BLK Design System React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -20,13 +20,13 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "assets/css/nucleo-icons.css";
-import "assets/scss/blk-design-system-react.scss?v=1.0.0";
+import "assets/scss/blk-design-system-react.scss?v=1.1.0";
 import "assets/demo/demo.css";
 
-import Index from "views/Index.jsx";
-import LandingPage from "views/examples/LandingPage.jsx";
-import RegisterPage from "views/examples/RegisterPage.jsx";
-import ProfilePage from "views/examples/ProfilePage.jsx";
+import Index from "views/Index.js";
+import LandingPage from "views/examples/LandingPage.js";
+import RegisterPage from "views/examples/RegisterPage.js";
+import ProfilePage from "views/examples/ProfilePage.js";
 
 ReactDOM.render(
   <BrowserRouter>

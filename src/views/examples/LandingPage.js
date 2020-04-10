@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.0.0
+* BLK Design System React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -34,10 +34,10 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
+import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import Footer from "components/Footer/Footer.js";
 
-import bigChartData from "variables/charts.jsx";
+import bigChartData from "variables/charts.js";
 
 class LandingPage extends React.Component {
   componentDidMount() {

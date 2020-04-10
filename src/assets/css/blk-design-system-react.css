@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.0.0
+* BLK Design System React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -10271,8 +10271,7 @@ hr {
     font-size: auto-0.75; }
 
 .icon + .icon-text {
-  padding-left: 1rem;
-  width: calc(100% - auto - 1); }
+  padding-left: 1rem; }
 
 .icon-xl {
   width: 5rem;
@@ -10280,26 +10279,17 @@ hr {
   .icon-xl i, .icon-xl svg {
     font-size: 4.25rem; }
 
-.icon-xl + .icon-text {
-  width: calc(100% - $icon-size-xl - 1); }
-
 .icon-lg {
   width: 3.7rem;
   height: 3.7rem; }
   .icon-lg i, .icon-lg svg {
     font-size: 2.95rem; }
 
-.icon-lg + .icon-text {
-  width: calc(100% - $icon-size-lg - 1); }
-
 .icon-sm {
   width: 1.875rem;
   height: 1.875rem; }
   .icon-sm i, .icon-sm svg {
     font-size: 1.125rem; }
-
-.icon-sm + .icon-text {
-  width: calc(100% - $icon-size-sm - 1); }
 
 .icon-shape {
   padding: 12px;
@@ -11959,55 +11949,55 @@ textarea.form-control {
   .register-page .square-1 {
     height: 300px;
     width: 300px;
-    background-image: url("../../assets/img/square1.png");
+    background-image: url("../../../../assets/img/square1.png");
     top: 175px;
     right: 150px;
     opacity: 0.8; }
   .register-page .square-2 {
     height: 120px;
     width: 120px;
-    background-image: url("../../assets/img/square2.png");
+    background-image: url("../../../../assets/img/square2.png");
     opacity: 0.9;
     top: 310px;
     right: 390px; }
   .register-page .square-3 {
     width: 200px;
     height: 200px;
-    background-image: url("../../assets/img/square3.png");
+    background-image: url("../../../../assets/img/square3.png");
     opacity: 0.3;
     top: -50px;
     right: 400px; }
   .register-page .square-4 {
     height: 200px;
     width: 200px;
-    background-image: url("../../assets/img/square4.png");
+    background-image: url("../../../../assets/img/square4.png");
     right: -50px;
     top: 525px; }
   .register-page .square-5 {
     height: 150px;
     width: 150px;
-    background-image: url("../../assets/img/square5.png");
+    background-image: url("../../../../assets/img/square5.png");
     opacity: 0.5;
     top: 500px;
     right: 470px; }
   .register-page .square-6 {
     height: 70px;
     width: 70px;
-    background-image: url("../../assets/img/square5.png");
+    background-image: url("../../../../assets/img/square5.png");
     opacity: 0.9;
     top: 105px;
     right: 20px; }
   .register-page .square-7 {
     height: 200px;
     width: 200px;
-    background-image: url("../../assets/img/square5.png");
+    background-image: url("../../../../assets/img/square5.png");
     left: -100px;
     top: 100px;
     opacity: .4; }
   .register-page .square-8 {
     height: 100px;
     width: 100px;
-    background-image: url("../../assets/img/square1.png");
+    background-image: url("../../../../assets/img/square1.png");
     left: 300px;
     top: 400px;
     opacity: .4; }
@@ -12016,7 +12006,7 @@ textarea.form-control {
 .landing-page,
 .profile-page,
 .register-page {
-  background-image: url("../../assets/img/dots.png");
+  background-image: url("../../../../assets/img/dots.png");
   background-size: contain; }
 
 @media (max-width: 991.98px) {
@@ -12447,7 +12437,7 @@ hr {
   .section-signup .square-1 {
     height: 300px;
     width: 300px;
-    background-image: url("../../assets/img/square1.png");
+    background-image: url("../../../../assets/img/square1.png");
     top: 80px;
     left: 100px;
     opacity: 0.3;
@@ -12455,7 +12445,7 @@ hr {
   .section-signup .square-2 {
     height: 200px;
     width: 200px;
-    background: url("../../assets/img/square3.png");
+    background: url("../../../../assets/img/square3.png");
     background-size: cover;
     bottom: 40px;
     left: 600px;
@@ -12464,7 +12454,7 @@ hr {
   .section-signup .square-3 {
     height: 100px;
     width: 100px;
-    background: url("../../assets/img/square2.png");
+    background: url("../../../../assets/img/square2.png");
     background-size: cover;
     top: 300px;
     left: 700px;
@@ -12472,7 +12462,7 @@ hr {
   .section-signup .square-4 {
     height: 250px;
     width: 250px;
-    background: url("../../assets/img/square3.png");
+    background: url("../../../../assets/img/square3.png");
     background-size: cover;
     top: 0px;
     right: 100px;
@@ -13692,7 +13682,7 @@ Copyright (c) 2015 Daniel Eden
   right: 0;
   background: rgba(16, 16, 16, 0.7); }
 
-/*! nouislider - 11.1.0 - 2018-04-02 11:18:13 */
+/*! nouislider - 11.1.0 - 2020-04-02 11:18:13 */
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
@@ -14861,6 +14851,263 @@ input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget {
     .card-chart .dropdown .btn {
       margin: 0; }
 
+/*! nouislider - 14.1.1 - 12/15/2020 */
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.noUi-target {
+  position: relative; }
+
+.noUi-base,
+.noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1; }
+
+/* Wrapper for all connect elements.
+ */
+.noUi-connects {
+  overflow: hidden;
+  z-index: 0; }
+
+.noUi-connect,
+.noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform-style: flat; }
+
+.noUi-connect {
+  height: 100%;
+  width: 100%; }
+
+.noUi-origin {
+  height: 10%;
+  width: 10%; }
+
+/* Offset direction
+ */
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+  left: 0;
+  right: auto; }
+
+/* Give origins 0 height/width so they don't interfere with clicking the
+ * connect elements.
+ */
+.noUi-vertical .noUi-origin {
+  width: 0; }
+
+.noUi-horizontal .noUi-origin {
+  height: 0; }
+
+.noUi-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute; }
+
+.noUi-touch-area {
+  height: 100%;
+  width: 100%; }
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s; }
+
+.noUi-state-drag * {
+  cursor: inherit !important; }
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 1px; }
+
+.noUi-horizontal .noUi-handle {
+  height: 15px;
+  width: 15px;
+  right: -17px; }
+
+.noUi-vertical {
+  width: 18px; }
+
+.noUi-vertical .noUi-handle {
+  height: 15px;
+  width: 15px;
+  top: -17px; }
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+  left: -17px;
+  right: auto; }
+
+/* Styling;
+ * Giving the connect element a border radius causes issues with using transform: scale
+ */
+.noUi-connects {
+  border-radius: 3px; }
+
+.noUi-connect {
+  background: #344675; }
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: ew-resize; }
+
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize; }
+
+.noUi-active {
+  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB; }
+
+/* Disabled state;
+ */
+[disabled] .noUi-connect {
+  background: #B8B8B8; }
+
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+  cursor: not-allowed; }
+
+/* Base;
+ *
+ */
+.noUi-pips,
+.noUi-pips * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.noUi-pips {
+  position: absolute;
+  color: #999; }
+
+/* Values;
+ *
+ */
+.noUi-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center; }
+
+.noUi-value-sub {
+  color: #ccc;
+  font-size: 10px; }
+
+/* Markings;
+ *
+ */
+.noUi-marker {
+  position: absolute;
+  background: #CCC; }
+
+.noUi-marker-sub {
+  background: #AAA; }
+
+.noUi-marker-large {
+  background: #AAA; }
+
+/* Horizontal layout;
+ *
+ */
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%; }
+
+.noUi-value-horizontal {
+  -webkit-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%); }
+
+.noUi-rtl .noUi-value-horizontal {
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%); }
+
+.noUi-marker-horizontal.noUi-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px; }
+
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 10px; }
+
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 15px; }
+
+/* Vertical layout;
+ *
+ */
+.noUi-pips-vertical {
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%; }
+
+.noUi-value-vertical {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding-left: 25px; }
+
+.noUi-rtl .noUi-value-vertical {
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%); }
+
+.noUi-marker-vertical.noUi-marker {
+  width: 5px;
+  height: 2px;
+  margin-top: -1px; }
+
+.noUi-marker-vertical.noUi-marker-sub {
+  width: 10px; }
+
+.noUi-marker-vertical.noUi-marker-large {
+  width: 15px; }
+
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap; }
+
+.noUi-horizontal .noUi-tooltip {
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 120%; }
+
+.noUi-vertical .noUi-tooltip {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 120%; }
+
 /*!
 * https://github.com/YouCanBookMe/react-datetime
 */
@@ -15317,3 +15564,5 @@ td.rdtYear:hover {
   color: #1d8cf8; }
   .blockquote.blockquote-info small {
     color: #1d8cf8; }
+
+/*# sourceMappingURL=blk-design-system-react.css.map */
