@@ -1,7 +1,7 @@
 # [Blk• Design  System React](https://demos.creative-tim.com/blk-design-system-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
 
- ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/blk-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/blk-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-1.1.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/blk-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/blk-design-system-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/blk-design-system-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 
 ![Product Presentation Image](https://github.com/creativetimofficial/public-assets/blob/master/blk-design-system-react/blk-design-system-react.jpg?raw=true)
@@ -89,7 +89,7 @@ Blk• Design System React
 └── src
     ├── index.js
     ├── variables
-    │   └── charts.jsx
+    │   └── charts.js
     ├── assets
     │   ├── css
     │   │   ├── blk-design-system-react.css
@@ -120,30 +120,30 @@ Blk• Design System React
     │       └── blk-design-system-react.scss
     ├── components
     │   ├── Footer
-    │   │   └── Footer.jsx
+    │   │   └── Footer.js
     │   ├── Navbars
-    │   │   ├── ComponentsNavbar.jsx
-    │   │   └── ExamplesNavbar.jsx
+    │   │   ├── ComponentsNavbar.js
+    │   │   └── ExamplesNavbar.js
     │   └── PageHeader
-    │       └── PageHeader.jsx
+    │       └── PageHeader.js
     └── views
-        ├── Index.jsx
+        ├── Index.js
         ├── IndexSections
-        │   ├── Basics.jsx
-        │   ├── Download.jsx
-        │   ├── Examples.jsx
-        │   ├── JavaScript.jsx
-        │   ├── Navbars.jsx
-        │   ├── Notifications.jsx
-        │   ├── NucleoIcons.jsx
-        │   ├── Pagination.jsx
-        │   ├── Signup.jsx
-        │   ├── Tabs.jsx
-        │   └── Typography.jsx
+        │   ├── Basics.js
+        │   ├── Download.js
+        │   ├── Examples.js
+        │   ├── JavaScript.js
+        │   ├── Navbars.js
+        │   ├── Notifications.js
+        │   ├── NucleoIcons.js
+        │   ├── Pagination.js
+        │   ├── Signup.js
+        │   ├── Tabs.js
+        │   └── Typography.js
         └── examples
-            ├── LandingPage.jsx
-            ├── ProfilePage.jsx
-            └── RegisterPage.jsx
+            ├── LandingPage.js
+            ├── ProfilePage.js
+            └── RegisterPage.js
 ```
 
 
@@ -178,7 +178,7 @@ We use GitHub Issues as the official bug tracker for the BLK Design System. Here
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=blkdsr-readme)
+- Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=blkdsr-readme)
 
 - Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 

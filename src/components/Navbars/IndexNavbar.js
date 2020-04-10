@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.0.0
+* BLK Design System React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -32,7 +32,8 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
+  UncontrolledTooltip
 } from "reactstrap";
 
 class ComponentsNavbar extends React.Component {
@@ -97,15 +98,16 @@ class ComponentsNavbar extends React.Component {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              data-placement="bottom"
               to="/"
-              rel="noopener noreferrer"
-              title="Designed and Coded by Creative Tim"
               tag={Link}
+              id="navbar-brand"
             >
               <span>BLK• </span>
               Design System React
             </NavbarBrand>
+            <UncontrolledTooltip placement="bottom" target="navbar-brand">
+              Designed and Coded by Creative Tim
+            </UncontrolledTooltip>
             <button
               aria-expanded={this.state.collapseOpen}
               className="navbar-toggler navbar-toggler"
@@ -209,6 +211,16 @@ class ComponentsNavbar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+               <Button
+                 className="nav-link d-none d-lg-block"
+                 color="primary"
+                 target="_blank"
+                 href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+               >
+                 <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+               </Button>
+             </NavItem>
               <NavItem>
                 <Button
                   className="nav-link d-none d-lg-block"
