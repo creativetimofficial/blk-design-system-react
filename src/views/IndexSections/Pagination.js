@@ -48,11 +48,11 @@ class PaginationSection extends React.Component {
   render() {
     return (
       <div className="section section-pagination">
-        <img alt="..." className="path" src={require("assets/img/path4.png")} />
+        <img alt="..." className="path" src={require("assets/img/path4.png").default} />
         <img
           alt="..."
           className="path path1"
-          src={require("assets/img/path5.png")}
+          src={require("assets/img/path5.png").default}
         />
         <Container>
           <Row>
