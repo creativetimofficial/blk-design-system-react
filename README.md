@@ -170,11 +170,25 @@ At present, we officially aim to support the last two versions of the following 
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/blk-design-system-react/issues)
-- **Dashboards:**
+- **FREE Dashboards:**
 
 | HTML | React | Vue  |
 | --- | --- | ---  |
 | [![Black Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/main/black-dashboard/black-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard) | [![Black Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/main/black-dashboard-react/black-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/black-dashboard-react) | [![Vue Black Dashboard](https://github.com/creativetimofficial/public-assets/blob/main/vue-black-dashboard/vue-black-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/vue-black-dashboard)  |
+
+| Angular | Laravel | Django | Nuxt |
+| --- | --- | --- | --- |
+| [![Black Dashboard Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/black-dashboard-angular/opt_bd_angular_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-angular)  | [![Black Dashboard Laravel](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/black-dashboard-laravel/opt_blk_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-laravel)  | [![Black Dashboard Django](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/black-dashboard-django/opt_bdfree_django_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-django)  | [![Nuxt Dashboard Django](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/nuxt-black-dashboard/opt_bd_nuxjs_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-django)  |
+
+- **PRO Dashboards:**
+
+| React | Vue | Nuxt |
+| --- | --- | ---  |
+| [![Black Dashboard PRO React](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/black-dashboard-pro-react/black-dashboard-pro-react.jpg)](https://www.creative-tim.com/product/black-dashboard-pro-react) | [![Vue Black Dashboard PRO](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/vue-black-dashboard-pro/vue-black-dashboard-pro.jpg)](https://www.creative-tim.com/product/vue-black-dashboard-pro) | [![Nuxt Black Dashboard PRO](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/nuxt-black-dashboard-pro/opt_bdp_nuxt_thumbnail.jpg)](https://www.creative-tim.com/product/nuxt-black-dashboard-pro)  |
+
+| Angular | Django | Django |
+| --- | --- | ---  |
+| [![Black Dashboard PRO Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/black-dashboard-pro-angular/opt_bdp_angular_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-pro-angular) | [![Black Dashboard PRO Laravel](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/black-dashboard-pro-laravel/opt_blkp_laravel_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-pro-laravel)  | [![Black Dashboard PRO Django](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/black-dashboard-pro-django/opt_bdp_django_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-pro-django)  |
 
 ## Reporting Issues
 
