@@ -33,7 +33,7 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 
 class ComponentsNavbar extends React.Component {
@@ -41,7 +41,7 @@ class ComponentsNavbar extends React.Component {
     super(props);
     this.state = {
       collapseOpen: false,
-      color: "navbar-transparent"
+      color: "navbar-transparent",
     };
   }
   componentDidMount() {
@@ -56,31 +56,31 @@ class ComponentsNavbar extends React.Component {
       document.body.scrollTop > 99
     ) {
       this.setState({
-        color: "bg-info"
+        color: "bg-info",
       });
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
       this.setState({
-        color: "navbar-transparent"
+        color: "navbar-transparent",
       });
     }
   };
   toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     this.setState({
-      collapseOpen: !this.state.collapseOpen
+      collapseOpen: !this.state.collapseOpen,
     });
   };
   onCollapseExiting = () => {
     this.setState({
-      collapseOut: "collapsing-out"
+      collapseOut: "collapsing-out",
     });
   };
   onCollapseExited = () => {
     this.setState({
-      collapseOut: ""
+      collapseOut: "",
     });
   };
   scrollToDownload = () => {
@@ -97,11 +97,7 @@ class ComponentsNavbar extends React.Component {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              to="/"
-              tag={Link}
-              id="navbar-brand"
-            >
+            <NavbarBrand to="/" tag={Link} id="navbar-brand">
               <span>BLK• </span>
               Design System React
             </NavbarBrand>
@@ -128,7 +124,7 @@ class ComponentsNavbar extends React.Component {
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     BLK•React
                   </a>
                 </Col>
@@ -187,7 +183,7 @@ class ComponentsNavbar extends React.Component {
                   data-toggle="dropdown"
                   href="#pablo"
                   nav
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   <i className="fa fa-cogs d-lg-none d-xl-none" />
                   Getting started
@@ -212,15 +208,15 @@ class ComponentsNavbar extends React.Component {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-               <Button
-                 className="nav-link d-none d-lg-block"
-                 color="primary"
-                 target="_blank"
-                 href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
-               >
-                 <i className="tim-icons icon-spaceship" /> Upgrade to PRO
-               </Button>
-             </NavItem>
+                <Button
+                  className="nav-link d-none d-lg-block"
+                  color="primary"
+                  target="_blank"
+                  href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+                >
+                  <i className="tim-icons icon-spaceship" /> Upgrade to PRO
+                </Button>
+              </NavItem>
               <NavItem>
                 <Button
                   className="nav-link d-none d-lg-block"
