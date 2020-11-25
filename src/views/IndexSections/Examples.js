@@ -24,7 +24,7 @@ class Examples extends React.Component {
   render() {
     return (
       <div className="section section-examples" data-background-color="black">
-        <img alt="..." className="path" src={require("assets/img/path1.png")} />
+        <img alt="..." className="path" src={require("assets/img/path1.png").default} />
         <div className="space-50" />
         <Container className="text-center">
           <Row>
@@ -33,7 +33,7 @@ class Examples extends React.Component {
                 <img
                   alt="..."
                   className="img-raised"
-                  src={require("assets/img/landing-page.png")}
+                  src={require("assets/img/landing-page.png").default}
                 />
               </Link>
               <Button
@@ -50,7 +50,7 @@ class Examples extends React.Component {
                 <img
                   alt="..."
                   className="img-raised"
-                  src={require("assets/img/profile-page.png")}
+                  src={require("assets/img/profile-page.png").default}
                 />
               </Link>
               <Button
