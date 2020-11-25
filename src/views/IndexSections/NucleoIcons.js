@@ -23,7 +23,7 @@ class NucleoIcons extends React.Component {
   render() {
     return (
       <div className="section section-nucleo-icons">
-        <img alt="..." className="path" src={require("assets/img/path3.png")} />
+        <img alt="..." className="path" src={require("assets/img/path3.png").default} />
         <Container>
           <Row className="justify-content-center">
             <Col lg="8" md="12">
