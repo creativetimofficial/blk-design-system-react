@@ -6,12 +6,13 @@
 - Add new branch, named `main`, this will replace the `master` branch
 ### Major style changes
 - Remove `src/assets/scss/blk-design-system-react/bootstrap` folder and start using the `node_modules/bootstrap` one
+- Add `src/assets/scss/blk-design-system-react/react/_custom-forms.scss` for usage of Bootstrap Switch / Reactstrap CustomInput of type switch
 ### Deleted components
 ### Added components
 ### Deleted dependencies
-```
-"eslint-plugin-flowtype": "3.13.0",
-```
+- react-bootstrap-switch
+  - This project was not longer maintained, and it had issues with the new React version. The styles for it are still kept inside the product, but we do not recommended using the plugin anymore. You ca use the simple Reactstrap CustomInput of type switch or the basic HTML Bootstrap Switch one.
+- eslint-plugin-flowtype
 ### Added dependencies
 ```
 "@testing-library/jest-dom": "5.11.6",
