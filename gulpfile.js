@@ -9,7 +9,7 @@ gulp.task("licenses", async function() {
       gap.prependText(`/*!
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
@@ -33,7 +33,7 @@ gulp.task("licenses", async function() {
       gap.prependText(`<!--
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
@@ -57,7 +57,7 @@ gulp.task("licenses", async function() {
       gap.prependText(`/*!
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
