@@ -1,7 +1,7 @@
 .custom-switch {
   .custom-control-label::before {
     height: 22px;
-    width: 59px;
+    width: 45px;
     border: none;
     background-image: url($asset-base-path + "/img/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png");
     background-position: center center;
@@ -19,15 +19,15 @@
     }
     ~ .custom-control-label::after {
       background-color: $white;
-      transform: translateX(2.275rem);
+      transform: translateX(23px);
     }
   }
   &:hover {
     .custom-control-label::after {
-      width: 27px;
+      width: 23px;
     }
     .custom-control-input:checked ~ .custom-control-label::after {
-      margin-left: -9px;
+      margin-left: -5px;
     }
   }
 }
