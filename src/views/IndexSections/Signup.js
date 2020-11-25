@@ -73,7 +73,7 @@ class Signup extends React.Component {
                 <CardHeader>
                   <CardImg
                     alt="..."
-                    src={require("assets/img/square-purple-1.png")}
+                    src={require("assets/img/square-purple-1.png").default}
                   />
                   <CardTitle tag="h4">Register</CardTitle>
                 </CardHeader>
