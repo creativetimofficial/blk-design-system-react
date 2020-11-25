@@ -33,14 +33,14 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 class Basics extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      inputFocus: false
+      inputFocus: false,
     };
   }
   componentDidMount() {
@@ -50,19 +50,23 @@ class Basics extends React.Component {
       start: [40],
       connect: [true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
     Slider.create(slider2, {
       start: [20, 60],
       connect: [false, true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
   }
   render() {
     return (
       <div className="section section-basic" id="basic-elements">
-        <img alt="..." className="path" src={require("assets/img/path1.png").default} />
+        <img
+          alt="..."
+          className="path"
+          src={require("assets/img/path1.png").default}
+        />
         <Container>
           <h2 className="title">Basic Elements</h2>
           <h3>Buttons</h3>
@@ -174,7 +178,7 @@ class Basics extends React.Component {
               <Col lg="3" sm="6">
                 <InputGroup
                   className={classnames({
-                    "input-group-focus": this.state.inputFocus
+                    "input-group-focus": this.state.inputFocus,
                   })}
                 >
                   <InputGroupAddon addonType="prepend">
@@ -185,8 +189,8 @@ class Basics extends React.Component {
                   <Input
                     placeholder="Left Font Awesome Icon"
                     type="text"
-                    onFocus={e => this.setState({ inputFocus: true })}
-                    onBlur={e => this.setState({ inputFocus: false })}
+                    onFocus={(e) => this.setState({ inputFocus: true })}
+                    onBlur={(e) => this.setState({ inputFocus: false })}
                   />
                 </InputGroup>
               </Col>
