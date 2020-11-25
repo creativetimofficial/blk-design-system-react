@@ -36,7 +36,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 class Signup extends React.Component {
@@ -81,7 +81,7 @@ class Signup extends React.Component {
                   <Form className="form">
                     <InputGroup
                       className={classnames({
-                        "input-group-focus": this.state.fullNameFocus
+                        "input-group-focus": this.state.fullNameFocus,
                       })}
                     >
                       <InputGroupAddon addonType="prepend">
@@ -92,13 +92,13 @@ class Signup extends React.Component {
                       <Input
                         placeholder="Full Name"
                         type="text"
-                        onFocus={e => this.setState({ fullNameFocus: true })}
-                        onBlur={e => this.setState({ fullNameFocus: false })}
+                        onFocus={(e) => this.setState({ fullNameFocus: true })}
+                        onBlur={(e) => this.setState({ fullNameFocus: false })}
                       />
                     </InputGroup>
                     <InputGroup
                       className={classnames({
-                        "input-group-focus": this.state.emailFocus
+                        "input-group-focus": this.state.emailFocus,
                       })}
                     >
                       <InputGroupAddon addonType="prepend">
@@ -109,13 +109,13 @@ class Signup extends React.Component {
                       <Input
                         placeholder="Email"
                         type="text"
-                        onFocus={e => this.setState({ emailFocus: true })}
-                        onBlur={e => this.setState({ emailFocus: false })}
+                        onFocus={(e) => this.setState({ emailFocus: true })}
+                        onBlur={(e) => this.setState({ emailFocus: false })}
                       />
                     </InputGroup>
                     <InputGroup
                       className={classnames({
-                        "input-group-focus": this.state.passwordFocus
+                        "input-group-focus": this.state.passwordFocus,
                       })}
                     >
                       <InputGroupAddon addonType="prepend">
@@ -126,15 +126,15 @@ class Signup extends React.Component {
                       <Input
                         placeholder="Password"
                         type="text"
-                        onFocus={e => this.setState({ passwordFocus: true })}
-                        onBlur={e => this.setState({ passwordFocus: false })}
+                        onFocus={(e) => this.setState({ passwordFocus: true })}
+                        onBlur={(e) => this.setState({ passwordFocus: false })}
                       />
                     </InputGroup>
                     <FormGroup check className="text-left">
                       <Label check>
                         <Input type="checkbox" />
                         <span className="form-check-sign" />I agree to the{" "}
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
                           terms and conditions
                         </a>
                         .
