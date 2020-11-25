@@ -36,12 +36,23 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-angular?ref=blkdsr-readme)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/blk-design-system-sketch/tree/sketch)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-angular?ref=blkdsr-readme)
 
 
 | HTML | React | Angular |
 | --- | --- | --- |
-| [![BLK Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system)  | [![BLK Design System  React](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-react/blk-design-system-react.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-react)  | [![BLK Design System  Angular](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-react/blk-design-system-angular.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-angular) |
+| [![BLK Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system)  | [![BLK Design System  React](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-react/blk-design-system-react.jpg)](https://www.creative-tim.com/product/blk-design-system-react)  | [![BLK Design System  Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-angular/opt_blk_angular_thumbnail.jpg)](https://www.creative-tim.com/product/blk-design-system-angular) |
+
+
+## PRO Versions
+
+[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-pro?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-pro-react?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-pro-angular?ref=blkdsr-readme)
+
+
+| HTML | React | Angular |
+| --- | --- | --- |
+| [![BLK Design System PRO HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-pro/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system-pro)  | [![BLK Design System PRO React](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-pro-react/blk-design-system-pro-react.jpg)](https://www.creative-tim.com/product/blk-design-system-react)  | [![BLK Design System PRO Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-pro-angular/opt_blkp_angular_thumbnail.jpg)](https://www.creative-tim.com/product/blk-design-system-angular) |
+
 
 ## Demo
 
