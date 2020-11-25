@@ -1,5 +1,39 @@
 # Change Log
 
+## [1.2.0] 2020-11-25
+### Bug fixing
+### Major style changes
+### Deleted components
+### Added components
+### Deleted dependencies
+```
+"eslint-plugin-flowtype": "3.13.0",
+```
+### Added dependencies
+```
+"@testing-library/jest-dom": "5.11.6",
+"@testing-library/react": "11.2.2",
+"@testing-library/user-event": "12.2.2",
+"web-vitals": "1.0.1"
+```
+### Updated dependencies
+```
+chart.js                   2.9.3   →    2.9.4
+moment                    2.24.0   →   2.29.1
+node-sass                 4.13.1   →    5.0.0
+nouislider                14.2.0   →   14.6.3
+react                    16.13.1   →   17.0.1
+react-chartjs-2            2.9.0   →   2.11.1
+react-datetime            2.16.3   →    3.0.4
+react-dom                16.13.1   →   17.0.1
+react-router-dom           5.1.2   →    5.2.0
+react-scripts              3.4.1   →    4.0.1
+reactstrap                 8.4.1   →    8.7.1
+typescript                 3.8.3   →    4.1.2
+```
+### Warning
+_Some warnings may appear when running the installation command, but they do not affect the UI or the functionality of the product._
+
 ## [1.1.0] 2020-04-10
 ### Bug fixing
 - Github
