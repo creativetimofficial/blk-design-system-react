@@ -35,6 +35,12 @@ typescript                 3.8.3   →    4.1.2
 ```
 ### Warning
 _Some warnings may appear when running the installation command, but they do not affect the UI or the functionality of the product._
+_The following warnings will appear when running the installation command, but they do not affect the UI or the functionality of the product (they will be solved in our next update):_
+```
+npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN react-popper@1.3.7 requires a peer of react@0.14.x || ^15.0.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN create-react-context@0.3.0 requires a peer of react@^0.14.0 || ^15.0.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
+```
 
 ## [1.1.0] 2020-04-10
 ### Bug fixing
