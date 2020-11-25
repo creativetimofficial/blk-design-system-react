@@ -43,17 +43,17 @@ import {
 
 const carouselItems = [
   {
-    src: require("assets/img/denys.jpg"),
+    src: require("assets/img/denys.jpg").default,
     altText: "Slide 1",
     caption: ""
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg"),
+    src: require("assets/img/fabien-bazanegue.jpg").default,
     altText: "Slide 2",
     caption: ""
   },
   {
-    src: require("assets/img/mark-finn.jpg"),
+    src: require("assets/img/mark-finn.jpg").default,
     altText: "Slide 3",
     caption: ""
   }
@@ -76,11 +76,11 @@ class JavaScript extends React.Component {
   render() {
     return (
       <div className="section section-javascript" id="javascriptComponents">
-        <img alt="..." className="path" src={require("assets/img/path5.png")} />
+        <img alt="..." className="path" src={require("assets/img/path5.png").default} />
         <img
           alt="..."
           className="path path1"
-          src={require("assets/img/path5.png")}
+          src={require("assets/img/path5.png").default}
         />
         <Container>
           <h3 className="title mb-5">Javascript components</h3>
@@ -209,7 +209,7 @@ class JavaScript extends React.Component {
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <img alt="..." src={require("assets/img/github.svg")} />
+                    <img alt="..." src={require("assets/img/github.svg").default} />
                   </Button>
                   <Button
                     className="btn-neutral btn-icon"
@@ -217,7 +217,7 @@ class JavaScript extends React.Component {
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <img alt="..." src={require("assets/img/google.svg")} />
+                    <img alt="..." src={require("assets/img/google.svg").default} />
                   </Button>
                 </div>
                 <div className="text-center text-muted mb-4 mt-3">
