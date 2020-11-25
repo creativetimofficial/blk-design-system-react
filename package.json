@@ -35,6 +35,7 @@
     "@testing-library/jest-dom": "5.11.6",
     "@testing-library/react": "11.2.2",
     "@testing-library/user-event": "12.2.2",
+    "bootstrap": "4.5.3",
     "chart.js": "2.9.4",
     "classnames": "2.2.6",
     "gulp": "4.0.2",
@@ -54,6 +55,7 @@
     "web-vitals": "1.0.1"
   },
   "optionalDependencies": {
+    "jquery": "3.5.1",
     "typescript": "4.1.2"
   },
   "scripts": {
