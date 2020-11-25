@@ -37,7 +37,7 @@ class Navbars extends React.Component {
   render() {
     return (
       <div className="section section-navbars">
-        <img alt="..." className="path" src={require("assets/img/path3.png")} />
+        <img alt="..." className="path" src={require("assets/img/path3.png").default} />
         <Container id="menu-dropdown">
           <Row>
             <Col md="6">
