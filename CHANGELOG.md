@@ -2,6 +2,8 @@
 
 ## [1.2.0] 2020-11-25
 ### Bug fixing
+### Misc
+- Add new branch, named `main`, this will replace the `master` branch
 ### Major style changes
 ### Deleted components
 ### Added components
