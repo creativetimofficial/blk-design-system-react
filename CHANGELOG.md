@@ -16,6 +16,8 @@
 "@testing-library/jest-dom": "5.11.6",
 "@testing-library/react": "11.2.2",
 "@testing-library/user-event": "12.2.2",
+"bootstrap": "4.5.3",
+"jquery": "3.5.1",
 "web-vitals": "1.0.1"
 ```
 ### Updated dependencies
@@ -33,6 +35,8 @@ react-scripts              3.4.1   →    4.0.1
 reactstrap                 8.4.1   →    8.7.1
 typescript                 3.8.3   →    4.1.2
 ```
+### Important Notes
+**The jQuery and TypeScript dependencies are installed only to stop console warnings on install. They are not actually used in our product. So the product is not based on jQuery, and it is not based on TypeScript!**
 ### Warning
 _Some warnings may appear when running the installation command, but they do not affect the UI or the functionality of the product._
 _The following warnings will appear when running the installation command, but they do not affect the UI or the functionality of the product (they will be solved in our next update):_
