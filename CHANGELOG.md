@@ -5,6 +5,7 @@
 ### Misc
 - Add new branch, named `main`, this will replace the `master` branch
 ### Major style changes
+- Remove `src/assets/scss/blk-design-system-react/bootstrap` folder and start using the `node_modules/bootstrap` one
 ### Deleted components
 ### Added components
 ### Deleted dependencies
