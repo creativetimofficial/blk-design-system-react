@@ -51,7 +51,7 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 
 | HTML | React | Angular |
 | --- | --- | --- |
-| [![BLK Design System PRO HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-pro/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system-pro)  | [![BLK Design System PRO React](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-pro-react/blk-design-system-pro-react.jpg)](https://www.creative-tim.com/product/blk-design-system-react)  | [![BLK Design System PRO Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-pro-angular/opt_blkp_angular_thumbnail.jpg)](https://www.creative-tim.com/product/blk-design-system-angular) |
+| [![BLK Design System PRO HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-pro/opt_blkp_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system-pro)  | [![BLK Design System PRO React](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-pro-react/blk-design-system-pro-react.jpg)](https://www.creative-tim.com/product/blk-design-system-react)  | [![BLK Design System PRO Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/main/blk-design-system-pro-angular/opt_blkp_angular_thumbnail.jpg)](https://www.creative-tim.com/product/blk-design-system-angular) |
 
 
 ## Demo
