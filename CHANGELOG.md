@@ -22,7 +22,7 @@
 ```
 chart.js                   2.9.3   →    2.9.4
 moment                    2.24.0   →   2.29.1
-node-sass                 4.13.1   →    5.0.0
+node-sass                 4.13.1   →   4.14.1
 nouislider                14.2.0   →   14.6.3
 react                    16.13.1   →   17.0.1
 react-chartjs-2            2.9.0   →   2.11.1
