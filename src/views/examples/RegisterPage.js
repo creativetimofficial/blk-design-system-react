@@ -35,7 +35,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -45,7 +45,7 @@ import Footer from "components/Footer/Footer.js";
 class RegisterPage extends React.Component {
   state = {
     squares1to6: "",
-    squares7and8: ""
+    squares7and8: "",
   };
   componentDidMount() {
     document.body.classList.toggle("register-page");
@@ -58,7 +58,7 @@ class RegisterPage extends React.Component {
       this.followCursor
     );
   }
-  followCursor = event => {
+  followCursor = (event) => {
     let posX = event.clientX - window.innerWidth / 2;
     let posY = event.clientY - window.innerWidth / 6;
     this.setState({
@@ -73,7 +73,7 @@ class RegisterPage extends React.Component {
         posX * 0.02 +
         "deg) rotateX(" +
         posY * -0.02 +
-        "deg)"
+        "deg)",
     });
   };
   render() {
@@ -101,7 +101,9 @@ class RegisterPage extends React.Component {
                       <CardHeader>
                         <CardImg
                           alt="..."
-                          src={require("assets/img/square-purple-1.png").default}
+                          src={
+                            require("assets/img/square-purple-1.png").default
+                          }
                         />
                         <CardTitle tag="h4">Register</CardTitle>
                       </CardHeader>
@@ -109,7 +111,7 @@ class RegisterPage extends React.Component {
                         <Form className="form">
                           <InputGroup
                             className={classnames({
-                              "input-group-focus": this.state.fullNameFocus
+                              "input-group-focus": this.state.fullNameFocus,
                             })}
                           >
                             <InputGroupAddon addonType="prepend">
@@ -120,17 +122,17 @@ class RegisterPage extends React.Component {
                             <Input
                               placeholder="Full Name"
                               type="text"
-                              onFocus={e =>
+                              onFocus={(e) =>
                                 this.setState({ fullNameFocus: true })
                               }
-                              onBlur={e =>
+                              onBlur={(e) =>
                                 this.setState({ fullNameFocus: false })
                               }
                             />
                           </InputGroup>
                           <InputGroup
                             className={classnames({
-                              "input-group-focus": this.state.emailFocus
+                              "input-group-focus": this.state.emailFocus,
                             })}
                           >
                             <InputGroupAddon addonType="prepend">
@@ -141,13 +143,17 @@ class RegisterPage extends React.Component {
                             <Input
                               placeholder="Email"
                               type="text"
-                              onFocus={e => this.setState({ emailFocus: true })}
-                              onBlur={e => this.setState({ emailFocus: false })}
+                              onFocus={(e) =>
+                                this.setState({ emailFocus: true })
+                              }
+                              onBlur={(e) =>
+                                this.setState({ emailFocus: false })
+                              }
                             />
                           </InputGroup>
                           <InputGroup
                             className={classnames({
-                              "input-group-focus": this.state.passwordFocus
+                              "input-group-focus": this.state.passwordFocus,
                             })}
                           >
                             <InputGroupAddon addonType="prepend">
@@ -158,10 +164,10 @@ class RegisterPage extends React.Component {
                             <Input
                               placeholder="Password"
                               type="text"
-                              onFocus={e =>
+                              onFocus={(e) =>
                                 this.setState({ passwordFocus: true })
                               }
-                              onBlur={e =>
+                              onBlur={(e) =>
                                 this.setState({ passwordFocus: false })
                               }
                             />
@@ -172,7 +178,7 @@ class RegisterPage extends React.Component {
                               <span className="form-check-sign" />I agree to the{" "}
                               <a
                                 href="#pablo"
-                                onClick={e => e.preventDefault()}
+                                onClick={(e) => e.preventDefault()}
                               >
                                 terms and conditions
                               </a>
