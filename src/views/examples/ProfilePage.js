@@ -49,17 +49,17 @@ import Footer from "components/Footer/Footer.js";
 
 const carouselItems = [
   {
-    src: require("assets/img/denys.jpg"),
+    src: require("assets/img/denys.jpg").default,
     altText: "Slide 1",
     caption: "Big City Life, United States"
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg"),
+    src: require("assets/img/fabien-bazanegue.jpg").default,
     altText: "Slide 2",
     caption: "Somewhere Beyond, United States"
   },
   {
-    src: require("assets/img/mark-finn.jpg"),
+    src: require("assets/img/mark-finn.jpg").default,
     altText: "Slide 3",
     caption: "Stocks, United States"
   }
@@ -108,12 +108,12 @@ class ProfilePage extends React.Component {
             <img
               alt="..."
               className="dots"
-              src={require("assets/img/dots.png")}
+              src={require("assets/img/dots.png").default}
             />
             <img
               alt="..."
               className="path"
-              src={require("assets/img/path4.png")}
+              src={require("assets/img/path4.png").default}
             />
             <Container className="align-items-center">
               <Row>
@@ -171,7 +171,7 @@ class ProfilePage extends React.Component {
                       <img
                         alt="..."
                         className="img-center img-fluid rounded-circle"
-                        src={require("assets/img/mike.jpg")}
+                        src={require("assets/img/mike.jpg").default}
                       />
                       <h4 className="title">Transactions</h4>
                     </CardHeader>
