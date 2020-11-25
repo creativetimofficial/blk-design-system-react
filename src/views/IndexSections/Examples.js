@@ -24,7 +24,11 @@ class Examples extends React.Component {
   render() {
     return (
       <div className="section section-examples" data-background-color="black">
-        <img alt="..." className="path" src={require("assets/img/path1.png").default} />
+        <img
+          alt="..."
+          className="path"
+          src={require("assets/img/path1.png").default}
+        />
         <div className="space-50" />
         <Container className="text-center">
           <Row>
