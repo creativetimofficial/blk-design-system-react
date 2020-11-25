@@ -32,22 +32,29 @@
   },
   "homepage": "https://demos.creative-tim.com/blk-design-system-react/#/",
   "dependencies": {
-    "chart.js": "2.9.3",
+    "@testing-library/jest-dom": "5.11.6",
+    "@testing-library/react": "11.2.2",
+    "@testing-library/user-event": "12.2.2",
+    "chart.js": "2.9.4",
     "classnames": "2.2.6",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
-    "moment": "2.24.0",
-    "node-sass": "4.13.1",
-    "nouislider": "14.2.0",
+    "moment": "2.29.1",
+    "node-sass": "5.0.0",
+    "nouislider": "14.6.3",
     "perfect-scrollbar": "1.5.0",
-    "react": "16.13.1",
+    "react": "17.0.1",
     "react-bootstrap-switch": "15.5.3",
-    "react-chartjs-2": "2.9.0",
-    "react-datetime": "2.16.3",
-    "react-dom": "16.13.1",
-    "react-router-dom": "5.1.2",
-    "react-scripts": "3.4.1",
-    "reactstrap": "8.4.1"
+    "react-chartjs-2": "2.11.1",
+    "react-datetime": "3.0.4",
+    "react-dom": "17.0.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.1",
+    "reactstrap": "8.7.1",
+    "web-vitals": "1.0.1"
+  },
+  "optionalDependencies": {
+    "typescript": "4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -60,16 +67,21 @@
     "map-sass": "node-sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css --source-map true"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "optionalDependencies": {
-    "eslint-plugin-flowtype": "3.13.0",
-    "typescript": "3.8.3"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
