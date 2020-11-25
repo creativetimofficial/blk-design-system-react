@@ -31,18 +31,18 @@ import ProfilePage from "views/examples/ProfilePage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/components" render={props => <Index {...props} />} />
+      <Route path="/components" render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"
-        render={props => <LandingPage {...props} />}
+        render={(props) => <LandingPage {...props} />}
       />
       <Route
         path="/register-page"
-        render={props => <RegisterPage {...props} />}
+        render={(props) => <RegisterPage {...props} />}
       />
       <Route
         path="/profile-page"
-        render={props => <ProfilePage {...props} />}
+        render={(props) => <ProfilePage {...props} />}
       />
       <Redirect from="/" to="/components" />
     </Switch>
