@@ -40,7 +40,7 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 
 
 | HTML | React | Angular |
-| --- | --- |
+| --- | --- | --- |
 | [![BLK Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system)  | [![BLK Design System  React](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-react/blk-design-system-react.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-react)  | [![BLK Design System  Angular](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-react/blk-design-system-angular.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-angular) |
 
 ## Demo
