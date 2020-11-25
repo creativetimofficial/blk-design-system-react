@@ -38,25 +38,25 @@ import {
   InputGroupAddon,
   InputGroupText,
   Label,
-  UncontrolledCarousel
+  UncontrolledCarousel,
 } from "reactstrap";
 
 const carouselItems = [
   {
     src: require("assets/img/denys.jpg").default,
     altText: "Slide 1",
-    caption: ""
+    caption: "",
   },
   {
     src: require("assets/img/fabien-bazanegue.jpg").default,
     altText: "Slide 2",
-    caption: ""
+    caption: "",
   },
   {
     src: require("assets/img/mark-finn.jpg").default,
     altText: "Slide 3",
-    caption: ""
-  }
+    caption: "",
+  },
 ];
 
 class JavaScript extends React.Component {
@@ -65,18 +65,22 @@ class JavaScript extends React.Component {
     this.state = {
       demoModal: false,
       miniModal: false,
-      formModal: false
+      formModal: false,
     };
   }
-  toggleModal = modalState => {
+  toggleModal = (modalState) => {
     this.setState({
-      [modalState]: !this.state[modalState]
+      [modalState]: !this.state[modalState],
     });
   };
   render() {
     return (
       <div className="section section-javascript" id="javascriptComponents">
-        <img alt="..." className="path" src={require("assets/img/path5.png").default} />
+        <img
+          alt="..."
+          className="path"
+          src={require("assets/img/path5.png").default}
+        />
         <img
           alt="..."
           className="path path1"
@@ -207,17 +211,23 @@ class JavaScript extends React.Component {
                     className="btn-neutral btn-icon"
                     color="default"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
-                    <img alt="..." src={require("assets/img/github.svg").default} />
+                    <img
+                      alt="..."
+                      src={require("assets/img/github.svg").default}
+                    />
                   </Button>
                   <Button
                     className="btn-neutral btn-icon"
                     color="default"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
-                    <img alt="..." src={require("assets/img/google.svg").default} />
+                    <img
+                      alt="..."
+                      src={require("assets/img/google.svg").default}
+                    />
                   </Button>
                 </div>
                 <div className="text-center text-muted mb-4 mt-3">
@@ -227,7 +237,7 @@ class JavaScript extends React.Component {
                   <FormGroup className="mb-3">
                     <InputGroup
                       className={classnames("input-group-alternative", {
-                        "input-group-focus": this.state.emailFocus
+                        "input-group-focus": this.state.emailFocus,
                       })}
                     >
                       <InputGroupAddon addonType="prepend">
@@ -238,15 +248,15 @@ class JavaScript extends React.Component {
                       <Input
                         placeholder="Email"
                         type="email"
-                        onFocus={e => this.setState({ emailFocus: true })}
-                        onBlur={e => this.setState({ emailFocus: false })}
+                        onFocus={(e) => this.setState({ emailFocus: true })}
+                        onBlur={(e) => this.setState({ emailFocus: false })}
                       />
                     </InputGroup>
                   </FormGroup>
                   <FormGroup>
                     <InputGroup
                       className={classnames("input-group-alternative", {
-                        "input-group-focus": this.state.passwordFocus
+                        "input-group-focus": this.state.passwordFocus,
                       })}
                     >
                       <InputGroupAddon addonType="prepend">
@@ -257,8 +267,8 @@ class JavaScript extends React.Component {
                       <Input
                         placeholder="Password"
                         type="password"
-                        onFocus={e => this.setState({ passwordFocus: true })}
-                        onBlur={e => this.setState({ passwordFocus: false })}
+                        onFocus={(e) => this.setState({ passwordFocus: true })}
+                        onBlur={(e) => this.setState({ passwordFocus: false })}
                       />
                     </InputGroup>
                   </FormGroup>
@@ -289,7 +299,7 @@ class JavaScript extends React.Component {
                   <ReactDatetime
                     inputProps={{
                       className: "form-control",
-                      placeholder: "Date Picker Here"
+                      placeholder: "Date Picker Here",
                     }}
                   />
                 </FormGroup>
