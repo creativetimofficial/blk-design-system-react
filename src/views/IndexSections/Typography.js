@@ -23,11 +23,11 @@ class Typography extends React.Component {
   render() {
     return (
       <div className="section section-typo">
-        <img alt="..." className="path" src={require("assets/img/path1.png")} />
+        <img alt="..." className="path" src={require("assets/img/path1.png").default} />
         <img
           alt="..."
           className="path path1"
-          src={require("assets/img/path3.png")}
+          src={require("assets/img/path3.png").default}
         />
         <Container>
           <h3 className="title">Typography</h3>
@@ -156,7 +156,7 @@ class Typography extends React.Component {
                 <img
                   alt="..."
                   className="img-fluid rounded shadow"
-                  src={require("assets/img/ryan.jpg")}
+                  src={require("assets/img/ryan.jpg").default}
                   style={{ width: "150px" }}
                 />
               </Col>
@@ -167,7 +167,7 @@ class Typography extends React.Component {
                 <img
                   alt="..."
                   className="img-fluid rounded-circle shadow"
-                  src={require("assets/img/james.jpg")}
+                  src={require("assets/img/james.jpg").default}
                   style={{ width: "150px" }}
                 />
               </Col>
@@ -178,7 +178,7 @@ class Typography extends React.Component {
                 <img
                   alt="..."
                   className="img-fluid rounded shadow-lg"
-                  src={require("assets/img/lora.jpg")}
+                  src={require("assets/img/lora.jpg").default}
                   style={{ width: "150px" }}
                 />
               </Col>
@@ -189,7 +189,7 @@ class Typography extends React.Component {
                 <img
                   alt="..."
                   className="img-fluid rounded-circle shadow-lg"
-                  src={require("assets/img/mike.jpg")}
+                  src={require("assets/img/mike.jpg").default}
                   style={{ width: "150px" }}
                 />
               </Col>
