@@ -19,14 +19,13 @@ import React from "react";
 import classnames from "classnames";
 // plugin that creates slider
 import Slider from "nouislider";
-// react plugin used to create switch buttons
-import Switch from "react-bootstrap-switch";
 
 // reactstrap components
 import {
   Button,
   Label,
   FormGroup,
+  CustomInput,
   Input,
   InputGroupAddon,
   InputGroupText,
@@ -296,9 +295,9 @@ class Basics extends React.Component {
             </Col>
             <Col lg="3" sm="6">
               <p className="category">Toggle Buttons</p>
-              <Switch offColor="" offText="" onColor="" onText="" />
+              <CustomInput type="switch" id="switch-1" />
               <br />
-              <Switch defaultValue={false} offColor="" onColor="" />
+              <CustomInput type="switch" id="switch-2" label="With label" />
             </Col>
             <Col lg="3" sm="6">
               <p className="category">Sliders</p>
