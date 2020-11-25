@@ -22,6 +22,7 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 ## Table of Contents
 
 * [Versions](#versions)
+* [PRO Versions](#pro-versions)
 * [Demo](#demo)
 * [Quick Start](#quick-start)
 * [Documentation](#documentation)
@@ -35,16 +36,12 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-readme)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/blk-design-system-sketch/tree/sketch)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/blk-design-system-angular?ref=blkdsr-readme)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/blk-design-system-sketch/tree/sketch)
 
 
-
-
-
-
-| HTML | React |
+| HTML | React | Angular |
 | --- | --- |
-| [![BLK Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system)  | [![BLK Design System  React](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-react/blk-design-system-react.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-react)
+| [![BLK Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system/opt_blk_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/blk-design-system)  | [![BLK Design System  React](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-react/blk-design-system-react.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-react)  | [![BLK Design System  Angular](https://github.com/creativetimofficial/public-assets/blob/main/blk-design-system-react/blk-design-system-angular.jpeg?raw=true)](https://www.creative-tim.com/product/blk-design-system-angular) |
 
 ## Demo
 
