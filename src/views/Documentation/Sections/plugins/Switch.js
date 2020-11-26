@@ -19,7 +19,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import Switch from "react-bootstrap-switch";
-import { Col, CardSubtitle } from "reactstrap";
+import { Col, CardSubtitle, Alert } from "reactstrap";
 
 const codeSwitchExample = `<Col xs={12} md={4}>
     <CardSubtitle>Default</CardSubtitle>
@@ -81,6 +81,9 @@ class Switches extends React.Component {
           </a>
           .
         </p>
+        <Alert color="warning">WARNING! This component is deprected, it has not been maintained since 2017, so we have dropped the usage of it as well.</Alert>
+        <Alert color="warning">WARNING! We are no longer offering support for this plugin.</Alert>
+        <Alert color="warning">If you still need it, you will have to first install it with the following command: <code className="font-weight-bold text-white">npm i -E react-bootstrap-switch@15.5.3</code>.</Alert>
         <p>To use it, you'll need the following import:</p>
         <SyntaxHighlighter
           language="jsx"
