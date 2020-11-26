@@ -84,7 +84,7 @@ class Sliders extends React.Component {
     return (
       <div>
         <h1 className="bd-title" id="content">
-          noUiSlider v13.1.1
+          noUiSlider v14.6.3
         </h1>
         <h2 id="content">Example</h2>
         <div className="bd-example">
