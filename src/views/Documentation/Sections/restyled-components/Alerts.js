@@ -172,7 +172,7 @@ class Alerts extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: true
+      visible: true,
     };
   }
   onDismiss = () => {
@@ -225,7 +225,7 @@ class Alerts extends React.Component {
             <a
               href="#pablo"
               className="alert-link"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               an example link
             </a>
@@ -236,7 +236,7 @@ class Alerts extends React.Component {
             <a
               href="#pablo"
               className="alert-link"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               an example link
             </a>
@@ -247,7 +247,7 @@ class Alerts extends React.Component {
             <a
               href="#pablo"
               className="alert-link"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               an example link
             </a>
@@ -258,7 +258,7 @@ class Alerts extends React.Component {
             <a
               href="#pablo"
               className="alert-link"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               an example link
             </a>
@@ -269,7 +269,7 @@ class Alerts extends React.Component {
             <a
               href="#pablo"
               className="alert-link"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               an example link
             </a>
