@@ -32,7 +32,7 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 class Colors extends React.Component {
