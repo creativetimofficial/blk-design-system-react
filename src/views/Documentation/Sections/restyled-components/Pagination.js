@@ -21,7 +21,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import {
   Pagination as Paginations,
   PaginationItem,
-  PaginationLink
+  PaginationLink,
 } from "reactstrap";
 
 const codeOverview = `import React from 'react';
