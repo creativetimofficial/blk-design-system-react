@@ -52,7 +52,7 @@ export default function Basics() {
       step: 1,
       range: { min: 0, max: 100 },
     });
-  },[]);
+  }, []);
   return (
     <div className="section section-basic" id="basic-elements">
       <img
