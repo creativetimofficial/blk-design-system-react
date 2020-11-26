@@ -42,7 +42,7 @@ export default function NucleoIcons() {
               <Button
                 className="btn-round"
                 color="primary"
-                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
+                href="https://www.creative-tim.com/learning-lab/reactstrap/nucleo-icons/blk-design-system"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -62,7 +62,7 @@ export default function NucleoIcons() {
           </Col>
         </Row>
         <div className="blur-hover">
-          <a href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons">
+          <a href="https://www.creative-tim.com/learning-lab/reactstrap/nucleo-icons/blk-design-system">
             <div className="icons-container blur-item on-screen mt-5">
               {/* Center */}
               <i className="icon tim-icons icon-coins" />
