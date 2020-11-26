@@ -41,7 +41,7 @@ export default function ExamplesNavbar() {
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
     };
-  });
+  },[]);
   const changeColor = () => {
     if (
       document.documentElement.scrollTop > 99 ||
