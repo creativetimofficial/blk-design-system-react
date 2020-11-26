@@ -62,39 +62,39 @@ var docsRoutes = [
       {
         path: "/documentation/overview",
         component: Overview,
-        name: "Overview"
+        name: "Overview",
       },
       {
         path: "/documentation/download",
         component: Download,
-        name: "Download"
+        name: "Download",
       },
       {
         path: "/documentation/build-tools",
         component: BuildTools,
-        name: "Build Tools"
+        name: "Build Tools",
       },
       {
         path: "/documentation/contents",
         component: Contents,
-        name: "Contents"
+        name: "Contents",
       },
       {
         path: "/documentation/license",
         component: License,
-        name: "License"
+        name: "License",
       },
       {
         path: "/documentation/tutorial",
         component: Tutorial,
-        name: "Tutorial"
+        name: "Tutorial",
       },
       {
         path: "/documentation/variables",
         component: Variables,
-        name: "Variables"
-      }
-    ]
+        name: "Variables",
+      },
+    ],
   },
   {
     name: "Foundation",
@@ -103,24 +103,24 @@ var docsRoutes = [
       {
         path: "/documentation/colors",
         component: Colors,
-        name: "Colors"
+        name: "Colors",
       },
       {
         path: "/documentation/grid",
         component: Grid,
-        name: "Grid"
+        name: "Grid",
       },
       {
         path: "/documentation/typography",
         component: Typography,
-        name: "Typography"
+        name: "Typography",
       },
       {
         path: "/documentation/icons",
         component: Icons,
-        name: "Icons"
-      }
-    ]
+        name: "Icons",
+      },
+    ],
   },
   {
     name: "Core Components",
@@ -129,19 +129,19 @@ var docsRoutes = [
       {
         path: "/documentation/footer",
         component: Footer,
-        name: "Footer"
+        name: "Footer",
       },
       {
         path: "/documentation/navbars",
         component: Navbars,
-        name: "App Navbars"
+        name: "App Navbars",
       },
       {
         path: "/documentation/page-header",
         component: PageHeader,
-        name: "PageHeader"
-      }
-    ]
+        name: "PageHeader",
+      },
+    ],
   },
   {
     name: "Restyled Components",
@@ -150,74 +150,74 @@ var docsRoutes = [
       {
         path: "/documentation/alert",
         component: Alerts,
-        name: "Alerts"
+        name: "Alerts",
       },
       {
         path: "/documentation/badge",
         component: Badge,
-        name: "Badge"
+        name: "Badge",
       },
       {
         path: "/documentation/breadcrumbs",
         component: Breadcrumb,
-        name: "Breadcrumb"
+        name: "Breadcrumb",
       },
       {
         path: "/documentation/buttons",
         component: Buttons,
-        name: "Buttons"
+        name: "Buttons",
       },
       {
         path: "/documentation/carousel",
         component: Carousel,
-        name: "Carousel"
+        name: "Carousel",
       },
       {
         path: "/documentation/dropdowns",
         component: Dropdowns,
-        name: "Dropdowns"
+        name: "Dropdowns",
       },
       {
         path: "/documentation/forms",
         component: Forms,
-        name: "Forms"
+        name: "Forms",
       },
       {
         path: "/documentation/modal",
         component: Modals,
-        name: "Modals"
+        name: "Modals",
       },
       {
         path: "/documentation/navbar",
         component: Navbar,
-        name: "Navbars"
+        name: "Navbars",
       },
       {
         path: "/documentation/navs",
         component: Navs,
-        name: "Navs"
+        name: "Navs",
       },
       {
         path: "/documentation/pagination",
         component: Pagination,
-        name: "Pagination"
+        name: "Pagination",
       },
       {
         path: "/documentation/progress",
         component: Progress,
-        name: "Progress"
+        name: "Progress",
       },
       {
         path: "/documentation/tables",
         component: Tables,
-        name: "Tables"
+        name: "Tables",
       },
       {
         path: "/documentation/tooltips",
         component: Tooltips,
-        name: "Tooltips"
-      }
-    ]
+        name: "Tooltips",
+      },
+    ],
   },
   {
     name: "Plugins",
@@ -227,13 +227,13 @@ var docsRoutes = [
       {
         path: "/documentation/date-time-picker",
         component: Datetimepicker,
-        name: "DateTimePicker"
+        name: "DateTimePicker",
       },
       { path: "/documentation/sliders", component: Sliders, name: "Sliders" },
-      { path: "/documentation/switch", component: Switch, name: "Switch" }
-    ]
+      { path: "/documentation/switch", component: Switch, name: "Switch" },
+    ],
   },
-  { redirect: true, path: "/documentation", pathTo: "/documentation/overview" }
+  { redirect: true, path: "/documentation", pathTo: "/documentation/overview" },
 ];
 
 export default docsRoutes;
