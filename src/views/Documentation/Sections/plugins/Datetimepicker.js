@@ -75,7 +75,7 @@ class DateTimePicker extends React.Component {
     return (
       <div>
         <h1 className="bd-title" id="content">
-          React Datetime v2.16.3
+          React Datetime v3.0.4
         </h1>
         <p className="bd-lead">
           We've used{" "}
