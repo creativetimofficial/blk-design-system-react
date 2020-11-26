@@ -26,7 +26,7 @@ import {
   CardHeader,
   FormGroup,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const codeExample = `<Row>
