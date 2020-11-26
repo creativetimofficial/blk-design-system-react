@@ -31,7 +31,7 @@ import {
   Col,
   Button,
   Card,
-  CardBody
+  CardBody,
 } from "reactstrap";
 
 const overviewExample = `import React from "react";
@@ -699,17 +699,17 @@ class Forms extends React.Component {
     super(props);
     this.state = {
       focused1: "",
-      focused2: ""
+      focused2: "",
     };
   }
-  onFocus = inputName => {
+  onFocus = (inputName) => {
     this.setState({
-      [inputName]: "input-group-focus"
+      [inputName]: "input-group-focus",
     });
   };
-  onBlur = inputName => {
+  onBlur = (inputName) => {
     this.setState({
-      [inputName]: ""
+      [inputName]: "",
     });
   };
   render() {
