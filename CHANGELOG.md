@@ -11,7 +11,7 @@
 ### Added components
 ### Deleted dependencies
 - react-bootstrap-switch
-  - This project was not longer maintained, and it had issues with the new React version. The styles for it are still kept inside the product, but we do not recommended using the plugin anymore. You ca use the simple Reactstrap CustomInput of type switch or the basic HTML Bootstrap Switch one.
+  - This project was not longer maintained, and it had issues with the new React version. The styles for it are still kept inside the product, but we do not recommended using the plugin anymore. You can use the simple Reactstrap CustomInput of type switch or the basic HTML Bootstrap Switch one.
 - eslint-plugin-flowtype
 ### Added dependencies
 ```
