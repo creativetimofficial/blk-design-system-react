@@ -34,7 +34,7 @@ import {
   TabContent,
   TabPane,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const codeBase = `<Nav>
@@ -764,13 +764,13 @@ class Navs extends React.Component {
       iconTabs: 1,
       pills: 1,
       vertical: 1,
-      withIcons: 1
+      withIcons: 1,
     };
   }
   toggleTabs = (e, stateName, index) => {
     e.preventDefault();
     this.setState({
-      [stateName]: index
+      [stateName]: index,
     });
   };
   render() {
@@ -813,18 +813,18 @@ class Navs extends React.Component {
               <NavLink
                 className="active"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Active
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
@@ -832,7 +832,7 @@ class Navs extends React.Component {
               <NavLink
                 className="disabled"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Disabled
               </NavLink>
@@ -861,20 +861,20 @@ class Navs extends React.Component {
             <NavLink
               className="active"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Active
             </NavLink>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
             <NavLink
               className="disabled"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Disabled
             </NavLink>
@@ -892,7 +892,7 @@ class Navs extends React.Component {
         <h3 id="horizontal-alignment">Horizontal alignment</h3>
         <p>
           Change the horizontal alignment of your nav with{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
             flexbox utilities
           </a>
           . By default, navs are left-aligned, but you can easily change them to
@@ -908,18 +908,18 @@ class Navs extends React.Component {
               <NavLink
                 className="active"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Active
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
@@ -927,7 +927,7 @@ class Navs extends React.Component {
               <NavLink
                 className="disabled"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Disabled
               </NavLink>
@@ -951,18 +951,18 @@ class Navs extends React.Component {
               <NavLink
                 className="active"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Active
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
@@ -970,7 +970,7 @@ class Navs extends React.Component {
               <NavLink
                 className="disabled"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Disabled
               </NavLink>
@@ -999,18 +999,18 @@ class Navs extends React.Component {
               <NavLink
                 className="active"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Active
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
@@ -1018,7 +1018,7 @@ class Navs extends React.Component {
               <NavLink
                 className="disabled"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Disabled
               </NavLink>
@@ -1042,20 +1042,20 @@ class Navs extends React.Component {
             <NavLink
               className="active"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Active
             </NavLink>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
             <NavLink
               className="disabled"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Disabled
             </NavLink>
@@ -1070,7 +1070,7 @@ class Navs extends React.Component {
           <code className="highlighter-rouge">.nav-tabs</code>
           class to generate a tabbed interface. Use them to create tabbable
           regions with our{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
             tab JavaScript plugin
           </a>
           .
@@ -1086,9 +1086,9 @@ class Navs extends React.Component {
                     <NavItem>
                       <NavLink
                         className={classnames({
-                          active: this.state.plainTabs === 1
+                          active: this.state.plainTabs === 1,
                         })}
-                        onClick={e => this.toggleTabs(e, "plainTabs", 1)}
+                        onClick={(e) => this.toggleTabs(e, "plainTabs", 1)}
                         href="#pablo"
                       >
                         Home
@@ -1097,9 +1097,9 @@ class Navs extends React.Component {
                     <NavItem>
                       <NavLink
                         className={classnames({
-                          active: this.state.plainTabs === 2
+                          active: this.state.plainTabs === 2,
                         })}
-                        onClick={e => this.toggleTabs(e, "plainTabs", 2)}
+                        onClick={(e) => this.toggleTabs(e, "plainTabs", 2)}
                         href="#pablo"
                       >
                         Updates
@@ -1108,9 +1108,9 @@ class Navs extends React.Component {
                     <NavItem>
                       <NavLink
                         className={classnames({
-                          active: this.state.plainTabs === 3
+                          active: this.state.plainTabs === 3,
                         })}
-                        onClick={e => this.toggleTabs(e, "plainTabs", 3)}
+                        onClick={(e) => this.toggleTabs(e, "plainTabs", 3)}
                         href="#pablo"
                       >
                         History
@@ -1175,9 +1175,9 @@ class Navs extends React.Component {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: this.state.iconTabs === 1
+                        active: this.state.iconTabs === 1,
                       })}
-                      onClick={e => this.toggleTabs(e, "iconTabs", 1)}
+                      onClick={(e) => this.toggleTabs(e, "iconTabs", 1)}
                       href="#pablo"
                     >
                       <i className="tim-icons icon-single-02" />
@@ -1186,9 +1186,9 @@ class Navs extends React.Component {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: this.state.iconTabs === 2
+                        active: this.state.iconTabs === 2,
                       })}
-                      onClick={e => this.toggleTabs(e, "iconTabs", 2)}
+                      onClick={(e) => this.toggleTabs(e, "iconTabs", 2)}
                       href="#pablo"
                     >
                       <i className="tim-icons icon-chat-33" />
@@ -1197,9 +1197,9 @@ class Navs extends React.Component {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: this.state.iconTabs === 3
+                        active: this.state.iconTabs === 3,
                       })}
-                      onClick={e => this.toggleTabs(e, "iconTabs", 3)}
+                      onClick={(e) => this.toggleTabs(e, "iconTabs", 3)}
                       href="#pablo"
                     >
                       <i className="tim-icons icon-settings-gear-63" />
@@ -1265,9 +1265,9 @@ class Navs extends React.Component {
             <NavItem>
               <NavLink
                 className={classnames({
-                  active: this.state.pills === 1
+                  active: this.state.pills === 1,
                 })}
-                onClick={e => this.toggleTabs(e, "pills", 1)}
+                onClick={(e) => this.toggleTabs(e, "pills", 1)}
                 href="#pablo"
               >
                 Profile
@@ -1276,9 +1276,9 @@ class Navs extends React.Component {
             <NavItem>
               <NavLink
                 className={classnames({
-                  active: this.state.pills === 2
+                  active: this.state.pills === 2,
                 })}
-                onClick={e => this.toggleTabs(e, "pills", 2)}
+                onClick={(e) => this.toggleTabs(e, "pills", 2)}
                 href="#pablo"
               >
                 Settings
@@ -1287,9 +1287,9 @@ class Navs extends React.Component {
             <NavItem>
               <NavLink
                 className={classnames({
-                  active: this.state.pills === 3
+                  active: this.state.pills === 3,
                 })}
-                onClick={e => this.toggleTabs(e, "pills", 3)}
+                onClick={(e) => this.toggleTabs(e, "pills", 3)}
                 href="#pablo"
               >
                 Options
@@ -1337,9 +1337,9 @@ class Navs extends React.Component {
                 <NavItem>
                   <NavLink
                     className={classnames({
-                      active: this.state.vertical === 1
+                      active: this.state.vertical === 1,
                     })}
-                    onClick={e => this.toggleTabs(e, "vertical", 1)}
+                    onClick={(e) => this.toggleTabs(e, "vertical", 1)}
                     href="#pablo"
                   >
                     Profile
@@ -1348,9 +1348,9 @@ class Navs extends React.Component {
                 <NavItem>
                   <NavLink
                     className={classnames({
-                      active: this.state.vertical === 2
+                      active: this.state.vertical === 2,
                     })}
-                    onClick={e => this.toggleTabs(e, "vertical", 2)}
+                    onClick={(e) => this.toggleTabs(e, "vertical", 2)}
                     href="#pablo"
                   >
                     Settings
@@ -1359,9 +1359,9 @@ class Navs extends React.Component {
                 <NavItem>
                   <NavLink
                     className={classnames({
-                      active: this.state.vertical === 3
+                      active: this.state.vertical === 3,
                     })}
-                    onClick={e => this.toggleTabs(e, "vertical", 3)}
+                    onClick={(e) => this.toggleTabs(e, "vertical", 3)}
                     href="#pablo"
                   >
                     Options
@@ -1413,9 +1413,9 @@ class Navs extends React.Component {
             <NavItem>
               <NavLink
                 className={classnames({
-                  active: this.state.withIcons === 1
+                  active: this.state.withIcons === 1,
                 })}
-                onClick={e => this.toggleTabs(e, "withIcons", 1)}
+                onClick={(e) => this.toggleTabs(e, "withIcons", 1)}
                 href="#pablo"
               >
                 <i className="tim-icons icon-laptop" />
@@ -1425,9 +1425,9 @@ class Navs extends React.Component {
             <NavItem>
               <NavLink
                 className={classnames({
-                  active: this.state.withIcons === 2
+                  active: this.state.withIcons === 2,
                 })}
-                onClick={e => this.toggleTabs(e, "withIcons", 2)}
+                onClick={(e) => this.toggleTabs(e, "withIcons", 2)}
                 href="#pablo"
               >
                 <i className="tim-icons icon-settings-gear-63" />
@@ -1437,9 +1437,9 @@ class Navs extends React.Component {
             <NavItem>
               <NavLink
                 className={classnames({
-                  active: this.state.withIcons === 3
+                  active: this.state.withIcons === 3,
                 })}
-                onClick={e => this.toggleTabs(e, "withIcons", 3)}
+                onClick={(e) => this.toggleTabs(e, "withIcons", 3)}
                 href="#pablo"
               >
                 <i className="tim-icons icon-calendar-60" />
@@ -1487,7 +1487,7 @@ class Navs extends React.Component {
               <NavLink
                 className="active"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Active
               </NavLink>
@@ -1501,29 +1501,29 @@ class Navs extends React.Component {
                 data-toggle="dropdown"
                 href="#pablo"
                 nav
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
                 role="button"
               >
                 Dropdown
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   Action
                 </DropdownItem>
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   Another action
                 </DropdownItem>
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   Something else here
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                   Separated link
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavItem>
-              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+              <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                 Link
               </NavLink>
             </NavItem>
@@ -1531,7 +1531,7 @@ class Navs extends React.Component {
               <NavLink
                 className="disabled"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Disabled
               </NavLink>
