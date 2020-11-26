@@ -206,7 +206,7 @@ class Charts extends React.Component {
     return (
       <div>
         <h1 className="bd-title" id="content">
-          React wrapper (v2.7.4) for Chart.js (v2.7.3)
+          React wrapper (v2.11.1) for Chart.js (v2.9.4)
         </h1>
         <p>
           Simple yet flexible React charting for designers & developers. Made by{" "}
