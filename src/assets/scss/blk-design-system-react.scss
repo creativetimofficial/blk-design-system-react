@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -21,48 +21,48 @@ $asset-base-path: '../../../../assets' !default;
 // Core
 
 @import "blk-design-system-react/custom/functions";
-@import "blk-design-system-react/bootstrap/functions";
+@import "~bootstrap/scss/functions";
 
 @import "blk-design-system-react/custom/variables";
-@import "blk-design-system-react/bootstrap/variables";
+@import "~bootstrap/scss/variables";
 
 @import "blk-design-system-react/custom/mixins";
-@import "blk-design-system-react/bootstrap/mixins";
+@import "~bootstrap/scss/mixins";
 
 // Bootstrap components
 
-@import "blk-design-system-react/bootstrap/root";
-@import "blk-design-system-react/bootstrap/reboot";
-@import "blk-design-system-react/bootstrap/type";
-@import "blk-design-system-react/bootstrap/images";
-@import "blk-design-system-react/bootstrap/code";
-@import "blk-design-system-react/bootstrap/grid";
-@import "blk-design-system-react/bootstrap/tables";
-@import "blk-design-system-react/bootstrap/forms";
-@import "blk-design-system-react/bootstrap/buttons";
-@import "blk-design-system-react/bootstrap/transitions";
-@import "blk-design-system-react/bootstrap/dropdown";
-@import "blk-design-system-react/bootstrap/button-group";
-@import "blk-design-system-react/bootstrap/input-group";
-@import "blk-design-system-react/bootstrap/custom-forms";
-@import "blk-design-system-react/bootstrap/nav";
-@import "blk-design-system-react/bootstrap/navbar";
-@import "blk-design-system-react/bootstrap/card";
-@import "blk-design-system-react/bootstrap/breadcrumb";
-@import "blk-design-system-react/bootstrap/pagination";
-@import "blk-design-system-react/bootstrap/badge";
-@import "blk-design-system-react/bootstrap/jumbotron";
-@import "blk-design-system-react/bootstrap/alert";
-@import "blk-design-system-react/bootstrap/progress";
-@import "blk-design-system-react/bootstrap/media";
-@import "blk-design-system-react/bootstrap/list-group";
-@import "blk-design-system-react/bootstrap/close";
-@import "blk-design-system-react/bootstrap/modal";
-@import "blk-design-system-react/bootstrap/tooltip";
-@import "blk-design-system-react/bootstrap/popover";
-@import "blk-design-system-react/bootstrap/carousel";
-@import "blk-design-system-react/bootstrap/utilities";
-@import "blk-design-system-react/bootstrap/print";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
 
 // Custom components
 

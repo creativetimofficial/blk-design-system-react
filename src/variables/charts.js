@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -17,7 +17,7 @@
 */
 // used inside src/views/examples/LandingPage.js
 const bigChart = {
-  data: canvas => {
+  data: (canvas) => {
     let ctx = canvas.getContext("2d");
 
     let gradientFill = ctx.createLinearGradient(0, 230, 0, 50);
@@ -39,7 +39,7 @@ const bigChart = {
         "SEP",
         "OCT",
         "NOV",
-        "DEC"
+        "DEC",
       ],
       datasets: [
         {
@@ -58,15 +58,15 @@ const bigChart = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 160, 200, 160, 250, 280, 220, 190, 200, 250, 290, 320]
-        }
-      ]
+          data: [80, 160, 200, 160, 250, 280, 220, 190, 200, 250, 290, 320],
+        },
+      ],
     };
   },
   options: {
     maintainAspectRatio: false,
     legend: {
-      display: false
+      display: false,
     },
 
     tooltips: {
@@ -77,7 +77,7 @@ const bigChart = {
       xPadding: 12,
       mode: "nearest",
       intersect: 0,
-      position: "nearest"
+      position: "nearest",
     },
     responsive: true,
     scales: {
@@ -87,16 +87,16 @@ const bigChart = {
           gridLines: {
             drawBorder: false,
             color: "rgba(0,0,0,0.0)",
-            zeroLineColor: "transparent"
+            zeroLineColor: "transparent",
           },
           ticks: {
             display: false,
             suggestedMin: 0,
             suggestedMax: 350,
             padding: 20,
-            fontColor: "#9a9a9a"
-          }
-        }
+            fontColor: "#9a9a9a",
+          },
+        },
       ],
       xAxes: [
         {
@@ -104,16 +104,16 @@ const bigChart = {
           gridLines: {
             drawBorder: false,
             color: "rgba(0,0,0,0)",
-            zeroLineColor: "transparent"
+            zeroLineColor: "transparent",
           },
           ticks: {
             padding: 20,
-            fontColor: "#9a9a9a"
-          }
-        }
-      ]
-    }
-  }
+            fontColor: "#9a9a9a",
+          },
+        },
+      ],
+    },
+  },
 };
 
 export default bigChart;

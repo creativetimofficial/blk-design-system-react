@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const gap = require("gulp-append-prepend");
 
-gulp.task("licenses", async function() {
+gulp.task("licenses", async function () {
   // this is to add Creative Tim licenses in the production mode for the minified js
   gulp
     .src("build/static/js/*chunk.js", { base: "./" })
@@ -9,12 +9,12 @@ gulp.task("licenses", async function() {
       gap.prependText(`/*!
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -33,12 +33,12 @@ gulp.task("licenses", async function() {
       gap.prependText(`<!--
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -57,12 +57,12 @@ gulp.task("licenses", async function() {
       gap.prependText(`/*!
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 

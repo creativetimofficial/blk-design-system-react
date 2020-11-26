@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.1.0
+* BLK Design System React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -35,37 +35,34 @@ import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
 import Download from "views/IndexSections/Download.js";
 
-class Index extends React.Component {
-  componentDidMount() {
+export default function Index() {
+  React.useEffect(() => {
     document.body.classList.toggle("index-page");
-  }
-  componentWillUnmount() {
-    document.body.classList.toggle("index-page");
-  }
-  render() {
-    return (
-      <>
-        <IndexNavbar />
-        <div className="wrapper">
-          <PageHeader />
-          <div className="main">
-            <Basics />
-            <Navbars />
-            <Tabs />
-            <Pagination />
-            <Notifications />
-            <Typography />
-            <JavaScript />
-            <NucleoIcons />
-            <Signup />
-            <Examples />
-            <Download />
-          </div>
-          <Footer />
+    // Specify how to clean up after this effect:
+    return function cleanup() {
+      document.body.classList.toggle("index-page");
+    };
+  },[]);
+  return (
+    <>
+      <IndexNavbar />
+      <div className="wrapper">
+        <PageHeader />
+        <div className="main">
+          <Basics />
+          <Navbars />
+          <Tabs />
+          <Pagination />
+          <Notifications />
+          <Typography />
+          <JavaScript />
+          <NucleoIcons />
+          <Signup />
+          <Examples />
+          <Download />
         </div>
-      </>
-    );
-  }
+        <Footer />
+      </div>
+    </>
+  );
 }
-
-export default Index;
