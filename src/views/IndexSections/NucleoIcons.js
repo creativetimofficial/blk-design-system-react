@@ -43,9 +43,8 @@ export default function NucleoIcons() {
               <Button
                 className="btn-round"
                 color="primary"
-                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/icons"
-                rel="noopener noreferrer"
-                target="_blank"
+                to="/documentation/icons"
+                tag={Link}
               >
                 View Demo Icons
               </Button>
