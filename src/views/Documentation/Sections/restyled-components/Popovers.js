@@ -206,22 +206,22 @@ class Popovers extends React.Component {
       popover2: false,
       popover3: false,
       popover4: false,
-      Popover2: false
+      Popover2: false,
     };
   }
   toggle1 = () => {
     this.setState({
-      popoverOpen: !this.state.popoverOpen
+      popoverOpen: !this.state.popoverOpen,
     });
   };
   toggle2 = () => {
     this.setState({
-      Popover2: !this.state.Popover2
+      Popover2: !this.state.Popover2,
     });
   };
-  toggle = popover => {
+  toggle = (popover) => {
     this.setState({
-      [popover]: !this.state[popover]
+      [popover]: !this.state[popover],
     });
   };
   render() {
