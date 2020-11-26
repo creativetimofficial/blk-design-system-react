@@ -35,7 +35,7 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
+  Container,
 } from "reactstrap";
 
 const codeNav1 = `import React from "react";
@@ -1119,14 +1119,14 @@ class NavbarDocs extends React.Component {
               {`.navbar-expand{-sm|-md|-lg|-xl}`}
             </code>{" "}
             for responsive collapsing and{" "}
-            <a href="#pablo" onClick={e => e.preventDefault()}>
+            <a href="#pablo" onClick={(e) => e.preventDefault()}>
               color scheme
             </a>{" "}
             classes.
           </li>
           <li>
             Navbars and their contents are fluid by default. Use{" "}
-            <a href="#pablo" onClick={e => e.preventDefault()}>
+            <a href="#pablo" onClick={(e) => e.preventDefault()}>
               optional containers
             </a>{" "}
             to limit their horizontal width.
@@ -1164,7 +1164,7 @@ class NavbarDocs extends React.Component {
           Navbar navigation links build on our{" "}
           <code className="highlighter-rouge">.nav</code> options with their own
           modifier class and require the use of{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
             toggler classes
           </a>{" "}
           for proper responsive styling.{" "}
@@ -1184,7 +1184,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="bg-primary" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button className="navbar-toggler" id="navbarNav" type="button">
@@ -1195,17 +1195,17 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarNav">
                 <Nav navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
@@ -1213,7 +1213,7 @@ class NavbarDocs extends React.Component {
                     <NavLink
                       className="disabled"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Disabled
                     </NavLink>
@@ -1237,7 +1237,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="bg-primary" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1252,17 +1252,17 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarNavDropdown">
                 <Nav navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
@@ -1276,26 +1276,26 @@ class NavbarDocs extends React.Component {
                       href="#pablo"
                       id="navbarDropdownMenuLink"
                       nav
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Dropdown link
                     </DropdownToggle>
                     <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                       <DropdownItem
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         Action
                       </DropdownItem>
                       <DropdownItem
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         Another action
                       </DropdownItem>
                       <DropdownItem
                         href="#pablo"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         Something else here
                       </DropdownItem>
@@ -1334,12 +1334,12 @@ class NavbarDocs extends React.Component {
               <Collapse isOpen={false} navbar toggler="#">
                 <Nav navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       link
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       link
                     </NavLink>
                   </NavItem>
@@ -1378,7 +1378,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="bg-primary" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar w/ text
               </NavbarBrand>
               <button className="navbar-toggler" id="navbarText" type="button">
@@ -1389,17 +1389,17 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarText">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
@@ -1430,7 +1430,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example bd-color-schemes">
           <Navbar className="bg-dark" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1445,22 +1445,22 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarColor01">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       About
                     </NavLink>
                   </NavItem>
@@ -1475,7 +1475,7 @@ class NavbarDocs extends React.Component {
           </Navbar>
           <Navbar className="bg-success" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1490,22 +1490,22 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarColor02">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       About
                     </NavLink>
                   </NavItem>
@@ -1520,7 +1520,7 @@ class NavbarDocs extends React.Component {
           </Navbar>
           <Navbar className="bg-danger" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1535,22 +1535,22 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarColor03">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       About
                     </NavLink>
                   </NavItem>
@@ -1565,7 +1565,7 @@ class NavbarDocs extends React.Component {
           </Navbar>
           <Navbar className="bg-warning" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1580,22 +1580,22 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarColor04">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       About
                     </NavLink>
                   </NavItem>
@@ -1610,7 +1610,7 @@ class NavbarDocs extends React.Component {
           </Navbar>
           <Navbar className="bg-white" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1625,22 +1625,22 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarColor05">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       About
                     </NavLink>
                   </NavItem>
@@ -1655,7 +1655,7 @@ class NavbarDocs extends React.Component {
           </Navbar>
           <Navbar className="bg-primary" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1670,22 +1670,22 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarColor06">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       About
                     </NavLink>
                   </NavItem>
@@ -1700,7 +1700,7 @@ class NavbarDocs extends React.Component {
           </Navbar>
           <Navbar className="bg-info" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1715,22 +1715,22 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarColor07">
                 <Nav className="mr-auto" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Features
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Pricing
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       About
                     </NavLink>
                   </NavItem>
@@ -1760,7 +1760,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="navbar-light bg-primary" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
             </Container>
@@ -1787,7 +1787,7 @@ class NavbarDocs extends React.Component {
             <code className="highlighter-rouge">.sticky-top</code>
             uses <code className="highlighter-rouge">position: sticky</code>,
             which{" "}
-            <a href="#pablo" onClick={e => e.preventDefault()}>
+            <a href="#pablo" onClick={(e) => e.preventDefault()}>
               isn’t fully supported in every browser
             </a>
           </strong>
@@ -1796,7 +1796,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="navbar-light bg-primary">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Default
               </NavbarBrand>
             </Container>
@@ -1808,7 +1808,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="fixed-top navbar-light bg-primary">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Fixed top
               </NavbarBrand>
             </Container>
@@ -1820,7 +1820,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="fixed-bottom navbar-light bg-primary">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Fixed bottom
               </NavbarBrand>
             </Container>
@@ -1832,7 +1832,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="sticky-top navbar-light bg-primary">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Sticky top
               </NavbarBrand>
             </Container>
@@ -1886,17 +1886,17 @@ class NavbarDocs extends React.Component {
                 <span className="navbar-toggler-bar navbar-kebab" />
               </button>
               <UncontrolledCollapse navbar toggler="#navbarTogglerDemo01">
-                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                   Hidden brand
                 </NavbarBrand>
                 <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Link
                     </NavLink>
                   </NavItem>
@@ -1904,7 +1904,7 @@ class NavbarDocs extends React.Component {
                     <NavLink
                       className="disabled"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Disabled
                     </NavLink>
@@ -1926,7 +1926,7 @@ class NavbarDocs extends React.Component {
         <div className="bd-example" data-example-id="">
           <Navbar className="bg-primary" expand="lg">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <button
@@ -1941,12 +1941,12 @@ class NavbarDocs extends React.Component {
               <UncontrolledCollapse navbar toggler="#navbarTogglerDemo02">
                 <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Link
                     </NavLink>
                   </NavItem>
@@ -1954,7 +1954,7 @@ class NavbarDocs extends React.Component {
                     <NavLink
                       className="disabled"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Disabled
                     </NavLink>
@@ -1985,18 +1985,18 @@ class NavbarDocs extends React.Component {
                 <span className="navbar-toggler-bar navbar-kebab" />
                 <span className="navbar-toggler-bar navbar-kebab" />
               </button>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Navbar
               </NavbarBrand>
               <UncontrolledCollapse navbar toggler="#navbarTogglerDemo03">
                 <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                   <NavItem className="active">
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Home <span className="sr-only">(current)</span>
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       Link
                     </NavLink>
                   </NavItem>
@@ -2004,7 +2004,7 @@ class NavbarDocs extends React.Component {
                     <NavLink
                       className="disabled"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Disabled
                     </NavLink>
