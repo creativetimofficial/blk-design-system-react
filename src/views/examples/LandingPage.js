@@ -46,7 +46,7 @@ export default function LandingPage() {
     return function cleanup() {
       document.body.classList.toggle("landing-page");
     };
-  },[]);
+  }, []);
   return (
     <>
       <ExamplesNavbar />
