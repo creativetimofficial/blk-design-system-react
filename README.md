@@ -77,7 +77,7 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 
 
 ## Documentation
-The documentation for the BLK Design System React is hosted at our [website](https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview).
+The documentation for the BLK Design System React is hosted at our [website](https://www.creative-tim.com/learning-lab/reactstrap/overview/blk-design-system).
 
 
 ## File Structure
@@ -166,7 +166,7 @@ At present, we officially aim to support the last two versions of the following 
 ## Resources
 - Demo: <https://demos.creative-tim.com/blk-design-system-react/#/>
 - Download Page: <https://www.creative-tim.com/product/blk-design-system-react>
-- Documentation: <https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview>
+- Documentation: <https://www.creative-tim.com/learning-lab/reactstrap/overview/blk-design-system>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/blk-design-system-react/issues)
