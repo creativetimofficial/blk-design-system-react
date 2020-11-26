@@ -42,7 +42,7 @@ export default function Index() {
     return function cleanup() {
       document.body.classList.toggle("index-page");
     };
-  });
+  },[]);
   return (
     <>
       <IndexNavbar />
