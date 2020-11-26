@@ -116,7 +116,7 @@ class Dropdowns extends React.Component {
           <code className="highlighter-rouge">DropdownToggle</code> uses the{" "}
           <code className="highlighter-rouge">Button</code> component
           internally, meaning it also accepts all the props the{" "}
-          <Link to="/documentation/buttons/">Button component</Link> accepts.
+          <a href="https://www.creative-tim.com/learning-lab/reactstrap/buttons/blk-design-system">Button component</a> accepts.
         </p>
         <p>
           You can either use a controlled or a uncontrolled dropdown. In our
