@@ -54,7 +54,11 @@ class Header extends React.Component {
         <div className="navbar-nav-scroll ml-md-auto">
           <Nav className="bd-navbar-nav flex-row" navbar>
             <NavItem>
-              <NavLink href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-index-navbar-upgrade-pro" target="_blank" className="p-2">
+              <NavLink
+                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-index-navbar-upgrade-pro"
+                target="_blank"
+                className="p-2"
+              >
                 <i className="tim-icons icon-spaceship" /> Upgrade to PRO
               </NavLink>
             </NavItem>
@@ -96,7 +100,7 @@ class Header extends React.Component {
               position: "absolute",
               top: "0",
               border: "0",
-              right: "0"
+              right: "0",
             }}
             aria-hidden="true"
           >
