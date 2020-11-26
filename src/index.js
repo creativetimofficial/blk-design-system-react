@@ -55,7 +55,7 @@ ReactDOM.render(
       />
       <Route
         path="/documentation"
-        render={props => <Documentation {...props} />}
+        render={(props) => <Documentation {...props} />}
       />
       <Redirect from="/" to="/components" />
     </Switch>
