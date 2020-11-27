@@ -1,6 +1,8 @@
 # Change Log
 
 ## [1.2.0] 2020-11-25
+### Enhancements
+- **Full Hooks Support**: Change `class` components usage with `functional` ones in order to support Hooks
 ### Bug fixing
 ### Misc
 - Add new branch, named `main`, this will replace the `master` branch
