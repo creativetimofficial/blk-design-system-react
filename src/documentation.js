@@ -46,13 +46,14 @@ import Navs from "views/Documentation/Sections/restyled-components/Navs.js";
 import Navbar from "views/Documentation/Sections/restyled-components/Navbar.js";
 import Pagination from "views/Documentation/Sections/restyled-components/Pagination.js";
 import Progress from "views/Documentation/Sections/restyled-components/Progress.js";
+import Switch from "views/Documentation/Sections/restyled-components/Switch.js";
 import Tables from "views/Documentation/Sections/restyled-components/Tables.js";
 import Tooltips from "views/Documentation/Sections/restyled-components/Tooltips.js";
 // Plugins
 import Charts from "views/Documentation/Sections/plugins/Charts.js";
 import Datetimepicker from "views/Documentation/Sections/plugins/Datetimepicker.js";
 import Sliders from "views/Documentation/Sections/plugins/Sliders.js";
-import Switch from "views/Documentation/Sections/plugins/Switch.js";
+import ReactBootstrapSwitch from "views/Documentation/Sections/plugins/Switch.js";
 
 var docsRoutes = [
   {
@@ -208,6 +209,11 @@ var docsRoutes = [
         name: "Progress",
       },
       {
+        path: "/documentation/switch",
+        component: Switch,
+        name: "Switch",
+      },
+      {
         path: "/documentation/tables",
         component: Tables,
         name: "Tables",
@@ -230,7 +236,7 @@ var docsRoutes = [
         name: "DateTimePicker",
       },
       { path: "/documentation/sliders", component: Sliders, name: "Sliders" },
-      { path: "/documentation/switch", component: Switch, name: "Switch" },
+      { path: "/documentation/react-bootstrap-switch", component: ReactBootstrapSwitch, name: "Switch" },
     ],
   },
   { redirect: true, path: "/documentation", pathTo: "/documentation/overview" },
