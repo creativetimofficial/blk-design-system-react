@@ -77,7 +77,7 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 
 
 ## Documentation
-The documentation for the BLK Design System React is hosted at our [website](https://www.creative-tim.com/learning-lab/reactstrap/overview/blk-design-system).
+The documentation for the BLK Design System React is hosted at our [website](https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview).
 
 
 ## File Structure
@@ -159,14 +159,16 @@ Blk• Design System React
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/opera-logo.png" width="64" height="64">
+| Chrome | Firefox | Edge | Safari | Opera |
+| :---: | :---: | :---: | :---: | :---: |
+|<img src="https://github.com/creativetimofficial/public-assets/blob/main/logos/chrome-logo.png?raw=true" width="64" height="64">|<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/firefox-logo.png" width="64" height="64">|<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/edge-logo.png" width="64" height="64">|<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/safari-logo.png" width="64" height="64"> |<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/main/logos/opera-logo.png" width="64" height="64">|
 
 
 
 ## Resources
 - Demo: <https://demos.creative-tim.com/blk-design-system-react/#/>
 - Download Page: <https://www.creative-tim.com/product/blk-design-system-react>
-- Documentation: <https://www.creative-tim.com/learning-lab/reactstrap/overview/blk-design-system>
+- Documentation: <https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/blk-design-system-react/issues)
