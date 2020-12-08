@@ -1,5 +1,56 @@
 # Change Log
 
+## [1.2.0] 2020-12-08
+### Enhancements
+- **Full Hooks Support**: Change `class` components usage with `functional` ones in order to support Hooks
+### Bug fixing
+### Misc
+- Add new branch, named `main`, this will replace the `master` branch
+### Major style changes
+- Remove `src/assets/scss/blk-design-system-react/bootstrap` folder and start using the `node_modules/bootstrap` one
+- Add `src/assets/scss/blk-design-system-react/react/_custom-forms.scss` for usage of Bootstrap Switch / Reactstrap CustomInput of type switch
+### Deleted components
+### Added components
+### Deleted dependencies
+- react-bootstrap-switch
+  - This project was not longer maintained, and it had issues with the new React version. The styles for it are still kept inside the product, but we do not recommended using the plugin anymore. You can use the simple Reactstrap CustomInput of type switch or the basic HTML Bootstrap Switch one.
+- eslint-plugin-flowtype
+### Added dependencies
+```
+"@testing-library/jest-dom": "5.11.6",
+"@testing-library/react": "11.2.2",
+"@testing-library/user-event": "12.2.2",
+"bootstrap": "4.5.3",
+"jquery": "3.5.1",
+"node-sass-package-importer": "5.3.2",
+"web-vitals": "1.0.1"
+```
+### Updated dependencies
+```
+chart.js                   2.9.3   →    2.9.4
+moment                    2.24.0   →   2.29.1
+node-sass                 4.13.1   →   4.14.1
+nouislider                14.2.0   →   14.6.3
+react                    16.13.1   →   17.0.1
+react-chartjs-2            2.9.0   →   2.11.1
+react-datetime            2.16.3   →    3.0.4
+react-dom                16.13.1   →   17.0.1
+react-router-dom           5.1.2   →    5.2.0
+react-scripts              3.4.1   →    4.0.1
+reactstrap                 8.4.1   →    8.7.1
+typescript                 3.8.3   →    4.1.2
+```
+### Important Notes
+**The jQuery and TypeScript dependencies are installed only to stop console warnings on install. They are not actually used in our product. So the product is not based on jQuery, and it is not based on TypeScript!**
+### Warning
+_Some warnings may appear when running the installation command, but they do not affect the UI or the functionality of the product._
+_The following warnings will appear when running the installation command, but they do not affect the UI or the functionality of the product (they will be solved in our next update):_
+```
+npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN react-popper@1.3.7 requires a peer of react@0.14.x || ^15.0.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN create-react-context@0.3.0 requires a peer of react@^0.14.0 || ^15.0.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
+```
+
 ## [1.1.0] 2020-04-10
 ### Bug fixing
 - Github
