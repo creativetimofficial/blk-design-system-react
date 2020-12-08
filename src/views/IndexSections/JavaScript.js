@@ -438,7 +438,7 @@ export default function JavaScript() {
               <Button
                 className="mt-4"
                 color="warning"
-                href="https://www.creative-tim.com/learning-lab/reactstrap/alerts/blk-design-system"
+                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alert"
               >
                 See all components
               </Button>
