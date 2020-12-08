@@ -17,7 +17,6 @@
 */
 import React from "react";
 import classnames from "classnames";
-import { Link } from "react-router-dom";
 // react plugin used to create datetimepicker
 import ReactDatetime from "react-datetime";
 
