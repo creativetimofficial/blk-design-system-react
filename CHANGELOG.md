@@ -22,6 +22,7 @@
 "@testing-library/user-event": "12.2.2",
 "bootstrap": "4.5.3",
 "jquery": "3.5.1",
+"node-sass-package-importer": "5.3.2",
 "web-vitals": "1.0.1"
 ```
 ### Updated dependencies
