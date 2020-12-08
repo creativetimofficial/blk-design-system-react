@@ -63,7 +63,7 @@ class Header extends React.Component {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://www.creative-tim.com/learning-lab/reactstrap/overview/blk-design-system?ref=bdsr-index-navbar-upgrade-pro" target="_blank" className="nav-link">
+              <NavLink to="/documentation/overview" className="nav-link" tag={Link}>
                 <i className="tim-icons icon-tv-2" /> Documentation
               </NavLink>
             </NavItem>
