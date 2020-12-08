@@ -18,7 +18,7 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
-import { Col, CardSubtitle, Alert, CustomInput } from "reactstrap";
+import { Col, CustomInput } from "reactstrap";
 
 const codeSwitchExample = `import React from "react";
 
