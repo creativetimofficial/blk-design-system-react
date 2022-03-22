@@ -34,10 +34,10 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import Footer from "components/Footer/Footer.js";
+import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar.js";
+import Footer from "../../components/Footer/Footer.js";
 
-import bigChartData from "variables/charts.js";
+import bigChartData from "../../variables/charts.js";
 
 export default function LandingPage() {
   React.useEffect(() => {
@@ -55,32 +55,32 @@ export default function LandingPage() {
           <img
             alt="..."
             className="path"
-            src={require("assets/img/blob.png").default}
+            src={require("../../assets/img/blob.png").default}
           />
           <img
             alt="..."
             className="path2"
-            src={require("assets/img/path2.png").default}
+            src={require("../../assets/img/path2.png").default}
           />
           <img
             alt="..."
             className="shapes triangle"
-            src={require("assets/img/triunghiuri.png").default}
+            src={require("../../assets/img/triunghiuri.png").default}
           />
           <img
             alt="..."
             className="shapes wave"
-            src={require("assets/img/waves.png").default}
+            src={require("../../assets/img/waves.png").default}
           />
           <img
             alt="..."
             className="shapes squares"
-            src={require("assets/img/patrat.png").default}
+            src={require("../../assets/img/patrat.png").default}
           />
           <img
             alt="..."
             className="shapes circle"
-            src={require("assets/img/cercuri.png").default}
+            src={require("../../assets/img/cercuri.png").default}
           />
           <div className="content-center">
             <Row className="row-grid justify-content-between align-items-center text-left">
@@ -141,7 +141,7 @@ export default function LandingPage() {
                 <img
                   alt="..."
                   className="img-fluid"
-                  src={require("assets/img/etherum.png").default}
+                  src={require("../../assets/img/etherum.png").default}
                 />
               </Col>
             </Row>
@@ -152,7 +152,7 @@ export default function LandingPage() {
             <img
               alt="..."
               className="path"
-              src={require("assets/img/path4.png").default}
+              src={require("../../assets/img/path4.png").default}
             />
             <Container>
               <Row className="row-grid justify-content-between">
@@ -278,17 +278,17 @@ export default function LandingPage() {
           <img
             alt="..."
             className="path"
-            src={require("assets/img/path4.png").default}
+            src={require("../../assets/img/path4.png").default}
           />
           <img
             alt="..."
             className="path2"
-            src={require("assets/img/path5.png").default}
+            src={require("../../assets/img/path5.png").default}
           />
           <img
             alt="..."
             className="path3"
-            src={require("assets/img/path2.png").default}
+            src={require("../../assets/img/path2.png").default}
           />
           <Container>
             <Row className="justify-content-center">
@@ -346,7 +346,7 @@ export default function LandingPage() {
           <img
             alt="..."
             className="path"
-            src={require("assets/img/path5.png").default}
+            src={require("../../assets/img/path5.png").default}
           />
           <Container>
             <Row className="row-grid justify-content-between">
@@ -354,7 +354,7 @@ export default function LandingPage() {
                 <img
                   alt="..."
                   className="img-fluid floating"
-                  src={require("assets/img/chester-wade.jpg").default}
+                  src={require("../../assets/img/chester-wade.jpg").default}
                 />
                 <Card className="card-stats bg-danger">
                   <CardBody>
@@ -439,12 +439,12 @@ export default function LandingPage() {
           <img
             alt="..."
             className="path"
-            src={require("assets/img/path4.png").default}
+            src={require("../../assets/img/path4.png").default}
           />
           <img
             alt="..."
             className="path2"
-            src={require("assets/img/path2.png").default}
+            src={require("../../assets/img/path2.png").default}
           />
           <Col md="12">
             <Card className="card-chart card-plain">
@@ -472,7 +472,7 @@ export default function LandingPage() {
           <img
             alt="..."
             className="path"
-            src={require("assets/img/path3.png").default}
+            src={require("../../assets/img/path3.png").default}
           />
           <Container>
             <Row>
@@ -491,7 +491,7 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/bitcoin.png").default}
+                      src={require("../../assets/img/bitcoin.png").default}
                     />
                   </CardHeader>
                   <CardBody>
@@ -523,7 +523,7 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/etherum.png").default}
+                      src={require("../../assets/img/etherum.png").default}
                     />
                   </CardHeader>
                   <CardBody>
@@ -555,7 +555,7 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/ripp.png").default}
+                      src={require("../../assets/img/ripp.png").default}
                     />
                   </CardHeader>
                   <CardBody>

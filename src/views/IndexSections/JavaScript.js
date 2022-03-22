@@ -43,17 +43,17 @@ import {
 
 const carouselItems = [
   {
-    src: require("assets/img/denys.jpg").default,
+    src: require("../../assets/img/denys.jpg").default,
     altText: "Slide 1",
     caption: "",
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg").default,
+    src: require("../../assets/img/fabien-bazanegue.jpg").default,
     altText: "Slide 2",
     caption: "",
   },
   {
-    src: require("assets/img/mark-finn.jpg").default,
+    src: require("../../assets/img/mark-finn.jpg").default,
     altText: "Slide 3",
     caption: "",
   },
@@ -70,12 +70,12 @@ export default function JavaScript() {
       <img
         alt="..."
         className="path"
-        src={require("assets/img/path5.png").default}
+        src={require("../../assets/img/path5.png").default}
       />
       <img
         alt="..."
         className="path path1"
-        src={require("assets/img/path5.png").default}
+        src={require("../../assets/img/path5.png").default}
       />
       <Container>
         <h3 className="title mb-5">Javascript components</h3>
@@ -185,7 +185,7 @@ export default function JavaScript() {
                 >
                   <img
                     alt="..."
-                    src={require("assets/img/github.svg").default}
+                    src={require("../../assets/img/github.svg").default}
                   />
                 </Button>
                 <Button
@@ -196,7 +196,7 @@ export default function JavaScript() {
                 >
                   <img
                     alt="..."
-                    src={require("assets/img/google.svg").default}
+                    src={require("../../assets/img/google.svg").default}
                   />
                 </Button>
               </div>

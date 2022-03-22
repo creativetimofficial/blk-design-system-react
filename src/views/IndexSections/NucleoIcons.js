@@ -25,7 +25,7 @@ export default function NucleoIcons() {
       <img
         alt="..."
         className="path"
-        src={require("assets/img/path3.png").default}
+        src={require("../../assets/img/path3.png").default}
       />
       <Container>
         <Row className="justify-content-center">

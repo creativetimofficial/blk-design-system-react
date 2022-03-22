@@ -39,8 +39,8 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import Footer from "components/Footer/Footer.js";
+import ExamplesNavbar from "../../components/Navbars/ExamplesNavbar.js";
+import Footer from "../../components/Footer/Footer.js";
 
 export default function RegisterPage() {
   const [squares1to6, setSquares1to6] = React.useState("");
@@ -99,7 +99,7 @@ export default function RegisterPage() {
                     <CardHeader>
                       <CardImg
                         alt="..."
-                        src={require("assets/img/square-purple-1.png").default}
+                        src={require("../../assets/img/square-purple-1.png").default}
                       />
                       <CardTitle tag="h4">Register</CardTitle>
                     </CardHeader>

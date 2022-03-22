@@ -58,7 +58,7 @@ export default function Basics() {
       <img
         alt="..."
         className="path"
-        src={require("assets/img/path1.png").default}
+        src={require("../../assets/img/path1.png").default}
       />
       <Container>
         <h2 className="title">Basic Elements</h2>

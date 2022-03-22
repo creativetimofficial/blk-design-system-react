@@ -29,7 +29,7 @@ export default function Download() {
       <img
         alt="..."
         className="path"
-        src={require("assets/img/path1.png").default}
+        src={require("../../assets/img/path1.png").default}
       />
       <Container>
         <Row className="justify-content-md-center">

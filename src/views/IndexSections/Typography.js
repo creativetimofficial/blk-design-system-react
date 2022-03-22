@@ -25,12 +25,12 @@ export default function Typography() {
       <img
         alt="..."
         className="path"
-        src={require("assets/img/path1.png").default}
+        src={require("../../assets/img/path1.png").default}
       />
       <img
         alt="..."
         className="path path1"
-        src={require("assets/img/path3.png").default}
+        src={require("../../assets/img/path3.png").default}
       />
       <Container>
         <h3 className="title">Typography</h3>
@@ -159,7 +159,7 @@ export default function Typography() {
               <img
                 alt="..."
                 className="img-fluid rounded shadow"
-                src={require("assets/img/ryan.jpg").default}
+                src={require("../../assets/img/ryan.jpg").default}
                 style={{ width: "150px" }}
               />
             </Col>
@@ -170,7 +170,7 @@ export default function Typography() {
               <img
                 alt="..."
                 className="img-fluid rounded-circle shadow"
-                src={require("assets/img/james.jpg").default}
+                src={require("../../assets/img/james.jpg").default}
                 style={{ width: "150px" }}
               />
             </Col>
@@ -181,7 +181,7 @@ export default function Typography() {
               <img
                 alt="..."
                 className="img-fluid rounded shadow-lg"
-                src={require("assets/img/lora.jpg").default}
+                src={require("../../assets/img/lora.jpg").default}
                 style={{ width: "150px" }}
               />
             </Col>
@@ -192,7 +192,7 @@ export default function Typography() {
               <img
                 alt="..."
                 className="img-fluid rounded-circle shadow-lg"
-                src={require("assets/img/mike.jpg").default}
+                src={require("../../assets/img/mike.jpg").default}
                 style={{ width: "150px" }}
               />
             </Col>

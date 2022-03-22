@@ -26,7 +26,7 @@ export default function Examples() {
       <img
         alt="..."
         className="path"
-        src={require("assets/img/path1.png").default}
+        src={require("../../assets/img/path1.png").default}
       />
       <div className="space-50" />
       <Container className="text-center">
@@ -36,7 +36,7 @@ export default function Examples() {
               <img
                 alt="..."
                 className="img-raised"
-                src={require("assets/img/landing-page.png").default}
+                src={require("../../assets/img/landing-page.png").default}
               />
             </Link>
             <Button
@@ -53,7 +53,7 @@ export default function Examples() {
               <img
                 alt="..."
                 className="img-raised"
-                src={require("assets/img/profile-page.png").default}
+                src={require("../../assets/img/profile-page.png").default}
               />
             </Link>
             <Button
