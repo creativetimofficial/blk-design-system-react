@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.0
+* BLK Design System React - v1.2.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -29,7 +29,7 @@ import {
   CardBody,
   Nav,
   NavItem,
-  NavLink,
+  NavLink
 } from "reactstrap";
 
 export default function Tabs() {
@@ -54,7 +54,7 @@ export default function Tabs() {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: iconTabs === 1,
+                        active: iconTabs === 1
                       })}
                       onClick={(e) => setIconsTabs(1)}
                       href="#pablo"
@@ -66,7 +66,7 @@ export default function Tabs() {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: iconTabs === 2,
+                        active: iconTabs === 2
                       })}
                       onClick={(e) => setIconsTabs(2)}
                       href="#pablo"
@@ -78,7 +78,7 @@ export default function Tabs() {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: iconTabs === 3,
+                        active: iconTabs === 3
                       })}
                       onClick={(e) => setIconsTabs(3)}
                       href="#pablo"
@@ -137,7 +137,7 @@ export default function Tabs() {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: textTabs === 4,
+                        active: textTabs === 4
                       })}
                       onClick={(e) => setTextTabs(4)}
                       href="#pablo"
@@ -148,7 +148,7 @@ export default function Tabs() {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: textTabs === 5,
+                        active: textTabs === 5
                       })}
                       onClick={(e) => setTextTabs(5)}
                       href="#pablo"
@@ -159,7 +159,7 @@ export default function Tabs() {
                   <NavItem>
                     <NavLink
                       className={classnames({
-                        active: textTabs === 6,
+                        active: textTabs === 6
                       })}
                       onClick={(e) => setTextTabs(6)}
                       href="#pablo"

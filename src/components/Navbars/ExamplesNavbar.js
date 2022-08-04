@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.0
+* BLK Design System React - v1.2.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -29,7 +29,7 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
+  UncontrolledTooltip
 } from "reactstrap";
 
 export default function ExamplesNavbar() {
@@ -41,7 +41,7 @@ export default function ExamplesNavbar() {
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
     };
-  },[]);
+  }, []);
   const changeColor = () => {
     if (
       document.documentElement.scrollTop > 99 ||

@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.0
+* BLK Design System React - v1.2.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -40,7 +40,7 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
-  UncontrolledCarousel,
+  UncontrolledCarousel
 } from "reactstrap";
 
 // core components
@@ -49,20 +49,20 @@ import Footer from "components/Footer/Footer.js";
 
 const carouselItems = [
   {
-    src: require("assets/img/denys.jpg").default,
+    src: require("assets/img/denys.jpg"),
     altText: "Slide 1",
-    caption: "Big City Life, United States",
+    caption: "Big City Life, United States"
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg").default,
+    src: require("assets/img/fabien-bazanegue.jpg"),
     altText: "Slide 2",
-    caption: "Somewhere Beyond, United States",
+    caption: "Somewhere Beyond, United States"
   },
   {
-    src: require("assets/img/mark-finn.jpg").default,
+    src: require("assets/img/mark-finn.jpg"),
     altText: "Slide 3",
-    caption: "Stocks, United States",
-  },
+    caption: "Stocks, United States"
+  }
 ];
 
 let ps = null;
@@ -88,7 +88,7 @@ export default function ProfilePage() {
       }
       document.body.classList.toggle("profile-page");
     };
-  },[]);
+  }, []);
   return (
     <>
       <ExamplesNavbar />
@@ -97,12 +97,12 @@ export default function ProfilePage() {
           <img
             alt="..."
             className="dots"
-            src={require("assets/img/dots.png").default}
+            src={require("assets/img/dots.png")}
           />
           <img
             alt="..."
             className="path"
-            src={require("assets/img/path4.png").default}
+            src={require("assets/img/path4.png")}
           />
           <Container className="align-items-center">
             <Row>
@@ -160,7 +160,7 @@ export default function ProfilePage() {
                     <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
-                      src={require("assets/img/mike.jpg").default}
+                      src={require("assets/img/mike.jpg")}
                     />
                     <h4 className="title">Transactions</h4>
                   </CardHeader>
@@ -172,7 +172,7 @@ export default function ProfilePage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 1,
+                            active: tabs === 1
                           })}
                           onClick={(e) => {
                             e.preventDefault();
@@ -186,7 +186,7 @@ export default function ProfilePage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 2,
+                            active: tabs === 2
                           })}
                           onClick={(e) => {
                             e.preventDefault();
@@ -200,7 +200,7 @@ export default function ProfilePage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 3,
+                            active: tabs === 3
                           })}
                           onClick={(e) => {
                             e.preventDefault();

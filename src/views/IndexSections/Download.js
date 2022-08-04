@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.0
+* BLK Design System React - v1.2.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -26,11 +26,7 @@ export default function Download() {
       data-background-color="black"
       id="download-section"
     >
-      <img
-        alt="..."
-        className="path"
-        src={require("assets/img/path1.png").default}
-      />
+      <img alt="..." className="path" src={require("assets/img/path1.png")} />
       <Container>
         <Row className="justify-content-md-center">
           <Col className="text-center" lg="8" md="12">
