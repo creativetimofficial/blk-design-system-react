@@ -86,28 +86,14 @@ export default function LandingPage() {
             <Row className="row-grid justify-content-between align-items-center text-left">
               <Col lg="6" md="6">
                 <h1 className="text-white">
-                  We keep your coin <br />
-                  <span className="text-white">secured</span>
+                  Who are we? <br />
                 </h1>
                 <p className="text-white mb-3">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel...
+                We are Hermes, a cutting-edge technology solution that enables companies to efficiently 
+                manage their vehicle fleet by optimizing delivery routes, reducing operational costs, 
+                and improving customer satisfaction. The solution also provides detailed reports and real-time 
+                analysis so that companies can make informed and strategic decisions.
                 </p>
-                <div className="btn-wrapper mb-3">
-                  <p className="category text-success d-inline">
-                    From 9.99%/mo
-                  </p>
-                  <Button
-                    className="btn-link"
-                    color="success"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                    size="sm"
-                  >
-                    <i className="tim-icons icon-minimal-right" />
-                  </Button>
-                </div>
                 <div className="btn-wrapper">
                   <div className="button-container">
                     <Button
@@ -141,7 +127,8 @@ export default function LandingPage() {
                 <img
                   alt="..."
                   className="img-fluid"
-                  src={require("assets/img/etherum.png")}
+                  // src={require("assets/img/etherum.png")}
+                  src={require("assets/img/hermes-transparente.png")}
                 />
               </Col>
             </Row>
@@ -156,108 +143,37 @@ export default function LandingPage() {
             />
             <Container>
               <Row className="row-grid justify-content-between">
-                <Col className="mt-lg-5" md="5">
-                  <Row>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-trophy text-warning" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">3,237</CardTitle>
-                                <p />
-                                <p className="card-category">Awards</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats upper bg-default">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-coins text-white" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">3,653</CardTitle>
-                                <p />
-                                <p className="card-category">Commits</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-gift-2 text-info" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">593</CardTitle>
-                                <p />
-                                <p className="card-category">Presents</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-credit-card text-success" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">10,783</CardTitle>
-                                <p />
-                                <p className="card-category">Forks</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col md="6">
+                <Col md="5">
                   <div className="pl-md-5">
                     <h1>
-                      Large <br />
-                      Achivements
+                    Purpose <br />
                     </h1>
                     <p>
-                      I should be capable of drawing a single stroke at the
-                      present moment; and yet I feel that I never was a greater
-                      artist than now.
+                    To transform the way companies manage their vehicle fleets. 
+                    Through our cloud-based platform-as-a-service solution, 
+                    we aim to provide our customers with an efficient and scalable tool 
+                    that allows them to optimize their delivery routes, reduce operational costs, 
+                    and improve customer satisfaction.
                     </p>
-                    <br />
+                    <a
+                      className="font-weight-bold text-info mt-5"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      Show all{" "}
+                      <i className="tim-icons icon-minimal-right text-info" />
+                    </a>
+                  </div>
+                </Col>
+                <Col md="5">
+                  <div className="pl-md-5">
+                    <h1>
+                    What do we want to achieve? <br />
+                    </h1>
                     <p>
-                      When, while the lovely valley teems with vapour around me,
-                      and the meridian sun strikes the upper surface of the
-                      impenetrable foliage of my trees, and but a few stray.
+                    To lead the fleet management industry with cutting-edge technology and 
+                    exceptional service, expanding nationally and internationally to positively 
+                    impact the logistics of companies worldwide.
                     </p>
                     <br />
                     <a
@@ -293,19 +209,20 @@ export default function LandingPage() {
           <Container>
             <Row className="justify-content-center">
               <Col lg="12">
-                <h1 className="text-center">Your best benefit</h1>
+                <h1 className="text-center">Your benefits</h1>
                 <Row className="row-grid justify-content-center">
                   <Col lg="3">
                     <div className="info">
                       <div className="icon icon-primary">
                         <i className="tim-icons icon-money-coins" />
                       </div>
-                      <h4 className="info-title">Low Commission</h4>
+                      <h4 className="info-title">Time and Money Savings</h4>
                       <hr className="line-primary" />
                       <p>
-                        Divide details about your work into parts. Write a few
-                        lines about each one. A paragraph describing a feature
-                        will.
+                      The route optimization offered by Hermes' solution allows companies to save 
+                      time and money in the process of delivering their products. By planning routes 
+                      efficiently, drivers can deliver more products in less time, reducing operating 
+                      costs and increasing efficiency.
                       </p>
                     </div>
                   </Col>
@@ -314,12 +231,13 @@ export default function LandingPage() {
                       <div className="icon icon-warning">
                         <i className="tim-icons icon-chart-pie-36" />
                       </div>
-                      <h4 className="info-title">High Incomes</h4>
+                      <h4 className="info-title">Increased Visibility and Control</h4>
                       <hr className="line-warning" />
                       <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing feature will be a feature.
+                      Hermes' solution provides complete visibility of the vehicle fleet, 
+                      allowing companies to monitor the progress of deliveries and quickly 
+                      respond to any issues or setbacks that arise. With Hermes' solution, 
+                      companies can have greater control over their delivery operations.
                       </p>
                     </div>
                   </Col>
@@ -328,12 +246,44 @@ export default function LandingPage() {
                       <div className="icon icon-success">
                         <i className="tim-icons icon-single-02" />
                       </div>
-                      <h4 className="info-title">Verified People</h4>
+                      <h4 className="info-title">Improved Customer Satisfaction</h4>
                       <hr className="line-success" />
                       <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing be enough.
+                      With real-time monitoring and delivery to the correct areas thanks to geofencing, 
+                      end customers receive their products on time, improving their satisfaction with 
+                      the service and increasing customer loyalty.
+                      </p>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+              <Col lg="12">
+                <Row className="row-grid justify-content-center">
+                  <Col lg="4">
+                    <div className="info">
+                      <div className="icon icon-success">
+                        <i className="tim-icons icon-chart-bar-32" />
+                      </div>
+                      <h4 className="info-title">Error and Delay Reduction</h4>
+                      <hr className="line-success" />
+                      <p>
+                      The route optimization offered by Hermes' solution allows companies to save time and money 
+                      in the process of delivering their products. By planning routes efficiently, drivers can deliver 
+                      more products in less time, reducing operating costs and increasing efficiency.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col lg="4">
+                    <div className="info">
+                      <div className="icon icon-warning">
+                        <i className="tim-icons icon-link-72"/>
+                      </div>
+                      <h4 className="info-title">Easy integration with existing systems</h4>
+                      <hr className="line-warning" />
+                      <p>
+                      Hermes' solution offers complete visibility of the vehicle fleet, allowing companies to monitor delivery 
+                      progress and respond quickly to any problems or setbacks that may arise. With Hermes' solution, companies 
+                      can have greater control over their delivery operations and easily integrate with their existing systems.
                       </p>
                     </div>
                   </Col>
@@ -354,14 +304,14 @@ export default function LandingPage() {
                 <img
                   alt="..."
                   className="img-fluid floating"
-                  src={require("assets/img/chester-wade.jpg")}
+                  src={require("assets/img/mark-finn.jpg")}
                 />
                 <Card className="card-stats bg-danger">
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">
-                        <CardTitle tag="p">100%</CardTitle>
-                        <p className="card-category text-white">Safe</p>
+                        <CardTitle tag="p">10%</CardTitle>
+                        <p className="card-category text-white">Fuel Savings</p>
                       </div>
                     </div>
                   </CardBody>
@@ -370,9 +320,9 @@ export default function LandingPage() {
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">
-                        <CardTitle tag="p">573 K</CardTitle>
+                        <CardTitle tag="p">20%</CardTitle>
                         <p className="card-category text-white">
-                          Satisfied customers
+                        Savings in work hours
                         </p>
                       </div>
                     </div>
@@ -382,8 +332,8 @@ export default function LandingPage() {
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">
-                        <CardTitle tag="p">10 425</CardTitle>
-                        <p className="card-category text-white">Business</p>
+                        <CardTitle tag="p">40%</CardTitle>
+                        <p className="card-category text-white">Cost reduction from errors and delays.</p>
                       </div>
                     </div>
                   </CardBody>
@@ -392,40 +342,65 @@ export default function LandingPage() {
               <Col md="6">
                 <div className="px-md-5">
                   <hr className="line-success" />
-                  <h3>Awesome features</h3>
-                  <p>
-                    The design system comes with three pre-built pages to help
-                    you get started faster. You can change the text and images
-                    and you're good to go.
-                  </p>
+                  <h3>Amazing features</h3>
                   <ul className="list-unstyled mt-5">
                     <li className="py-2">
                       <div className="d-flex align-items-center">
                         <div className="icon icon-success mb-2">
-                          <i className="tim-icons icon-vector" />
+                          <i className="tim-icons icon-delivery-fast" />
                         </div>
                         <div className="ml-3">
-                          <h6>Carefully crafted components</h6>
+                          <h6>Route optimization</h6>
                         </div>
                       </div>
                     </li>
                     <li className="py-2">
                       <div className="d-flex align-items-center">
                         <div className="icon icon-success mb-2">
-                          <i className="tim-icons icon-tap-02" />
+                          <i className="tim-icons icon-square-pin" />
                         </div>
                         <div className="ml-3">
-                          <h6>Amazing page examples</h6>
+                          <h6>Real-time monitoring</h6>
                         </div>
                       </div>
                     </li>
                     <li className="py-2">
                       <div className="d-flex align-items-center">
                         <div className="icon icon-success mb-2">
-                          <i className="tim-icons icon-single-02" />
+                          <i className="tim-icons icon-app" />
                         </div>
                         <div className="ml-3">
-                          <h6>Super friendly support team</h6>
+                          <h6>Mobile App</h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="d-flex align-items-center">
+                        <div className="icon icon-success mb-2">
+                          <i className="tim-icons icon-map-big" />
+                        </div>
+                        <div className="ml-3">
+                          <h6>Geo fences</h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="d-flex align-items-center">
+                        <div className="icon icon-success mb-2">
+                          <i className="tim-icons icon-bus-front-12" />
+                        </div>
+                        <div className="ml-3">
+                          <h6>Traffic simulator</h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="d-flex align-items-center">
+                        <div className="icon icon-success mb-2">
+                          <i className="tim-icons icon-settings-gear-63" />
+                        </div>
+                        <div className="ml-3">
+                          <h6>API</h6>
                         </div>
                       </div>
                     </li>
@@ -434,39 +409,6 @@ export default function LandingPage() {
               </Col>
             </Row>
           </Container>
-        </section>
-        <section className="section section-lg">
-          <img
-            alt="..."
-            className="path"
-            src={require("assets/img/path4.png")}
-          />
-          <img
-            alt="..."
-            className="path2"
-            src={require("assets/img/path2.png")}
-          />
-          <Col md="12">
-            <Card className="card-chart card-plain">
-              <CardHeader>
-                <Row>
-                  <Col className="text-left" sm="6">
-                    <hr className="line-info" />
-                    <h5 className="card-category">Total Investments</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
-                  </Col>
-                </Row>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={bigChartData.data}
-                    options={bigChartData.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
         </section>
         <section className="section section-lg section-coins">
           <img
@@ -479,8 +421,8 @@ export default function LandingPage() {
               <Col md="4">
                 <hr className="line-info" />
                 <h1>
-                  Choose the coin{" "}
-                  <span className="text-info">that fits your needs</span>
+                  Choose your plan{" "}
+                  <span className="text-info">according to your needs.</span>
                 </h1>
               </Col>
             </Row>
@@ -491,22 +433,21 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/bitcoin.png")}
+                      src={require("assets/img/logo-hermes-1.png")}
                     />
                   </CardHeader>
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Light Coin</h4>
+                        <h4 className="text-uppercase">Basic</h4>
                         <span>Plan</span>
                         <hr className="line-primary" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>50 messages</ListGroupItem>
-                        <ListGroupItem>100 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                      <ListGroupItem>$40</ListGroupItem>
+                        <ListGroupItem>1 to 9 drivers</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -523,22 +464,21 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/etherum.png")}
+                      src={require("assets/img/logo-hermes-2.png")}
                     />
                   </CardHeader>
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Dark Coin</h4>
+                        <h4 className="text-uppercase">Standar</h4>
                         <span>Plan</span>
                         <hr className="line-success" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>150 messages</ListGroupItem>
-                        <ListGroupItem>1000 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                      <ListGroupItem>$30</ListGroupItem>
+                        <ListGroupItem>10 to 29 drivers</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
@@ -555,22 +495,21 @@ export default function LandingPage() {
                     <img
                       alt="..."
                       className="img-center img-fluid"
-                      src={require("assets/img/ripp.png")}
+                      src={require("assets/img/logo-hermes-5.png")}
                     />
                   </CardHeader>
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Bright Coin</h4>
+                        <h4 className="text-uppercase">Enterprise</h4>
                         <span>Plan</span>
                         <hr className="line-info" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>350 messages</ListGroupItem>
-                        <ListGroupItem>10K emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                      <ListGroupItem>Contact Sales</ListGroupItem>
+                        <ListGroupItem>More than 30 drivers</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>

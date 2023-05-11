@@ -79,7 +79,7 @@ export default function IndexNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span>BLK• </span>
+            <span>Hermes• </span>
             Design System React
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">

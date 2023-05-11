@@ -70,12 +70,9 @@ export default function ExamplesNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" id="navbar-brand" tag={Link}>
-            <span>BLK• </span>
-            Design System React
+            <span>Hermes• </span>
+            Logistic Company
           </NavbarBrand>
-          <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
-          </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
             className="navbar-toggler navbar-toggler"
@@ -146,26 +143,6 @@ export default function ExamplesNavbar() {
               >
                 <i className="fab fa-instagram" />
                 <p className="d-lg-none d-xl-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="primary"
-                target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
-              >
-                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
-              </Button>
-            </NavItem>
-            <NavItem>
-              <NavLink tag={Link} to="/">
-                Back to Kit
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
-                Have an issue?
               </NavLink>
             </NavItem>
           </Nav>

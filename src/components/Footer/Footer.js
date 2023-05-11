@@ -34,58 +34,10 @@ export default function Footer() {
     <footer className="footer">
       <Container>
         <Row>
-          <Col md="3">
-            <h1 className="title">BLK•</h1>
+          <Col md="6">
+            <h1 className="title">Hermes• Logistic Company</h1>
           </Col>
-          <Col md="3">
-            <Nav>
-              <NavItem>
-                <NavLink to="/" tag={Link}>
-                  Home
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/landing-page" tag={Link}>
-                  Landing
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/register-page" tag={Link}>
-                  Register
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/profile-page" tag={Link}>
-                  Profile
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Col>
-          <Col md="3">
-            <Nav>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
-                  Contact Us
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
-                  About Us
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">
-                  Blog
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://opensource.org/licenses/MIT">
-                  License
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Col>
-          <Col md="3">
+          <Col md="6">
             <h3 className="title">Follow us:</h3>
             <div className="btn-wrapper profile">
               <Button
