@@ -1,6 +1,6 @@
 {
   "name": "blk-design-system-react",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "React version of BLK Design System by Creative Tim",
   "main": "index.js",
   "author": "Creative Tim",
@@ -32,34 +32,34 @@
     "blk-design-system-react"
   ],
   "dependencies": {
-    "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.3.0",
-    "@testing-library/user-event": "14.4.1",
-    "bootstrap": "4.5.3",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "bootstrap": "4.6.2",
     "chart.js": "2.9.4",
     "classnames": "2.3.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
     "moment": "2.29.4",
-    "nouislider": "14.6.3",
+    "nouislider": "15.4.0",
     "perfect-scrollbar": "1.5.5",
     "react": "18.2.0",
-    "react-chartjs-2": "2.11.1",
-    "react-datetime": "3.1.1",
+    "react-chartjs-2": "2.11.2",
+    "react-datetime": "3.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "5.2.0",
+    "react-router-dom": "6.11.1",
     "react-scripts": "5.0.1",
-    "reactstrap": "8.7.1",
-    "sass": "1.54.0",
-    "web-vitals": "2.1.4"
+    "reactstrap": "8.10.0",
+    "sass": "1.62.1",
+    "web-vitals": "3.3.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "optionalDependencies": {
-    "jquery": "3.6.0",
-    "typescript": "4.7.4"
+    "jquery": "3.7.0",
+    "typescript": "5.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -75,6 +75,11 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "overrides": {
+    "svgo": "3.0.2",
+    "chokidar": "3.5.3",
+    "fsevents": "2.3.2"
   },
   "browserslist": {
     "production": [

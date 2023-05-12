@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.2.2] 2023-05-12
+
+- Update the dependencies
+- Fix the installation issue
+
 ## [1.2.1] 2021-08-05
 
 - Update the dependencies
