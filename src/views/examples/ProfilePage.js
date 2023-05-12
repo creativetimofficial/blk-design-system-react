@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.1
+* BLK Design System React - v1.2.2
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -40,7 +40,7 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
-  UncontrolledCarousel
+  UncontrolledCarousel,
 } from "reactstrap";
 
 // core components
@@ -51,18 +51,18 @@ const carouselItems = [
   {
     src: require("assets/img/denys.jpg"),
     altText: "Slide 1",
-    caption: "Big City Life, United States"
+    caption: "Big City Life, United States",
   },
   {
     src: require("assets/img/fabien-bazanegue.jpg"),
     altText: "Slide 2",
-    caption: "Somewhere Beyond, United States"
+    caption: "Somewhere Beyond, United States",
   },
   {
     src: require("assets/img/mark-finn.jpg"),
     altText: "Slide 3",
-    caption: "Stocks, United States"
-  }
+    caption: "Stocks, United States",
+  },
 ];
 
 let ps = null;
@@ -172,7 +172,7 @@ export default function ProfilePage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 1
+                            active: tabs === 1,
                           })}
                           onClick={(e) => {
                             e.preventDefault();
@@ -186,7 +186,7 @@ export default function ProfilePage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 2
+                            active: tabs === 2,
                           })}
                           onClick={(e) => {
                             e.preventDefault();
@@ -200,7 +200,7 @@ export default function ProfilePage() {
                       <NavItem>
                         <NavLink
                           className={classnames({
-                            active: tabs === 3
+                            active: tabs === 3,
                           })}
                           onClick={(e) => {
                             e.preventDefault();

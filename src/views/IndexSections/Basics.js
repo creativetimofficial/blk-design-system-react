@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.2.1
+* BLK Design System React - v1.2.2
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -32,7 +32,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 export default function Basics() {
@@ -44,13 +44,13 @@ export default function Basics() {
       start: [40],
       connect: [true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
     Slider.create(slider2.current, {
       start: [20, 60],
       connect: [false, true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
   }, []);
   return (
@@ -167,7 +167,7 @@ export default function Basics() {
             <Col lg="3" sm="6">
               <InputGroup
                 className={classnames({
-                  "input-group-focus": inputFocus
+                  "input-group-focus": inputFocus,
                 })}
               >
                 <InputGroupAddon addonType="prepend">
