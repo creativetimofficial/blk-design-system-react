@@ -112,9 +112,9 @@ jobs:
           key: nodeModules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             nodeModules-
-              
+
       - name: Install dependencies
-        run: npm install --frozen-lockfile
+        run: npm install --legacy-peer-deps
         env:
           CI: true
 
