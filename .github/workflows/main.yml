@@ -1,50 +1,3 @@
-# name: Google Cloud Run Deploy
-# # https://github.com/google-github-actions/setup-gcloud
-# on:
-#   push:
-#     branches:
-#       - develop
-
-# env:
-#   PROJECT_ID: ${{ secrets.GCR_PROJECT }}
-#   RUN_REGION: us-central1
-#   SERVICE_NAME: medium-react-app
-
-# jobs:
-#   build:
-#     name: Build React App
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       - name: Checkout Repo
-#         uses: actions/checkout@main
-
-#       - name: Setup Node.js (NPM)
-#         uses: actions/setup-node@master
-#         with:
-#           node-version: '18.x'
-
-#       - name: Use cached node_modules
-#         uses: actions/cache@master
-#         with:
-#           path: node_modules
-#           key: nodeModules-${{ hashFiles('**/package-lock.json') }}
-#           restore-keys: |
-#             nodeModules-
-#       - name: Install dependencies
-#         run: npm install --frozen-lockfile
-#         env:
-#           CI: true
-
-#       - name: Build Development
-#         run: npm run build
-
-#       - name: Archive Production Artifact
-#         uses: actions/upload-artifact@main
-#         with:
-#           name: build
-#           path: build
-
 #   deploy-gcr:
 #     name: Deploy to bucket
 #     needs: build
@@ -77,11 +30,14 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
+env:
+  PROJECT_ID: ${{ secrets.GCR_PROJECT }}
+  RUN_REGION: us-central1
+  SERVICE_NAME: medium-react-app
 jobs:
   build:
     name: Build React App
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repo
         uses: actions/checkout@main
@@ -112,3 +68,30 @@ jobs:
         with:
           name: build
           path: build
+  deploy-bucket:
+    name: Deploy to bucket
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@main
+
+      - name: Download Artifact
+        uses: actions/download-artifact@main
+        with:
+          name: build
+          path: build
+
+      - name: Setup GCloud Auth
+        id: auth
+        uses: google-github-actions/auth@v0.4.0
+        with:
+          credentials_json: ${{ inputs.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.1
+
+      # Build and push image to Google Container Registry
+      - name: rsync
+        run: gsutil rsync -r . gs://website-website-gcp-development
+        working-directory: build
