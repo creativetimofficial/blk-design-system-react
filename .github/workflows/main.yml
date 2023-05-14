@@ -115,8 +115,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
-        env:
-          CI: true
 
       - name: Build Development
         run: npm run build
