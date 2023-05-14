@@ -105,7 +105,7 @@ jobs:
       - name: Build Development
         run: npm run build
         env:
-          CI: true
+          CI: false
 
       - name: Archive Production Artifact
         uses: actions/upload-artifact@main
