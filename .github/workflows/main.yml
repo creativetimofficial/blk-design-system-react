@@ -1,32 +1,3 @@
-#   deploy-gcr:
-#     name: Deploy to bucket
-#     needs: build
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       - name: Checkout Repo
-#         uses: actions/checkout@main
-
-#       - name: Download Artifact
-#         uses: actions/download-artifact@main
-#         with:
-#           name: build
-#           path: build
-
-#       - name: Setup GCloud Auth
-#         id: auth
-#         uses: google-github-actions/auth@v0.4.0
-#         with:
-#           credentials_json: ${{ inputs.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
-
-#       - name: Set up Cloud SDK
-#         uses: google-github-actions/setup-gcloud@v0.2.1
-
-#       # Build and push image to Google Container Registry
-#       - name: rsync
-#         run: gsutil rsync -r . gs://website-website-gcp-development
-#         working-directory: build
-
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
@@ -83,9 +54,16 @@ jobs:
 
       - name: Setup GCloud Auth
         id: auth
-        uses: google-github-actions/auth@v0.4.0
-        with:
-          credentials_json: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_CREDENTIALS }}
+        uses: google-github-actions/setup-gcloud@v0.2.1
+        
+      - name: GET KEY
+        run: echo $GOOGLE_SERVICE_ACCOUNT_CREDENTIALS | base64 -d > ./gcloud-api-key.json
+      
+      - name: GET KEY
+        run: echo $GOOGLE_SERVICE_ACCOUNT_CREDENTIALS | base64 -d > ./gcloud-api-key.json
+      
+      - name: Authentication
+        run: gcloud auth activate-service-account --key-file=gcloud-api-key.json
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0.2.1
