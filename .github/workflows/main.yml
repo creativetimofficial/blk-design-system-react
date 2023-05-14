@@ -32,8 +32,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
   PROJECT_ID: ${{ secrets.GCR_PROJECT }}
-  RUN_REGION: us-central1
-  SERVICE_NAME: medium-react-app
+  RUN_REGION: us-east4
 jobs:
   build:
     name: Build React App
