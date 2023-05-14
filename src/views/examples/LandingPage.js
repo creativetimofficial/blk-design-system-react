@@ -89,10 +89,11 @@ export default function LandingPage() {
                   Who are we? <br />
                 </h1>
                 <p className="text-white mb-3">
-                We are Hermes, a cutting-edge technology solution that enables companies to efficiently 
-                manage their vehicle fleet by optimizing delivery routes, reducing operational costs, 
-                and improving customer satisfaction. The solution also provides detailed reports and real-time 
-                analysis so that companies can make informed and strategic decisions.
+                We are Hermes Fleet Management, a leading technology provider offering an innovative 
+                solution to streamline vehicle fleet operations. Our platform empowers companies to 
+                optimize their delivery routes, lower operational costs, and drive customer satisfaction. 
+                By leveraging our advanced reporting and real-time analysis, businesses can make strategic 
+                decisions for enhanced efficiency and profitability.
                 </p>
                 <div className="btn-wrapper">
                   <div className="button-container">
@@ -149,11 +150,12 @@ export default function LandingPage() {
                     Purpose <br />
                     </h1>
                     <p>
-                    To transform the way companies manage their vehicle fleets. 
-                    Through our cloud-based platform-as-a-service solution, 
-                    we aim to provide our customers with an efficient and scalable tool 
-                    that allows them to optimize their delivery routes, reduce operational costs, 
-                    and improve customer satisfaction.
+                    Using Intelligent Route Optimization to transform the way companies manage 
+                    their vehicles fleet, using Hermes will help them to to optimize delivery routes. 
+                    By considering factors like traffic, delivery windows, and package volume, 
+                    businesses can reduce travel time, fuel consumption, and operational costs. 
+                    The intelligent route optimization feature ensures efficient resource utilization 
+                    and maximizes delivery efficiency.
                     </p>
                     <a
                       className="font-weight-bold text-info mt-5"
@@ -219,7 +221,7 @@ export default function LandingPage() {
                       <h4 className="info-title">Time and Money Savings</h4>
                       <hr className="line-primary" />
                       <p>
-                      The route optimization offered by Hermes' solution allows companies to save 
+                      The route optimization offered by Hermes solution allows companies to save 
                       time and money in the process of delivering their products. By planning routes 
                       efficiently, drivers can deliver more products in less time, reducing operating 
                       costs and increasing efficiency.
@@ -234,9 +236,9 @@ export default function LandingPage() {
                       <h4 className="info-title">Increased Visibility and Control</h4>
                       <hr className="line-warning" />
                       <p>
-                      Hermes' solution provides complete visibility of the vehicle fleet, 
+                      Hermes solution provides complete visibility of the vehicle fleet, 
                       allowing companies to monitor the progress of deliveries and quickly 
-                      respond to any issues or setbacks that arise. With Hermes' solution, 
+                      respond to any issues or setbacks that arise. With Hermes solution, 
                       companies can have greater control over their delivery operations.
                       </p>
                     </div>
@@ -267,7 +269,7 @@ export default function LandingPage() {
                       <h4 className="info-title">Error and Delay Reduction</h4>
                       <hr className="line-success" />
                       <p>
-                      The route optimization offered by Hermes' solution allows companies to save time and money 
+                      The route optimization offered by Hermes solution allows companies to save time and money 
                       in the process of delivering their products. By planning routes efficiently, drivers can deliver 
                       more products in less time, reducing operating costs and increasing efficiency.
                       </p>
@@ -281,8 +283,8 @@ export default function LandingPage() {
                       <h4 className="info-title">Easy integration with existing systems</h4>
                       <hr className="line-warning" />
                       <p>
-                      Hermes' solution offers complete visibility of the vehicle fleet, allowing companies to monitor delivery 
-                      progress and respond quickly to any problems or setbacks that may arise. With Hermes' solution, companies 
+                      Hermes solution offers complete visibility of the vehicle fleet, allowing companies to monitor delivery 
+                      progress and respond quickly to any problems or setbacks that may arise. With Hermes solution, companies 
                       can have greater control over their delivery operations and easily integrate with their existing systems.
                       </p>
                     </div>
