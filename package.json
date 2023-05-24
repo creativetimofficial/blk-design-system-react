@@ -38,8 +38,6 @@
     "bootstrap": "4.6.2",
     "chart.js": "2.9.4",
     "classnames": "2.3.1",
-    "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.9",
     "moment": "2.29.4",
     "nouislider": "15.4.0",
     "perfect-scrollbar": "1.5.5",
@@ -63,7 +61,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",

@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.2.2] 2023-05-12
+## [1.2.2] 2023-05-24
 
 - Update the dependencies
 - Fix the installation issue
