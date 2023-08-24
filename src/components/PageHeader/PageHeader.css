@@ -1,0 +1,40 @@
+
+
+
+.new {
+  width: 100%;
+  margin-top: 80px;
+  min-height: 500;
+  max-height: 1300;
+  height: 100vh;
+}
+
+
+.see2 {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .see2 img {
+  flex-grow: 0;
+  flex-shrink: 0;
+} */
+
+/* .pageHead {
+  background-image: url('../../../public/clean-home.jpg');
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-size: 100% 100%;
+} */
+
+.pageHead > h2 {
+  position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 50%;                         /* vertical alignment */
+    transform: translate(-50%, -50%);
+    
+}
+
