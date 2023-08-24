@@ -34,6 +34,8 @@ import NucleoIcons from "views/IndexSections/NucleoIcons.js";
 import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
 import Download from "views/IndexSections/Download.js";
+import UnderHero from "components/PageHeader/UnderHero";
+import LineBar from "components/PageHeader/LineBar";
 
 export default function Index() {
   React.useEffect(() => {
@@ -49,7 +51,9 @@ export default function Index() {
       <div className="wrapper">
         <PageHeader />
         <div className="main">
-          <Basics />
+          {/* <Basics /> */}
+          <UnderHero />
+          <LineBar />
           <Navbars />
           <Tabs />
           <Pagination />
