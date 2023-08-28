@@ -1,9 +1,7 @@
 import React from 'react'
 import { Button, Col, Container, Row, UncontrolledCarousel } from 'reactstrap'
-import './UnderHero.css'
 
-
-export default function UnderHero() {
+export default function RightLeft({title, description, b1, b2, b3, b4 }) {
 
 
   const carouselItems = [
@@ -24,7 +22,6 @@ export default function UnderHero() {
     },
   ];
 
-
   return (
     <div className="section">
         <Container>
@@ -32,14 +29,28 @@ export default function UnderHero() {
             {/* <h3>Carousel</h3> */}
           </div>
           <Row className="justify-content-between align-items-center">
+            <Col lg="6">
+              <UncontrolledCarousel
+                items={carouselItems}
+                indicators={false}
+                autoPlay={false}
+              />
+            </Col>
             <Col className="mb-5 mb-lg-0" lg="5">
               <h1 className="text-white font-weight-light">
-                Clean Home = Easy Life
+                {title}
               </h1>
               <p className="text-white mt-4">
-                Without Spot Or Blemish team takes pride in delivering the best and most reliable house cleaning services. Our trained cleaning experts are bonded, insured, workers compensation (WSIB) covered, security checked and trustworthy.
+              {description}
               </p>
-              <p className='text-white mt-4'>Without Spot Or Blemish offers professional house cleaning services to clients across Almonte, Carleton Place and Carp.</p>
+              <ul className='text-white mt-4'>
+                <li>{b1}</li>
+                <li>{b2}</li>
+                <li>{b3}</li>
+                <li>{b4}</li>
+                {/* <li>{b5}</li>
+                <li>{b6}</li> */}
+              </ul>
               <Button
                 className="mt-4"
                 color="warning"
@@ -47,13 +58,6 @@ export default function UnderHero() {
               >
                 Request Quote NOW!
               </Button>
-            </Col>
-            <Col lg="6">
-              <UncontrolledCarousel
-                items={carouselItems}
-                indicators={false}
-                autoPlay={false}
-              />
             </Col>
           </Row>
         </Container>

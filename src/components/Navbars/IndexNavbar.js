@@ -136,9 +136,9 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
+                href="/components/about-us"
                 rel="noopener noreferrer"
-                target="_blank"
+                // target="_blank"
                 title="Like us on Facebook"
               >
                 {/* <i className="fab fa-facebook-square" /> */}

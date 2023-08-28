@@ -20,6 +20,11 @@ import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
+  FormGroup,
+  Label,
+  Input,
+  FormText,
+  FormFeedback,
   NavItem,
   NavLink,
   Nav,
@@ -35,10 +40,12 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md="3">
-            <h1 className="title">BLK•</h1>
+            <h1 className="title">(LOGO)</h1>
           </Col>
           <Col md="3">
             <Nav>
+            <h4>Quick Links</h4>
+
               <NavItem>
                 <NavLink to="/" tag={Link}>
                   Home
@@ -46,12 +53,12 @@ export default function Footer() {
               </NavItem>
               <NavItem>
                 <NavLink to="/landing-page" tag={Link}>
-                  Landing
+                  Blog
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/register-page" tag={Link}>
-                  Register
+                  Meet The Team
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -63,6 +70,8 @@ export default function Footer() {
           </Col>
           <Col md="3">
             <Nav>
+            <h4>Cleaning Service</h4>
+
               <NavItem>
                 <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
                   Contact Us
@@ -85,9 +94,10 @@ export default function Footer() {
               </NavItem>
             </Nav>
           </Col>
-          <Col md="3">
-            <h3 className="title">Follow us:</h3>
+          {/* <Col md="3">
             <div className="btn-wrapper profile">
+            <h4 className="title">Follow us:</h4>
+
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
@@ -125,8 +135,20 @@ export default function Footer() {
                 Follow us
               </UncontrolledTooltip>
             </div>
-          </Col>
+          </Col> */}
         </Row>
+        <FormGroup>
+    <Label for="examplePassword">
+      Join Our Mailing List
+    </Label>
+    <Input invalid />
+    <FormFeedback>
+      Invalid Email
+    </FormFeedback>
+    <FormText>
+      
+    </FormText>
+  </FormGroup>
       </Container>
     </footer>
   );
