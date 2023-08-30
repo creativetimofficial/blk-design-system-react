@@ -23,10 +23,26 @@ section {
   text-shadow: 3px 3px 3px rgb(143, 143, 143);
 }
 
-
-.paragraph {
-  display: flex;
+.back {
+  margin-top: 10%;
 }
+
+span {
+  color: white;
+  font-weight: bold;
+}
+
+/* .percent {
+  margin-top: 10%;
+} */
+
+.follow1 {
+  margin-top: 7%;
+}
+
+/* .paragraph {
+  display: flex;
+} */
 
 
 

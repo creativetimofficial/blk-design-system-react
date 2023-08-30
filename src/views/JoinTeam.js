@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Card, CardImg, CardImgOverlay, CardTitle, CardText, Row, Col,  Carousel,
+import { Button, Container, Card, CardImg, CardImgOverlay, CardTitle, CardText, Row, Col,  Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
@@ -8,7 +8,7 @@ import { Container, Card, CardImg, CardImgOverlay, CardTitle, CardText, Row, Col
 import Slider from "react-slick";
 
 
-import './Reviews.css'
+import './JoinTeam.css'
 import IndexNavbar from 'components/Navbars/IndexNavbar';
 import avatarPhoto from '../assets/img/avatar.svg'
 import wellSoonIMG from '../assets/img/well-soon.jpg'
@@ -92,7 +92,6 @@ export default function JoinTeam() {
     <>
   {/* <IndexNavbar /> */}
     <Container>
-      
       <div className='back'>
         {/* <h3>About Us</h3> */}
         <Card className='text-center mt-5'>
@@ -118,13 +117,17 @@ export default function JoinTeam() {
       </CardText> */}
     </CardImgOverlay>
   </Card>
+
       </div>
+
       <div className='follow'>
+      <Row className='follow1'>
+    <Col>
         <div className='paragraph'>
           <h2>Top Pay, Paid Training</h2>
           <p>Are you looking to become part of a growing family-friendly company? At Green Clean Plus, you’ll never have to work nights or weekends. You will get home not long after the kids get home from school. We offer full and part-time positions.</p>
           <p>Become part of an elite team of house cleaning professionals</p>
-          <p>What we are looking for</p>
+          <span>What we are looking for</span>
           <ul>
             <li>Punctuality</li>
             <li>Flexibility</li>
@@ -132,7 +135,7 @@ export default function JoinTeam() {
             <li>Trustworthiness</li>
             <li>Thoroughness</li>
           </ul>
-          <p>What We Offer</p>
+          <span>What We Offer</span>
           <ul>
             <li>Great compensation</li>
             <li>Paid training</li>
@@ -140,12 +143,15 @@ export default function JoinTeam() {
             <li>Full or part-time positions</li>
             <li>Eco-Friendly cleaning products for your well being</li>
           </ul>
-          <p>We’d love to hear from you! CONTACT US AT (613) 461-6090.</p>
+          <Button color="primary">
+    Apply Now
+  </Button>
         </div>
-      <img src={teamPhoto} alt="career" />
-
-
-
+        </Col>
+        <Col>
+        <img src={teamPhoto} alt="career" />
+        </Col>
+      </Row>
       </div>
   <hr />
       {/* <div>
@@ -153,8 +159,6 @@ export default function JoinTeam() {
         <div>Photo</div>
       </div> */}
 
-      
-    
     </Container>
     </>
   )
