@@ -172,7 +172,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="/components/careers"
                 rel="noopener noreferrer"
                 // target="_blank"
                 title="Follow us on Instagram"

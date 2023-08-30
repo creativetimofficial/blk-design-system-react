@@ -1,0 +1,32 @@
+
+
+section {
+  height: 100%;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.newTitle {
+  vertical-align: middle;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 70px;
+  text-shadow: 3px 3px 3px rgb(143, 143, 143);
+}
+
+
+.paragraph {
+  display: flex;
+}
+
+
+
