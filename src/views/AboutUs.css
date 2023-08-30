@@ -1,0 +1,57 @@
+
+
+section {
+  height: 100%;
+}
+
+/* .back {
+  background: url(../assets/img/clean-back.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 30%;
+} */
+
+
+.newTitle {
+  vertical-align: middle;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 70px;
+  text-shadow: 3px 3px 3px rgb(143, 143, 143);
+}
+
+.customer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 5%; */
+}
+
+.customer > img {
+  width: 10%;
+  height: 10%;
+}
+
+.customer > h4 {
+  /* align-self: center; */
+  /* text-align: center; */
+  /* justify-self: center; */
+  /* vertical-align: middle; */
+  /* align-items: center; */
+  margin-top: 4%;
+  margin-left: 7px;
+}
+
+.parentCustomer > p {
+  margin-top: 7px;
+
+}
+
+/* .newMike {
+  display: flex;
+  flex-grow: 100%;
+}
+ */
+
