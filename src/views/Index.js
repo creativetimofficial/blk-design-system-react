@@ -38,7 +38,7 @@ import UnderHero from "components/PageHeader/UnderHero";
 import LineBar from "components/PageHeader/LineBar";
 import LeftRight from "components/PageHeader/LeftRight";
 import RightLeft from "components/PageHeader/RightLeft";
-import Reviews from "components/PageHeader/Reviews";
+// import Reviews from "components/PageHeader/Reviews";
 
 export default function Index() {
   React.useEffect(() => {
@@ -76,7 +76,7 @@ export default function Index() {
 ' b3='Dust ceiling fan
 ' b4='Vacuum and mop floors
 ' />
-<Reviews />
+{/* <Reviews /> */}
           <Navbars />
           <Tabs />
           <Pagination />

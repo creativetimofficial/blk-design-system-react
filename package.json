@@ -41,14 +41,16 @@
     "moment": "2.29.4",
     "nouislider": "15.4.0",
     "perfect-scrollbar": "1.5.5",
-    "react": "18.2.0",
+    "react": ">=16.8.0",
     "react-chartjs-2": "2.11.2",
     "react-datetime": "3.2.0",
-    "react-dom": "18.2.0",
+    "react-dom": ">=16.8.0",
     "react-router-dom": "6.11.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "reactstrap": "8.10.0",
     "sass": "1.62.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "3.3.1"
   },
   "peerDependencies": {

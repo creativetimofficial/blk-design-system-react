@@ -29,6 +29,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import AboutUs from "views/AboutUs";
 import GiftCard from "views/GiftCard";
+import Reviews from "views/Reviews"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -38,6 +39,7 @@ root.render(
       <Route path="/components" element={<Index />} />
       <Route path="/components/about-us" element={<AboutUs />} />
       <Route path="/components/giftcards" element={<GiftCard/>} />
+      <Route path="/components/reviews" element={<Reviews />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />

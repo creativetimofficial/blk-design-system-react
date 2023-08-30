@@ -160,9 +160,9 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="/components/reviews"
                 rel="noopener noreferrer"
-                target="_blank"
+                // target="_blank"
                 title="Follow us on Instagram"
               >
                 {/* <i className="fab fa-instagram" /> */}
@@ -174,7 +174,7 @@ export default function IndexNavbar() {
                 data-placement="bottom"
                 href="https://www.instagram.com/CreativeTimOfficial"
                 rel="noopener noreferrer"
-                target="_blank"
+                // target="_blank"
                 title="Follow us on Instagram"
               >
                 {/* <i className="fab fa-instagram" /> */}
