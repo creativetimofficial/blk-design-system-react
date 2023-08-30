@@ -148,9 +148,9 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="/components/giftcards"
                 rel="noopener noreferrer"
-                target="_blank"
+                // target="_blank"
                 title="Follow us on Instagram"
               >
                 {/* <i className="fab fa-instagram" /> */}
