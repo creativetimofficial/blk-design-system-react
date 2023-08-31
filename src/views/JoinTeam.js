@@ -90,6 +90,7 @@ export default function JoinTeam() {
   return (
     <>
   <IndexNavbar />
+  <div className='new'>
     <Container>
       <div className='back'>
         {/* <h3>About Us</h3> */}
@@ -151,6 +152,7 @@ export default function JoinTeam() {
       </div> */}
 
     </Container>
+    </div>
     </>
   )
 }
