@@ -20,7 +20,7 @@ section {
   justify-content: center;
   height: 100%;
   font-size: 70px;
-  text-shadow: 5.2px 5.2px 5.2px rgb(0, 0, 0);
+  text-shadow: 4.2px 4.2px 4.2px rgb(0, 0, 0);
 }
 
 .back {
@@ -39,6 +39,8 @@ span {
 .follow1 {
   margin-top: 7%;
 }
+
+
 
 /* .paragraph {
   display: flex;

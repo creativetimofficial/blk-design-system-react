@@ -12,7 +12,7 @@ import './JoinTeam.css'
 import IndexNavbar from 'components/Navbars/IndexNavbar';
 import avatarPhoto from '../assets/img/avatar.svg'
 import wellSoonIMG from '../assets/img/well-soon.jpg'
-import backPhoto from '../assets/img/clean-back.jpg'
+import backPhoto from '../assets/img/clean-place.jpg'
 import teamPhoto from '../assets/img/team.jpg'
 
 
@@ -90,7 +90,7 @@ export default function JoinTeam() {
   return (
     <>
   <IndexNavbar />
-  <div className='new'>
+  {/* <div className='new'> */}
     <Container>
       <div className='back'>
         {/* <h3>About Us</h3> */}
@@ -152,7 +152,7 @@ export default function JoinTeam() {
       </div> */}
 
     </Container>
-    </div>
+    {/* </div> */}
     </>
   )
 }
