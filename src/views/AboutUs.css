@@ -19,7 +19,8 @@ section {
   justify-content: center;
   height: 100%;
   font-size: 70px;
-  text-shadow: 3px 3px 3px rgb(143, 143, 143);
+  text-shadow: 7px 7px 7px rgb(0, 0, 0);
+
 }
 
 .customer {

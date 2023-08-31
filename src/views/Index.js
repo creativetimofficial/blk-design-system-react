@@ -56,7 +56,7 @@ export default function Index() {
         <div className="main">
           {/* <Basics /> */}
           <UnderHero />
-          <LineBar />
+          {/* <LineBar /> */}
           <RightLeft title='Your Welcome Living Room' description='We know the family room is a place when the people you love gather. We will make sure it iss a room that you are proud to welcome family and friends.' b1='Dust all furniture
 ' b2='Dust TV and other electronics
 ' b3='Straighten pillows and throws

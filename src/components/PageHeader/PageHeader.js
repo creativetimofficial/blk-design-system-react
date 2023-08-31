@@ -18,7 +18,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Card, CardImg, CardImgOverlay, CardTitle, Container } from "reactstrap";
 import backgroundImg from '../../assets/img/clean-home.jpg'
 import './PageHeader.css';
 
@@ -34,12 +34,28 @@ export default function PageHeader() {
       <div className="squares square7" /> */}
       <Container className="see2">
         <div className="content-center brand pageHead">
-          <img className="favimg" src={`${backgroundImg}`} alt="" />
-          <h2 className="h2-seo">Best Cleaning Services in Houston</h2>
+          {/* <img className="favimg" src={`${backgroundImg}`} alt="" />
+          <h2 className="h2-seo">Best Cleaning Services in Houston</h2> */}
           {/* <h3 className="d-none d-sm-block">
             A beautiful Design System for Bootstrap 4 (reactstrap) and React.
             It's Free and Open Source.
           </h3> */}
+
+<Card className='text-center mt-5'>
+    <CardImg
+      alt="Card image cap"
+      src={backgroundImg}
+      style={{
+        height: 570
+      }}
+      width="100%"
+    />
+    <CardImgOverlay>
+      <CardTitle className='newTitle' tag="h1">
+      Best Cleaning Services in Houston
+      </CardTitle>
+    </CardImgOverlay>
+  </Card>
         </div>
       </Container>
     </div>

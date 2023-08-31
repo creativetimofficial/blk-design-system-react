@@ -48,8 +48,8 @@ export default function IndexNavbar() {
   }, []);
   const changeColor = () => {
     if (
-      document.documentElement.scrollTop > 99 ||
-      document.body.scrollTop > 99
+      document.documentElement.scrollTop > 99.88 ||
+      document.body.scrollTop > 99.88
     ) {
       setColor("bg-info");
     } else if (
@@ -76,7 +76,7 @@ export default function IndexNavbar() {
   };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
-      <Container>
+      <Container className="my-2">
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>Without• </span>
@@ -124,9 +124,9 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
+                href="/components"
                 rel="noopener noreferrer"
-                target="_blank"
+                // target="_blank"
                 title="Follow us on Twitter"
               >
                 {/* <i className="fab fa-twitter" /> */}

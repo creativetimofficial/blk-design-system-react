@@ -89,7 +89,7 @@ export default function Reviews() {
 
   return (
     <>
-  {/* <IndexNavbar /> */}
+  <IndexNavbar />
     <Container>
       
       <div className='back'>

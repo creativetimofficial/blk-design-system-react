@@ -82,7 +82,6 @@ export default function JoinTeam() {
         <CarouselCaption
         captionHeader={item.header}
           captionText={item.caption}
-          
         />
       </CarouselItem>
     );
@@ -90,7 +89,7 @@ export default function JoinTeam() {
 
   return (
     <>
-  {/* <IndexNavbar /> */}
+  <IndexNavbar />
     <Container>
       <div className='back'>
         {/* <h3>About Us</h3> */}
@@ -107,14 +106,6 @@ export default function JoinTeam() {
       <CardTitle className='newTitle' tag="h1">
         Join Our Team
       </CardTitle>
-      {/* <CardText>
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-      </CardText>
-      <CardText>
-        <small className="text-muted">
-          Last updated 3 mins ago
-        </small>
-      </CardText> */}
     </CardImgOverlay>
   </Card>
 

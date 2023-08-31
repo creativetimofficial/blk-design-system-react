@@ -11,7 +11,7 @@ import backPhoto from '../assets/img/clean-back.jpg'
 export default function GiftCard() {
   return (
     <>
-  {/* <IndexNavbar /> */}
+  <IndexNavbar />
     <Container>
       
       <div className='back'>

@@ -3,18 +3,23 @@
 
 .new {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 5%;
   min-height: 500;
   max-height: 1300;
   height: 100vh;
 }
 
+.newTitle {
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+
+}
+
 
 .see2 {
   /* background-color: red; */
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 /* .see2 img {
@@ -31,10 +36,10 @@
 } */
 
 .pageHead > h2 {
-  position: absolute;  
-    left: 50%;                        /* horizontal alignment */
-    top: 50%;                         /* vertical alignment */
-    transform: translate(-50%, -50%);
+  /* position: absolute;  
+    left: 50%;                        horizontal alignment */
+    /* top: 50%;                         vertical alignment */
+    /* transform: translate(-50%, -50%); */
     
 }
 
