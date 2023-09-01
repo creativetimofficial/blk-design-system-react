@@ -18,7 +18,7 @@
 import React from "react";
 
 // reactstrap components
-import { Card, CardImg, CardImgOverlay, CardTitle, Container } from "reactstrap";
+import { Button, Card, CardImg, CardImgOverlay, CardTitle, Container } from "reactstrap";
 import backgroundImg from '../../assets/img/clean-home.jpg'
 import './PageHeader.css';
 
@@ -50,11 +50,22 @@ export default function PageHeader() {
       }}
       width="100%"
     />
-    <CardImgOverlay>
+    <CardImgOverlay className="wrapper1">
       <CardTitle className='newTitle' tag="h1">
       Best Cleaning Services in Houston
+     
       </CardTitle>
+     
+      
     </CardImgOverlay>
+    <Button
+                className="button1"
+                color="primary"
+                target="_blank"
+                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+              >
+                <i className="tim-icons icon-spaceship" /> Request A Quote Now!
+              </Button>
   </Card>
         </div>
       </Container>

@@ -14,6 +14,20 @@
 
 }
 
+/* .wrapper1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  vertical-align: middle;
+  text-align: center;
+} */
+
+.button1 {
+  text-align: center;
+  /* align-self: center; */
+  /* margin: auto; */
+}
 
 .see2 {
   /* background-color: red; */

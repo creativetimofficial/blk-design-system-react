@@ -77,7 +77,7 @@ export default function Index() {
 ' b4='Vacuum and mop floors
 ' />
 {/* <Reviews /> */}
-          <Navbars />
+          {/* <Navbars />
           <Tabs />
           <Pagination />
           <Notifications />
@@ -86,7 +86,7 @@ export default function Index() {
           <NucleoIcons />
           <Signup />
           <Examples />
-          <Download />
+          <Download /> */}
         </div>
         <Footer />
       </div>
