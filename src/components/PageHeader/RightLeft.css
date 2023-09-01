@@ -1,11 +1,25 @@
 
 
+
+.list-section {
+  text-align: center;
+
+}
+
+.list-section > ul {
+  text-align: left;
+}
+
 .list-section > h1, p {
   text-align: center;
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 993px) {
+.list-section {
+  text-align: left;
+}
+
 .list-section > h1, p {
   text-align: left;
 }

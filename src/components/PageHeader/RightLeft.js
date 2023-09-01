@@ -54,7 +54,7 @@ export default function RightLeft({title, description, b1, b2, b3, b4 }) {
                 <li>{b6}</li> */}
               </ul>
               <Button
-                className="mt-4"
+                className="mt-4 button-request1"
                 color="warning"
                 href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alert"
               >
