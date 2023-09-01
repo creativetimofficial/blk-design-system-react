@@ -5,13 +5,15 @@ section {
   height: 100%;
 }
 
-.car {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.review-para {
   text-align: center;
+  margin-bottom: 5%;
 }
+
+/* hr {
+  margin: 5%;
+  color: lightblue;
+} */
 
 .newTitle {
   vertical-align: middle;

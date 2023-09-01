@@ -1,0 +1,29 @@
+
+
+
+.landing-head {
+  /* margin: 40px 0; */
+  margin: 40px 0;
+}
+
+.section {
+  /* margin-top: -10%; */
+  height: 780px;
+}
+
+.list-section > h1, p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .section {
+    height: 100%;
+  }
+
+  .list-section > h1, p {
+    text-align: left;
+  }
+  
+
+}

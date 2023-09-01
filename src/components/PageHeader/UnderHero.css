@@ -1,7 +1,16 @@
 
 
 
-.section {
-  margin-top: 10%;
+.section1 {
+  margin-top: 50px;
+  text-align: center;
 }
 
+p {
+  /* text-align: center; */
+
+}
+
+.buttonforHero {
+  text-align: center;
+}

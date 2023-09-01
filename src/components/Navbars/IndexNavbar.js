@@ -76,7 +76,7 @@ export default function IndexNavbar() {
   };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
-      <Container className="my-2">
+      <Container className="my-2" >
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>Without• </span>
@@ -106,7 +106,8 @@ export default function IndexNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                <span>Without• </span>
+            Spot OR Blemish
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -120,7 +121,10 @@ export default function IndexNavbar() {
               </Col>
             </Row>
           </div>
-          <Nav navbar>
+          <Nav navbar className="w-100">
+            <div className="mx-auto d-flex align-content-lg-center justify-content-center text-center">
+
+         
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
@@ -142,7 +146,7 @@ export default function IndexNavbar() {
                 title="Like us on Facebook"
               >
                 {/* <i className="fab fa-facebook-square" /> */}
-                <p className="d-lg d-xl">About Us</p>
+                <p className="d-lg d-xl">About </p>
               </NavLink>
             </NavItem>
             <NavItem className="p-0">
@@ -154,7 +158,7 @@ export default function IndexNavbar() {
                 title="Follow us on Instagram"
               >
                 {/* <i className="fab fa-instagram" /> */}
-                <p className="d-lg d-xl">Gift Cards</p>
+                <p className="d-lg d-xl">Gift</p>
               </NavLink>
             </NavItem>
             <NavItem className="p-0">
@@ -178,11 +182,12 @@ export default function IndexNavbar() {
                 title="Follow us on Instagram"
               >
                 {/* <i className="fab fa-instagram" /> */}
-                <p className="d-lg d-xl">Join Our Team</p>
+                <p className="d-lg d-xl">Join Us</p>
               </NavLink>
             </NavItem>
+            </div>
             <UncontrolledDropdown nav>
-              <DropdownToggle
+              {/* <DropdownToggle
                 caret
                 color="default"
                 data-toggle="dropdown"
@@ -192,8 +197,8 @@ export default function IndexNavbar() {
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
                 Services
-              </DropdownToggle>
-              <DropdownMenu className="dropdown-with-icons">
+              </DropdownToggle> */}
+              {/* <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
                   <i className="tim-icons icon-paper" />
                   Recurring Service
@@ -210,7 +215,7 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-single-02" />
                   Office Cleaning
                 </DropdownItem>
-              </DropdownMenu>
+              </DropdownMenu> */}
             </UncontrolledDropdown>
             <NavItem>
               <Button

@@ -26,7 +26,7 @@ export default function UnderHero() {
 
 
   return (
-    <div className="section">
+    <div className="section1">
         <Container>
           <div className="title">
             {/* <h3>Carousel</h3> */}

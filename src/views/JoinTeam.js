@@ -14,6 +14,7 @@ import avatarPhoto from '../assets/img/avatar.svg'
 import wellSoonIMG from '../assets/img/well-soon.jpg'
 import backPhoto from '../assets/img/clean-place.jpg'
 import teamPhoto from '../assets/img/team.jpg'
+import Footer from 'components/Footer/Footer';
 
 
 const settings = {
@@ -153,6 +154,7 @@ export default function JoinTeam() {
 
     </Container>
     {/* </div> */}
+    <Footer />
     </>
   )
 }

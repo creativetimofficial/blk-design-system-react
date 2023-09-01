@@ -1,7 +1,40 @@
 
 
 .section {
-  /* margin-top: 10%; */
+  margin-top: 0px;
 }
 
+.line-section {
+  margin-top: 20%;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  /* margin: auto; */
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.line-section > h1 {
+  /* color: white; */
+  /* text-align: center; */
+  /* margin-bottom: 50%; */
+}
+
+.cornel {
+  line-height: 100%;
+
+  vertical-align: middle;
+  margin-top: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .line-section {
+    margin-top: 10%;
+  }
+}
 

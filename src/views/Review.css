@@ -1,0 +1,43 @@
+
+
+.slider-car {
+  background-color: rgb(20, 23, 77);
+  width: 100%;
+  margin-top: 5%;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  /* background-color: aliceblue; */
+
+}
+
+.car > * {
+  /* padding: 0.5%; */
+  padding: 0 40px ;
+  margin-top: 1px;
+}
+
+.car > h3 {
+  padding-top: 4%;
+}
+
+.endPara {
+  padding-bottom: 3%;
+}
+
+.review-headline {
+  font-weight: bold;
+  
+}
+
+.iconStar {
+  color: gold;
+  font-size: 17px;
+}
+

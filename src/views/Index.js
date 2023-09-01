@@ -38,6 +38,8 @@ import UnderHero from "components/PageHeader/UnderHero";
 import LineBar from "components/PageHeader/LineBar";
 import LeftRight from "components/PageHeader/LeftRight";
 import RightLeft from "components/PageHeader/RightLeft";
+import Review from "./Review";
+import BookNow from "./BookNow";
 // import Reviews from "components/PageHeader/Reviews";
 
 export default function Index() {
@@ -57,6 +59,7 @@ export default function Index() {
           {/* <Basics /> */}
           <UnderHero />
           {/* <LineBar /> */}
+          <LineBar description='A Cleaning Service You Can Trust!' />
           <RightLeft title='Your Welcome Living Room' description='We know the family room is a place when the people you love gather. We will make sure it iss a room that you are proud to welcome family and friends.' b1='Dust all furniture
 ' b2='Dust TV and other electronics
 ' b3='Straighten pillows and throws
@@ -76,6 +79,7 @@ export default function Index() {
 ' b3='Dust ceiling fan
 ' b4='Vacuum and mop floors
 ' />
+<LineBar description='Clean Home = Happy Family' />
 {/* <Reviews /> */}
           {/* <Navbars />
           <Tabs />
@@ -87,6 +91,8 @@ export default function Index() {
           <Signup />
           <Examples />
           <Download /> */}
+          <Review />
+          <BookNow />
         </div>
         <Footer />
       </div>

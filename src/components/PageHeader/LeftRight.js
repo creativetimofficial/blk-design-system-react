@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button, Col, Container, Row, UncontrolledCarousel } from 'reactstrap'
 
+import './LeftRight.css'
+
 export default function LeftRight({title, description, b1, b2, b3, b4 }) {
 
 
@@ -29,8 +31,8 @@ export default function LeftRight({title, description, b1, b2, b3, b4 }) {
             {/* <h3>Carousel</h3> */}
           </div>
           <Row className="justify-content-between align-items-center">
-            <Col className="mb-5 mb-lg-0" lg="5">
-              <h1 className="text-white font-weight-light">
+            <Col className="mb-5 mb-lg-0 list-section" lg="5">
+              <h1 className="text-white font-weight-light landing-head">
                 {title}
               </h1>
               <p className="text-white mt-4">

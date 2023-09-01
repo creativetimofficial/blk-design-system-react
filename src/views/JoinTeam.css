@@ -47,4 +47,11 @@ span {
 } */
 
 
+hr {
+  background-color: lightblue;
+  /* text-align: center; */
+  margin: auto;
+  height: 0.1px;
+  width: 40%;
 
+}

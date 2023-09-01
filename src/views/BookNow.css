@@ -1,0 +1,36 @@
+
+
+.newTitle4 {
+  vertical-align: middle;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* font-size: 50px; */
+  /* text-shadow: 7px 7px 7px rgb(0, 0, 0); */
+  /* color: pink; */
+  /* margin: auto; */
+}
+
+.wrapper-BookNow > h2 {
+  font-size: 40px;
+  color: skyblue;
+  
+}
+.newTitle4 > div {
+  background-color: white;
+  width: 100%;
+  border-radius: 2%;
+  margin: auto;
+  padding: 25px;
+}
+
+@media only screen and (min-width: 992px) {
+
+  .newTitle4 > div {
+    width: 50%;
+  }
+
+}
+

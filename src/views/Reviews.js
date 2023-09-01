@@ -22,6 +22,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 import avatarPhoto from "../assets/img/avatar.svg";
 import wellSoonIMG from "../assets/img/well-soon.jpg";
 import backPhoto from "../assets/img/clean-place.jpg";
+import Review from "./Review";
 
 const settings = {
   dots: true,
@@ -124,7 +125,7 @@ export default function Reviews() {
           </Card>
         </div>
         <div>
-          <p>
+          <p className="review-para">
             There is a reason why Green Clean Plus has earned such great ratings
             and reviews. Simply put, we do what we say we'll do every time we
             clean. And, if we ever drop the ball, we'll make it right - always.
@@ -154,31 +155,9 @@ export default function Reviews() {
         />
       </Carousel> */}
 
-          <Slider {...settings}>
-            <div className="car">
-              <h3>Tamika P</h3>
-              <p>5 Stars</p>
-              <p>Awesome Job!</p>
-              <p>
-                Michael was very knowledgable and professional, he was on time
-                and went striaght to work. I defitly will be using him again...
-              </p>
-            </div>
-            <div className="car">
-              <h3>Michael J</h3>
-              <p>5 Stars</p>
-              <p>Highly Recommend!</p>
-              <p>Michael was great, I would recommend him to anyone...</p>
-            </div>
-            <div className="car">
-              <h3>Brenda B</h3>
-              <p>5 Stars</p>
-              <p>Great Job!</p>
-              <p>Michael was very pleasant and thorough. Hard worker...</p>
-            </div>
-          </Slider>
+          <Review />
         </div>
-        <hr />
+        {/* <hr /> */}
         {/* <div>
         <div>Text</div>
         <div>Photo</div>

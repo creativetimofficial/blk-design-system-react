@@ -15,6 +15,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 import avatarPhoto from "../assets/img/avatar.svg";
 import wellSoonIMG from "../assets/img/well-soon.jpg";
 import backPhoto from "../assets/img/clean-place.jpg";
+import Footer from "components/Footer/Footer";
 
 export default function GiftCard() {
   return (
@@ -109,6 +110,7 @@ export default function GiftCard() {
         <div>Photo</div>
       </div> */}
       </Container>
+      <Footer />
     </>
   );
 }

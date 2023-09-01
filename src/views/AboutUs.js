@@ -17,6 +17,7 @@ import familyIcon from "../assets/img/family.svg";
 import homeowner from "../assets/img/homeownder.svg";
 import oldman from "../assets/img/oldman.svg";
 import backPhoto from "../assets/img/clean-place.jpg";
+import Footer from "components/Footer/Footer";
 
 export default function AboutUs() {
   return (
@@ -159,6 +160,7 @@ export default function AboutUs() {
           </Row>
         </div>
       </Container>
+      <Footer />
     </>
   );
 }

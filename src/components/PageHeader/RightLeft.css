@@ -1,0 +1,13 @@
+
+
+.list-section > h1, p {
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+.list-section > h1, p {
+  text-align: left;
+}
+
+}
