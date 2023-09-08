@@ -20,7 +20,8 @@
 .car > * {
   /* padding: 0.5%; */
   padding: 0 50px ;
-  margin-top: 1px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .car > h3 {
