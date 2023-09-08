@@ -37,15 +37,15 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/components" element={<Index />} />
-      <Route path="/components/about-us" element={<AboutUs />} />
-      <Route path="/components/giftcards" element={<GiftCard/>} />
-      <Route path="/components/careers" element={<JoinTeam/>} />
-      <Route path="/components/reviews" element={<Reviews />} />
+      <Route path="/" element={<Index />} />
+      <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/giftcards" element={<GiftCard/>} />
+      <Route path="/careers" element={<JoinTeam/>} />
+      <Route path="/reviews" element={<Reviews />} />
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/register-page" element={<RegisterPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="*" element={<Navigate to="/components" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </BrowserRouter>
 );

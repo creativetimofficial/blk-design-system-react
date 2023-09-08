@@ -32,7 +32,7 @@ import {
   Col,
 } from "reactstrap";
 
-import './IndexNavbar.css'
+import "./IndexNavbar.css";
 
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -73,14 +73,14 @@ export default function IndexNavbar() {
       .scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <Navbar className={"fixed-top " + color } color-on-scroll="100" expand="lg">
-      <Container className="my-2 barNeedsWork" >
+    <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
+      <Container className="my-2 barNeedsWork">
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>Without• </span>
             Spot OR Blemish
           </NavbarBrand>
-          
+
           <button
             aria-expanded={collapseOpen}
             className="navbar-toggler navbar-toggler"
@@ -101,9 +101,9 @@ export default function IndexNavbar() {
           <div className="navbar-collapse-header">
             <Row>
               <Col className="collapse-brand" xs="6">
-                <a href="/components" onClick={(e) => e.preventDefault()}>
-                <span>Without• </span>
-            Spot OR Blemish
+                <a href="/" onClick={(e) => e.preventDefault()}>
+                  <span>Without• </span>
+                  Spot OR Blemish
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -119,64 +119,64 @@ export default function IndexNavbar() {
           </div>
           <Nav navbar className="w-100">
             <div className="mx-auto d-flex align-content-lg-center justify-content-center text-center navClassNew">
-            <NavItem className="p-0">
+              <NavItem className="p-0">
+                <NavLink
+                  data-placement="bottom"
+                  href="/"
+                  rel="noopener noreferrer"
+                  // target="_blank"
+                  title="Follow us on Twitter"
+                >
+                  {/* <i className="fab fa-twitter" /> */}
+                  <p className="d-lg d-xl">Home</p>
+                </NavLink>
+              </NavItem>
+              <NavItem className="p-0">
+                <NavLink
+                  data-placement="bottom"
+                  href="/about-us"
+                  rel="noopener noreferrer"
+                  // target="_blank"
+                  title="Like us on Facebook"
+                >
+                  {/* <i className="fab fa-facebook-square" /> */}
+                  <p className="d-lg d-xl">About </p>
+                </NavLink>
+              </NavItem>
+              {/* <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="/components"
-                rel="noopener noreferrer"
-                // target="_blank"
-                title="Follow us on Twitter"
-              >
-                {/* <i className="fab fa-twitter" /> */}
-                <p className="d-lg d-xl">Home</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="/components/about-us"
-                rel="noopener noreferrer"
-                // target="_blank"
-                title="Like us on Facebook"
-              >
-                {/* <i className="fab fa-facebook-square" /> */}
-                <p className="d-lg d-xl">About </p>
-              </NavLink>
-            </NavItem>
-            {/* <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="/components/giftcards"
+                href="/giftcards"
                 rel="noopener noreferrer"
                 title="Follow us on Instagram"
               >
                 <p className="d-lg d-xl">Gift</p>
               </NavLink>
             </NavItem> */}
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="/components/reviews"
-                rel="noopener noreferrer"
-                // target="_blank"
-                title="Follow us on Instagram"
-              >
-                {/* <i className="fab fa-instagram" /> */}
-                <p className="d-lg d-xl">Reviews</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="/components/careers"
-                rel="noopener noreferrer"
-                // target="_blank"
-                title="Follow us on Instagram"
-              >
-                {/* <i className="fab fa-instagram" /> */}
-                <p className="d-lg d-xl">Join Us</p>
-              </NavLink>
-            </NavItem>
+              <NavItem className="p-0">
+                <NavLink
+                  data-placement="bottom"
+                  href="/reviews"
+                  rel="noopener noreferrer"
+                  // target="_blank"
+                  title="Follow us on Instagram"
+                >
+                  {/* <i className="fab fa-instagram" /> */}
+                  <p className="d-lg d-xl">Reviews</p>
+                </NavLink>
+              </NavItem>
+              <NavItem className="p-0">
+                <NavLink
+                  data-placement="bottom"
+                  href="/careers"
+                  rel="noopener noreferrer"
+                  // target="_blank"
+                  title="Follow us on Instagram"
+                >
+                  {/* <i className="fab fa-instagram" /> */}
+                  <p className="d-lg d-xl">Join Us</p>
+                </NavLink>
+              </NavItem>
             </div>
             <UncontrolledDropdown nav>
               {/* <DropdownToggle
