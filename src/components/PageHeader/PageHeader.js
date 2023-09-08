@@ -62,8 +62,7 @@ export default function PageHeader() {
     <Button
                 className="button1"
                 color="primary"
-                target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+                href="#"
               >
                 <i className="tim-icons icon-spaceship" /> Request A Quote Now!
               </Button>

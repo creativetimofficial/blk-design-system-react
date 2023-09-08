@@ -33,6 +33,7 @@ import {
 } from "reactstrap";
 
 import "./IndexNavbar.css";
+import MediaQuery from 'react-responsive'
 
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -49,7 +50,7 @@ export default function IndexNavbar() {
       document.documentElement.scrollTop > 99.88 ||
       document.body.scrollTop > 99.88
     ) {
-      setColor("bg-info");
+      setColor("bg-back");
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
@@ -73,8 +74,8 @@ export default function IndexNavbar() {
       .scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
-      <Container className="my-2 barNeedsWork">
+    <Navbar className={"fixed-top " + color + " navBarStyle"} color-on-scroll="100" expand="lg">
+      <Container className="my-1 barNeedsWork">
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>Without• </span>
@@ -125,7 +126,7 @@ export default function IndexNavbar() {
                   href="/"
                   rel="noopener noreferrer"
                   // target="_blank"
-                  title="Follow us on Twitter"
+                  title="Home"
                 >
                   {/* <i className="fab fa-twitter" /> */}
                   <p className="d-lg d-xl">Home</p>
@@ -137,7 +138,7 @@ export default function IndexNavbar() {
                   href="/about-us"
                   rel="noopener noreferrer"
                   // target="_blank"
-                  title="Like us on Facebook"
+                  title="About Us"
                 >
                   {/* <i className="fab fa-facebook-square" /> */}
                   <p className="d-lg d-xl">About </p>
@@ -159,7 +160,7 @@ export default function IndexNavbar() {
                   href="/reviews"
                   rel="noopener noreferrer"
                   // target="_blank"
-                  title="Follow us on Instagram"
+                  title="See Reviews"
                 >
                   {/* <i className="fab fa-instagram" /> */}
                   <p className="d-lg d-xl">Reviews</p>
@@ -171,12 +172,27 @@ export default function IndexNavbar() {
                   href="/careers"
                   rel="noopener noreferrer"
                   // target="_blank"
-                  title="Follow us on Instagram"
+                  title="Join Us"
                 >
                   {/* <i className="fab fa-instagram" /> */}
                   <p className="d-lg d-xl">Join Us</p>
                 </NavLink>
               </NavItem>
+              <MediaQuery maxWidth={991}>
+              <NavItem className="p-0">
+                <NavLink
+                  data-placement="bottom"
+                  href="/"
+                  rel="noopener noreferrer"
+                  // target="_blank"
+                  title="Follow us on Instagram"
+                >
+                  {/* <i className="fab fa-instagram" /> */}
+                  <p className="d-lg">Book Now</p>
+                </NavLink>
+              </NavItem>
+              </MediaQuery>
+             
             </div>
             <UncontrolledDropdown nav>
               {/* <DropdownToggle
@@ -213,8 +229,7 @@ export default function IndexNavbar() {
               <Button
                 className="nav-link d-none d-lg-block"
                 color="primary"
-                target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
+                href="#"
               >
                 <i className="tim-icons icon-spaceship" /> Get A Quote
               </Button>

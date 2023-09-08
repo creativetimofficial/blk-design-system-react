@@ -20,8 +20,11 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 import "assets/css/nucleo-icons.css";
-import "assets/scss/blk-design-system-react.scss";
 import "assets/demo/demo.css";
+import "assets/scss/blk-design-system-react.scss";
+// import "assets/css/blk-design-system-react.css"
+// import "assets/css/blk-design-system-react.min.css"
+
 
 import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";

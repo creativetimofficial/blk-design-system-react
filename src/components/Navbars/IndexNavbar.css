@@ -1,5 +1,9 @@
 
 
+.navBarStyle {
+  /* height: 5%; */
+}
+
 @media (max-width: 991px) {
   
   .navClassNew {

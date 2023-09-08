@@ -49,7 +49,7 @@ export default function LeftRight({title, description, b1, b2, b3, b4 }) {
               <Button
                 className="mt-4"
                 color="warning"
-                href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/alert"
+                href="#"
               >
                 Request Quote NOW!
               </Button>
