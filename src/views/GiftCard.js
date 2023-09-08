@@ -26,6 +26,7 @@ export default function GiftCard() {
           {/* <h3>About Us</h3> */}
           <Card className="text-center mt-5">
             <CardImg
+              className="imageHero"
               alt="Card image cap"
               src={backPhoto}
               style={{

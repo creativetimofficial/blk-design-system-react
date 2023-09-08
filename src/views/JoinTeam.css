@@ -55,3 +55,18 @@ hr {
   width: 40%;
 
 }
+
+
+@media (max-width: 993px) {
+  .follow1 {
+  display: flex;
+  flex-direction: column;
+  }
+  .paragraph > h2 {
+    text-align: center;
+  }
+}
+
+
+
+

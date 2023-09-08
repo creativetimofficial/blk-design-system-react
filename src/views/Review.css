@@ -19,7 +19,7 @@
 
 .car > * {
   /* padding: 0.5%; */
-  padding: 0 40px ;
+  padding: 0 50px ;
   margin-top: 1px;
 }
 
@@ -39,5 +39,21 @@
 .iconStar {
   color: gold;
   font-size: 17px;
+}
+
+
+@media (max-width: 430px) {
+  .car > * {
+    text-align: center;
+    /* padding: 0.5%; */
+    padding: 0 50px ;
+    margin-top: 1px;
+    width: 100%;
+  }
+  .car > p {
+    /* display: block;
+    max-height: 3.6em;
+    line-height: 1.8em; */
+  }
 }
 

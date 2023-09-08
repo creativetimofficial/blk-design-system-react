@@ -36,6 +36,8 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
+import './IndexNavbar.css'
+
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
@@ -75,16 +77,14 @@ export default function IndexNavbar() {
       .scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
-      <Container className="my-2" >
+    <Navbar className={"fixed-top " + color } color-on-scroll="100" expand="lg">
+      <Container className="my-2 barNeedsWork" >
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>Without• </span>
             Spot OR Blemish
           </NavbarBrand>
-          <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            {/* Designed and Coded by Creative Tim */}
-          </UncontrolledTooltip>
+          
           <button
             aria-expanded={collapseOpen}
             className="navbar-toggler navbar-toggler"
@@ -105,7 +105,7 @@ export default function IndexNavbar() {
           <div className="navbar-collapse-header">
             <Row>
               <Col className="collapse-brand" xs="6">
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                <a href="/components" onClick={(e) => e.preventDefault()}>
                 <span>Without• </span>
             Spot OR Blemish
                 </a>
@@ -122,9 +122,7 @@ export default function IndexNavbar() {
             </Row>
           </div>
           <Nav navbar className="w-100">
-            <div className="mx-auto d-flex align-content-lg-center justify-content-center text-center">
-
-         
+            <div className="mx-auto d-flex align-content-lg-center justify-content-center text-center navClassNew">
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
@@ -149,18 +147,16 @@ export default function IndexNavbar() {
                 <p className="d-lg d-xl">About </p>
               </NavLink>
             </NavItem>
-            <NavItem className="p-0">
+            {/* <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
                 href="/components/giftcards"
                 rel="noopener noreferrer"
-                // target="_blank"
                 title="Follow us on Instagram"
               >
-                {/* <i className="fab fa-instagram" /> */}
                 <p className="d-lg d-xl">Gift</p>
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"

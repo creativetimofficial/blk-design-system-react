@@ -13,8 +13,8 @@ import {
 import "./AboutUs.css";
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import avatarPhoto from "../assets/img/avatar.svg";
-import familyIcon from "../assets/img/family.svg";
-import homeowner from "../assets/img/homeownder.svg";
+import familyIcon from "../assets/img/family1.svg";
+import homeowner from "../assets/img/house-solid.svg";
 import oldman from "../assets/img/oldman.svg";
 import backPhoto from "../assets/img/clean-place.jpg";
 import Footer from "components/Footer/Footer";
@@ -23,11 +23,12 @@ export default function AboutUs() {
   return (
     <>
       <IndexNavbar />
-      <Container>
+      <Container fluid="sm">
         <div className="back">
           {/* <h3>About Us</h3> */}
           <Card className="text-center mt-5">
             <CardImg
+              className="imageHero"
               alt="Card image cap"
               src={backPhoto}
               style={{
@@ -50,14 +51,14 @@ export default function AboutUs() {
             </CardImgOverlay>
           </Card>
         </div>
-        <Row>
+        <Row className="newWrapperMobile">
           <Col className="">
             <img src={avatarPhoto} alt="mike avatar" />
           </Col>
           <Col className="">
             <h2>Welcome to Without Spot OR Blemish</h2>
             <p>
-              Hi, I'm Maria Murphy and I am the proud owner of Green Clean Plus.
+              Hi, I'm Michael S. and I am the proud owner of Green Clean Plus.
               My team and I are here to provide you the best house cleaning
               services you can buy.
             </p>
@@ -118,7 +119,7 @@ export default function AboutUs() {
               <div className="parentCustomer">
                 <div className="customer">
                   <img src={familyIcon} alt="" />
-                  <h4>Young Families</h4>
+                  <h4>Families</h4>
                 </div>
                 <p>
                   Green Clean Plus loves helping young families that have too
@@ -144,7 +145,7 @@ export default function AboutUs() {
             </Col>
             <Col className="bg-light border">
               <div className="parentCustomer">
-                <div className="customer">
+                <div className="customer newCustomer">
                   <img src={homeowner} alt="" />
                   <h4>Homeowners</h4>
                 </div>

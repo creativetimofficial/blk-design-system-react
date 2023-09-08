@@ -43,6 +43,7 @@ export default function PageHeader() {
 
 <Card className='text-center mt-5'>
     <CardImg
+      className="imageHero"
       alt="Card image cap"
       src={backgroundImg}
       style={{

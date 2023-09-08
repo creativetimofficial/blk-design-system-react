@@ -1,0 +1,13 @@
+
+
+@media (max-width: 991px) {
+  
+  .navClassNew {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .barNeedsWork {
+    margin-bottom: 20px;
+  } */
+}

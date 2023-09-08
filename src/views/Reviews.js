@@ -23,6 +23,7 @@ import avatarPhoto from "../assets/img/avatar.svg";
 import wellSoonIMG from "../assets/img/well-soon.jpg";
 import backPhoto from "../assets/img/clean-place.jpg";
 import Review from "./Review";
+import Footer from "components/Footer/Footer";
 
 const settings = {
   dots: true,
@@ -102,6 +103,7 @@ export default function Reviews() {
           {/* <h3>About Us</h3> */}
           <Card className="text-center mt-5">
             <CardImg
+              className="imageHero"
               alt="Card image cap"
               src={backPhoto}
               style={{
@@ -163,6 +165,7 @@ export default function Reviews() {
         <div>Photo</div>
       </div> */}
       </Container>
+      <Footer />
     </>
   );
 }

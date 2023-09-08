@@ -15,6 +15,7 @@ import wellSoonIMG from '../assets/img/well-soon.jpg'
 import backPhoto from '../assets/img/clean-place.jpg'
 import teamPhoto from '../assets/img/team.jpg'
 import Footer from 'components/Footer/Footer';
+import MediaQuery from 'react-responsive'
 
 
 const settings = {
@@ -97,6 +98,7 @@ export default function JoinTeam() {
         {/* <h3>About Us</h3> */}
         <Card className='text-center mt-5'>
     <CardImg
+      className="imageHero"
       alt="Card image cap"
       src={backPhoto}
       style={{
@@ -142,11 +144,14 @@ export default function JoinTeam() {
         </div>
         </Col>
         <Col>
+        <MediaQuery minWidth={993}>
         <img src={teamPhoto} alt="career" />
+        </MediaQuery>
+       
         </Col>
       </Row>
       </div>
-  <hr />
+  {/* <hr /> */}
       {/* <div>
         <div>Text</div>
         <div>Photo</div>
