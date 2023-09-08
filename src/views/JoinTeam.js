@@ -1,93 +1,89 @@
-import React, { useState } from 'react'
-import { Button, Container, Card, CardImg, CardImgOverlay, CardTitle, CardText, Row, Col,  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption, } from "reactstrap";
+import React from 'react'
+import { Button, Container, Card, CardImg, CardImgOverlay, CardTitle, Row, Col } from "reactstrap";
 
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 
 import './JoinTeam.css'
 import IndexNavbar from 'components/Navbars/IndexNavbar';
-import avatarPhoto from '../assets/img/avatar.svg'
-import wellSoonIMG from '../assets/img/well-soon.jpg'
+// import avatarPhoto from '../assets/img/avatar.svg'
+// import wellSoonIMG from '../assets/img/well-soon.jpg'
 import backPhoto from '../assets/img/clean-place.jpg'
 import teamPhoto from '../assets/img/team.jpg'
 import Footer from 'components/Footer/Footer';
 import MediaQuery from 'react-responsive'
 
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1
-};
+// const settings = {
+//   dots: true,
+//   infinite: true,
+//   speed: 500,
+//   slidesToShow: 1,
+//   slidesToScroll: 1
+// };
 
-const items = [
-  {
-    src: 'https://picsum.photos/id/123/1200/400',
-    altText: 'Slide 1',
-    header: 'Tamika P',
-    caption: 'Michael was very knowledgable and professional, he was on time and went striaght to work. I defitly will be using him again...',
-    key: 1,
-  },
-  {
-    src: 'https://picsum.photos/id/456/1200/400',
-    altText: 'Slide 2',
-    header: 'Michael J',
-    caption: 'Michael was great, I would recommend him to anyone...',
-    key: 2,
-  },
-  {
-    src: 'https://picsum.photos/id/678/1200/400',
-    altText: 'Slide 3',
-    header: 'Brenda B',
-    caption: 'Michael was very pleasant and thorough. Hard worker...',
-    key: 3,
-  },
-];
+// const items = [
+//   {
+//     src: 'https://picsum.photos/id/123/1200/400',
+//     altText: 'Slide 1',
+//     header: 'Tamika P',
+//     caption: 'Michael was very knowledgable and professional, he was on time and went striaght to work. I defitly will be using him again...',
+//     key: 1,
+//   },
+//   {
+//     src: 'https://picsum.photos/id/456/1200/400',
+//     altText: 'Slide 2',
+//     header: 'Michael J',
+//     caption: 'Michael was great, I would recommend him to anyone...',
+//     key: 2,
+//   },
+//   {
+//     src: 'https://picsum.photos/id/678/1200/400',
+//     altText: 'Slide 3',
+//     header: 'Brenda B',
+//     caption: 'Michael was very pleasant and thorough. Hard worker...',
+//     key: 3,
+//   },
+// ];
 
 
 export default function JoinTeam() {
 
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
+  // const [activeIndex, setActiveIndex] = useState(0);
+  // const [animating, setAnimating] = useState(false);
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
+  // const next = () => {
+  //   if (animating) return;
+  //   const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+  //   setActiveIndex(nextIndex);
+  // };
 
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
+  // const previous = () => {
+  //   if (animating) return;
+  //   const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+  //   setActiveIndex(nextIndex);
+  // };
 
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  };
+  // const goToIndex = (newIndex) => {
+  //   if (animating) return;
+  //   setActiveIndex(newIndex);
+  // };
 
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.key}
-      >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption
-        captionHeader={item.header}
-          captionText={item.caption}
-        />
-      </CarouselItem>
-    );
-  });
+  // const slides = items.map((item) => {
+  //   return (
+  //     <CarouselItem
+  //       onExiting={() => setAnimating(true)}
+  //       onExited={() => setAnimating(false)}
+  //       key={item.key}
+  //     >
+  //       <img src={item.src} alt={item.altText} />
+  //       <CarouselCaption
+  //       captionHeader={item.header}
+  //         captionText={item.caption}
+  //       />
+  //     </CarouselItem>
+  //   );
+  // });
 
   return (
     <>

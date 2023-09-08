@@ -21,19 +21,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 
 // reactstrap components
 import {
-  Button,
-  FormGroup,
-  Label,
-  Input,
-  FormText,
-  FormFeedback,
-  NavItem,
-  NavLink,
-  Nav,
   Container,
-  Row,
-  Col,
-  UncontrolledTooltip,
 } from "reactstrap";
 
 export default function Footer() {

@@ -5,7 +5,6 @@ import {
   CardImg,
   CardImgOverlay,
   CardTitle,
-  CardText,
   Row,
   Col,
 } from "reactstrap";

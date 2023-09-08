@@ -5,14 +5,14 @@ import {
   CardImg,
   CardImgOverlay,
   CardTitle,
-  CardText,
+  // CardText,
   Row,
   Col,
 } from "reactstrap";
 
 import "./GiftCard.css";
 import IndexNavbar from "components/Navbars/IndexNavbar";
-import avatarPhoto from "../assets/img/avatar.svg";
+// import avatarPhoto from "../assets/img/avatar.svg";
 import wellSoonIMG from "../assets/img/well-soon.jpg";
 import backPhoto from "../assets/img/clean-place.jpg";
 import Footer from "components/Footer/Footer";
