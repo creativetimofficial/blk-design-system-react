@@ -42,30 +42,30 @@ const settings = {
   ]
 };
 
-const items = [
-  {
-    src: "https://picsum.photos/id/123/1200/400",
-    altText: "Slide 1",
-    header: "Tamika P",
-    caption:
-      "Michael was very knowledgable and professional, he was on time and went striaght to work. I defitly will be using him again...",
-    key: 1,
-  },
-  {
-    src: "https://picsum.photos/id/456/1200/400",
-    altText: "Slide 2",
-    header: "Michael J",
-    caption: "Michael was great, I would recommend him to anyone...",
-    key: 2,
-  },
-  {
-    src: "https://picsum.photos/id/678/1200/400",
-    altText: "Slide 3",
-    header: "Brenda B",
-    caption: "Michael was very pleasant and thorough. Hard worker...",
-    key: 3,
-  },
-];
+// const items = [
+//   {
+//     src: "https://picsum.photos/id/123/1200/400",
+//     altText: "Slide 1",
+//     header: "Tamika P",
+//     caption:
+//       "Michael was very knowledgable and professional, he was on time and went striaght to work. I defitly will be using him again...",
+//     key: 1,
+//   },
+//   {
+//     src: "https://picsum.photos/id/456/1200/400",
+//     altText: "Slide 2",
+//     header: "Michael J",
+//     caption: "Michael was great, I would recommend him to anyone...",
+//     key: 2,
+//   },
+//   {
+//     src: "https://picsum.photos/id/678/1200/400",
+//     altText: "Slide 3",
+//     header: "Brenda B",
+//     caption: "Michael was very pleasant and thorough. Hard worker...",
+//     key: 3,
+//   },
+// ];
 
 export default function Review() {
   return (

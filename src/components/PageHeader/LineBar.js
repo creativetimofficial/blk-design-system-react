@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row, UncontrolledAlert } from 'reactstrap'
+import { Container } from 'reactstrap'
 import './LineBar.css'
 
 export default function LineBar({description}) {
