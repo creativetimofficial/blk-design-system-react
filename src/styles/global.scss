@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/functions";
+
+$enable-cssgrid: false;
+$font-size-base: 0.875rem;
+$font-family-base: 'Poppins', sans-serif;
+$primary: #f51806;
+$secondary: #333333;
+$body-color: $secondary;
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+$custom-theme-colors: map-merge($theme-colors, ("primary": $primary, "secondary": $secondary));
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/containers";
+
+@import "~bootstrap/scss/utilities/api";
+
+body {
+  outline: none;
+}

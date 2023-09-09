@@ -1,0 +1,8 @@
+node_modules/
+.eslintrc.js
+dist/
+coverage/
+__mocks__/
+.prettierrc.js
+vite.config.js
+env.d.ts

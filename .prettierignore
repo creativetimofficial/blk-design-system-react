@@ -1,0 +1,19 @@
+# misc
+jest.config.js
+
+# generated
+/.cache/
+/coverage/
+/dist/
+/dist-dev/
+/public/
+/storybook-static/
+/node_modules/
+
+# IDE Stuff
+/.code-workspace/
+/.idea/
+/.next/
+/.project/
+/.vscode/
+/.settings/

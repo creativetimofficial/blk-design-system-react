@@ -1,9 +1,0 @@
-.form-check input[type="checkbox"]:checked + .form-check-sign::before,
-.form-check input[type="checkbox"]:checked + .form-check-sign::before,
-.form-check-radio input[type="radio"]:checked + .form-check-sign::after{
-  background-color: $info;
-}
-.form-check-radio input[type="radio"]:checked + .form-check-sign::after,
-.form-check-radio input[type="radio"]:checked + .form-check-sign::before{
-  border-color: $info;
-}
