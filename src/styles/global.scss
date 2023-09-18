@@ -1,11 +1,28 @@
 @import "~bootstrap/scss/functions";
 
+:root {
+  --swiper-pagination-bullet-inactive-color: #94A4C2;
+  --swiper-pagination-color: #FF734D;
+  --swiper-pagination-bullet-inactive-opacity: 0.8;
+  --swiper-pagination-bullet-width: 20px;
+  --swiper-pagination-bullet-height: 10px;
+  --swiper-pagination-bullet-border-radius: 10px;
+}
+
 $enable-cssgrid: false;
 $font-size-base: 0.875rem;
 $font-family-base: 'Poppins', sans-serif;
-$primary: #f51806;
-$secondary: #333333;
-$body-color: $secondary;
+
+$bg: #01051D;
+$primary: #031E72;
+$secondary: #61F0FF;
+$light-yellow: #FFC152;
+$sunset-orange: #FF734D;
+$gray: #94A4C2;
+$light-gray: #C5D1E7;
+
+$body-color: white;
+$body-bg: $bg;
 
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
@@ -13,7 +30,11 @@ $body-color: $secondary;
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/utilities";
 
-$custom-theme-colors: map-merge($theme-colors, ("primary": $primary, "secondary": $secondary));
+$custom-theme-colors: map-merge($theme-colors, (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $bg,
+));
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 
@@ -21,9 +42,118 @@ $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/helpers";
 @import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/transitions";
 
 @import "~bootstrap/scss/utilities/api";
 
-body {
-  outline: none;
+// Custom classes
+.fs-5 {
+  font-size: 1rem !important;
 }
+.fs-12 {
+  font-size: 12px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.text-sunset {
+  color: $sunset-orange;
+}
+.mw-1200 {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+// styles for the whole page
+header, main, footer {
+  margin: auto;
+  max-width: 1920px;
+}
+
+nav.navbar {
+  z-index: 10;
+  .container-fluid {
+    padding: 30px 80px;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-item {
+    font-size: 16px;
+    font-weight: 400;
+    .nav-link {
+      display: block;
+      color: white;
+      height: 100%;
+      padding: 15px 40px;
+      transition: color 0.3s ease-in-out;
+      width: 100%;
+      &:hover {
+        color: $secondary;
+        transition: color 0.3s ease-in-out;
+      }
+    }
+    &:first-child {
+      font-weight: 600;
+    }
+    &:last-child {
+      border: 2px solid $sunset-orange;
+      border-radius: 30px;
+      font-weight: 700;
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url('/img/menu.svg');
+  }
+  &.scrolled {
+    .container-fluid {
+      background-color: $primary;
+      transition: all 0.3s ease-in-out;
+    }
+    @media (min-width: 992px) {
+      .container-fluid {
+        padding: 5px 80px;
+      }
+    }
+  }
+  @media (min-width: 1921px) {
+    .container-fluid {
+      background-color: $primary;
+    }
+  }
+  @media (max-width: 1370px) {
+    .nav-item {
+      .nav-link {
+        padding: 15px 20px;
+      }
+    }
+  }
+  @media (max-width: 1150px) {
+    .container-fluid {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 991px) {
+    .container-fluid {
+      background-color: $primary;
+      padding: 0 12px;
+    }
+  }
+  @media (max-width: 345px) {
+    .logo {
+      height: auto !important;
+      width: 200px !important;
+    }
+  }
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 80px !important;
+}
+
+// just to not have too much code in a single file
+@import "./header.scss";
+@import "./home-body.scss";
+@import "./footer.scss";
