@@ -1,0 +1,22 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    entrypoint: "bash"
+    args:
+      [
+        "-c",
+        "docker pull us-west2-docker.pkg.dev/$PROJECT_ID/$REPOSITORY_NAME/quickstart-image:latest || exit 0",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "us-west2-docker.pkg.dev/$PROJECT_ID/$REPOSITORY_NAME/quickstart-image:latest",
+        "--cache-from",
+        "us-west2-docker.pkg.dev/$PROJECT_ID/$REPOSITORY_NAME/quickstart-image:latest",
+        ".",
+      ]
+images:
+  [
+    "us-west2-docker.pkg.dev/$PROJECT_ID/$REPOSITORY_NAME/quickstart-image:latest",
+  ]
