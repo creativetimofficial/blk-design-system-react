@@ -1,4 +1,5 @@
 steps:
+  # Download docker image cache
   - name: "gcr.io/cloud-builders/docker"
     entrypoint: "bash"
     args:
@@ -6,6 +7,7 @@ steps:
         "-c",
         "docker pull us-central1-docker.pkg.dev/hermes-development-01/development/website:latest || exit 0",
       ]
+  # Build the container image
   - name: "gcr.io/cloud-builders/docker"
     args:
       [
@@ -15,6 +17,34 @@ steps:
         "--cache-from",
         "us-central1-docker.pkg.dev/hermes-development-01/development/website:latest",
         ".",
+      ]
+  # Push the container image to Container Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "us-central1-docker.pkg.dev/hermes-development-01/development/website:latest",
+      ]
+  # Deploy container image to Cloud Run
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    # args:
+    #   [
+    #     "-c",
+    #     "gcloud run deploy website --image us-central1-docker.pkg.dev/hermes-development-01/development/website:latest --platform managed --region us-central1 --allow-unauthenticated --project hermes-development-01",
+    #   ]
+    args:
+      [
+        "run",
+        "deploy",
+        "development-website",
+        "--image",
+        "us-central1-docker.pkg.dev/hermes-development-01/development/website:latest",
+        "--region",
+        "us-east4",
+        "--allow-unauthenticated",
+        "--project",
+        "hermes-development-01",
       ]
 images:
   [
