@@ -5,6 +5,8 @@ import Negotiator from 'negotiator'
 
 import { i18n } from '../i18n.config'
 
+const PUBLIC_FILE = /\.(.*)$/
+
 function getLocale(request: NextRequest): string | undefined {
   const negotiatorHeaders: Record<string, string> = {}
   // eslint-disable-next-line no-return-assign
@@ -17,12 +19,16 @@ function getLocale(request: NextRequest): string | undefined {
   return locale
 }
 
-// eslint-disable-next-line consistent-return
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const pathnameIsMissingLocale = i18n.locales.every(
     locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
+
+  if (PUBLIC_FILE.test(request.nextUrl.pathname)) {
+    // to not break the images and other public files
+    return NextResponse.next()
+  }
 
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
@@ -31,9 +37,10 @@ export function middleware(request: NextRequest) {
     if (locale === i18n.defaultLocale) {
       return NextResponse.rewrite(new URL(`/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`, request.url))
     }
-
     return NextResponse.redirect(new URL(`/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`, request.url))
   }
+
+  return NextResponse.next()
 }
 
 export const config = {

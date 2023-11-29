@@ -26,7 +26,7 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
   return (
     <>
       <header>
-        <Navbar lang={lang} />
+        <Navbar />
         <div className="intro w-100">
           <h1 className="fw-semibold display-2 px-3 px-md-0 mt-5">Lorem Ipsum Dolor Sit Amet</h1>
           <p className="fs-18 fw-semibold mx-auto mt-4 mb-5 px-3 px-md-0" style={{ maxWidth: '650px' }}>

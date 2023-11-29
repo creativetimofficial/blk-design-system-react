@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const Navbar: React.FC<{ lang: string }> = ({ lang }) => {
+export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export const Navbar: React.FC<{ lang: string }> = ({ lang }) => {
     >
       <div className="container-fluid">
         <div className="text-secondary navbar-brand">
-          <Image src={`/${lang}/logo.svg`} alt="Hermes Logistic" width={250} height={50} className="logo" />
+          <Image src="/logo.svg" alt="Hermes Logistic" width={250} height={50} className="logo" />
         </div>
         <button
           className="navbar-toggler"
