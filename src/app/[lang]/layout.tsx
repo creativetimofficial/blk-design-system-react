@@ -2,9 +2,12 @@ import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 
+import { Locale, i18n } from '../../../i18n.config'
+
 import '@/styles/global.scss'
 
 export const metadata: Metadata = { title: 'Hermes Logistic' }
+export const generateStaticProps = async () => i18n.locales.map(lang => ({ lang }))
 
 const poppins = Poppins({
   weight: ['400', '600', '700'],
@@ -13,9 +16,9 @@ const poppins = Poppins({
   display: 'swap',
 })
 
-const RootLayout = ({ children }: { children: ReactNode }) => {
+const RootLayout = ({ children, params }: { children: ReactNode; params: { lang: Locale } }) => {
   return (
-    <html lang="en">
+    <html lang={params?.lang ?? 'en'}>
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
