@@ -21,20 +21,28 @@ export const metadata: Metadata = {
 }
 
 const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }) => {
-  const { home } = await getDictionary(lang)
+  const { mainSection, menu, whoWeAre, purposeAchieve, benefits, features, pricing, contact } =
+    await getDictionary(lang)
+
+  const convertBreaks = str =>
+    str.split(/<br\s*\/?>/).reduce((prev, curr, i) => {
+      const key = `_${Math.random().toString(36).substring(2, 9)}`
+      return [...prev, i > 0 && <br key={key} />, curr]
+    }, [])
 
   return (
     <>
       <header>
-        <Navbar />
+        <Navbar lang={menu} />
         <div className="intro w-100">
-          <h1 className="fw-semibold display-2 px-3 px-md-0 mt-5">Lorem Ipsum Dolor Sit Amet</h1>
+          <h1 style={{ maxWidth: '1500px' }} className="fw-semibold display-2 px-3 px-md-0 mt-5 mx-auto">
+            {mainSection.title}
+          </h1>
           <p className="fs-18 fw-semibold mx-auto mt-4 mb-5 px-3 px-md-0" style={{ maxWidth: '650px' }}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-            atque corrupti.
+            {mainSection.subtitle}
           </p>
           <button type="button" className="btn btn-secondary rounded-pill fw-bold fs-5 px-5 py-3 mb-3">
-            {home.test}
+            {mainSection.cta}
           </button>
         </div>
         <div className="info container">
@@ -43,31 +51,23 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
             <span className="line" />
             <p className="justify-content-start">
               <span className="fs-1 fw-semibold pe-3">10%</span>
-              <span>FUEL SAVINGS</span>
+              <span>{mainSection.fuel}</span>
             </p>
           </div>
           <div className="info-element">
             <Image src={clock} alt="clock" width={30} height={30} />
             <span className="line" />
             <p>
-              <span className="fs-1 fw-semibold">20%</span>
-              <span>
-                SAVINGS IN WORK
-                <br />
-                HOURS
-              </span>
+              <span className="fs-1 fw-semibold pe-3">20%</span>
+              <span>{convertBreaks(mainSection.hours)}</span>
             </p>
           </div>
           <div className="info-element">
             <Image src={calendar} alt="calendar" width={30} height={30} />
             <span className="line" />
             <p>
-              <span className="fs-1 fw-semibold">40%</span>
-              <span>
-                COST PRODUCTION
-                <br />
-                FROM ERROR DELAYS.
-              </span>
+              <span className="fs-1 fw-semibold pe-3">40%</span>
+              <span>{convertBreaks(mainSection.cost)}</span>
             </p>
           </div>
         </div>
@@ -79,12 +79,8 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
           className="who-we-are-section py-5 d-flex justify-content-evenly align-items-center mw-1200 px-3 px-xl-0"
         >
           <div style={{ maxWidth: '510px' }}>
-            <span className="fs-12 text-sunset fw-semibold">WHO WE ARE</span>
-            <h2 className="display-5 fw-semibold lh-base py-4 mb-0">
-              Hermes
-              <br />
-              Logistic Company
-            </h2>
+            <span className="fs-12 text-sunset fw-semibold">{whoWeAre.section}</span>
+            <h2 className="display-5 fw-semibold lh-base py-4 mb-0">{convertBreaks(whoWeAre.title)}</h2>
             <Image
               src={whoWeAreMain}
               alt="Who We Are"
@@ -92,15 +88,7 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
               height={550}
               className="mw-100 d-inline-block d-lg-none"
             />
-            <p className="fs-5">
-              We are Hermes Fleet Management, a leading technology provider offering an innovative solution to
-              streamline vehicle fleet operations.
-              <br />
-              <br />
-              Our platform empowers companies to optimize their delivery routes, lower operational costs, and drive
-              customer satisfaction. By leveraging our advanced reporting and real-time analysis, businesses can make
-              strategic decisions for enhanced efficiency and profitability.
-            </p>
+            <p className="fs-5">{convertBreaks(whoWeAre.text)}</p>
           </div>
           <Image
             src={whoWeAreMain}
@@ -125,7 +113,7 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
                 aria-selected="true"
                 tabIndex={-1}
               >
-                Our Purpose
+                {purposeAchieve.tab1}
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -140,7 +128,7 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
                 aria-selected="false"
                 tabIndex={-1}
               >
-                What do we Want To Achieve?
+                {purposeAchieve.tab2}
               </button>
             </li>
           </ul>
@@ -155,15 +143,9 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
               <div className="tab-custom-content">
                 <Image src={purpose} alt="Our purpose" width={550} className="mw-100 d-none d-lg-inline-block" />
                 <div style={{ maxWidth: '410px' }}>
-                  <h2 className="display-5 fw-semibold lh-base pb-4 mb-0">Our Purpose</h2>
+                  <h2 className="display-5 fw-semibold lh-base pb-4 mb-0">{purposeAchieve.title1}</h2>
                   <Image src={purpose} alt="Our purpose" width={550} className="mw-100 d-lg-inline-block d-lg-none" />
-                  <p className="fs-5">
-                    Use Intelligent Route Optimization to transform the way companies manage their vehicles fleet, using
-                    Hermes will help them to to optimize delivery routes. By considering factors like traffic, delivery
-                    windows, and package volume, businesses can reduce travel time, fuel consumption, and operational
-                    costs. The intelligent route optimization feature ensures efficient resource utilization and
-                    maximizes delivery efficiency.
-                  </p>
+                  <p className="fs-5">{purposeAchieve.text1}</p>
                 </div>
               </div>
             </div>
@@ -176,12 +158,9 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
             >
               <div className="tab-custom-content">
                 <div style={{ maxWidth: '410px' }}>
-                  <h2 className="display-5 fw-semibold pb-4 mb-0">What do we Want To Achieve?</h2>
+                  <h2 className="display-5 fw-semibold pb-4 mb-0">{purposeAchieve.title2}</h2>
                   <Image src={purpose} alt="Our purpose" width={550} className="mw-100 d-inline-block d-lg-none" />
-                  <p className="fs-5">
-                    To lead the fleet management industry with cutting-edge technology and exceptional service,
-                    expanding nationally and internationally to positively impact the logistics of companies worldwide.
-                  </p>
+                  <p className="fs-5">{purposeAchieve.text2}</p>
                 </div>
                 <Image src={purpose} alt="Our purpose" width={550} className="mw-100 d-none d-lg-inline-block" />
               </div>
@@ -189,23 +168,19 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
           </div>
         </section>
 
-        <Benefits />
+        <Benefits lang={benefits} />
 
-        <Features />
+        <Features lang={features} />
 
-        <Plans />
+        <Plans lang={pricing} />
 
         <section id="contact" className="w-100 banner-section">
           <div className="banner">
             <div>
-              <h2 className="display-5 fw-semibold">CTA title Banner Here</h2>
-              <p className="fs-5 mb-4">
-                Sed ut perspiciatis unde omnis iste natus error sit
-                <br />
-                voluptatem accusantium.
-              </p>
+              <h2 className="display-6 fw-semibold">{convertBreaks(contact.title)}</h2>
+              <p className="fs-5 mb-4">{convertBreaks(contact.subtitle)}</p>
               <button type="button" className="btn btn-secondary rounded-pill fs-5 fw-bold">
-                CTA Text Here
+                {contact.cta}
               </button>
             </div>
             <Image src={banner} alt="Banner" width={440} height={565} className="mw-100" />

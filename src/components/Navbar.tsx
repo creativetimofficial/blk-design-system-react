@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const Navbar: React.FC = () => {
+import Switcher from './Switcher'
+
+export const Navbar: React.FC<{ lang: Record<string, string> }> = ({ lang }) => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -66,7 +68,7 @@ export const Navbar: React.FC = () => {
                 data-bs-toggle="collapse"
                 data-bs-target=".navbar-collapse.show"
               >
-                Who We Are
+                {lang.who}
               </Link>
             </li>
             <li className="nav-item">
@@ -77,7 +79,7 @@ export const Navbar: React.FC = () => {
                 data-bs-toggle="collapse"
                 data-bs-target=".navbar-collapse.show"
               >
-                Benefits
+                {lang.benefits}
               </Link>
             </li>
             <li className="nav-item">
@@ -88,7 +90,7 @@ export const Navbar: React.FC = () => {
                 data-bs-toggle="collapse"
                 data-bs-target=".navbar-collapse.show"
               >
-                Features
+                {lang.features}
               </Link>
             </li>
             <li className="nav-item">
@@ -99,7 +101,7 @@ export const Navbar: React.FC = () => {
                 data-bs-toggle="collapse"
                 data-bs-target=".navbar-collapse.show"
               >
-                Pricing
+                {lang.pricing}
               </Link>
             </li>
             <li className="nav-item">
@@ -110,8 +112,11 @@ export const Navbar: React.FC = () => {
                 data-bs-toggle="collapse"
                 data-bs-target=".navbar-collapse.show"
               >
-                Contact Us
+                {lang.contact}
               </Link>
+            </li>
+            <li className="nav-link">
+              <Switcher />
             </li>
           </ul>
         </div>

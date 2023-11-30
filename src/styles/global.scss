@@ -47,6 +47,7 @@ $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
 
 @import "~bootstrap/scss/utilities/api";
 
@@ -87,7 +88,7 @@ nav.navbar {
       display: block;
       color: white;
       height: 100%;
-      padding: 15px 40px;
+      padding: 15px 30px;
       transition: color 0.3s ease-in-out;
       width: 100%;
       &:hover {
@@ -98,10 +99,41 @@ nav.navbar {
     &:first-child {
       font-weight: 600;
     }
-    &:last-child {
+    &:nth-last-child(2) {
       border: 2px solid $sunset-orange;
       border-radius: 30px;
       font-weight: 700;
+    }
+  }
+  .navbar-nav {
+    .language-switch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 10px;
+      transition: color 0.3s ease-in-out;
+      width: 100%;
+      &:hover {
+        color: $secondary;
+        transition: color 0.3s ease-in-out;
+      }
+      a {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 10px;
+        text-decoration: none;
+        &:hover {
+          color: $secondary;
+          transition: color 0.3s ease-in-out;
+        }
+        &.lang-active {
+          color: $secondary;
+          transition: color 0.3s ease-in-out;
+          text-decoration: underline;
+        }
+      }
     }
   }
   .navbar-toggler-icon {

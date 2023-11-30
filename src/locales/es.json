@@ -1,5 +1,134 @@
 {
-  "home": {
-    "test": "Testeando"
+  "menu": {
+    "who": "¿Quiénes somos?",
+    "benefits": "Beneficios",
+    "features": "Características",
+    "pricing": "Precios",
+    "contact": "Contactenos"
+  },
+  "mainSection": {
+    "title": "Una Nueva Forma De Gestionar Tu Flota Vehicular De Entrega",
+    "subtitle": "Aprovecha la tecnología para optimizar tus rutas, reducir costos y aumentar la eficiencia de tus entregas",
+    "cta": "Solicita una demo",
+    "fuel": "AHORRO DE COMBUSTIBLE",
+    "hours": "AHORRO EN HORAS<br/>DE TRABAJO",
+    "cost": "COSTO DE PRODUCCIÓN<br/>DEBIDO RETRASOS Y ERRORES"
+  },
+  "whoWeAre": {
+    "section": "QUIENES SOMOS",
+    "title": "Hermes<br/>Compañía Logística",
+    "text": "Somos Hermes Fleet Management, un proveedor líder de tecnología que ofrece una solución innovadora para optimizar las operaciones de flotas de vehículos.<br /><br /> Nuestra plataforma permite a las empresas optimizar sus rutas de entrega, reducir costos operativos y aumentar la satisfacción del cliente. Al aprovechar nuestros informes avanzados y análisis en tiempo real, las empresas pueden tomar decisiones estratégicas para mejorar la eficiencia y la rentabilidad."
+  },
+  "purposeAchieve": {
+    "tab1": "Nuestro Propósito",
+    "tab2": "¿Qué queremos lograr?",
+    "title1": "Nuestro Propósito",
+    "title2": "¿Qué queremos lograr?",
+    "text1": "Utilizar la Optimización Inteligente de Rutas para transformar la forma en que las empresas gestionan su flota de vehículos, utilizando Hermes les ayudará a optimizar las rutas de entrega. Al tener en cuenta factores como el tráfico, las ventanas de entrega y el volumen de paquetes, las empresas pueden reducir el tiempo de viaje, el consumo de combustible y los costos operativos. La función de optimización inteligente de rutas garantiza una utilización eficiente de los recursos y maximiza la eficiencia en las entregas.",
+    "text2": "Liderar la industria de gestión de flotas con tecnología de vanguardia y un servicio excepcional, expandiéndonos a nivel nacional e internacional para tener un impacto positivo en la logística de empresas en todo el mundo."
+  },
+  "benefits": {
+    "section": "BENEFICIOS",
+    "title": "Tus Beneficios",
+    "benefits": [
+      {
+        "title": "Ahorro de Tiempo y Dinero",
+        "description": "La optimización de rutas ofrecida por la solución de Hermes permite a las empresas ahorrar tiempo y dinero en el proceso de entrega de sus productos. Al planificar las rutas de manera eficiente, los conductores pueden entregar más productos en menos tiempo, reduciendo los costos operativos y aumentando la eficiencia."
+      },
+      {
+        "title": "Mayor Visibilidad y Control",
+        "description": "La solución de Hermes proporciona una visibilidad completa de la flota de vehículos, lo que permite a las empresas supervisar el progreso de las entregas y responder rápidamente a cualquier problema o contratiempo que surja. Con la solución de Hermes, las empresas pueden tener un mayor control sobre sus operaciones de entrega."
+      },
+      {
+        "title": "Mejora de la Satisfacción del Cliente",
+        "description": "Con el monitoreo en tiempo real y la entrega en áreas específicas gracias a la geocerca, los clientes finales reciben sus productos a tiempo, mejorando su satisfacción con el servicio y aumentando la fidelidad del cliente."
+      },
+      {
+        "title": "Reducción de Errores y Retrasos",
+        "description": "La optimización de rutas ofrecida por la solución de Hermes permite a las empresas ahorrar tiempo y dinero en el proceso de entrega de sus productos. Al planificar las rutas de manera eficiente, los conductores pueden entregar más productos en menos tiempo, reduciendo los costos operativos y aumentando la eficiencia."
+      },
+      {
+        "title": "Integración Sencilla con Sistemas Existentes",
+        "description": "La solución de Hermes ofrece una visibilidad completa de la flota de vehículos, permitiendo a las empresas supervisar el progreso de las entregas y responder rápidamente a cualquier problema o contratiempo que pueda surgir. Con la solución de Hermes, las empresas pueden tener un mayor control sobre sus operaciones de entrega y una fácil integración con sus sistemas existentes."
+      }
+    ]
+  },
+  "features": {
+    "section": "CARACTERÍSTICAS",
+    "title": "Características asombrosass",
+    "description": "Descubre las innovadoras características que te ayudarán a llevar tu logística al siguiente nivel.",
+    "features": [
+      {
+        "title": "Optimizacion de Rutas",
+        "description": "maximiza la eficiencia de tus entregas planificando las rutas más rápidas y rentables para tu flota."
+      },
+      {
+        "title": "Monitoreo en Tiempo Real",
+        "description": "supervisa y controla tus vehículos y envíos en tiempo real para una gestión precisa y reacción rápida."
+      },
+      {
+        "title": "Aplicacion web Movil",
+        "description": "Accede a todas las funcionalidades desde cualquier dispositivo móvil, lo que te permite mantener el control incluso mientras te desplazas."
+      },
+      {
+        "title": "Geovalla",
+        "description": "Define áreas geográficas específicas y recibe alertas instantáneas cuando tus vehículos entren o salgan de ellas, garantizando la seguridad y el cumplimiento."
+      },
+      {
+        "title": "Simulador de Trafico",
+        "description": "Anticípate a posibles demoras y optimiza tus rutas considerando las condiciones actuales de tráfico en tiempo real."
+      },
+      {
+        "title": "API",
+        "description": "Integra nuestra solución logística con tus sistemas y aplicaciones existentes para una mayor personalización y eficacia en tus operaciones."
+      }
+    ]
+  },
+  "pricing": {
+    "section": "PRECIO",
+    "title": "Escoge tu plan de acuerdo a tus necesidades",
+    "plans": [
+      {
+        "title": "Plan Básico",
+        "description": "El Plan BASICO es ideal para pequeñas empresas o emprendedores que desean una solución de gestión de flotas eficiente y económica. Cubre todas tus necesidades sin importar cuán pequeña sea tu flota",
+        "price": "$40.00",
+        "features": [
+          "Unidades 1-5"
+        ],
+        "cta": "Obtener Basic Plan"
+      },
+      {
+        "title": "Plan Estándar",
+        "description": "El Plan ESTANDAR es perfecto para negocios medianos que buscan controlar y optimizar sus operaciones de flota. Ofrece una solución completa y escalable que se adapta a tus necesidades en crecimiento",
+        "price": "$35.00",
+        "features": [
+          "Unidades 6-24"
+        ],
+        "cta": "Obtener Standard Plan"
+      },
+      {
+        "title": "Plan Plata",
+        "description": "El Plan PLATA está diseñado para empresas en crecimiento con flotas considerables. Ofrece un control exhaustivo y opciones avanzadas de gestión para optimizar tus operaciones a gran escala",
+        "price": "$30.00",
+        "features": [
+          "Unidades 25-60"
+        ],
+        "cta": "Obtener Premium Plata"
+      },
+      {
+        "title": "Plan Empresarial",
+        "description": "El Plan EMPRESARIAL es la elección definitiva para las empresas más grandes con flotas extensas. Proporciona una solución de gestión de flotas a medida y de alto rendimiento que se adapta a tus necesidades a gran escala",
+        "price": "Contactanos",
+        "features": [
+          "Unidades 60+"
+        ],
+        "cta": "Obtener Premium Empresarial"
+      }
+    ]
+  },
+  "contact": {
+    "title": "¿Tienes alguna pregunta,<br>sugerencia o consulta?",
+    "subtitle": "No dudes en ponerte en contacto con nosotros. Estamos aquí<br>para brindarte la mejor asistencia y ayudarte a optimizar<br>tu logística. Completa el formulario a continuación y te<br>responderemos a la brevedad",
+    "cta": "FORMULARIO"
   }
 }

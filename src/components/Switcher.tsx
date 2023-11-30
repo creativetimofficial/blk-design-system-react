@@ -15,17 +15,25 @@ export default function LocaleSwitcher() {
     return segments.join('/')
   }
 
+  const labels = {
+    en: 'En',
+    es: 'Es',
+  }
+
+  const currentLocale = pathName?.replace('/', '') || 'en'
   return (
-    <ul className="flex gap-x-3">
+    <div className="language-switch">
       {i18n.locales.map(locale => {
         return (
-          <li key={locale}>
-            <Link href={redirectedPathName(locale)} className="rounded-md border bg-black px-3 py-2 text-white">
-              {locale}
-            </Link>
-          </li>
+          <Link
+            key={locale}
+            href={redirectedPathName(locale)}
+            className={currentLocale === locale ? 'lang-active' : ''}
+          >
+            {labels[locale]}
+          </Link>
         )
       })}
-    </ul>
+    </div>
   )
 }

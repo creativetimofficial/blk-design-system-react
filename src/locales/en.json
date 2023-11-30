@@ -1,5 +1,134 @@
 {
-  "home": {
-    "test": "Testing"
+  "menu": {
+    "who": "Who We Are",
+    "benefits": "Benefits",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact Us"
+  },
+  "mainSection": {
+    "title": "Lorem Ipsum Dolor Sit Amet",
+    "subtitle": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.",
+    "cta": "Schedule a Demo",
+    "fuel": "FUEL SAVINGS",
+    "hours": "SAVINGS IN WORK<br/>HOURS",
+    "cost": "COST PRODUCTION<br/>FROM ERROR DELAYS"
+  },
+  "whoWeAre": {
+    "section": "WHO WE ARE",
+    "title": "Hermes<br/>Logistic Company",
+    "text": "We are Hermes Fleet Management, a leading technology provider offering an innovative solution to streamline vehicle fleet operations. <br /><br /> Our platform empowers companies to optimize their delivery routes, lower operational costs, and drive customer satisfaction. By leveraging our advanced reporting and real-time analysis, businesses can make strategic decisions for enhanced efficiency and profitability."
+  },
+  "purposeAchieve": {
+    "tab1": "Our Purpose",
+    "tab2": "What do we want to Achieve?",
+    "title1": "Our Purpose",
+    "title2": "What do we want to Achieve?",
+    "text1": "Use Intelligent Route Optimization to transform the way companies manage their vehicles fleet, using Hermes will help them to to optimize delivery routes. By considering factors like traffic, delivery windows, and package volume, businesses can reduce travel time, fuel consumption, and operational costs. The intelligent route optimization feature ensures efficient resource utilization and maximizes delivery efficiency.",
+    "text2": "To lead the fleet management industry with cutting-edge technology and exceptional service, expanding nationally and internationally to positively impact the logistics of companies worldwide."
+  },
+  "benefits": {
+    "section": "BENEFITS",
+    "title": "Your Benefits",
+    "benefits": [
+      {
+        "title": "Time and Money Savings",
+        "description": "The route optimization offered by Hermes solution allows companies to save time and money in the process of delivering their products. By planning routes efficiently, drivers can deliver more products in less time, reducing operating costs and increasing efficiency."
+      },
+      {
+        "title": "Increased Visibility and Control",
+        "description": "Hermes solution provides complete visibility of the vehicle fleet, allowing companies to monitor the progress of deliveries and quickly respond to any issues or setbacks that arise. With Hermes solution, companies can have greater control over their delivery operations."
+      },
+      {
+        "title": "Improved Customer Satisfaction",
+        "description": "With real-time monitoring and delivery to the correct areas thanks to geofencing, end customers receive their products on time, improving their satisfaction with the service and increasing customer loyalty."
+      },
+      {
+        "title": "Error and Delay Reduction",
+        "description": "The route optimization offered by Hermes solution allows companies to save time and money in the process of delivering their products. By planning routes efficiently, drivers can deliver more products in less time, reducing operating costs and increasing efficiency."
+      },
+      {
+        "title": "Easy integration with existing systems",
+        "description": "Hermes solution offers complete visibility of the vehicle fleet, allowing companies to monitor delivery progress and respond quickly to any problems or setbacks that may arise. With Hermes solution, companies can have greater control over their delivery operations and easily integrate with their existing systems."
+      }
+    ]
+  },
+  "features": {
+    "section": "FEATURES",
+    "title": "Amazing features",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "features": [
+      {
+        "title": "Route Optimization",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+      },
+      {
+        "title": "Real-Time Monitoring",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+      },
+      {
+        "title": "Mobile App",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+      },
+      {
+        "title": "GEO Fences",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+      },
+      {
+        "title": "Traffic Simulator",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+      },
+      {
+        "title": "API",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium."
+      }
+    ]
+  },
+  "pricing": {
+    "section": "PRICING",
+    "title": "Choose your plan according to your needs",
+    "plans": [
+      {
+        "title": "Plan Básico",
+        "description": "El Plan BASICO es ideal para pequeñas empresas o emprendedores que desean una solución de gestión de flotas eficiente y económica. Cubre todas tus necesidades sin importar cuán pequeña sea tu flota",
+        "price": "$40.00",
+        "features": [
+          "Unidades 1-5"
+        ],
+        "cta": "Obtener Basic Plan"
+      },
+      {
+        "title": "Plan Estándar",
+        "description": "El Plan ESTANDAR es perfecto para negocios medianos que buscan controlar y optimizar sus operaciones de flota. Ofrece una solución completa y escalable que se adapta a tus necesidades en crecimiento",
+        "price": "$35.00",
+        "features": [
+          "Unidades 6-24"
+        ],
+        "cta": "Obtener Standard Plan"
+      },
+      {
+        "title": "Plan Plata",
+        "description": "El Plan PLATA está diseñado para empresas en crecimiento con flotas considerables. Ofrece un control exhaustivo y opciones avanzadas de gestión para optimizar tus operaciones a gran escala",
+        "price": "$30.00",
+        "features": [
+          "Unidades 25-60"
+        ],
+        "cta": "Obtener Premium Plata"
+      },
+      {
+        "title": "Plan Empresarial",
+        "description": "El Plan EMPRESARIAL es la elección definitiva para las empresas más grandes con flotas extensas. Proporciona una solución de gestión de flotas a medida y de alto rendimiento que se adapta a tus necesidades a gran escala",
+        "price": "Contactanos",
+        "features": [
+          "Unidades 60+"
+        ],
+        "cta": "Obtener Premium Empresarial"
+      }
+    ]
+  },
+  "contact": {
+    "title": "CTA title Banner Here",
+    "subtitle": "Sed ut perspiciatis unde omnis iste natus error sit<br />voluptatem accusantium.",
+    "cta": "CTA Text Here"
   }
 }

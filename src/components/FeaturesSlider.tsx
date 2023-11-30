@@ -8,43 +8,44 @@ import 'swiper/css/pagination'
 import route from '../assets/images/slider/route.png'
 import monitor from '../assets/images/slider/monitoring.png'
 import mobile from '../assets/images/slider/app.png'
+import { FeaturesLang } from '../types'
 
-const FeaturesSlider: React.FC = () => {
+const FeaturesSlider: React.FC<FeaturesLang> = ({ lang }) => {
   const data = [
     {
       id: '1',
-      name: 'Route Optimization',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+      name: lang.features[0].title,
+      description: lang.features[0].description,
       image: route,
     },
     {
       id: '2',
-      name: 'Real-Time Monitoring',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+      name: lang.features[1].title,
+      description: lang.features[1].description,
       image: monitor,
     },
     {
       id: '3',
-      name: 'Mobile App',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+      name: lang.features[2].title,
+      description: lang.features[2].description,
       image: mobile,
     },
     {
       id: '4',
-      name: 'GEO Fences',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+      name: lang.features[3].title,
+      description: lang.features[3].description,
       image: route,
     },
     {
       id: '5',
-      name: 'Traffic Simulator',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+      name: lang.features[4].title,
+      description: lang.features[4].description,
       image: monitor,
     },
     {
       id: '6',
-      name: 'API',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
+      name: lang.features[5].title,
+      description: lang.features[5].description,
       image: mobile,
     },
   ]
