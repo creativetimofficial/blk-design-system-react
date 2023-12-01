@@ -7,7 +7,9 @@ import { Locale, i18n } from '../../../i18n.config'
 import '@/styles/global.scss'
 
 export const metadata: Metadata = { title: 'Hermes Logistic' }
-export const generateStaticProps = async () => i18n.locales.map(lang => ({ lang }))
+export async function generateStaticParams() {
+  return i18n.locales.map(locale => ({ lang: locale }))
+}
 
 const poppins = Poppins({
   weight: ['400', '600', '700'],
