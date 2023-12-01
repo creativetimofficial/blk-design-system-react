@@ -1,6 +1,8 @@
-FROM node:20.6.1-bullseye
+FROM node:21.2.0-alpine3.18
 ENV PATH /app/node_modules/.bin:$PATH
-RUN npm update -g npm
+RUN npm install -g npm@10.2.4 && \
+    apk update && \
+    apk add --no-cache python3 build-base
 WORKDIR /app
 COPY package* ./
 RUN npm ci
