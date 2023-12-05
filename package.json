@@ -18,10 +18,8 @@
     "eslint-config-next": "14.0.3",
     "negotiator": "0.6.3",
     "next": "14.0.3",
-    "node-sass": "9.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.66.1",
     "sharp": "0.32.6",
     "swiper": "10.2.0",
     "typescript": "5.2.2"
@@ -37,7 +35,8 @@
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "prettier": "3.0.3"
+    "prettier": "3.0.3",
+    "sass": "1.69.5"
   },
   "engines": {
     "node": "~> 21.2",
