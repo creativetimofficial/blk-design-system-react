@@ -1,6 +1,5 @@
 header {
   align-items: center;
-  background-image: url("../assets/images/main.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -12,6 +11,14 @@ header {
   padding-top: 50px;
   position: relative;
   text-align: center;
+
+  &.services {
+    background-image: url("../assets/images/services_bg.jpg");
+  }
+  &.home {
+    background-image: url("../assets/images/main.jpg");
+  }
+
   &::after {
     content: "";
     position: absolute;

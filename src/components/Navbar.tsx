@@ -6,7 +6,10 @@ import Link from 'next/link'
 
 import Switcher from './Switcher'
 
-export const Navbar: React.FC<{ lang: Record<string, string> }> = ({ lang }) => {
+export const Navbar: React.FC<{ lang: Record<string, string>; currentLang?: string }> = ({
+  lang,
+  currentLang = 'en',
+}) => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -44,9 +47,9 @@ export const Navbar: React.FC<{ lang: Record<string, string> }> = ({ lang }) => 
       id="navbar"
     >
       <div className="container-fluid">
-        <div className="text-secondary navbar-brand">
+        <Link href={`/${currentLang}`} className="text-secondary navbar-brand">
           <Image src="/logo.svg" alt="Hermes Logistic" width={250} height={50} className="logo" />
-        </div>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -102,6 +105,11 @@ export const Navbar: React.FC<{ lang: Record<string, string> }> = ({ lang }) => 
                 data-bs-target=".navbar-collapse.show"
               >
                 {lang.pricing}
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href={`/${currentLang}/services`}>
+                {lang.services}
               </Link>
             </li>
             <li className="nav-item">

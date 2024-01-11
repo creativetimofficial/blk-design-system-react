@@ -2,18 +2,14 @@ import type { NextPage, Metadata } from 'next'
 import Image from 'next/image'
 
 import { Locale } from '../../../i18n.config'
-import { Navbar, Features, Plans, Benefits } from '../../components'
 import drop from '../../assets/images/icons/drop.svg'
 import clock from '../../assets/images/icons/clock.svg'
 import calendar from '../../assets/images/icons/calendar.svg'
 import whoWeAreMain from '../../assets/images/WhoWeAreMain.svg'
 import purpose from '../../assets/images/purpose.png'
-import banner from '../../assets/images/banner.svg'
-import fb from '../../assets/images/icons/fb.svg'
-import ins from '../../assets/images/icons/ins.svg'
-import x from '../../assets/images/icons/x.svg'
-import tel from '../../assets/images/icons/tel.svg'
 import { getDictionary } from '../../../dictionary'
+import { convertBreaks } from '../../common/helpers'
+import { Navbar, Features, Plans, Benefits, ContactBanner, Footer } from '../../components'
 
 export const metadata: Metadata = {
   title: 'Hermes Logistic',
@@ -24,16 +20,10 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
   const { mainSection, menu, whoWeAre, purposeAchieve, benefits, features, pricing, contact } =
     await getDictionary(lang)
 
-  const convertBreaks = str =>
-    str.split(/<br\s*\/?>/).reduce((prev, curr, i) => {
-      const key = `_${Math.random().toString(36).substring(2, 9)}`
-      return [...prev, i > 0 && <br key={key} />, curr]
-    }, [])
-
   return (
     <>
-      <header>
-        <Navbar lang={menu} />
+      <header className="home">
+        <Navbar lang={menu} currentLang={lang} />
         <div className="intro w-100">
           <h1 style={{ maxWidth: '1500px' }} className="fw-semibold display-2 px-3 px-md-0 mt-5 mx-auto">
             {mainSection.title}
@@ -174,58 +164,9 @@ const Home: NextPage<{ params: { lang: Locale } }> = async ({ params: { lang } }
 
         <Plans lang={pricing} />
 
-        <section id="contact" className="w-100 banner-section">
-          <div className="banner">
-            <div>
-              <h2 className="display-6 fw-semibold">{convertBreaks(contact.title)}</h2>
-              <p className="fs-5 mb-4">{convertBreaks(contact.subtitle)}</p>
-              <button type="button" className="btn btn-secondary rounded-pill fs-5 fw-bold">
-                {contact.cta}
-              </button>
-            </div>
-            <Image src={banner} alt="Banner" width={440} height={565} className="mw-100" />
-          </div>
-        </section>
+        <ContactBanner title={contact.title} subtitle={contact.subtitle} ctaText={contact.cta} />
       </main>
-      <footer className="w-100">
-        <div className="mw-1200">
-          <div className="d-flex justify-content-between align-items-center pb-0 pb-md-5">
-            <Image src="/small-logo.svg" alt="Hermes Logistic" width={170} height={70} />
-            <ul className="social">
-              <li>
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                  <Image src={fb} alt="Facebook" width={30} height={30} />
-                </a>
-              </li>
-              <li>
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                  <Image src={ins} alt="Instagram" width={30} height={30} />
-                </a>
-              </li>
-              <li>
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                  <Image src={x} alt="X" width={30} height={30} />
-                </a>
-              </li>
-              <li>
-                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                  <Image src={tel} alt="Telegram" width={30} height={30} />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="terms">
-            <span className="fs-12">©Hermes Company. All Rights Reserved</span>
-            <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="fs-12">
-              Privacy Policy
-            </a>
-            <a href="http://google.com" target="_blank" rel="noopener noreferrer" className="fs-12">
-              Terms & Conditions
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

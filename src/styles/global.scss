@@ -1,3 +1,4 @@
+@import "./colors.scss";
 @import "~bootstrap/scss/functions";
 
 :root {
@@ -12,17 +13,6 @@
 $enable-cssgrid: false;
 $font-size-base: 0.875rem;
 $font-family-base: 'Poppins', sans-serif;
-
-$bg: #01051D;
-$primary: #031E72;
-$secondary: #61F0FF;
-$light-yellow: #FFC152;
-$sunset-orange: #FF734D;
-$gray: #94A4C2;
-$light-gray: #C5D1E7;
-
-$body-color: white;
-$body-bg: $bg;
 
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/variables-dark";
@@ -158,7 +148,7 @@ nav.navbar {
   @media (max-width: 1370px) {
     .nav-item {
       .nav-link {
-        padding: 15px 20px;
+        padding: 15px;
       }
     }
   }

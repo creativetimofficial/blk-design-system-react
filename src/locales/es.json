@@ -4,7 +4,8 @@
     "benefits": "Beneficios",
     "features": "Características",
     "pricing": "Precios",
-    "contact": "Contactenos"
+    "contact": "Contactenos",
+    "services": "Servicios"
   },
   "mainSection": {
     "title": "Una Nueva Forma De Gestionar Tu Flota Vehicular De Entrega",
@@ -130,5 +131,83 @@
     "title": "¿Tienes alguna pregunta,<br>sugerencia o consulta?",
     "subtitle": "No dudes en ponerte en contacto con nosotros. Estamos aquí<br>para brindarte la mejor asistencia y ayudarte a optimizar<br>tu logística. Completa el formulario a continuación y te<br>responderemos a la brevedad",
     "cta": "FORMULARIO"
+  },
+  "services": {
+    "title": "Servicios",
+    "info": {
+      "section": "SERVICES",
+      "title": "Title for this Section Here",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "grid": [
+        {
+          "title": "Consulting and Cloud Strategy",
+          "items": [
+            "Consultoría y Migración a la Nube",
+            "Diseño de Arquitectura Cloud"
+          ]
+        },
+        {
+          "title": "Messaging and Collaboration",
+          "items": [
+            "Google Workspace",
+            "Office 360",
+            "Zimbra Mail Server",
+            "Rocket Chat Message Server",
+            "JitsiMeet Server",
+            "OwnCloud File Ser5ver"
+          ]
+        },
+        {
+          "title": "Servers and Domain",
+          "items": [
+            "Mail Servers",
+            "File Servers",
+            "Domian Servers",
+            "Web Servers (Apache, Nginx)",
+            "Proxy Servers (Nginx, Kong, HAproxy, Traefik, Squid)",
+            "Data Base Servers (PostgreSQL, MySQL, MongoDB)",
+            "Application Servers (PostgreSQL, MySQL, NodeJS)",
+            "CDN Servers (AWS CloudFront, Google Cloud CDN, Cloud Flare)",
+            "Virtualization Servers (KVM. VMWare, Google Compute Engine, AWS EC2, Proxmox)",
+            "Cache Servers (Redis, Mem Cache)",
+            "Monitor Serverless (AWS CloudWatch, Cloud Monitoring, ELK Stack, Prometheus, Data Dog)",
+            "Serverless (AWS Lambda, Cloud Fuctions, Knative)",
+            "Logging Serverless (AWS CloudWatch, Cloud Logging, ELK Stack, Data Dog)",
+            "Metric Servers (ELK Stack, Prometheus, Open Telemetry, Data Dog)",
+            "VDI (Amazon VDI)"
+          ]
+        },
+        {
+          "title": "Automated IT and CI/CD",
+          "items": [
+            "Ansible y Ansible AWX/Tower",
+            "Gitlab CI",
+            "Bitbucket CI",
+            "GitHub Actions",
+            "Argo Workflow",
+            "CloudBuild"
+          ]
+        },
+        {
+          "title": "Security and Governance",
+          "items": [
+            "Secret Management (HashiCorp Vault)",
+            "Infraestructura como Código (Terraform)",
+            "Contenedores (Docker)",
+            "Orquestación de Contenedores (Kubernetes)",
+            "Proveedores Cloud (Google Cloud, AWS, Asure, Digital Ocean)",
+            "DevSecOps (SonarQube, Snyk, Code Climate)",
+            "Pruebas de Carga (DDocsify)"
+          ]
+        },
+        {
+          "title": "Cloud Provider",
+          "items": [
+            "Google Cloud Platform",
+            "Amazon Web Service"
+          ]
+        }
+      ]
+    }
   }
 }
