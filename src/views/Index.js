@@ -34,6 +34,7 @@ import NucleoIcons from "views/IndexSections/NucleoIcons.js";
 import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
 import Download from "views/IndexSections/Download.js";
+import { Row, Col } from "reactstrap";
 
 export default function Index() {
   React.useEffect(() => {
@@ -45,21 +46,26 @@ export default function Index() {
   }, []);
   return (
     <>
-      <IndexNavbar />
       <div className="wrapper">
         <PageHeader />
         <div className="main">
-          <Basics />
-          <Navbars />
-          <Tabs />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <JavaScript />
-          <NucleoIcons />
-          <Signup />
-          <Examples />
-          <Download />
+          <Row>
+            <Col className="ml-auto mr-auto" md="8" xl="5">
+              <Typography />
+            </Col>
+            <Col className="ml-auto mr-auto" md="12" xl="6">
+              <JavaScript />
+              <NucleoIcons />
+              <Signup />
+              <Examples />
+              <Download />
+              <Basics />
+              <Navbars />
+              <Tabs />
+              <Pagination />
+              <Notifications />
+            </Col>
+          </Row>
         </div>
         <Footer />
       </div>

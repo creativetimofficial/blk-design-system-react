@@ -103,7 +103,7 @@ body {
   line-height: 1.5;
   color: #525f7f;
   text-align: left;
-  background-color: #171941;
+  background-color: #140F34;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -539,7 +539,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #171941;
+  background-color: #140F34;
   border: 0.0625rem solid #e3e3e3;
   border-radius: 0.25rem;
   box-shadow: 0 1px 2px rgba(34, 42, 66, 0.075);
@@ -1931,7 +1931,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #171941;
+  color: #140F34;
   background-color: #212529;
   border-color: #32383e;
 }
@@ -1943,7 +1943,7 @@ pre code {
 }
 
 .table-dark {
-  color: #171941;
+  color: #140F34;
   background-color: #212529;
 }
 .table-dark th,
@@ -1958,7 +1958,7 @@ pre code {
   background-color: rgba(255, 255, 255, 0.05);
 }
 .table-dark.table-hover tbody tr:hover {
-  color: #171941;
+  color: #140F34;
   background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -4310,13 +4310,13 @@ input[type="button"].btn-block {
   outline: none;
 }
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #171941, none;
+  box-shadow: 0 0 0 1px #140F34, none;
 }
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #171941, none;
+  box-shadow: 0 0 0 1px #140F34, none;
 }
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px #171941, none;
+  box-shadow: 0 0 0 1px #140F34, none;
 }
 .custom-range::-moz-focus-outer {
   border: 0;
@@ -4496,8 +4496,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #525f7f;
-  background-color: #171941;
-  border-color: #e3e3e3 #e3e3e3 #171941;
+  background-color: #140F34;
+  border-color: #e3e3e3 #e3e3e3 #140F34;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -0.0625rem;
@@ -13920,7 +13920,7 @@ fieldset[disabled] .btn-link.active {
 .footer {
   padding: 50px 0;
   border-top: 2px solid #435db5;
-  background: radial-gradient(ellipse at bottom, #292d61 30%, #171941 80%);
+  background: radial-gradient(ellipse at bottom, #292d61 30%, #140F34 80%);
 }
 .footer [class*="container-"] {
   padding: 0;
@@ -17737,7 +17737,7 @@ code {
 }
 
 .profile-page .btcwdgt {
-  background-color: #171941 !important;
+  background-color: #140F34 !important;
 }
 .profile-page .btcwdgt .btcwdgt-header {
   background-color: transparent !important;
@@ -18632,7 +18632,7 @@ textarea.form-control:active {
   overflow-x: hidden;
 }
 .landing-page .page-header::after {
-  background: radial-gradient(ellipse at top right, #292d61 23%, #171941 65%);
+  background: radial-gradient(ellipse at top right, #292d61 23%, #140F34 65%);
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -18902,7 +18902,7 @@ textarea.form-control:active {
 }
 
 .register-page {
-  background-color: #171941;
+  background-color: #140F34;
 }
 .register-page .link {
   font-size: 10px;
