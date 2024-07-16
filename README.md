@@ -22,6 +22,7 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 - [PRO Versions](#pro-versions)
 - [Demo](#demo)
 - [Quick Start](#quick-start)
+- [Deploy](#deploy)
 - [Documentation](#documentation)
 - [File Structure](#file-structure)
 - [Browser Support](#browser-support)
@@ -65,6 +66,12 @@ Blk• Design System React is built on top of the much awaited Bootstrap 4 (Reac
 - [Download from Creative Tim](https://www.creative-tim.com/product/blk-design-system-react).
 - Install with [Bower](https://bower.io/): `bower install blk-design-system-react`.
 - Clone the repo: `git clone https://github.com/creativetimofficial/blk-design-system-react.git`.
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/blk-design-system-react&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Documentation
 
